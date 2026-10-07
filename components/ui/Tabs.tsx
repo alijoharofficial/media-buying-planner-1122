@@ -12,12 +12,15 @@ type TabsProps = {
   onChange: (id: string) => void;
   /** Accessible name for the tab list. */
   label: string;
+  /** Base id so callers can link their tab panels (see tabId / panelId). */
+  id?: string;
   className?: string;
 };
 
 /** Accessible tab list (WAI-ARIA tabs pattern) with an animated active indicator. */
-export function Tabs({ items, value, onChange, label, className }: TabsProps) {
-  const groupId = useId();
+export function Tabs({ items, value, onChange, label, id, className }: TabsProps) {
+  const autoId = useId();
+  const groupId = id ?? autoId;
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
   const enabled = items.filter((i) => !i.disabled);
 

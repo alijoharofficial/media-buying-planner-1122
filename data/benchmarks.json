@@ -1,0 +1,11 @@
+{
+  "_note": "PLACEHOLDER VALUES. Replace with real benchmark data before relying on them. Rates are ratios (0.012 = 1.2%). Region 'default' applies when no region-specific row exists.",
+  "rows": [
+    { "profile": "ecommerce", "region": "default", "platform": "meta", "cpm": 12, "ctr": 0.012, "cvr": 0.02 },
+    { "profile": "leads", "region": "default", "platform": "meta", "cpm": 15, "ctr": 0.01, "cvr": 0.08 },
+    { "profile": "messaging", "region": "default", "platform": "meta", "cpm": 10, "ctr": 0.012, "cvr": 0.15 },
+    { "profile": "ecommerce", "region": "default", "platform": "google", "cpc": 1.2, "ctr": 0.04, "cvr": 0.025 },
+    { "profile": "leads", "region": "default", "platform": "google", "cpc": 3, "ctr": 0.05, "cvr": 0.08 },
+    { "profile": "messaging", "region": "default", "platform": "google", "cpc": 2, "ctr": 0.05, "cvr": 0.1 }
+  ]
+}

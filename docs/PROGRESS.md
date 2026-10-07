@@ -16,6 +16,14 @@
 - Decisions: a platform whose share falls below its own minimum moves to the other platform (covers "low search volume → mostly Meta"). Google learning check counts 1 non-brand campaign. Health thresholds and step translation keys (`steps.<id>.*`, `split.reasons.*`, `warnings.<code>`) are defined for Phase 3/4 copy.
 - Next: Phase 3, calculator form (brief sections 7, 8).
 
+## Phase 3: Calculator form (done)
+- Done: `/calculator` page with Step 0 (4 card questions, progress bar), summary chips, 6 mode-aware tabs with error/warning badges, Next/Back, Calculate (disabled while hard errors exist; "Show issues" link jumps to the first one), tooltips on every field, autosave, example data per mode, clear all, named scenarios + compare up to 3, URL-hash share link, CSV import with column mapping, My benchmarks library + "Use my benchmarks", seasonal grid, reset defaults. Minimal results card until Phase 4.
+- Files: `lib/planner/{types,fields,options,validation,convert,storage,csv}.ts` + `__tests__/validation.test.ts`, `components/planner/{Planner,Step0,SummaryChips,TabPanel,Field,inputs,RowsEditor,CsvImport,BenchmarkPanel,ScenarioPanel,context}.tsx`, `components/ui/Toast.tsx`, `data/benchmarks.json`, `messages/en/planner.json`, `app/[locale]/calculator/page.tsx`.
+- Decisions: every field is defined once in `lib/planner/fields.ts`; tabs, the generic Field and the Zod schema (base Step 0 schema `.extend()`ed per mode) are generated from it. Cross-field rules live in one `crossFieldRules()`; soft warnings in `softWarnings()`. Form stores percentages as 0 to 100; `toPlanInput()` converts.
+- Decisions: RHF holds values; validation runs on every change for badges, inline messages show after blur or a calculate attempt. Existing lead accounts use CRM funnel rows, so booking/show/close inputs are optional there. Per-lead-source CRM split (when both sources ran) is not modelled: rows sum both sources. Toasts added globally (reused for Phase 6 deterrent toast).
+- Decisions: "Use my benchmarks" averages the 3 most recent matching rows, else falls back to the placeholder JSON (source "Published benchmark"). Existing accounts blend low-volume data with the placeholder benchmark CPA.
+- Next: Phase 4, results screen + "Show the calculation" view (brief sections 10, 11).
+
 ## Deliverables
 - [x] Engine module with passing unit tests for all fixtures in 9.9
 - [x] Logo set, favicons and web manifest
