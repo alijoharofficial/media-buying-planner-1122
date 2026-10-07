@@ -1,13 +1,66 @@
 {
+  "meta": {
+    "title": "Ad Budget Calculator for Meta and Google Ads",
+    "description": "Free media buying planner: calculate the monthly ad budget you need on Meta and Google Search, your break-even costs and a clear budget split. For lead generation and ecommerce."
+  },
   "hero": {
     "title": "Plan your ad budget with confidence",
-    "subtitle": "Find the monthly budget your business needs on Meta and Google Search, then turn it into a clear media buying plan.",
+    "subtitle": "Find the monthly budget your business needs on Meta and Google Search, then turn it into a clear media buying plan you can explain to anyone.",
     "ctaPrimary": "Build my media plan",
     "ctaSecondary": "How it works"
   },
   "preview": {
+    "title": "Media buying plan",
+    "sample": "Sample",
+    "alt": "Sample media buying plan: recommended monthly budget 4,550, daily budget 150, 154 leads at 29.50 per lead, verdict profitable with room to scale.",
     "budget": "Recommended monthly budget",
+    "daily": "Daily budget",
+    "leads": "Expected leads",
+    "cpl": "Cost per lead",
     "verdict": "Profitable, room to scale",
-    "infoTooltip": "This is a sample plan. Your numbers will appear here after you use the planner."
+    "sectionTitle": "Your plan in minutes, not spreadsheets",
+    "sectionText": "Answer four questions, fill in the tabs that apply to you and get a budget, a verdict and a split across Meta and Google Search. Every number comes with the formula behind it."
+  },
+  "trust": {
+    "types": "Works for lead generation and ecommerce",
+    "platforms": "Meta and Google Search",
+    "accounts": "New or existing accounts",
+    "languages": "7 languages"
+  },
+  "features": {
+    "title": "Everything a media buyer checks, in one planner",
+    "intro": "From break-even costs to the learning phase, each tool answers one question you would otherwise work out by hand.",
+    "cta": "See all features"
+  },
+  "how": {
+    "title": "How it works",
+    "intro": "Four steps from your business numbers to a plan you can act on.",
+    "steps": {
+      "business": {
+        "title": "Choose your business type",
+        "desc": "Lead generation or ecommerce, new or existing account, Meta and Google Search."
+      },
+      "numbers": {
+        "title": "Enter your numbers",
+        "desc": "Client value or order costs, plus account data or estimates. Tooltips show where to find each one."
+      },
+      "plan": {
+        "title": "Get your media plan",
+        "desc": "A recommended budget, expected results, a verdict and a split across platforms."
+      },
+      "calculation": {
+        "title": "See the calculation",
+        "desc": "Open every step with the formula and your numbers filled in."
+      }
+    }
+  },
+  "guides": {
+    "title": "Guides and tips",
+    "intro": "Practical guides from the TECH24 team on budgets, testing and scaling.",
+    "cta": "Read all guides"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "cta": "See all questions"
   }
 }

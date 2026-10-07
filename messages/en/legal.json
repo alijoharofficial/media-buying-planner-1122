@@ -1,0 +1,52 @@
+{
+  "eyebrow": "Legal",
+  "updated": "Last updated: {date}",
+  "date": "7 October 2026",
+  "privacy": {
+    "meta": { "title": "Privacy Policy", "description": "How the media buying planner handles your data: planner inputs stay in your browser, and analytics run only with your consent." },
+    "title": "Privacy Policy",
+    "intro": "This policy explains what data {brand} handles and why. In short: your planner inputs never leave your browser.",
+    "sections": [
+      { "heading": "Planner inputs stay in your browser", "body": ["Everything you enter in the planner, including saved scenarios and benchmarks, is stored in your browser's local storage on your device. It is not sent to our servers, and we cannot see it.", "Share links contain your planner inputs encoded in the link itself. Anyone with the link can see those inputs, so only share it with people you trust."] },
+      { "heading": "The contact form", "body": ["When you use the contact form we receive your name, email address and message. We use them only to reply to you and keep them no longer than needed for that purpose.", "To prevent spam, the form uses Cloudflare Turnstile, which may process technical data such as your IP address."] },
+      { "heading": "Analytics", "body": ["We use analytics (Google Analytics 4) only if you accept analytics cookies in the cookie banner. Analytics help us understand which pages are useful. IP addresses are anonymized. You can change your choice at any time by clearing this site's data in your browser."] },
+      { "heading": "Your rights", "list": ["Access, correct or delete the personal data we hold about you (contact form messages).", "Withdraw consent for analytics at any time.", "Complain to your local data protection authority."] },
+      { "heading": "Contact", "body": ["For privacy questions, use the contact form or email {email}."] }
+    ]
+  },
+  "terms": {
+    "meta": { "title": "Terms of Use", "description": "The terms for using the free media buying planner and its guides." },
+    "title": "Terms of Use",
+    "intro": "By using {brand} you agree to these terms.",
+    "sections": [
+      { "heading": "The service", "body": ["{brand} is a free planning tool that estimates ad budgets and media buying plans from the numbers you provide. Guides are provided for general information."] },
+      { "heading": "No guarantee", "body": ["Results are estimates based on your inputs and planning assumptions. They are not guarantees of costs, results or profit. You are responsible for your advertising decisions and budgets."] },
+      { "heading": "Acceptable use", "list": ["Do not attempt to disrupt, overload or attack the service.", "Do not misuse the contact form or send unsolicited messages.", "Do not copy or republish the site's content without permission."] },
+      { "heading": "Intellectual property", "body": ["The site design, text, guides and code are protected. The guides are written by the TECH24 team and credited on each article."] },
+      { "heading": "Limitation of liability", "body": ["To the extent allowed by law, {brand} is not liable for losses arising from the use of, or reliance on, the planner or its guides."] },
+      { "heading": "Changes", "body": ["We may update these terms. The date at the top shows the latest version."] }
+    ]
+  },
+  "disclaimer": {
+    "meta": { "title": "Disclaimer", "description": "Planner results are estimates, not guarantees. Read how to use them responsibly." },
+    "title": "Disclaimer",
+    "intro": "{brand} gives estimates to support planning. It does not predict the future.",
+    "sections": [
+      { "heading": "Results are estimates, not guarantees", "body": ["Every budget, cost and result shown is an estimate based on your inputs, default settings and placeholder benchmarks. Real advertising results depend on creatives, offers, landing pages, competition, seasonality, tracking and platform changes."] },
+      { "heading": "Benchmarks are placeholders", "body": ["Default benchmark values are placeholders and should be replaced with your own data before you rely on them."] },
+      { "heading": "Not financial or legal advice", "body": ["Nothing on this site is financial, legal or tax advice. For decisions with significant financial impact, get professional advice."] },
+      { "heading": "Third-party platforms", "body": ["Meta, Facebook, Instagram, Google and Google Ads are trademarks of their owners. {brand} is not affiliated with or endorsed by them. Platform rules and recommendations, such as learning thresholds, can change at any time."] }
+    ]
+  },
+  "cookies": {
+    "meta": { "title": "Cookie Policy", "description": "Which browser storage and cookies the media buying planner uses, and how to control them." },
+    "title": "Cookie Policy",
+    "intro": "{brand} uses as little browser storage as possible.",
+    "sections": [
+      { "heading": "Essential storage", "body": ["We use local storage to save your planner inputs, scenarios, benchmarks, theme, and your cookie choice. A language cookie (NEXT_LOCALE) remembers the language you picked. These are needed for the site to work and do not track you."] },
+      { "heading": "Analytics cookies (optional)", "body": ["If you accept analytics, Google Analytics 4 sets cookies such as _ga to count visits and page views. They are not set unless you accept."] },
+      { "heading": "Security", "body": ["The contact form uses Cloudflare Turnstile to block spam, which may set cookies needed for that check."] },
+      { "heading": "Managing your choice", "body": ["You can clear this site's storage and cookies in your browser settings at any time. The cookie banner will appear again so you can choose."] }
+    ]
+  }
+}

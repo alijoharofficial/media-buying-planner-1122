@@ -1,0 +1,130 @@
+{
+  "features": {
+    "meta": {
+      "title": "Features: Budget, CAC, ROAS and Scaling Tools",
+      "description": "Every tool in the media buying planner: budget calculator, CAC and break-even ROAS, test planner, learning phase check, scaling table, budget split and more."
+    },
+    "eyebrow": "Features",
+    "title": "Every check a media buyer makes, built in",
+    "intro": "Ten tools that work together. Each one answers a question you would otherwise solve in a spreadsheet.",
+    "cta": "Build my media plan"
+  },
+  "howTo": {
+    "meta": {
+      "title": "How to Use the Ad Budget Planner",
+      "description": "Step by step: choose your business type, enter your numbers, read your media buying plan and see the calculation. Plus where to find each number in Meta and Google Ads."
+    },
+    "eyebrow": "How to Use",
+    "title": "From your numbers to a media buying plan",
+    "intro": "Most plans take five to ten minutes. Here is what each step and tab asks for, and where to find the numbers.",
+    "tabsTitle": "The planner tabs",
+    "tabsIntro": "You only see the tabs that apply to your business type and account.",
+    "tabs": {
+      "setup": "Pick your niche, regions, planning month and currency, then your target clients or sales, or your fixed monthly budget.",
+      "business": "For lead generation: client value, margin and your booking, show-up and close rates. For ecommerce: order value, product cost, shipping, fees and returns.",
+      "account": "Only for accounts with data: spend, impressions, reach, clicks and results per country, plus Google Search numbers. You can import a CSV export.",
+      "estimates": "Only for new accounts: CPM, CTR and conversion rates for Meta, and search volume, bids and rates for Google, each with a source label.",
+      "planning": "How many Meta ad sets and creatives you plan to run, the test length and whether to include retargeting.",
+      "advanced": "Learning thresholds, buffers, range multipliers and seasonality. Defaults are filled in, so most people never change them."
+    },
+    "whereTitle": "Where to find each number",
+    "whereIntro": "Use the same date range in every platform. 30 days is a good default.",
+    "where": {
+      "number": "Number",
+      "meta": "Meta Ads Manager",
+      "google": "Google Ads",
+      "rows": {
+        "spend": { "name": "Spend", "meta": "Columns → Performance → Amount spent", "google": "Campaigns → Cost" },
+        "impressions": { "name": "Impressions", "meta": "Columns → Performance → Impressions", "google": "Campaigns → Impr." },
+        "reach": { "name": "Reach", "meta": "Columns → Performance → Reach", "google": "Not used for Search" },
+        "clicks": { "name": "Clicks", "meta": "Columns → Performance and clicks → Link clicks", "google": "Campaigns → Clicks" },
+        "leads": { "name": "Leads", "meta": "Results (lead campaigns) or Website leads", "google": "Conversions (primary lead action)" },
+        "purchases": { "name": "Purchases and value", "meta": "Columns → Conversions → Purchases, Purchases conversion value", "google": "Conversions and Conv. value" },
+        "impressionShare": { "name": "Impression share", "meta": "Not available", "google": "Columns → Competitive metrics → Search impr. share" },
+        "lostBudget": { "name": "Lost impression share", "meta": "Not available", "google": "Search lost IS (budget) and Search lost IS (rank)" },
+        "searchVolume": { "name": "Search volume", "meta": "Not available", "google": "Tools → Keyword Planner → Avg. monthly searches" },
+        "bids": { "name": "Bids", "meta": "Not available", "google": "Keyword Planner → Top of page bid (low and high range)" }
+      }
+    },
+    "cta": "Start planning"
+  },
+  "about": {
+    "meta": {
+      "title": "About",
+      "description": "What the planner does, how it calculates budgets in plain language, and why every result is an estimate."
+    },
+    "eyebrow": "About",
+    "title": "About {brand}",
+    "intro": "{brand} turns your business numbers into an ad budget and a media buying plan for Meta and Google Search.",
+    "sections": [
+      {
+        "heading": "What it does",
+        "body": [
+          "It answers the questions every media buyer asks before spending: how much budget do we need, what will it deliver, can we afford it, and how should it be split across platforms?",
+          "It works for lead generation and ecommerce, for new accounts and accounts with history, and in seven languages."
+        ]
+      },
+      {
+        "heading": "How it works, in plain language",
+        "body": [
+          "Your business numbers set the limits. Client value and margin, or order value and costs, decide the most you can pay for a client, a lead or a sale.",
+          "Data or tests find the real cost. With account history we start from what results actually cost you. Without it, we plan a test budget and clear rules for what to do once real costs come in.",
+          "Then we account for how costs rise as you scale, the learning phase on each platform, and how much Google Search can actually deliver."
+        ]
+      },
+      {
+        "heading": "Results are estimates",
+        "body": [
+          "Every plan is an estimate, not a promise. Ad costs change with your creatives, offer, competition, season and platform updates. Use the plan to decide what to test and how much to risk, then update it with real results."
+        ]
+      },
+      {
+        "heading": "Your data stays with you",
+        "body": ["Planner inputs are saved in your browser only. Nothing you enter in the planner is sent to our servers."]
+      }
+    ],
+    "creditsTitle": "Guides and credits",
+    "creditsText": "The guides on this site are written by the TECH24 team.",
+    "creditsLink": "Visit TECH24"
+  },
+  "services": {
+    "meta": {
+      "title": "Services: Planner Tools and Expert Opinion",
+      "description": "Lead and ecommerce budget calculators, a new account test planner, learning phase check, scaling table, budget split, Google ceiling and bottleneck finder, plus an expert opinion."
+    },
+    "eyebrow": "Services",
+    "title": "Tools for every budget decision",
+    "intro": "Each tool is part of the planner. Open it, enter your numbers and get an answer in minutes.",
+    "useIt": "Use it",
+    "useItFor": "Use the {service}",
+    "expertTitle": "Expert opinion",
+    "expertText": "Want a professional to review your numbers, funnel and scaling plan before you spend? Get an expert opinion.",
+    "expertCta": "Get an expert opinion"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Questions, feedback or ideas for the media buying planner? Send us a message."
+    },
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "intro": "Questions, feedback or a feature you would like to see? Send a message and we will reply by email.",
+    "fields": { "name": "Your name", "email": "Email address", "message": "Message", "website": "Leave this field empty" },
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Thank you. Your message has been sent.",
+    "privacy": "We use your details only to reply to your message.",
+    "errors": {
+      "name": "Enter your name (2 to 100 characters).",
+      "email": "Enter a valid email address.",
+      "message": "Write at least 10 characters.",
+      "verification": "Please complete the verification check.",
+      "rateLimited": "Too many messages. Please try again in a few minutes.",
+      "invalid": "Some fields are not valid. Check the form and try again.",
+      "unavailable": "We could not send your message right now. Please try again later."
+    },
+    "expertTitle": "Need an expert opinion?",
+    "expertText": "For a professional review of your budget, funnel and scaling plan, request an expert opinion.",
+    "expertLink": "Get an expert opinion"
+  }
+}

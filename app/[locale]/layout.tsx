@@ -3,6 +3,9 @@ import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
+import { CookieConsent } from '@/components/layout/CookieConsent';
+import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
 import { Providers } from '@/components/Providers';
 import { BRAND_NAME, SITE_URL } from '@/lib/brand';
 import { fontVariables } from '@/lib/fonts';
@@ -49,7 +52,12 @@ export default async function LocaleLayout({ children, params }: Props) {
           {t('skipToContent')}
         </a>
         <NextIntlClientProvider>
-          <Providers>{children}</Providers>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+            <CookieConsent />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>

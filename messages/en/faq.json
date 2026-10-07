@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Frequently Asked Questions",
+    "description": "Answers about how the planner calculates ad budgets, the learning phase, CAC vs CPL, Google Search limits and what happens to your data."
+  },
+  "eyebrow": "FAQ",
+  "title": "Frequently asked questions",
+  "intro": "How the planner works, what the numbers mean and what happens to your data.",
+  "more": "Still have a question?",
+  "contact": "Contact us",
+  "items": {
+    "guaranteed": { "q": "Is the result guaranteed?", "a": "No. The plan is an estimate built from your numbers and common planning rules. Real costs depend on your ads, offer, market, competition and platform changes. Use the plan to decide what to test and how much to risk, then update it with real results." },
+    "noData": { "q": "What if I have no previous data?", "a": "Choose 'New account'. The planner uses your estimates for CPM, CTR and conversion rate, adds a new account penalty and gives you a test budget, a stop-loss and decision rules. After the test, switch to 'Has previous data' with your real numbers." },
+    "learningPerAdSet": { "q": "Why is the learning phase per ad set?", "a": "Meta optimizes delivery at the ad set level, and each ad set needs about 50 optimization events a week to exit learning. Splitting a small budget across many ad sets leaves each one short of data, so the planner recommends how many ad sets your budget can support." },
+    "cacVsCpl": { "q": "Why compare platforms on CAC instead of CPL?", "a": "Leads from different platforms book and buy at different rates. A cheap lead that never books is expensive per client. Cost per client (CAC) shows what you really pay for revenue, so the planner compares platforms on CAC for lead generation and on CPA and ROAS for ecommerce." },
+    "googleAds": { "q": "Does it work for Google Ads?", "a": "Yes, for Google Search. The planner models search volume, impression share and cost per click, and shows the maximum results Google can deliver. Google Shopping, Performance Max, YouTube and TikTok are coming later." },
+    "dataStored": { "q": "Is my data stored?", "a": "Your planner inputs stay in your browser. They are saved in local storage so you do not lose them, and they are never sent to our servers. Only the contact form sends data, and only what you type into it." },
+    "impressionShare": { "q": "Where do I find impression share?", "a": "In Google Ads, open Campaigns, click Columns, then Modify columns and add Search impr. share, Search lost IS (budget) and Search lost IS (rank) from Competitive metrics." },
+    "whichBudget": { "q": "Should I use a target or a fixed budget?", "a": "Use a target when you know how many clients or sales you need. Use a fixed budget when spend is already decided and you want to know what it can deliver and whether it is enough." },
+    "newAccountPenalty": { "q": "What is the new account penalty?", "a": "New accounts usually pay more at first while the platform learns who converts. By default the planner adds 25% to estimated costs. You can change it in Advanced Settings." },
+    "scalingCost": { "q": "Why does cost per result rise when I spend more?", "a": "The cheapest, most likely buyers are reached first. As spend grows, the platform reaches less responsive people and auctions get more competitive. The planner assumes cost rises by 15% each time spend doubles, which you can change." },
+    "multiCountry": { "q": "Can I plan for several countries?", "a": "Yes. Add one row per country in Account Data. Costs differ a lot by country, so the planner warns you that blended numbers can hide expensive markets." },
+    "leadSource": { "q": "Instant forms or landing pages?", "a": "Instant forms are usually cheaper per lead because people never leave the app, but those leads tend to book less often. Enter the real booking rate for each so the planner can compare them on cost per client." },
+    "returns": { "q": "Why do returns matter so much?", "a": "A returned order still costs you the ad spend and often shipping. In categories like fashion, returns can remove a large part of the profit per order, which lowers the CPA you can afford." },
+    "currency": { "q": "Which currency should I use?", "a": "The one your ad account bills in. The planner suggests a currency from your first region, and every money field uses it." },
+    "benchmarks": { "q": "Where do the default benchmarks come from?", "a": "The defaults are placeholder values to get you started and should be replaced with your own numbers. Save results from your accounts in 'My benchmarks' and the planner will reuse them for new clients in the same niche and region." },
+    "share": { "q": "How do I share a plan with a client?", "a": "Use 'Copy share link'. The link contains only your planner inputs, encoded in the address, and nothing is stored on a server. You can also export the plan as a PDF." },
+    "free": { "q": "Is the planner free?", "a": "Yes. The planner is free to use. If you want a professional to review your numbers, you can request an expert opinion." }
+  }
+}

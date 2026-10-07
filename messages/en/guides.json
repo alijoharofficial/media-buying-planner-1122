@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Guides and Tips on Ad Budgets and Media Buying",
+    "description": "Practical guides on Meta and Google ad budgets, CAC, break-even ROAS, the learning phase, scaling and test budgets, written by the TECH24 team."
+  },
+  "eyebrow": "Guides and Tips",
+  "title": "Guides and tips for smarter ad budgets",
+  "intro": "Step-by-step guides from the TECH24 team. Each one links to the planner so you can try it with your own numbers.",
+  "categories": {
+    "budgets": "Budgets",
+    "metaAds": "Meta ads",
+    "ecommerce": "Ecommerce",
+    "strategy": "Strategy"
+  },
+  "items": {
+    "meta-ads-budget-new-account": { "title": "How to calculate a Meta ads budget for a new ad account", "summary": "Start from what you can afford per result, then plan a test that can exit learning." },
+    "cost-per-lead-to-cac": { "title": "Lead generation budgets: from cost per lead to cost per client (CAC)", "summary": "Why cost per lead alone misleads, and how booking, show-up and close rates set your real limit." },
+    "ecommerce-break-even-roas": { "title": "Ecommerce break-even CPA and ROAS explained, including returns and fees", "summary": "Work out the profit an order leaves for ads, and the ROAS you need to break even." },
+    "meta-learning-phase-50-results": { "title": "The Meta learning phase: why 50 results per ad set matters (CBO, ABO, Advantage+)", "summary": "How budget type changes the number of ad sets that need data, and what to do when budgets are small." },
+    "scaling-ad-spend-costs": { "title": "Scaling ad spend: why costs rise as budget grows", "summary": "Diminishing returns, the cost of each doubling and how to find your profitable limit." },
+    "meta-vs-google-budget-split": { "title": "Meta vs Google Search: how to split your budget", "summary": "Platform minimums, marginal cost and search volume limits, in plain language." },
+    "test-budget-decision-rules": { "title": "Planning a test budget and the decision rules after it", "summary": "How much to test, when to stop and what result means scale, optimize or stop." },
+    "seasonality-q4-ad-costs": { "title": "Seasonality: how Q4 and peak months change your ad costs", "summary": "Why November and December cost more and how to plan budgets around peak months." },
+    "benchmarks-before-launch": { "title": "Where to find CPM, CTR and conversion rate benchmarks before you launch", "summary": "Reliable sources for estimates, and how to label how much you trust each one." },
+    "lead-funnel-bottleneck": { "title": "Finding the bottleneck in your lead funnel (booking, show-up and close rates)", "summary": "Which stage costs you the most, and what a 10 point improvement is worth." }
+  }
+}

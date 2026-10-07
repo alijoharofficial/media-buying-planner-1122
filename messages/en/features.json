@@ -1,0 +1,62 @@
+{
+  "items": {
+    "budgetCalculator": {
+      "title": "Budget calculator",
+      "desc": "The monthly and daily budget for your target, or what a fixed budget delivers.",
+      "long": "Works from your real costs when you have data, or from estimates and a test plan when you do not. Costs rise as spend grows, so the budget accounts for diminishing returns."
+    },
+    "leadFunnel": {
+      "title": "Lead funnel and CAC analysis",
+      "desc": "From cost per lead to cost per client, through booking, show-up and close rates.",
+      "long": "Turns client value and margin into the most you can pay per client (CAC) and per lead (CPL), then checks your real funnel against those limits.",
+      "service": "Lead budget calculator"
+    },
+    "ecomBreakEven": {
+      "title": "Ecommerce break-even and ROAS",
+      "desc": "Break-even CPA and ROAS after product cost, shipping, fees and returns.",
+      "long": "Shows exactly how much profit an order leaves for ads, judged on the first order or on lifetime value, with a target CPA that keeps a safety buffer.",
+      "service": "Ecommerce budget calculator"
+    },
+    "testPlanner": {
+      "title": "New account test planner",
+      "desc": "A test budget, daily spend and clear rules for what to do after the test.",
+      "long": "For accounts without data: what you can afford to test, a stop-loss, and decision rules to scale, optimize or stop once real costs come in.",
+      "service": "New account test planner"
+    },
+    "learningCheck": {
+      "title": "Learning phase check",
+      "desc": "Checks that each Meta ad set and Google campaign gets enough results to learn.",
+      "long": "Counts effective ad sets for CBO, ABO and Advantage+, compares results per ad set per week with the learning threshold and recommends how many ad sets your budget supports.",
+      "service": "Learning phase check"
+    },
+    "scalingTable": {
+      "title": "Scaling table",
+      "desc": "Budget against results and cost per result, with the profitable limit marked.",
+      "long": "Projects how cost per result rises as you scale and shows the highest monthly budget that still stays under break-even.",
+      "service": "Scaling table"
+    },
+    "budgetSplit": {
+      "title": "Budget split planner",
+      "desc": "How much goes to Meta, Google Search, testing, retargeting and brand, and why.",
+      "long": "Allocates each step of budget to the platform with the lowest cost for the next result, respects platform minimums and adds a safe ramp schedule.",
+      "service": "Budget split planner"
+    },
+    "googleCeiling": {
+      "title": "Google search ceiling",
+      "desc": "The most Google Search can spend and deliver before costs climb.",
+      "long": "Uses search volume, impression share and impression share lost to budget to find where extra Google spend stops buying extra searches.",
+      "service": "Google search ceiling"
+    },
+    "bottleneck": {
+      "title": "Bottleneck finder",
+      "desc": "The weakest stage of your lead funnel and what fixing it is worth.",
+      "long": "Tests a 10 point improvement at booking, show-up and close stages and shows the budget you would save, or the extra clients you would win.",
+      "service": "Bottleneck finder"
+    },
+    "showCalculation": {
+      "title": "Show the calculation",
+      "desc": "Every number explained step by step, with your values filled in.",
+      "long": "A timeline of each formula in plain language, with colour tags that separate your inputs, assumptions and settings, so you can defend the plan to a client."
+    }
+  }
+}

@@ -32,6 +32,13 @@
 - Decisions: support banner built now (Phase 5 reuses it). A test asserts every step, value, warning, split reason and funnel stage the engine can emit has English copy.
 - Next: Phase 5, pages, header, footer, support banner placement, home sections (brief sections 5, 6, 13, 14, 15).
 
+## Phase 5: Pages, header, footer, home (done)
+- Done: sticky blur header + RTL-aware mobile slide-in menu, 3-zone footer + bottom bar, cookie consent (GA4 only after consent), home (aurora canvas hero, word reveal, 3D-tilt dashboard, trust strip, features, stepper, planner preview, latest guides, top-6 FAQ, support banner), Features, How to Use (tab illustrations + where-to-find table), Guides index (cards with generated covers), FAQ (17), About, Services (anchors for footer links + expert section), Contact (form + `/api/contact`), 4 legal pages, localized 404 (catch-all) and 500 pages.
+- Files: `lib/{site,metadata,contact}.ts`, `components/layout/{Header,Footer,CookieConsent}.tsx`, `components/content/{Reveal,ContentPage,LegalPage,FeatureGrid,FaqAccordion,HowStepper,GuideCard,ContactForm,ErrorView}.tsx`, `components/home/{Hero,AuroraCanvas}.tsx`, `components/ui/Icon.tsx`, all `app/[locale]/*` pages, `app/api/contact/route.ts`, `app/global-error.tsx`, messages `features, faq, guides, pages, legal` + common/home updates, `.env.example`.
+- Decisions: one shared nav/feature/FAQ/guide config (`lib/site.ts`) drives header, footer, home, Features and Services. Brand never appears in message files: `{brand}` placeholders are filled from `lib/brand.ts`. Guide links 404 until Phase 7 writes the MDX articles; search/filter/reading time also land in Phase 7.
+- Decisions: contact API fails closed in production without `TURNSTILE_SECRET_KEY` / `RESEND_API_KEY` + `CONTACT_FROM_EMAIL` (accepts and logs in development). Email via Resend REST (no extra library). Rate limit is in-memory per instance (5 per 10 min per IP). Honeypot submissions get a silent success. `global-error.tsx` is the one page without translations (root layout failed), so it shows brand, code and a reload icon only.
+- Next: Phase 6, SEO (buildMetadata, hreflang, OG images, JSON-LD, sitemap, robots) and security (CSP nonces, headers, deterrents) (brief sections 16, 17).
+
 ## Deliverables
 - [x] Animated "Your Media Buying Plan" results screen + "Show the calculation" view
 - [x] Engine module with passing unit tests for all fixtures in 9.9

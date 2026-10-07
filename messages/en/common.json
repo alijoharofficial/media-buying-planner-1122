@@ -33,5 +33,47 @@
     "tagline": "Your numbers are in. Want a pro to check them?",
     "subline": "Get an expert opinion on your budget, funnel and scaling plan.",
     "button": "Get an expert opinion"
+  },
+  "nav": {
+    "label": "Main",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "planner": "Planner",
+    "features": "Features",
+    "howToUse": "How to Use",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "disclaimer": "Disclaimer",
+    "cookies": "Cookie Policy"
+  },
+  "footer": {
+    "expertText": "Need a second pair of eyes on your budget?",
+    "expertLink": "Expert opinion",
+    "quickLinks": "Quick links",
+    "features": "Planner tools",
+    "qr": "Free QR Code Generator",
+    "guidesBy": "Guides by TECH24"
+  },
+  "cookie": {
+    "label": "Cookie consent",
+    "text": "We use only essential browser storage to save your planner inputs. With your permission we also use analytics cookies to understand how the site is used.",
+    "policy": "Read the cookie policy",
+    "accept": "Accept analytics",
+    "reject": "Essential only"
+  },
+  "errors": {
+    "notFoundTitle": "This page does not exist",
+    "notFoundText": "The link may be old or mistyped. Your saved planner inputs are still safe in your browser.",
+    "serverTitle": "Something went wrong",
+    "serverText": "An unexpected error stopped this page from loading. Please try again.",
+    "retry": "Try again",
+    "home": "Go to the home page",
+    "planner": "Open the planner"
   }
 }
