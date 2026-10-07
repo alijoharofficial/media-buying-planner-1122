@@ -18,7 +18,7 @@ export function workingCPA(
     lowConfidence,
     steps: [
       step(
-        'workingCPA',
+        hasBenchmark ? 'workingCPA' : 'workingCPANoBenchmark',
         [
           val('actualCPA', actualCPA, 'currency'),
           val('results', results, 'number'),

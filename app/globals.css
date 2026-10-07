@@ -36,6 +36,13 @@
   --shadow-soft: 0 1px 2px rgb(11 18 48 / 0.04), 0 8px 24px rgb(11 18 48 / 0.06);
   --shadow-lift: 0 2px 4px rgb(11 18 48 / 0.06), 0 18px 40px rgb(11 18 48 / 0.1);
 
+  /* Chart categorical slots (validated palette, fixed order) */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+
   --gradient-aurora-1: #6366f1;
   --gradient-aurora-2: #22d3ee;
   --gradient-aurora-3: #a78bfa;
@@ -71,6 +78,11 @@
   --color-info-soft: rgb(96 165 250 / 0.14);
 
   --color-ring: rgb(34 211 238 / 0.5);
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
   --shadow-soft: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
   --shadow-lift: 0 2px 4px rgb(0 0 0 / 0.35), 0 18px 40px rgb(0 0 0 / 0.45);
 }
@@ -189,5 +201,57 @@ html[lang='zh'] {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Print / PDF export of the media buying plan ---------- */
+.print-only {
+  display: none;
+}
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  body * {
+    visibility: hidden;
+  }
+  #print-area,
+  #print-area * {
+    visibility: visible;
+  }
+  #print-area {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block;
+  }
+  .print-watermark {
+    position: fixed;
+    inset: 40% 0 auto 0;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: rgb(30 42 120 / 0.06);
+    transform: rotate(-24deg);
+    pointer-events: none;
+  }
+  #print-area section,
+  #print-area article {
+    break-inside: avoid;
+  }
+}
+
+@keyframes support-border {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
 }

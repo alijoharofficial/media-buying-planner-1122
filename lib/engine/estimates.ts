@@ -36,7 +36,7 @@ export function metaNewAccountCost(
     seasonal,
     steps: [
       step(
-        type === 'leads' ? 'estimatedCPL' : 'estimatedCPA',
+        type === 'leads' ? (useForm ? 'estimatedCPLForm' : 'estimatedCPL') : 'estimatedCPA',
         [
           val('cpm', est.cpm.value, 'currency', 'assumption', est.cpm.source),
           val('ctr', est.ctr.value, 'percent', 'assumption', est.ctr.source),

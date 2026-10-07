@@ -36,6 +36,7 @@ import type {
 
 export type ScalingRow = { budget: number; results: number; cpa: number; cac?: number; roas: number; profitable: boolean };
 export type BottleneckStage = { stage: 'booking' | 'show' | 'close'; rate: number; improvedRate: number; budgetSaved?: number; extraClients?: number };
+export type FunnelStage = { key: string; value: number; low: number; high: number; unit: 'number' | 'currency' };
 export type HealthItem = { value: number; flag: HealthFlag };
 
 export type PlanResult = {
@@ -70,6 +71,8 @@ export type PlanResult = {
     isEstimate: boolean;
   };
   verdict: Verdict;
+  /** "What it delivers": leads → bookings → shows → clients, or visits → carts → purchases → revenue. */
+  funnel: FunnelStage[];
   learning?: LearningCheck;
   googleLearning?: { perCampaign: number; ok: boolean };
   split: { platforms: Allocation; reasons: Partial<Record<Platform, AllocationReason>>; lines: SplitLine[]; ramp: RampStep[] };
@@ -282,6 +285,7 @@ export function buildPlan(input: PlanInput): PlanResult {
   };
   const econ = economics(results, monthly, input, leadToClient);
   Object.assign(budget, econ);
+  const delivery = deliveryFunnel(budget, limits, input, metaTotal, googleExisting);
 
   // ---------- Verdict ----------
   const verdict: Verdict = newAccount
@@ -363,6 +367,7 @@ export function buildPlan(input: PlanInput): PlanResult {
     newAccount,
     budget,
     verdict,
+    funnel: delivery,
     learning,
     googleLearning,
     split: { platforms: alloc, reasons: platformSplit.reasons, lines, ramp },
@@ -376,6 +381,38 @@ export function buildPlan(input: PlanInput): PlanResult {
 
 function sourcesOfGoogle(g: NonNullable<NonNullable<PlanInput['estimates']>['google']>): Source[] {
   return [g.monthlySearches.source, g.bidLow.source, g.bidHigh.source, g.ctr.source, g.cvr.source];
+}
+
+/** Funnel stages for the recommended budget, with the same low/high spread as results. */
+function deliveryFunnel(
+  b: PlanResult['budget'],
+  limits: Limits,
+  input: PlanInput,
+  meta: MetaMetrics | undefined,
+  google: GoogleMetrics | undefined,
+): FunnelStage[] {
+  const lo = div(b.resultsLow, b.results) || 1;
+  const hi = div(b.resultsHigh, b.results) || 1;
+  const stage = (key: string, value: number, unit: FunnelStage['unit'] = 'number'): FunnelStage => ({ key, value, low: value * lo, high: value * hi, unit });
+  if (limits.kind === 'leads') {
+    const bookings = b.results * limits.bookingRate;
+    const shows = bookings * limits.showRate;
+    return [stage('leads', b.results), stage('bookings', bookings), stage('shows', shows), stage('clients', shows * limits.closeRate)];
+  }
+  const est = input.estimates;
+  const clicksPerSale =
+    meta && meta.results > 0 ? div(meta.linkClicks, meta.results)
+      : google && google.results > 0 ? div(google.clicks, google.results)
+        : est?.meta?.cvr?.value ? 1 / est.meta.cvr.value
+          : est?.google?.cvr.value ? 1 / est.google.cvr.value
+            : 0;
+  const cartsPerSale = meta && meta.addToCarts > 0 && meta.results > 0 ? div(meta.addToCarts, meta.results) : est?.meta?.atcToPurchaseRate?.value ? 1 / est.meta.atcToPurchaseRate.value : 0;
+  return [
+    ...(clicksPerSale ? [stage('visits', b.results * clicksPerSale)] : []),
+    ...(cartsPerSale ? [stage('carts', b.results * cartsPerSale)] : []),
+    stage('purchases', b.results),
+    stage('revenue', b.revenue, 'currency'),
+  ];
 }
 
 /** Clients, CAC, revenue and ROAS for a number of platform results at a spend. */

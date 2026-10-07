@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { FormProvider, useForm, useWatch } from 'react-hook-form';
 import { Badge } from '@/components/ui/Badge';
@@ -10,7 +10,6 @@ import { Card } from '@/components/ui/Card';
 import { Tabs, panelId, tabId } from '@/components/ui/Tabs';
 import { useToast } from '@/components/ui/Toast';
 import { buildPlan, type PlanResult } from '@/lib/engine';
-import { formatCurrency, formatNumber } from '@/lib/format';
 import { defaultValues, exampleValues, toPlanInput } from '@/lib/planner/convert';
 import { visibleTabs } from '@/lib/planner/fields';
 import { suggestCurrency } from '@/lib/planner/options';
@@ -18,6 +17,7 @@ import { clearDraft, decodeShare, encodeShare, loadDraft, loadScenarios, saveDra
 import type { FormValues, TabId } from '@/lib/planner/types';
 import { modeOf, validate, type Issue } from '@/lib/planner/validation';
 import { PlannerContext, type PlannerCtx } from './context';
+import { Results } from '@/components/results/Results';
 import { ScenarioPanel } from './ScenarioPanel';
 import { Step0 } from './Step0';
 import { SummaryChips } from './SummaryChips';
@@ -28,7 +28,6 @@ const TABS_ID = 'planner-tabs';
 /** Planner shell: Step 0, the tabbed form, actions, autosave and the (Phase 4) results hand-off. */
 export function Planner() {
   const t = useTranslations('planner');
-  const locale = useLocale();
   const toast = useToast();
   const methods = useForm<FormValues>({ defaultValues: defaultValues(), mode: 'onBlur' });
   const { reset, getValues, setValue, control } = methods;
@@ -45,6 +44,7 @@ export function Planner() {
   const [scenarioName, setScenarioName] = useState('');
   const [confirmClear, setConfirmClear] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const formTopRef = useRef<HTMLFormElement>(null);
 
   // Load: share link hash first, then the autosaved draft (browser only).
   useEffect(() => {
@@ -154,7 +154,7 @@ export function Planner() {
             }}
           />
         ) : (
-          <form noValidate onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-6">
+          <form ref={formTopRef} noValidate onSubmit={(e) => e.preventDefault()} className="no-print flex scroll-mt-24 flex-col gap-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <SummaryChips onEdit={(i) => setStep0({ step: i, single: true })} />
               <div className="flex flex-wrap gap-2">
@@ -294,23 +294,18 @@ export function Planner() {
 
         <div ref={resultsRef} aria-live="polite">
           {plan && !step0 && (
-            <Card className="mt-8">
-              <h2 className="text-2xl font-bold">{t('result.title')}</h2>
-              <dl className="mt-4 grid gap-4 sm:grid-cols-3">
-                <div>
-                  <dt className="text-sm text-fg-muted">{t('result.monthly')}</dt>
-                  <dd className="text-3xl font-bold tabular-nums">{formatCurrency(plan.budget.monthly, locale, values.currency)}</dd>
-                </div>
-                <div>
-                  <dt className="text-sm text-fg-muted">{t('result.daily')}</dt>
-                  <dd className="text-2xl font-semibold tabular-nums">{formatCurrency(plan.budget.daily, locale, values.currency)}</dd>
-                </div>
-                <div>
-                  <dt className="text-sm text-fg-muted">{t(`result.results_${plan.input.businessType}`)}</dt>
-                  <dd className="text-2xl font-semibold tabular-nums">{formatNumber(plan.budget.results, locale)}</dd>
-                </div>
-              </dl>
-            </Card>
+            <div className="mt-10">
+              <Results
+                plan={plan}
+                currency={values.currency}
+                onShare={share}
+                onSave={() => {
+                  setPanel('save');
+                  formTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                onRecalculate={() => formTopRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              />
+            </div>
           )}
         </div>
       </PlannerContext.Provider>

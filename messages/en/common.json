@@ -28,5 +28,10 @@
     "comingSoon": "Coming soon",
     "moreInfo": "More information",
     "close": "Close"
+  },
+  "support": {
+    "tagline": "Your numbers are in. Want a pro to check them?",
+    "subline": "Get an expert opinion on your budget, funnel and scaling plan.",
+    "button": "Get an expert opinion"
   }
 }

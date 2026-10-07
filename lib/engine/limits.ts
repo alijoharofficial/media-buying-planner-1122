@@ -4,6 +4,9 @@ import type { BusinessType, EcomBusiness, LeadBusiness, RateSource, Stepped } fr
 export type LeadLimits = {
   kind: 'leads';
   profitPerClient: number;
+  bookingRate: number;
+  showRate: number;
+  closeRate: number;
   leadToClient: number;
   maxCAC: number;
   targetCAC: number;
@@ -36,6 +39,9 @@ export function leadLimits(b: LeadBusiness, profitBuffer: number, rateSource: Ra
   return {
     kind: 'leads',
     profitPerClient,
+    bookingRate: b.bookingRate,
+    showRate: b.showRate,
+    closeRate: b.closeRate,
     leadToClient,
     maxCAC,
     targetCAC,

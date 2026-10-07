@@ -97,7 +97,7 @@ export function sumRows(rows: MetaRow[]): MetaRow {
 export function metaMetricSteps(m: MetaMetrics, days: number, type: BusinessType): StepRecord[] {
   const resultKey = type === 'leads' ? 'leads' : 'purchases';
   return [
-    step('actualCPA', [val('spend', m.spend, 'currency'), val(resultKey, m.results, 'number')], m.cpa, 'currency'),
+    step(type === 'leads' ? 'actualCPL' : 'actualCPA', [val('spend', m.spend, 'currency'), val(resultKey, m.results, 'number')], m.cpa, 'currency'),
     step('cpm', [val('spend', m.spend, 'currency'), val('impressions', m.impressions, 'number')], m.cpm, 'currency'),
     step('ctr', [val('linkClicks', m.linkClicks, 'number'), val('impressions', m.impressions, 'number')], m.ctr, 'percent'),
     step('frequency', [val('impressions', m.impressions, 'number'), val('reach', m.reach, 'number')], m.frequency, 'number'),

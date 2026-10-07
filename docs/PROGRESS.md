@@ -24,7 +24,16 @@
 - Decisions: "Use my benchmarks" averages the 3 most recent matching rows, else falls back to the placeholder JSON (source "Published benchmark"). Existing accounts blend low-volume data with the placeholder benchmark CPA.
 - Next: Phase 4, results screen + "Show the calculation" view (brief sections 10, 11).
 
+## Phase 4: Results + calculation view (done)
+- Done: "Your Media Buying Plan" results in brief order: headline (count-up, range; new accounts show test plan first + scale estimate tagged "Estimate"), funnel, cost cards + verdict, split donut + why table + ramp, bottleneck, account health, scaling chart + table with profitable limit, decision rules/stop-loss, warnings, support banner, actions (PDF, share, save, recalculate). "See how we calculated this" timeline with formula, filled formula, colour tags, sources, collapse/expand all, progress rail.
+- Files: `components/results/{Results,CalcView,Charts,Funnel,MetricCard,CountUp,useFormat}.tsx`, `components/SupportBanner.tsx`, `messages/en/results.json`, `lib/engine/__tests__/messages.test.ts`; engine adds `funnel` output, lead rates in limits, distinct step ids per variant.
+- Decisions: PDF export uses the browser print dialog (Save as PDF) with a print stylesheet: plan only, logo, date, "estimates" note and a "Media Buying Planner" watermark. No PDF library was added (brief forbids extra libraries). Charts are lazy-loaded via next/dynamic.
+- Decisions: formulas are one template per step (`results.steps.<id>.formula`) rendered twice: names, then tagged values. Scaling chart shows one measure (cost per result) on one axis with break-even and profitable-limit lines; the table carries results/CAC/ROAS. Chart colours use the validated categorical palette (`--series-1..5`); the split table doubles as legend and data table.
+- Decisions: support banner built now (Phase 5 reuses it). A test asserts every step, value, warning, split reason and funnel stage the engine can emit has English copy.
+- Next: Phase 5, pages, header, footer, support banner placement, home sections (brief sections 5, 6, 13, 14, 15).
+
 ## Deliverables
+- [x] Animated "Your Media Buying Plan" results screen + "Show the calculation" view
 - [x] Engine module with passing unit tests for all fixtures in 9.9
 - [x] Logo set, favicons and web manifest
 - [x] Light and dark mode, reduced-motion support (base)

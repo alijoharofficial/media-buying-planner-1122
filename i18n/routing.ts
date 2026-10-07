@@ -7,7 +7,7 @@ export const rtlLocales: readonly Locale[] = ['ar'];
 export const getDirection = (locale: Locale) => (rtlLocales.includes(locale) ? 'rtl' : 'ltr');
 
 /** Message namespaces, one JSON file per namespace in messages/<locale>/. */
-export const namespaces = ['common', 'home', 'planner'] as const;
+export const namespaces = ['common', 'home', 'planner', 'results'] as const;
 
 export const routing = defineRouting({
   locales,

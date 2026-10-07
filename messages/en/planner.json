@@ -13,23 +13,69 @@
     "done": "Back to the form",
     "comingSoon": "Coming soon",
     "questions": {
-      "businessType": { "title": "What kind of business are you planning for?", "hint": "This decides which numbers we ask for and how we judge profit.", "short": "business type" },
-      "accountStatus": { "title": "Does the ad account have previous data?", "hint": "With data we start from your real costs. Without it we plan a test first.", "short": "account status" },
-      "platforms": { "title": "Which platforms will you use?", "hint": "Pick one or both. More platforms are on the way.", "short": "platforms" },
-      "goalType": { "title": "What is your goal?", "hint": "Tell us how many results you want, or how much you can spend.", "short": "goal" }
+      "businessType": {
+        "title": "What kind of business are you planning for?",
+        "hint": "This decides which numbers we ask for and how we judge profit.",
+        "short": "business type"
+      },
+      "accountStatus": {
+        "title": "Does the ad account have previous data?",
+        "hint": "With data we start from your real costs. Without it we plan a test first.",
+        "short": "account status"
+      },
+      "platforms": {
+        "title": "Which platforms will you use?",
+        "hint": "Pick one or both. More platforms are on the way.",
+        "short": "platforms"
+      },
+      "goalType": {
+        "title": "What is your goal?",
+        "hint": "Tell us how many results you want, or how much you can spend.",
+        "short": "goal"
+      }
     },
     "options": {
-      "leads": { "label": "Lead generation", "desc": "You collect leads, then book calls or appointments that turn into clients." },
-      "ecommerce": { "label": "Ecommerce", "desc": "You sell products online and customers buy on your store." },
-      "new": { "label": "New account", "desc": "No useful history yet. We will plan a test budget and decision rules." },
-      "existing": { "label": "Has previous data", "desc": "At least a few weeks of spend and results we can learn from." },
-      "meta": { "label": "Meta", "desc": "Facebook and Instagram ads." },
-      "google": { "label": "Google Search", "desc": "Search ads on Google." },
-      "shopping": { "label": "Google Shopping / PMax" },
-      "youtube": { "label": "YouTube" },
-      "tiktok": { "label": "TikTok" },
-      "target": { "label": "Target number of results", "desc": "I know how many clients or sales I want each month." },
-      "budget": { "label": "Fixed monthly budget", "desc": "I know how much I can spend each month." }
+      "leads": {
+        "label": "Lead generation",
+        "desc": "You collect leads, then book calls or appointments that turn into clients."
+      },
+      "ecommerce": {
+        "label": "Ecommerce",
+        "desc": "You sell products online and customers buy on your store."
+      },
+      "new": {
+        "label": "New account",
+        "desc": "No useful history yet. We will plan a test budget and decision rules."
+      },
+      "existing": {
+        "label": "Has previous data",
+        "desc": "At least a few weeks of spend and results we can learn from."
+      },
+      "meta": {
+        "label": "Meta",
+        "desc": "Facebook and Instagram ads."
+      },
+      "google": {
+        "label": "Google Search",
+        "desc": "Search ads on Google."
+      },
+      "shopping": {
+        "label": "Google Shopping / PMax"
+      },
+      "youtube": {
+        "label": "YouTube"
+      },
+      "tiktok": {
+        "label": "TikTok"
+      },
+      "target": {
+        "label": "Target number of results",
+        "desc": "I know how many clients or sales I want each month."
+      },
+      "budget": {
+        "label": "Fixed monthly budget",
+        "desc": "I know how much I can spend each month."
+      }
     }
   },
   "chips": {
@@ -77,100 +123,383 @@
     "metaRows": "Meta performance by country"
   },
   "fields": {
-    "niche": { "label": "Niche", "placeholder": "Search niches", "tooltip": "Pick the closest match to what you sell. It sets default benchmarks and seasonality, for example higher Q4 costs for ecommerce." },
-    "regions": { "label": "Region(s)", "placeholder": "Search countries", "tooltip": "The countries you target. Ad costs vary a lot by country, so we plan each country separately when you have data for more than one." },
-    "month": { "label": "Planning month", "tooltip": "The month you are planning for. Busy months like November and December usually cost more per impression." },
-    "currency": { "label": "Currency", "tooltip": "All money fields use this currency. We suggest one from your first region, and you can change it." },
-    "targetResults": { "label_leads": "Target new clients per month", "label_ecommerce": "Target sales per month", "tooltip": "How many new clients (lead generation) or orders (ecommerce) you want each month. We work backwards from this to the budget." },
-    "monthlyBudget": { "label": "Monthly budget available", "tooltip": "The most you can spend on ads in a month. We show what it can deliver and whether it is enough to exit the learning phase." },
-    "clientValue": { "label": "Average client value", "tooltip": "What a new client pays you on average: the package price or the first purchase. Find it in your CRM or sales records." },
-    "margin": { "label": "Margin", "tooltip": "Profit left after delivering the service, before ad costs. A 60% margin on 600 leaves 360 to spend on winning that client." },
-    "bookingRate": { "label": "Booking rate", "tooltip": "Share of leads who book a call or consultation. Bookings ÷ leads, from your CRM or calendar." },
-    "showRate": { "label": "Show-up rate", "tooltip": "Share of bookings who actually attend. Shows ÷ bookings." },
-    "closeRate": { "label": "Close rate", "tooltip": "Share of attendees who buy. Clients ÷ shows. With previous data we use your real funnel instead." },
-    "rateSource": { "label": "Source of these rates", "tooltip": "Where the booking, show-up and close rates come from. CRM data is the most reliable and gives a narrower range." },
-    "leadSource": { "label": "Lead source", "tooltip": "Instant forms collect leads inside Meta and are usually cheaper, but those leads book less often than landing page leads." },
-    "aov": { "label": "Average order value (AOV)", "tooltip": "Average revenue per order. For a new store, use your main product or bundle price." },
-    "productCost": { "label": "Product cost per order", "tooltip": "What the products in an average order cost you, including packaging." },
-    "shipping": { "label": "Shipping cost per order", "tooltip": "What you pay to ship an average order. Use 0 if the customer pays shipping in full." },
-    "paymentFee": { "label": "Payment fees", "tooltip": "Payment processor fees as a share of the order value, often 2% to 4%." },
-    "returnRate": { "label": "Return rate", "tooltip": "Share of revenue lost to returns and refunds. Important for fashion, where it can be 20% or more." },
-    "ordersPerCustomer": { "label": "Orders per customer", "tooltip": "Average number of orders a customer places over their lifetime. Used only if you judge profit on lifetime value." },
-    "judgeOn": { "label": "Judge profit on", "tooltip": "First order is the safe default. Lifetime value lets you pay more per customer, but only if repeat orders are proven." },
-    "days": { "label": "Date range (days)", "tooltip": "How many days the account data below covers. 30 days is a good default. Use the same range in Meta and Google." },
-    "retargetingAudience": { "label": "Retargeting audience size", "tooltip": "Website visitors plus social engagers from the last 30 days. Find it in Meta Events Manager or your custom audiences." },
-    "gCost": { "label": "Cost", "tooltip": "Google Ads → Campaigns → Cost for the same date range." },
-    "gImpressions": { "label": "Impressions", "tooltip": "Google Ads → Campaigns → Impr." },
-    "gClicks": { "label": "Clicks", "tooltip": "Google Ads → Campaigns → Clicks." },
-    "gConversions": { "label": "Conversions", "tooltip": "Google Ads → Campaigns → Conversions. Count only the primary conversion (lead or purchase)." },
-    "gConversionValue": { "label": "Conversion value", "tooltip": "Google Ads → Campaigns → Conv. value. Revenue reported by Google for purchases." },
-    "gImpressionShare": { "label": "Search impression share", "tooltip": "Google Ads → Columns → Competitive metrics → Search impr. share. The share of eligible searches where your ads showed." },
-    "gLostBudget": { "label": "Search lost IS (budget)", "tooltip": "Share of searches you missed because the budget ran out. This sets how much more Google can absorb." },
-    "gLostRank": { "label": "Search lost IS (rank)", "tooltip": "Share of searches you missed because of low ad rank. More budget does not fix this, better bids and quality do." },
-    "gBrand": { "label": "Do people search for your brand?", "tooltip": "If people already search your brand name, we set aside a small brand campaign budget to protect those clicks." },
-    "eCpm": { "label": "CPM", "tooltip": "CPM is the cost per 1,000 impressions. Use Meta's estimate in Ads Manager, your other accounts or a published benchmark for your country." },
-    "eCtr": { "label": "CTR (link)", "tooltip": "Link click-through rate: link clicks ÷ impressions. 0.8% to 1.5% is common on Meta." },
-    "eCvr": { "label_leads": "Landing page conversion rate", "label_ecommerce": "Site conversion rate", "tooltip": "Share of link clicks that become a lead (landing page) or a purchase (store). Your website analytics is the best source." },
-    "eFormRate": { "label": "Instant form completion rate", "tooltip": "Share of people who open the instant form and submit it. Often 10% to 20%." },
-    "eAtcRate": { "label": "Add to cart → purchase rate", "tooltip": "Share of add to carts that turn into purchases. Used to guide an Add to Cart test when the budget is small." },
-    "eDailyMin": { "label": "Estimated daily results (min)", "tooltip": "From the Meta ad set panel: the lower end of 'Estimated daily results'. Used only as a cross-check." },
-    "eDailyMax": { "label": "Estimated daily results (max)", "tooltip": "The upper end of Meta's 'Estimated daily results' for the same daily budget." },
-    "eDailyBudget": { "label": "Daily budget used for that estimate", "tooltip": "The daily budget you entered in Meta when it showed the estimate above." },
-    "gKeywords": { "label": "Main keywords", "tooltip": "Optional. The main search terms you plan to bid on, for your own reference." },
-    "gSearches": { "label": "Monthly search volume", "tooltip": "Total monthly searches for your keywords in your regions. Google Ads → Tools → Keyword Planner." },
-    "gBidLow": { "label": "Top of page bid (low)", "tooltip": "Keyword Planner → 'Top of page bid (low range)'. We average the low and high bids as the expected cost per click." },
-    "gBidHigh": { "label": "Top of page bid (high)", "tooltip": "Keyword Planner → 'Top of page bid (high range)'." },
-    "gIS": { "label": "Expected impression share", "tooltip": "Share of those searches where you expect to show. New accounts often reach 30% to 60%." },
-    "gCtrNew": { "label": "Expected CTR", "tooltip": "Clicks ÷ impressions on search ads. 3% to 7% is common for well-matched keywords." },
-    "gCvrNew": { "label": "Expected conversion rate", "tooltip": "Share of search clicks that convert. Search traffic usually converts better than social." },
-    "gBrandNew": { "label": "Do people search for your brand?", "tooltip": "If yes, we keep a small brand campaign so competitors do not take those clicks." },
-    "adSets": { "label": "Planned number of Meta ad sets", "tooltip": "Each ad set needs about 50 results a week to exit learning. Fewer ad sets means more data per ad set." },
-    "creatives": { "label": "Number of creatives to test", "tooltip": "Each creative needs some spend to prove itself, about 2.5 × your target cost per result." },
-    "testDays": { "label": "Test duration (days)", "tooltip": "How long the first test runs before you decide to scale, optimize or stop. 14 days is a good default." },
-    "includeRetargeting": { "label": "Include retargeting", "tooltip": "Show ads again to people who visited or engaged. For new accounts we add it after 2 to 4 weeks." },
-    "campaignName": { "label": "Campaign name", "tooltip": "Optional, to help you recognise the row." },
-    "budgetType": { "label": "Budget type", "tooltip": "CBO: Meta spreads one budget across ad sets. ABO: each ad set has its own budget. Advantage+: one automated campaign." },
-    "campaignAdSets": { "label": "Number of ad sets", "tooltip": "Active ad sets in this campaign." },
-    "adSetsWithSpend": { "label": "Ad sets getting meaningful spend", "tooltip": "In CBO, Meta often spends on only a few ad sets. Count the ones that get a real share of the budget." },
-    "rowCountry": { "label": "Country", "tooltip": "The country this row covers. Leave empty if you have one row for all countries." },
-    "spend": { "label": "Amount spent", "tooltip": "Ads Manager → Columns → Performance → Amount spent." },
-    "impressions": { "label": "Impressions", "tooltip": "Ads Manager → Columns → Performance → Impressions." },
-    "reach": { "label": "Reach", "tooltip": "Ads Manager → Columns → Performance → Reach. Unique people who saw your ads." },
-    "linkClicks": { "label": "Link clicks", "tooltip": "Ads Manager → Columns → Performance and clicks → Link clicks." },
-    "landingPageViews": { "label": "Landing page views", "tooltip": "Ads Manager → Columns → Performance and clicks → Landing page views. Needs the Meta pixel." },
-    "formLeads": { "label": "Instant form leads", "tooltip": "Ads Manager → Results for lead form campaigns (On-Facebook leads)." },
-    "landingLeads": { "label": "Landing page leads", "tooltip": "Website leads tracked by the pixel or your CRM." },
-    "bookings": { "label": "Bookings (CRM)", "tooltip": "Calls or consultations booked from these leads, from your CRM or calendar." },
-    "shows": { "label": "Shows (CRM)", "tooltip": "Booked people who attended." },
-    "clients": { "label": "Clients (CRM)", "tooltip": "Attendees who bought." },
-    "addToCarts": { "label": "Adds to cart", "tooltip": "Ads Manager → Columns → Conversions → Adds to cart." },
-    "checkouts": { "label": "Checkouts initiated", "tooltip": "Ads Manager → Columns → Conversions → Checkouts initiated." },
-    "purchases": { "label": "Purchases", "tooltip": "Ads Manager → Columns → Conversions → Purchases. Your store is the source of truth if numbers differ." },
-    "purchaseValue": { "label": "Purchase value", "tooltip": "Ads Manager → Purchases conversion value." },
-    "learningThreshold": { "label": "Meta learning threshold (results per ad set per week)", "tooltip": "Meta needs about 50 optimisation events per ad set per week to exit the learning phase." },
-    "googleMinConversions": { "label": "Google smart bidding minimum (conversions per campaign per 30 days)", "tooltip": "A common rule of thumb for smart bidding. Check Google's current guidance, as it changes." },
-    "minResultsForConfidence": { "label": "Minimum results for confident data", "tooltip": "Below this many results we blend your cost with a benchmark and flag low confidence." },
-    "scalingPenalty": { "label": "Cost increase per doubling of spend", "tooltip": "How much cost per result rises each time spend doubles. 15% is a common planning assumption." },
-    "profitBuffer": { "label": "Profit buffer", "tooltip": "Safety margin below break-even. The target cost is the maximum cost ÷ (1 + buffer)." },
-    "newAccountPenalty": { "label": "New account penalty", "tooltip": "New accounts usually pay more at first. We add this to estimated costs." },
-    "creativeTestMultiplier": { "label": "Creative testing spend per creative (× target cost)", "tooltip": "Spend each creative gets to prove itself, as a multiple of your target cost per result." },
-    "scaleThreshold": { "label": "Scale threshold (share of break-even)", "tooltip": "If the real cost after the test is at or below this share of your maximum, scale." },
-    "stopLossLow": { "label": "Stop-loss low (× break-even)", "tooltip": "Stop a campaign or creative that spends this multiple of your maximum cost with no results." },
-    "stopLossHigh": { "label": "Stop-loss high (× break-even)", "tooltip": "Upper end of the stop-loss range." },
-    "retargetingViewsPerMonth": { "label": "Retargeting views per person per month", "tooltip": "How often each person in the retargeting audience should see your ads." },
-    "retargetingCap": { "label": "Retargeting cap (share of Meta budget)", "tooltip": "Retargeting never takes more than this share of the Meta budget." },
-    "minRetargetingAudience": { "label": "Minimum retargeting audience", "tooltip": "Below this size, retargeting is skipped because it cannot deliver efficiently." },
-    "brandShare": { "label": "Brand campaign share of Google budget", "tooltip": "Share of the Google budget kept for a brand campaign when people search your brand." },
-    "maxStepIncrease": { "label": "Max budget increase per step", "tooltip": "Raise budgets by no more than this each step to avoid resetting learning." },
-    "stepDays": { "label": "Days between budget steps", "tooltip": "Wait this many days between budget increases." },
-    "rangeLow": { "label": "{source}: low multiplier", "tooltip": "The optimistic end of the cost range for estimates from this source." },
-    "rangeHigh": { "label": "{source}: high multiplier", "tooltip": "The cautious end of the cost range for estimates from this source. Less reliable sources get a wider range." }
+    "niche": {
+      "label": "Niche",
+      "placeholder": "Search niches",
+      "tooltip": "Pick the closest match to what you sell. It sets default benchmarks and seasonality, for example higher Q4 costs for ecommerce."
+    },
+    "regions": {
+      "label": "Region(s)",
+      "placeholder": "Search countries",
+      "tooltip": "The countries you target. Ad costs vary a lot by country, so we plan each country separately when you have data for more than one."
+    },
+    "month": {
+      "label": "Planning month",
+      "tooltip": "The month you are planning for. Busy months like November and December usually cost more per impression."
+    },
+    "currency": {
+      "label": "Currency",
+      "tooltip": "All money fields use this currency. We suggest one from your first region, and you can change it."
+    },
+    "targetResults": {
+      "label_leads": "Target new clients per month",
+      "label_ecommerce": "Target sales per month",
+      "tooltip": "How many new clients (lead generation) or orders (ecommerce) you want each month. We work backwards from this to the budget."
+    },
+    "monthlyBudget": {
+      "label": "Monthly budget available",
+      "tooltip": "The most you can spend on ads in a month. We show what it can deliver and whether it is enough to exit the learning phase."
+    },
+    "clientValue": {
+      "label": "Average client value",
+      "tooltip": "What a new client pays you on average: the package price or the first purchase. Find it in your CRM or sales records."
+    },
+    "margin": {
+      "label": "Margin",
+      "tooltip": "Profit left after delivering the service, before ad costs. A 60% margin on 600 leaves 360 to spend on winning that client."
+    },
+    "bookingRate": {
+      "label": "Booking rate",
+      "tooltip": "Share of leads who book a call or consultation. Bookings ÷ leads, from your CRM or calendar."
+    },
+    "showRate": {
+      "label": "Show-up rate",
+      "tooltip": "Share of bookings who actually attend. Shows ÷ bookings."
+    },
+    "closeRate": {
+      "label": "Close rate",
+      "tooltip": "Share of attendees who buy. Clients ÷ shows. With previous data we use your real funnel instead."
+    },
+    "rateSource": {
+      "label": "Source of these rates",
+      "tooltip": "Where the booking, show-up and close rates come from. CRM data is the most reliable and gives a narrower range."
+    },
+    "leadSource": {
+      "label": "Lead source",
+      "tooltip": "Instant forms collect leads inside Meta and are usually cheaper, but those leads book less often than landing page leads."
+    },
+    "aov": {
+      "label": "Average order value (AOV)",
+      "tooltip": "Average revenue per order. For a new store, use your main product or bundle price."
+    },
+    "productCost": {
+      "label": "Product cost per order",
+      "tooltip": "What the products in an average order cost you, including packaging."
+    },
+    "shipping": {
+      "label": "Shipping cost per order",
+      "tooltip": "What you pay to ship an average order. Use 0 if the customer pays shipping in full."
+    },
+    "paymentFee": {
+      "label": "Payment fees",
+      "tooltip": "Payment processor fees as a share of the order value, often 2% to 4%."
+    },
+    "returnRate": {
+      "label": "Return rate",
+      "tooltip": "Share of revenue lost to returns and refunds. Important for fashion, where it can be 20% or more."
+    },
+    "ordersPerCustomer": {
+      "label": "Orders per customer",
+      "tooltip": "Average number of orders a customer places over their lifetime. Used only if you judge profit on lifetime value."
+    },
+    "judgeOn": {
+      "label": "Judge profit on",
+      "tooltip": "First order is the safe default. Lifetime value lets you pay more per customer, but only if repeat orders are proven."
+    },
+    "days": {
+      "label": "Date range (days)",
+      "tooltip": "How many days the account data below covers. 30 days is a good default. Use the same range in Meta and Google."
+    },
+    "retargetingAudience": {
+      "label": "Retargeting audience size",
+      "tooltip": "Website visitors plus social engagers from the last 30 days. Find it in Meta Events Manager or your custom audiences."
+    },
+    "gCost": {
+      "label": "Cost",
+      "tooltip": "Google Ads → Campaigns → Cost for the same date range."
+    },
+    "gImpressions": {
+      "label": "Impressions",
+      "tooltip": "Google Ads → Campaigns → Impr."
+    },
+    "gClicks": {
+      "label": "Clicks",
+      "tooltip": "Google Ads → Campaigns → Clicks."
+    },
+    "gConversions": {
+      "label": "Conversions",
+      "tooltip": "Google Ads → Campaigns → Conversions. Count only the primary conversion (lead or purchase)."
+    },
+    "gConversionValue": {
+      "label": "Conversion value",
+      "tooltip": "Google Ads → Campaigns → Conv. value. Revenue reported by Google for purchases."
+    },
+    "gImpressionShare": {
+      "label": "Search impression share",
+      "tooltip": "Google Ads → Columns → Competitive metrics → Search impr. share. The share of eligible searches where your ads showed."
+    },
+    "gLostBudget": {
+      "label": "Search lost IS (budget)",
+      "tooltip": "Share of searches you missed because the budget ran out. This sets how much more Google can absorb."
+    },
+    "gLostRank": {
+      "label": "Search lost IS (rank)",
+      "tooltip": "Share of searches you missed because of low ad rank. More budget does not fix this, better bids and quality do."
+    },
+    "gBrand": {
+      "label": "Do people search for your brand?",
+      "tooltip": "If people already search your brand name, we set aside a small brand campaign budget to protect those clicks."
+    },
+    "eCpm": {
+      "label": "CPM",
+      "tooltip": "CPM is the cost per 1,000 impressions. Use Meta's estimate in Ads Manager, your other accounts or a published benchmark for your country."
+    },
+    "eCtr": {
+      "label": "CTR (link)",
+      "tooltip": "Link click-through rate: link clicks ÷ impressions. 0.8% to 1.5% is common on Meta."
+    },
+    "eCvr": {
+      "label_leads": "Landing page conversion rate",
+      "label_ecommerce": "Site conversion rate",
+      "tooltip": "Share of link clicks that become a lead (landing page) or a purchase (store). Your website analytics is the best source."
+    },
+    "eFormRate": {
+      "label": "Instant form completion rate",
+      "tooltip": "Share of people who open the instant form and submit it. Often 10% to 20%."
+    },
+    "eAtcRate": {
+      "label": "Add to cart → purchase rate",
+      "tooltip": "Share of add to carts that turn into purchases. Used to guide an Add to Cart test when the budget is small."
+    },
+    "eDailyMin": {
+      "label": "Estimated daily results (min)",
+      "tooltip": "From the Meta ad set panel: the lower end of 'Estimated daily results'. Used only as a cross-check."
+    },
+    "eDailyMax": {
+      "label": "Estimated daily results (max)",
+      "tooltip": "The upper end of Meta's 'Estimated daily results' for the same daily budget."
+    },
+    "eDailyBudget": {
+      "label": "Daily budget used for that estimate",
+      "tooltip": "The daily budget you entered in Meta when it showed the estimate above."
+    },
+    "gKeywords": {
+      "label": "Main keywords",
+      "tooltip": "Optional. The main search terms you plan to bid on, for your own reference."
+    },
+    "gSearches": {
+      "label": "Monthly search volume",
+      "tooltip": "Total monthly searches for your keywords in your regions. Google Ads → Tools → Keyword Planner."
+    },
+    "gBidLow": {
+      "label": "Top of page bid (low)",
+      "tooltip": "Keyword Planner → 'Top of page bid (low range)'. We average the low and high bids as the expected cost per click."
+    },
+    "gBidHigh": {
+      "label": "Top of page bid (high)",
+      "tooltip": "Keyword Planner → 'Top of page bid (high range)'."
+    },
+    "gIS": {
+      "label": "Expected impression share",
+      "tooltip": "Share of those searches where you expect to show. New accounts often reach 30% to 60%."
+    },
+    "gCtrNew": {
+      "label": "Expected CTR",
+      "tooltip": "Clicks ÷ impressions on search ads. 3% to 7% is common for well-matched keywords."
+    },
+    "gCvrNew": {
+      "label": "Expected conversion rate",
+      "tooltip": "Share of search clicks that convert. Search traffic usually converts better than social."
+    },
+    "gBrandNew": {
+      "label": "Do people search for your brand?",
+      "tooltip": "If yes, we keep a small brand campaign so competitors do not take those clicks."
+    },
+    "adSets": {
+      "label": "Planned number of Meta ad sets",
+      "tooltip": "Each ad set needs about 50 results a week to exit learning. Fewer ad sets means more data per ad set."
+    },
+    "creatives": {
+      "label": "Number of creatives to test",
+      "tooltip": "Each creative needs some spend to prove itself, about 2.5 × your target cost per result."
+    },
+    "testDays": {
+      "label": "Test duration (days)",
+      "tooltip": "How long the first test runs before you decide to scale, optimize or stop. 14 days is a good default."
+    },
+    "includeRetargeting": {
+      "label": "Include retargeting",
+      "tooltip": "Show ads again to people who visited or engaged. For new accounts we add it after 2 to 4 weeks."
+    },
+    "campaignName": {
+      "label": "Campaign name",
+      "tooltip": "Optional, to help you recognise the row."
+    },
+    "budgetType": {
+      "label": "Budget type",
+      "tooltip": "CBO: Meta spreads one budget across ad sets. ABO: each ad set has its own budget. Advantage+: one automated campaign."
+    },
+    "campaignAdSets": {
+      "label": "Number of ad sets",
+      "tooltip": "Active ad sets in this campaign."
+    },
+    "adSetsWithSpend": {
+      "label": "Ad sets getting meaningful spend",
+      "tooltip": "In CBO, Meta often spends on only a few ad sets. Count the ones that get a real share of the budget."
+    },
+    "rowCountry": {
+      "label": "Country",
+      "tooltip": "The country this row covers. Leave empty if you have one row for all countries."
+    },
+    "spend": {
+      "label": "Amount spent",
+      "tooltip": "Ads Manager → Columns → Performance → Amount spent."
+    },
+    "impressions": {
+      "label": "Impressions",
+      "tooltip": "Ads Manager → Columns → Performance → Impressions."
+    },
+    "reach": {
+      "label": "Reach",
+      "tooltip": "Ads Manager → Columns → Performance → Reach. Unique people who saw your ads."
+    },
+    "linkClicks": {
+      "label": "Link clicks",
+      "tooltip": "Ads Manager → Columns → Performance and clicks → Link clicks."
+    },
+    "landingPageViews": {
+      "label": "Landing page views",
+      "tooltip": "Ads Manager → Columns → Performance and clicks → Landing page views. Needs the Meta pixel."
+    },
+    "formLeads": {
+      "label": "Instant form leads",
+      "tooltip": "Ads Manager → Results for lead form campaigns (On-Facebook leads)."
+    },
+    "landingLeads": {
+      "label": "Landing page leads",
+      "tooltip": "Website leads tracked by the pixel or your CRM."
+    },
+    "bookings": {
+      "label": "Bookings (CRM)",
+      "tooltip": "Calls or consultations booked from these leads, from your CRM or calendar."
+    },
+    "shows": {
+      "label": "Shows (CRM)",
+      "tooltip": "Booked people who attended."
+    },
+    "clients": {
+      "label": "Clients (CRM)",
+      "tooltip": "Attendees who bought."
+    },
+    "addToCarts": {
+      "label": "Adds to cart",
+      "tooltip": "Ads Manager → Columns → Conversions → Adds to cart."
+    },
+    "checkouts": {
+      "label": "Checkouts initiated",
+      "tooltip": "Ads Manager → Columns → Conversions → Checkouts initiated."
+    },
+    "purchases": {
+      "label": "Purchases",
+      "tooltip": "Ads Manager → Columns → Conversions → Purchases. Your store is the source of truth if numbers differ."
+    },
+    "purchaseValue": {
+      "label": "Purchase value",
+      "tooltip": "Ads Manager → Purchases conversion value."
+    },
+    "learningThreshold": {
+      "label": "Meta learning threshold (results per ad set per week)",
+      "tooltip": "Meta needs about 50 optimisation events per ad set per week to exit the learning phase."
+    },
+    "googleMinConversions": {
+      "label": "Google smart bidding minimum (conversions per campaign per 30 days)",
+      "tooltip": "A common rule of thumb for smart bidding. Check Google's current guidance, as it changes."
+    },
+    "minResultsForConfidence": {
+      "label": "Minimum results for confident data",
+      "tooltip": "Below this many results we blend your cost with a benchmark and flag low confidence."
+    },
+    "scalingPenalty": {
+      "label": "Cost increase per doubling of spend",
+      "tooltip": "How much cost per result rises each time spend doubles. 15% is a common planning assumption."
+    },
+    "profitBuffer": {
+      "label": "Profit buffer",
+      "tooltip": "Safety margin below break-even. The target cost is the maximum cost ÷ (1 + buffer)."
+    },
+    "newAccountPenalty": {
+      "label": "New account penalty",
+      "tooltip": "New accounts usually pay more at first. We add this to estimated costs."
+    },
+    "creativeTestMultiplier": {
+      "label": "Creative testing spend per creative (× target cost)",
+      "tooltip": "Spend each creative gets to prove itself, as a multiple of your target cost per result."
+    },
+    "scaleThreshold": {
+      "label": "Scale threshold (share of break-even)",
+      "tooltip": "If the real cost after the test is at or below this share of your maximum, scale."
+    },
+    "stopLossLow": {
+      "label": "Stop-loss low (× break-even)",
+      "tooltip": "Stop a campaign or creative that spends this multiple of your maximum cost with no results."
+    },
+    "stopLossHigh": {
+      "label": "Stop-loss high (× break-even)",
+      "tooltip": "Upper end of the stop-loss range."
+    },
+    "retargetingViewsPerMonth": {
+      "label": "Retargeting views per person per month",
+      "tooltip": "How often each person in the retargeting audience should see your ads."
+    },
+    "retargetingCap": {
+      "label": "Retargeting cap (share of Meta budget)",
+      "tooltip": "Retargeting never takes more than this share of the Meta budget."
+    },
+    "minRetargetingAudience": {
+      "label": "Minimum retargeting audience",
+      "tooltip": "Below this size, retargeting is skipped because it cannot deliver efficiently."
+    },
+    "brandShare": {
+      "label": "Brand campaign share of Google budget",
+      "tooltip": "Share of the Google budget kept for a brand campaign when people search your brand."
+    },
+    "maxStepIncrease": {
+      "label": "Max budget increase per step",
+      "tooltip": "Raise budgets by no more than this each step to avoid resetting learning."
+    },
+    "stepDays": {
+      "label": "Days between budget steps",
+      "tooltip": "Wait this many days between budget increases."
+    },
+    "rangeLow": {
+      "label": "{source}: low multiplier",
+      "tooltip": "The optimistic end of the cost range for estimates from this source."
+    },
+    "rangeHigh": {
+      "label": "{source}: high multiplier",
+      "tooltip": "The cautious end of the cost range for estimates from this source. Less reliable sources get a wider range."
+    }
   },
   "options": {
-    "rateSource": { "crm": "CRM data", "estimate": "Client's estimate", "default": "Default" },
-    "leadSource": { "form": "Instant form", "landing": "Landing page", "both": "Both" },
-    "judgeOn": { "first": "First order", "lifetime": "Lifetime value" },
-    "budgetType": { "CBO": "CBO (campaign budget)", "ABO": "ABO (ad set budget)", "ADVANTAGE": "Advantage+" }
+    "rateSource": {
+      "crm": "CRM data",
+      "estimate": "Client's estimate",
+      "default": "Default"
+    },
+    "leadSource": {
+      "form": "Instant form",
+      "landing": "Landing page",
+      "both": "Both"
+    },
+    "judgeOn": {
+      "first": "First order",
+      "lifetime": "Lifetime value"
+    },
+    "budgetType": {
+      "CBO": "CBO (campaign budget)",
+      "ABO": "ABO (ad set budget)",
+      "ADVANTAGE": "Advantage+"
+    }
   },
   "sources": {
     "accounts": "Your accounts",
@@ -273,7 +602,10 @@
     "choose": "Choose CSV file",
     "mappingTitle": "Check the column mapping",
     "targetLabel": "Export type",
-    "target": { "meta": "Meta Ads Manager", "google": "Google Ads" },
+    "target": {
+      "meta": "Meta Ads Manager",
+      "google": "Google Ads"
+    },
     "fields": {
       "country": "Country",
       "spend": "Amount spent",
@@ -334,14 +666,11 @@
     "cpa_leads": "Cost per lead",
     "cpa_ecommerce": "Cost per sale",
     "verdict": "Verdict",
-    "verdicts": { "profitable": "Profitable, room to scale", "optimize": "Optimize first", "notViable": "Not viable" },
+    "verdicts": {
+      "profitable": "Profitable, room to scale",
+      "optimize": "Optimize first",
+      "notViable": "Not viable"
+    },
     "incomplete": "This scenario has missing or invalid inputs."
-  },
-  "result": {
-    "title": "Your Media Buying Plan",
-    "monthly": "Recommended monthly budget",
-    "daily": "Daily budget",
-    "results_leads": "Expected leads",
-    "results_ecommerce": "Expected sales"
   }
 }
