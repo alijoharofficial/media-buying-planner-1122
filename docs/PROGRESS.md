@@ -83,6 +83,12 @@
 - Verified: tsc, lint, parity tests, build; /de pages 200, English and French slugs 308 to German slugs.
 - Next: Phase 8, session 4: Arabic (ar, RTL).
 
+## Phase 8, session 4: Arabic (ar, RTL) (done)
+- Done: all 9 UI namespaces in `messages/ar/` (parity 9/9, Arabic plural categories in ICU), all 10 guides in `content/guides/ar/` (1,270 to 1,640 words), loaders in `lib/guides.ts`. RTL layout was already logical-property based; `<html dir="rtl">` verified.
+- Decisions: Arabic guides keep English URL slugs (no `slugs.ar`) to avoid percent-encoded URLs; other-locale slugs still 308 to them. Western digits with "." decimal and "," thousands in prose (common in Gulf marketing); UI numbers use Intl. «» quotes; menu paths use "←" (points forward in RTL).
+- Verified: tsc, lint, all tests, build; /ar pages 200 with dir="rtl".
+- Next: Phase 8, session 5: Portuguese (pt).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents
