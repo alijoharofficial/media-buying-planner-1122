@@ -7,6 +7,8 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  // Article sources are read at request time for reading time.
+  outputFileTracingIncludes: { '/**': ['./content/guides/**/*'] },
 };
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');

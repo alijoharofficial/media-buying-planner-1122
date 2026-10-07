@@ -14,7 +14,8 @@ import { SupportBanner } from '@/components/SupportBanner';
 import { ButtonLink } from '@/components/ui/Button';
 import { BRAND_NAME } from '@/lib/brand';
 import { buildMetadata } from '@/lib/seo';
-import { FAQ_IDS, GUIDES, HOME_FAQ_COUNT } from '@/lib/site';
+import { publishedGuides, readingMinutes } from '@/lib/guides';
+import { FAQ_IDS, HOME_FAQ_COUNT } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -112,9 +113,9 @@ export default function HomePage({ params }: Props) {
 
       <Section title={t('guides.title')} intro={t('guides.intro')} cta={<ButtonLink href="/guides" variant="secondary">{t('guides.cta')}</ButtonLink>}>
         <Reveal as="ul" className="grid gap-6 md:grid-cols-3">
-          {GUIDES.slice(0, 3).map((g) => (
+          {publishedGuides().slice(0, 3).map((g) => (
             <RevealItem key={g.slug} as="li" className="relative">
-              <GuideCard guide={g} />
+              <GuideCard guide={g} minutes={readingMinutes(locale, g.slug)} />
             </RevealItem>
           ))}
         </Reveal>

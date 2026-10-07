@@ -1,0 +1,130 @@
+export const faq = [
+  {
+    q: 'What is break-even ROAS?',
+    a: 'Break-even ROAS is the return on ad spend at which an order neither makes nor loses money. It equals the average order value divided by the profit per order before ad costs. Below it you lose money on every sale; above it you make some.',
+  },
+  {
+    q: 'How do I calculate break-even CPA?',
+    a: 'Start with the average order value and subtract product cost, shipping, payment fees and the average value lost to returns. What remains is the profit per order before ads, and that is the most you can pay per sale: your break-even CPA.',
+  },
+  {
+    q: 'Should I include returns in break-even ROAS?',
+    a: 'Yes. A returned order still used ad spend and often shipping. In fashion, returns of 20% or more can raise break-even ROAS by almost half. Use the share of revenue you lose to returns and refunds over a recent period.',
+  },
+  {
+    q: 'Can I use lifetime value instead of the first order?',
+    a: 'Only if repeat purchases are proven in your own data and you can afford to wait for them. Judging on lifetime value lets you pay more per new customer, but it ties up cash and depends on retention holding up.',
+  },
+  {
+    q: 'Why is my Meta ROAS higher than my real profit suggests?',
+    a: 'Platform ROAS uses its own attribution window, counts gross revenue before returns, and can overlap with other channels. Check results against your store data and judge profit on what actually stayed in the bank.',
+  },
+]
+
+Every ecommerce store eventually asks the same question: what ROAS do we need? The usual answers are rules of thumb like "aim for 3x" or "4x is good". Those numbers come from other people's businesses. Your break-even point depends on your own product cost, shipping, payment fees and returns, and it can be very different from anyone else's.
+
+This guide shows how to calculate your real profit per order, turn it into a break-even cost per acquisition (CPA) and a break-even ROAS, and set a target that leaves room for profit. You can enter the same numbers in the [planner](/calculator) and see each step.
+
+## Step 1: profit per order before ads
+
+Start with what an average order earns you after every cost except advertising:
+
+<Formula>Profit per order = AOV − product cost − shipping − (AOV × payment fees) − (AOV × return rate)</Formula>
+
+Take a store with these numbers:
+
+- **Average order value (AOV)**: 60
+- **Product cost per order**: 18, including packaging
+- **Shipping per order**: 5
+- **Payment fees**: 3% of the order, so 1.80
+- **Returns**: 10% of revenue lost to returns and refunds, so 6.00
+
+The profit per order is 60 − 18 − 5 − 1.80 − 6.00 = **29.20**.
+
+Two of these costs are easy to forget. Payment fees look small, but at 3% they are often bigger than people assume, especially with buy now pay later options. Returns are the most underestimated cost in ecommerce: you usually lose the outbound shipping, sometimes the return shipping, and occasionally the product itself.
+
+## Step 2: break-even CPA
+
+The profit per order is the most you can pay in ads to win that order and still break even. That is your **break-even CPA**:
+
+<Formula>Break-even CPA = profit per order</Formula>
+
+For the example store, break-even CPA is 29.20. If Meta or Google charge you 29.20 per purchase, you make nothing. At 35, you lose 5.80 on every order.
+
+## Step 3: break-even ROAS
+
+ROAS is revenue divided by ad spend. At break-even, you spend exactly your profit per order to make one sale worth the AOV:
+
+<Formula>Break-even ROAS = AOV ÷ profit per order</Formula>
+
+For the example store, 60 ÷ 29.20 = **2.05**. Every ROAS above 2.05 makes money on the first order; every ROAS below it loses money.
+
+<Callout title="The gross margin trap">
+<p>A common shortcut is to use gross margin only. Here the product margin is (60 − 18) ÷ 60 = 70%, which suggests a break-even ROAS of 1 ÷ 0.70 = 1.43. The real break-even ROAS is 2.05 once shipping, fees and returns are included. A store running at 1.8 ROAS would think it is profitable while losing money on every sale.</p>
+</Callout>
+
+## Step 4: set a target with a buffer
+
+Break-even is a limit, not a goal. You need room for overheads, slow weeks and measurement error. A simple approach is a profit buffer: divide break-even CPA by 1 plus the buffer.
+
+<Formula>Target CPA = break-even CPA ÷ (1 + profit buffer)</Formula>
+
+With a 25% buffer, the target CPA is 29.20 ÷ 1.25 = 23.36, which is a target ROAS of 60 ÷ 23.36 = about 2.57. Campaigns at or below 23.36 per sale are healthy. Campaigns between 23.36 and 29.20 break even or make a little and should be optimized. Above 29.20, stop and fix something.
+
+<TryPlanner text="Enter your order value, product cost, shipping, fees and returns to see your break-even CPA and ROAS instantly." />
+
+## How returns change everything in fashion
+
+Returns hit some categories much harder than others. Imagine the same store sells fashion with a 25% return rate instead of 10%. Returns now cost 15 per order:
+
+- Profit per order: 60 − 18 − 5 − 1.80 − 15 = 20.20
+- Break-even CPA: 20.20
+- Break-even ROAS: 60 ÷ 20.20 = **2.97**
+
+The same products, prices and ads now need almost 3x ROAS just to break even, up from 2.05. Many fashion brands that "hit 2.5x" are quietly losing money for exactly this reason. If you sell clothing or shoes, measure your return rate carefully and update it every quarter.
+
+## Discounts and free shipping
+
+Promotions change the maths too. A 10% discount on the same basket lowers the AOV to 54 but leaves product and shipping costs unchanged:
+
+- Payment fees: 1.62. Returns at 10%: 5.40.
+- Profit per order: 54 − 18 − 5 − 1.62 − 5.40 = 23.98
+- Break-even ROAS: 54 ÷ 23.98 = **2.25**
+
+A discount that looks small on the price tag cuts the profit available for ads by almost a fifth. Plan sale periods with their own break-even numbers, especially in Q4 when ad costs also rise. The [seasonality guide](/guides/seasonality-q4-ad-costs) covers that side.
+
+## First order or lifetime value?
+
+Some stores sell products people buy again: skincare, supplements, coffee. If a customer places 1.5 orders on average, the profit from a new customer is 29.20 × 1.5 = 43.80, so you could pay up to 43.80 to acquire them.
+
+That is a real advantage, but use it carefully:
+
+- **Prove it with data.** Use repeat purchase rates from your own store, over at least six to twelve months.
+- **Mind the cash.** You pay for the customer today and collect the extra profit over months.
+- **Keep a first-order view too.** The planner keeps break-even ROAS on the first order and lets you choose whether to judge profit on the first order or on lifetime value.
+
+## Checking an existing account
+
+If your store already runs ads, compare your real numbers with these limits. Suppose a store with an AOV of 90 and a profit per order of 45 spent 3,000 last month on Meta and recorded 100 purchases worth 9,000:
+
+- CPA = 3,000 ÷ 100 = 30, below the break-even CPA of 45 and the target CPA of 36
+- ROAS = 9,000 ÷ 3,000 = 3.0, above the break-even ROAS of 2.0
+
+The account is profitable with room to scale. To reach 200 sales a month, the store cannot simply double the budget at the same CPA, because costs rise as spend grows. With a 15% cost increase per doubling, the planner projects a budget of about 7,130 at a CPA near 35.65, still under the 36 target. Read the [scaling guide](/guides/scaling-ad-spend-costs) to see how that projection works.
+
+### Platform ROAS is not store ROAS
+
+Ad platforms report revenue they attribute to themselves, within their own attribution windows, before returns. If Meta and Google both claim the same order, it is counted twice. Before you trust a 3.0 ROAS, compare platform-reported purchases with orders in your store for the same period, and deduct returns. Your store is the source of truth.
+
+## When the budget is too small to learn
+
+A new store needs about 50 purchases a week per ad set for Meta to exit the learning phase. At a break-even CPA of 29.20, a full test is about 50 × 29.20 = 1,460. If that is out of reach, optimize for Add to Cart in the first week to give the algorithm more signals, then switch to Purchase. With a 30% add to cart to purchase rate, keep the cost per add to cart under about 29.20 × 0.30 = 8.76. The [new account guide](/guides/meta-ads-budget-new-account) explains the full test plan.
+
+## Summary
+
+- Profit per order is AOV minus product cost, shipping, payment fees and returns.
+- Break-even CPA equals profit per order; break-even ROAS is AOV divided by it.
+- Set a target with a buffer, and judge campaigns against target and break-even.
+- Recalculate for returns, discounts and seasons, because each one moves the line.
+
+Put your own numbers into the [planner](/calculator) to see your break-even CPA, ROAS and a full media buying plan built on them.

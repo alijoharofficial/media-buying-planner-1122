@@ -1,15 +1,13 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHeader } from '@/components/content/ContentPage';
-import { GuideCard } from '@/components/content/GuideCard';
-import { Reveal, RevealItem } from '@/components/content/Reveal';
+import { GuidesBrowser } from '@/components/guides/GuidesBrowser';
+import { publishedGuides, readingMinutes } from '@/lib/guides';
 import { pageMetadata, type PageProps } from '@/lib/metadata';
-import { GUIDES } from '@/lib/site';
 
 export async function generateMetadata({ params }: PageProps) {
   return pageMetadata((await params).locale, 'guides', '/guides');
 }
 
-// Phase 7 adds search, the category filter and reading time once the MDX articles exist.
 export default async function GuidesPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -18,13 +16,7 @@ export default async function GuidesPage({ params }: PageProps) {
   return (
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} crumb={{ name: tn('guides'), path: '/guides' }} />
-      <Reveal as="ul" className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {GUIDES.map((g) => (
-          <RevealItem key={g.slug} as="li">
-            <GuideCard guide={g} />
-          </RevealItem>
-        ))}
-      </Reveal>
+      <GuidesBrowser guides={publishedGuides().map((g) => ({ ...g, minutes: readingMinutes(locale, g.slug) }))} />
     </main>
   );
 }

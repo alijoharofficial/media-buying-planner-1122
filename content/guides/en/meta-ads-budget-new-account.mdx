@@ -1,0 +1,121 @@
+export const faq = [
+  {
+    q: 'How much should I spend on Meta ads with a brand new account?',
+    a: 'Enough to give one ad set about 50 results at the most you can afford to pay per result. For a lead generation business that can pay up to 40 per lead, that is a test budget of about 2,000. If that is too much, start smaller with one ad set and a broad audience, and judge the test on cost per result rather than on the learning status.',
+  },
+  {
+    q: 'Why add a penalty to estimated costs for a new account?',
+    a: 'A new ad account has no conversion history, so Meta has to learn who responds before delivery becomes efficient. Costs in the first weeks are usually higher than benchmarks suggest. Adding around 25% to estimated costs keeps the plan honest.',
+  },
+  {
+    q: 'Should I use Meta’s estimated daily results?',
+    a: 'Use them as a cross-check, not as the plan. Divide the daily budget by the estimated results to get an implied cost per result, then compare it with the number you calculated from CPM, CTR and conversion rate.',
+  },
+  {
+    q: 'How long should the first test run?',
+    a: 'Fourteen days is a good default. It covers two full weeks of weekday and weekend behaviour and gives the algorithm time to settle. Stop earlier only if spend hits your stop-loss with no results.',
+  },
+  {
+    q: 'What happens after the test?',
+    a: 'Compare the real cost per result with your limits. At or below about 70% of the maximum, scale. Between that line and the maximum, optimize and retest. Above the maximum, fix the offer, price or funnel before spending more.',
+  },
+]
+
+A new ad account is the hardest place to plan a budget. There is no history to learn from, every number is an estimate, and the platform itself does not yet know who your buyers are. Most people answer the question "how much should we spend?" with a round number that feels safe. That number is usually either too small to teach the algorithm anything or too large for the risk the business can take.
+
+This guide shows a better way. You start from what your business can afford to pay for a result, estimate what that result will actually cost, and then size a test that can produce a clear answer. Every step uses simple arithmetic, and you can run the same numbers in the [planner](/calculator) in a few minutes.
+
+## Start with what you can afford, not with what you want to spend
+
+The first number in any ad budget is not the budget. It is the **maximum cost per result** your business can pay and still break even. Everything else is measured against it.
+
+For a lead generation business, work backwards from a client:
+
+- **Profit per client** is the client value multiplied by your margin. A clinic that earns 600 per new client with a 60% margin keeps 360 to spend on winning that client.
+- **Lead to client rate** is your booking rate times your show-up rate times your close rate. With 35% of leads booking, 65% of bookings attending and 50% of attendees buying, 11.4% of leads become clients.
+- **Maximum cost per lead** is the profit per client multiplied by the lead to client rate. Here that is 360 × 11.375%, or about 40.95.
+
+<Formula>Max cost per lead = client value × margin × booking rate × show-up rate × close rate</Formula>
+
+For ecommerce the logic is the same, but the unit is an order. Take the average order value and subtract product cost, shipping, payment fees and the value lost to returns. What is left is the profit per order, which is also your break-even cost per sale. The [ecommerce break-even guide](/guides/ecommerce-break-even-roas) walks through that calculation in detail.
+
+Most businesses also want a margin of safety. Dividing the maximum by 1.25 gives a **target cost** that keeps a 25% profit buffer. In the clinic example the target cost per lead is about 32.76.
+
+## Estimate what a result will really cost
+
+With no account history, you build the cost per result from three estimates:
+
+1. **CPM**: what 1,000 impressions cost in your country and niche.
+2. **CTR (link)**: the share of people who click through.
+3. **Conversion rate**: the share of clicks that become a lead or a sale. For instant forms, use the form completion rate instead.
+
+<Formula>Estimated cost per result = CPM ÷ (1,000 × CTR × conversion rate)</Formula>
+
+With a CPM of 20, a link CTR of 1.2% and a landing page conversion rate of 8%, the estimated cost per lead is 20 ÷ (1,000 × 0.012 × 0.08) = 20.83.
+
+That number is too optimistic for a brand new account. Meta has no conversion data to optimize from, your creatives are untested, and your pixel has not seen a single lead. Add a **new account penalty** of about 25%, and adjust for the season if you are planning a busy month. The expected cost per lead becomes 20.83 × 1.25 = 26.04.
+
+### Label how much you trust each estimate
+
+Not every estimate deserves the same confidence. A CPM taken from another account you run in the same country is far more reliable than a guess. In the planner every estimate carries a source label: your accounts, Meta's estimate, a published benchmark or a guess. Less reliable sources get a wider range. A guess might be 30% better or 60% worse than expected, so the planner shows a low, expected and high cost instead of one number. The [benchmarks guide](/guides/benchmarks-before-launch) covers where to find each estimate.
+
+## Check whether the idea is viable before you spend
+
+Now compare the expected cost with the maximum you can afford:
+
+- **Viable**: even the cautious high end of the range is below your maximum.
+- **Risky**: the expected cost is below the maximum, but the high end is not.
+- **Not viable**: the expected cost is already above the maximum.
+
+In the clinic example the expected cost per lead is 26.04 and the maximum is 40.95. If all three estimates come from published benchmarks, the cautious end of the range is 40% higher, about 36.46, which stays under the limit: viable. If the conversion rate is only a guess, the cautious end is 60% higher, about 41.66, just over the limit: risky. The test is still worth running, but the conversion rate is the biggest assumption to watch. If the expected cost had been 45, no budget would fix it. The offer, the price or the funnel would need work first.
+
+This check takes a minute and saves a lot of money. Many failed launches were never viable on paper.
+
+<TryPlanner text="Enter your client value, funnel rates and estimates, and see the test budget and viability for your account." />
+
+## Size the test so it can teach you something
+
+Meta optimizes each ad set separately and needs roughly **50 results per ad set per week** to leave the learning phase. That threshold also makes a good test size: 50 results is enough to judge the real cost per result with some confidence.
+
+<Formula>Test budget = 50 × maximum cost per result</Formula>
+
+Using the maximum rather than the expected cost is deliberate. It tells you the most you would need to spend to reach 50 results if costs come in right at your limit. For the clinic, the test budget is up to 50 × 40.95 = 2,047. Spread over a 14 day test, that is about 146 a day.
+
+For ecommerce the same rule gives **Option A**: 50 × break-even CPA. A store with a break-even CPA of 29.20 needs about 1,460 to reach 50 purchases at break-even. If that is more than you can spend, use **Option B**: optimize for Add to Cart in the first week so the algorithm gets more signals, then switch to Purchase. Keep the cost per add to cart under your break-even CPA multiplied by your add to cart to purchase rate.
+
+### When the budget is smaller than the test
+
+You do not have to force the budget up. With less money, use one ad set and a broad audience so every result lands in the same place. The ad set may stay in "learning limited", and that is acceptable as long as the cost per result stays on target. What you must avoid is splitting a small budget across many ad sets, which leaves each one with too little data to learn from. The [learning phase guide](/guides/meta-learning-phase-50-results) explains the details for CBO, ABO and Advantage+ campaigns.
+
+### Leave room for creative testing
+
+Each new creative needs some spend before you can judge it. A practical rule is about 2.5 times your target cost per result per creative. Three creatives at a target of 32.76 need about 246. If testing all your creatives costs more than the whole test budget, test fewer at once.
+
+## Set the rules before the test starts
+
+The most expensive mistakes happen after launch, when people react to a few days of data. Decide in advance what each outcome means:
+
+- **Scale** if the real cost per result is at or below 70% of your maximum. In the clinic example that line is about 28.67 per lead. Switch the plan to "has previous data" and calculate a scale budget from real numbers.
+- **Optimize and retest** if the cost is between that line and the maximum. Work on creatives, audience or landing page, then test again.
+- **Stop** if the cost is above the maximum. Fix the offer, price or funnel before spending more.
+
+Add a **stop-loss** too. If an ad set or creative spends two to three times your maximum cost per result with no results at all, pause it. For the clinic that is 82 to 123 with zero leads.
+
+### Remember what a lead test cannot tell you
+
+A 2,000 test that produces 78 leads at 26 each will bring only about 9 clients at an 11.4% lead to client rate. Nine clients are not enough to confirm your close rate. Keep tracking bookings, shows and sales in your CRM after the test, and treat the scale plan as an estimate until those numbers settle. The guide to [cost per client (CAC)](/guides/cost-per-lead-to-cac) explains why this matters so much.
+
+## Turn the test into a monthly budget
+
+Once the test gives you a real cost per result, the scale budget follows from your target. If you need 20 new clients a month at an 11.4% lead to client rate, you need about 176 leads. At the expected cost of 26.04 that is roughly 4,580 a month, with a range from about 3,200 to 7,300 depending on how the estimates hold up. After the test, replace the estimate with real data: costs also rise as spend grows, which the [scaling guide](/guides/scaling-ad-spend-costs) covers.
+
+## A quick checklist for new accounts
+
+- Work out your maximum and target cost per result first.
+- Build the expected cost from CPM, CTR and conversion rate, plus a new account penalty.
+- Check viability with the cautious end of the range.
+- Size the test at 50 results at your maximum cost, and keep the number of ad sets low.
+- Write down the scale, optimize and stop rules and the stop-loss before launch.
+- After the test, switch to real data and recalculate.
+
+The [planner](/calculator) does each of these steps for you and shows the calculation behind every number, so you can explain the plan to a client or a manager with confidence.

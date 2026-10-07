@@ -47,6 +47,13 @@
 - Decisions: `npm audit --omit=dev` is clean; the full audit reports a `braces` advisory with no patched version, reachable only through dev-only `eslint-config-next` (its "fix" downgrades to Next 14), so left as is. JSON-LD uses `dangerouslySetInnerHTML` with our own escaped data only.
 - Next: Phase 7, English guide articles (brief section 12), 2 to 3 per session.
 
+## Phase 7, session 1: Article system + guides 1 to 3 (done)
+- Done: article route `/guides/[slug]` with one shared layout (category, H1, "Guide by TECH24" byline, date, reading time, generated cover, MDX body, FAQ block, CTA box, "Written by the TECH24 team" author box, related guides, support banner); Article + FAQPage + BreadcrumbList JSON-LD; title "[Title] | Media Buying Planner Guides". Guides index: search, category filter, reading time. Home and sitemap list published guides only.
+- Articles written (EN): 1 `meta-ads-budget-new-account` (~1,640 words), 2 `cost-per-lead-to-cac` (~1,310), 3 `ecommerce-break-even-roas` (~1,270), each plus a 5-question FAQ. All worked examples match the engine fixtures.
+- Files: `content/guides/en/*.mdx`, `lib/guides.ts` (loader map, published list, reading time), `components/guides/{ArticleParts,GuidesBrowser}.tsx`, `mdx-components.tsx`, `types/mdx.d.ts`, `app/[locale]/guides/[slug]/page.tsx`, article styles in `globals.css`.
+- Decisions: FAQs are an `export const faq` in each MDX file. No remark-gfm (no extra libraries), so tables are written as JSX. Articles render the English MDX in every locale until Phase 8 adds translations (add entries to `GUIDE_CONTENT`). Some internal links point to guides 4 to 10, which go live in the next sessions.
+- Next: Phase 7, session 2: guides 4 to 6 (learning phase, scaling, Meta vs Google split).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

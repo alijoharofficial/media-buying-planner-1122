@@ -1,0 +1,136 @@
+export const faq = [
+  {
+    q: 'What is a good cost per lead?',
+    a: 'There is no universal number. A good cost per lead is one below your maximum, which is your profit per client multiplied by your lead to client rate. A clinic that keeps 360 per client and turns 16.25% of leads into clients can pay up to 58.50 per lead.',
+  },
+  {
+    q: 'What is the difference between CPL and CAC?',
+    a: 'CPL is ad spend divided by leads. CAC, the customer acquisition cost, is ad spend divided by new paying clients. CAC includes the effect of your booking, show-up and close rates, so it tells you what revenue really costs.',
+  },
+  {
+    q: 'Why do instant form leads look cheaper?',
+    a: 'Instant forms keep people inside Facebook or Instagram and pre-fill their details, so more people submit. The same convenience brings in less committed leads, who book and show up less often. Compare instant forms and landing pages on cost per client, not cost per lead.',
+  },
+  {
+    q: 'Where do I get booking, show-up and close rates?',
+    a: 'From your CRM, booking calendar or sales records for the same period as your ad data. Count leads, bookings, attended appointments and new clients, then divide each stage by the one before it.',
+  },
+  {
+    q: 'How many clients do I need before I trust my CAC?',
+    a: 'More than most people think. With fewer than 20 to 30 clients in a period, one or two extra sales can swing the close rate a lot. Use longer date ranges or combine months until the rates are stable.',
+  },
+]
+
+Cost per lead is the number everyone reports, because ad platforms show it on the first screen. It is also the number that misleads lead generation businesses most often. A campaign with a cheap cost per lead can lose money, and a campaign with an expensive one can be the most profitable thing you run. The difference is what happens after the lead arrives.
+
+This guide shows how to turn cost per lead (CPL) into cost per client (CAC), how to set the maximum you can afford for each, and how to compare lead sources and platforms fairly. You can follow along with your own numbers in the [planner](/calculator).
+
+## The lead funnel in four numbers
+
+Between a lead and a paying client there are usually three steps:
+
+1. **Booking rate**: the share of leads who book a call or consultation.
+2. **Show-up rate**: the share of bookings who attend.
+3. **Close rate**: the share of attendees who buy.
+
+Multiply the three and you get the **lead to client rate**, the share of leads that become clients.
+
+<Formula>Lead to client rate = booking rate × show-up rate × close rate</Formula>
+
+Here is a real-looking month for a beauty clinic running Meta ads:
+
+- Ad spend: 2,000
+- Leads: 80, so the cost per lead is 25.00
+- Bookings: 32, a booking rate of 40%
+- Shows: 22, a show-up rate of 68.75%
+- New clients: 13, a close rate of 59.1%
+
+The lead to client rate is 13 ÷ 80 = 16.25%. In other words, only about one lead in six becomes a client.
+
+## From cost per lead to cost per client
+
+The cost per client is the ad spend divided by new clients. You can also get it from the cost per lead:
+
+<Formula>CAC = CPL ÷ lead to client rate</Formula>
+
+For the clinic, 25.00 ÷ 0.1625 = 153.85 per client. Each stage has its own cost too: 2,000 ÷ 32 = 62.50 per booking and 2,000 ÷ 22 = 90.91 per attended appointment. These middle numbers are useful when you talk to the team handling calls, because they show what every no-show actually costs.
+
+## How much can you afford per client and per lead?
+
+The maximum you can pay for a client is the profit that client brings, before ad costs:
+
+<Formula>Max CAC = client value × margin</Formula>
+
+If a new client pays 600 and the margin after delivering the service is 60%, the clinic keeps 360. That is the **maximum CAC**. Pay more and every new client loses money.
+
+Most businesses want a safety margin, so they aim lower. With a 25% profit buffer, the **target CAC** is 360 ÷ 1.25 = 288.
+
+Now translate those limits back to cost per lead. Because only 16.25% of leads become clients, each lead is worth 16.25% of a client:
+
+<Formula>Max CPL = max CAC × lead to client rate</Formula>
+
+The maximum CPL is 360 × 0.1625 = 58.50, and the target CPL is 288 × 0.1625 = 46.80. The clinic is paying 25.00, well inside both limits. It has room to scale.
+
+<Callout title="Same CPL, different verdict">
+<p>Suppose the close rate dropped from 59% to 30% while the cost per lead stayed at 25. The lead to client rate falls to about 8.25%, the maximum CPL drops to about 29.70, and the CAC rises to about 303. The ads did not change at all, yet the campaign moved from comfortably profitable to above the target. That is why CPL alone is not enough.</p>
+</Callout>
+
+## Instant forms vs landing pages
+
+Meta instant forms usually produce cheaper leads than landing pages. People never leave the app, their details are pre-filled, and submitting takes seconds. The same ease attracts people who are less ready to buy.
+
+Compare two lead sources for the same clinic:
+
+<table>
+  <thead>
+    <tr><th scope="col">Metric</th><th scope="col">Instant form</th><th scope="col">Landing page</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Cost per lead</th><td>12.00</td><td>25.00</td></tr>
+    <tr><th scope="row">Booking rate</th><td>15%</td><td>40%</td></tr>
+    <tr><th scope="row">Show-up rate</th><td>60%</td><td>68.75%</td></tr>
+    <tr><th scope="row">Close rate</th><td>50%</td><td>59.1%</td></tr>
+    <tr><th scope="row">Lead to client rate</th><td>4.5%</td><td>16.25%</td></tr>
+    <tr><th scope="row">Cost per client</th><td>266.67</td><td>153.85</td></tr>
+  </tbody>
+</table>
+
+The instant form looks twice as good on cost per lead and is about 73% more expensive per client. It is still under the 360 maximum, so it is not a disaster, but it is clearly the weaker source. If you only looked at CPL, you would move budget in exactly the wrong direction.
+
+Your own numbers may show the opposite. Some businesses qualify instant form leads well with a few extra questions and a fast phone follow-up. The point is to measure each source on cost per client using real CRM data, not to assume.
+
+<TryPlanner text="Enter your client value, margin and funnel rates to see your maximum cost per lead and your real cost per client." />
+
+## Comparing Meta and Google Search on CAC
+
+The same rule applies across platforms. Google Search leads are often more expensive, because the people searching are already looking for a solution. They also tend to book and buy more often.
+
+Imagine Google Search brings leads at 40.00, with a 60% booking rate, 75% show-up rate and 60% close rate. The lead to client rate is 27%, so the cost per client is 40.00 ÷ 0.27 = about 148. That is slightly cheaper per client than Meta's 153.85, even though each Google lead costs 60% more.
+
+This is why the planner compares platforms on cost per client for lead generation, never on cost per lead alone. Our guide on [splitting budget between Meta and Google Search](/guides/meta-vs-google-budget-split) explains how the planner allocates money once each platform's real cost is known.
+
+## Planning a budget from a client target
+
+Once you know your funnel, setting a budget becomes straightforward. Start with the number of new clients you want each month and work backwards:
+
+<Formula>Leads needed = target clients ÷ lead to client rate</Formula>
+
+For 25 new clients at 16.25%, the clinic needs about 154 leads a month. At today's 25.00 per lead that would be 3,850, but costs do not stay flat as you spend more. Reaching more people means reaching less responsive ones, so the cost per lead rises. Assuming costs rise 15% each time spend doubles, the clinic needs about 4,520 a month, with a projected cost per lead around 29.40 and a cost per client around 181. That is still well under the 288 target, so the plan works. The [scaling guide](/guides/scaling-ad-spend-costs) shows how this projection is calculated.
+
+## Improve the funnel before you raise the budget
+
+Because CAC depends on every stage, improving one rate can be worth more than any ad tweak. If the clinic lifted its booking rate from 40% to 50% with faster follow-up calls, the lead to client rate would rise to about 20.3%. It would then need about 123 leads instead of 154 for the same 25 clients, saving roughly a fifth of the budget.
+
+The [bottleneck guide](/guides/lead-funnel-bottleneck) shows how to find the weakest stage and what a 10 point improvement is worth in your own funnel.
+
+## Common mistakes to avoid
+
+- **Optimizing campaigns on CPL alone.** Platforms will happily find you cheap leads who never book.
+- **Using funnel rates from a different period.** Match the CRM date range to the ad data date range.
+- **Trusting rates from a handful of clients.** Small numbers swing wildly. Combine periods if needed.
+- **Ignoring the cost of no-shows.** A low show-up rate quietly doubles your cost per client.
+- **Counting the same lead twice.** If Meta and Google both claim a lead, use your CRM as the source of truth.
+
+## Summary
+
+Cost per lead tells you how efficiently your ads collect contacts. Cost per client tells you whether your advertising makes money. Measure your booking, show-up and close rates, work out your maximum CAC and CPL, and compare every lead source and platform on what a client actually costs. The [planner](/calculator) does the arithmetic and shows each step, so you can focus on improving the numbers that matter.
