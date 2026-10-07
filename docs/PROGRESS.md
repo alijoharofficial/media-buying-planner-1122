@@ -54,6 +54,11 @@
 - Decisions: FAQs are an `export const faq` in each MDX file. No remark-gfm (no extra libraries), so tables are written as JSX. Articles render the English MDX in every locale until Phase 8 adds translations (add entries to `GUIDE_CONTENT`). Some internal links point to guides 4 to 10, which go live in the next sessions.
 - Next: Phase 7, session 2: guides 4 to 6 (learning phase, scaling, Meta vs Google split).
 
+## Phase 7, session 2: Guides 4 to 6 (done)
+- Done: 4 `meta-learning-phase-50-results` (~1,460 words), 5 `scaling-ad-spend-costs` (~1,300), 6 `meta-vs-google-budget-split` (~1,210), each with a 5-question FAQ, CTA box and internal links. Registered in `lib/guides.ts`; sitemap now 133 URLs.
+- Decisions: worked examples reuse engine numbers (scaling table 3,040 → 24,320 at 15% per doubling, profitable limit ~22,700, Google max useful spend 2,160 and the 2,160 / 2,840 split from the engine test).
+- Next: Phase 7, session 3: guides 7 to 10 (test budget rules, seasonality, benchmarks, funnel bottleneck).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

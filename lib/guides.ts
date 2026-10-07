@@ -8,6 +8,9 @@ export const GUIDE_CONTENT: Record<string, () => Promise<{ default: ComponentTyp
   'en/meta-ads-budget-new-account': () => import('@/content/guides/en/meta-ads-budget-new-account.mdx'),
   'en/cost-per-lead-to-cac': () => import('@/content/guides/en/cost-per-lead-to-cac.mdx'),
   'en/ecommerce-break-even-roas': () => import('@/content/guides/en/ecommerce-break-even-roas.mdx'),
+  'en/meta-learning-phase-50-results': () => import('@/content/guides/en/meta-learning-phase-50-results.mdx'),
+  'en/scaling-ad-spend-costs': () => import('@/content/guides/en/scaling-ad-spend-costs.mdx'),
+  'en/meta-vs-google-budget-split': () => import('@/content/guides/en/meta-vs-google-budget-split.mdx'),
 };
 
 export type FaqEntry = { q: string; a: string };

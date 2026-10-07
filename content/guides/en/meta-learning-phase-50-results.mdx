@@ -1,0 +1,137 @@
+export const faq = [
+  {
+    q: 'What does "learning limited" mean on Meta?',
+    a: 'It means the ad set is not expected to get about 50 optimization events in a week, so delivery may stay less stable. It is a warning, not a failure. If the cost per result is on target, a learning limited ad set can still be profitable.',
+  },
+  {
+    q: 'Is the 50 results rule per campaign or per ad set?',
+    a: 'Per ad set. Meta optimizes delivery at the ad set level, so each ad set needs its own events. With CBO, only the ad sets that actually receive budget count; Advantage+ shopping and sales campaigns behave like a single unit.',
+  },
+  {
+    q: 'What resets the learning phase?',
+    a: 'Significant edits: changing the optimization event, targeting, creative or bid strategy, pausing for a week or more, or large budget jumps. Raising budgets in steps of about 20% every few days keeps disruption low.',
+  },
+  {
+    q: 'What if I cannot afford 50 results a week?',
+    a: 'Do not force the budget up. Use one ad set with a broad audience so all results land in one place, and judge it on cost per result. For ecommerce, optimizing for Add to Cart for a while can give the algorithm more events.',
+  },
+  {
+    q: 'Does Google Ads have a learning phase too?',
+    a: 'Yes. Smart bidding strategies learn from conversions, and a common rule of thumb is at least 30 conversions per campaign over 30 days. Check Google’s current guidance, as the recommendation changes.',
+  },
+]
+
+Every media buyer has seen the yellow "Learning" or "Learning limited" label in Meta Ads Manager. It appears so often that many people either panic about it or ignore it completely. Neither helps. The learning phase is simply a signal about how much data each ad set gets, and once you understand it, it becomes one of the most useful planning tools you have.
+
+This guide explains why Meta wants about 50 results per ad set per week, how that number changes with CBO, ABO and Advantage+ campaigns, and how to plan a budget that respects it without wasting money. You can check your own setup in the [planner](/calculator).
+
+## What the learning phase actually is
+
+When you launch or significantly change an ad set, Meta does not yet know which people inside your audience are most likely to take the action you optimize for. It explores, shows ads to different people, and learns from the results. During this period performance is less stable and the cost per result is often higher.
+
+Meta says an ad set usually needs **around 50 optimization events in a week** after the last significant edit to exit learning. An optimization event is whatever you told Meta to optimize for: a purchase, a lead, an add to cart.
+
+Two words in that sentence matter most: **ad set** and **week**.
+
+## Why it is per ad set
+
+Each ad set is optimized separately. Splitting the same budget across more ad sets does not create more data; it divides the data you have. Five ad sets that each get 12 purchases a week are five ad sets stuck in learning. One ad set with 60 purchases a week has exited learning and can optimize properly.
+
+This is the single most common budgeting mistake on Meta: too many ad sets for the budget.
+
+## How many ad sets are you really running?
+
+The number that matters is the **effective ad sets**, the ones that actually compete for results. It depends on the campaign budget type:
+
+- **ABO (ad set budget)**: every ad set has its own budget, so every active ad set counts.
+- **CBO (campaign budget)**: Meta spreads one budget across ad sets and usually concentrates spend on a few. Count only the ad sets getting meaningful spend. A CBO campaign with three ad sets where two get almost all the budget has two effective ad sets.
+- **Advantage+ campaigns**: these behave like a single unit, so count one.
+
+Add up the effective ad sets across your prospecting campaigns. That is the number you divide your results by.
+
+## The arithmetic of learning
+
+Start with the results you get, or expect to get, in a month, and convert them to a weekly figure per ad set:
+
+<Formula>Results per ad set per week = monthly results ÷ 4.345 ÷ effective ad sets</Formula>
+
+There are about 4.345 weeks in a month. Now compare the result with the 50 threshold.
+
+You can also work the other way and ask how much one ad set needs to exit learning:
+
+<Formula>Monthly budget for one ad set = 50 × cost per result × 4.345</Formula>
+
+And how many ad sets a budget can support:
+
+<Formula>Supported ad sets = weekly budget ÷ (50 × cost per result), at least 1</Formula>
+
+### A worked example
+
+An online store pays about 30 per purchase and spends 3,000 a month on prospecting:
+
+- Weekly budget: 3,000 ÷ 4.345 = about 690
+- Purchases per week: 690 ÷ 30 = about 23
+- Budget for one ad set to exit learning: 50 × 30 × 4.345 = about 6,518 a month
+
+This store cannot get even one ad set out of learning at its current budget. If it runs five ABO ad sets, each one gets about 4.6 purchases a week, far below 50. The fix is not more money. It is fewer ad sets.
+
+<Callout title="What the planner recommends">
+<p>When the budget is below the floor for one ad set, the planner recommends <strong>one ad set with a broad audience</strong> and shows the note "Learning limited is acceptable if cost per result stays on target". For ecommerce it also suggests optimizing for Add to Cart until purchase volume picks up. When the budget is above the floor, it recommends the number of ad sets the budget supports.</p>
+</Callout>
+
+## Learning limited is not a failure
+
+"Learning limited" means Meta does not expect the ad set to reach 50 events a week. Delivery may be less efficient than it could be, but that does not make the ad set unprofitable. A small business spending 2,000 a month at a cost per lead of 25 gets about 18 leads a week. It will never exit learning in the strict sense, and it does not need to. If 25 per lead is below the business's target cost per lead, the campaign is doing its job.
+
+Judge ad sets on **cost per result against your limits**, not on the learning label. The [cost per client guide](/guides/cost-per-lead-to-cac) shows how to set those limits for lead generation, and the [break-even ROAS guide](/guides/ecommerce-break-even-roas) does the same for ecommerce.
+
+<TryPlanner text="Enter your campaigns, budget types and ad sets in the planner to see results per ad set per week and how many ad sets your budget supports." />
+
+## How CBO changes the picture
+
+CBO is often recommended for small budgets because Meta moves money to the ad sets that perform best. That helps, but it also hides the real structure. A CBO campaign with eight ad sets might spend 80% of its budget on two of them. The other six get a trickle of spend and never learn.
+
+When you plan with CBO:
+
+- Look at the spend per ad set over the last 7 to 14 days.
+- Count the ad sets with meaningful spend as your effective ad sets.
+- Consider removing ad sets that get almost nothing; they add noise without adding data.
+
+In the planner, CBO campaigns ask for "ad sets getting meaningful spend" for exactly this reason. The number of effective ad sets can never be higher than the number of ad sets in the campaign.
+
+## Advantage+ and consolidation
+
+Advantage+ shopping and sales campaigns go further and let Meta handle audience and placement decisions inside one structure. For learning purposes they behave like a single ad set, which is why they can work well on modest budgets: all the conversion data feeds one model.
+
+The trade-off is control. You see less about which audiences convert, and creative testing becomes more important because creative is one of the few levers left. Many advertisers run one Advantage+ campaign alongside a small ABO campaign for structured creative tests.
+
+## Creative testing and learning
+
+New creatives need spend too. A practical rule is to give each creative about 2.5 times your target cost per result before judging it. Three creatives at a target cost of 24 need about 180 in testing spend. Put creative tests in a separate ad set or campaign so they do not disrupt your main ad set's learning, and keep the number of creatives in each test small enough for the budget.
+
+## Avoid resetting learning
+
+Learning restarts after significant edits. Common triggers include:
+
+- Changing the optimization event or the conversion location
+- Large changes to targeting or placements
+- Adding many new ads at once
+- Pausing an ad set for seven days or more
+- Big budget jumps
+
+For budgets, increase by no more than about **20% every three days**. A campaign at 100 a day reaches 235 a day in about two weeks this way: 100, 120, 144, 173, 207, then 235. The planner builds this ramp schedule automatically. The [scaling guide](/guides/scaling-ad-spend-costs) explains why costs rise as you scale, which is the other half of the story.
+
+## What about Google Ads?
+
+Google's smart bidding strategies, like Maximize Conversions or Target CPA, also learn from conversion data. A common rule of thumb is **at least 30 conversions per campaign over 30 days**, though Google's guidance changes, so check the current recommendation. The same lesson applies: fewer, better-funded campaigns learn faster than many thin ones. If your brand campaign gets only a handful of conversions, consider a simpler bid strategy there.
+
+## A learning phase checklist
+
+- Count effective ad sets: all for ABO, funded ones for CBO, one for Advantage+.
+- Calculate results per ad set per week and compare with 50.
+- If you are below the floor, consolidate to one ad set with a broad audience.
+- Judge ad sets on cost per result, not on the learning label.
+- Keep creative tests separate and sized to the budget.
+- Raise budgets by about 20% every three days.
+
+Run your own structure through the [planner](/calculator) to see exactly how many ad sets your budget can feed.

@@ -1,0 +1,113 @@
+export const faq = [
+  {
+    q: 'Should I spend more on Meta or Google Search?',
+    a: 'It depends on search demand and on what each platform costs per client or per sale. Google Search captures people already looking for you and is limited by search volume. Meta creates demand and can absorb much larger budgets. Fund Google up to its useful ceiling when it is efficient, and put the rest on Meta.',
+  },
+  {
+    q: 'What is the minimum budget for each platform?',
+    a: 'A practical floor for Meta is about 10 results a week at your expected cost, so it keeps delivering steadily. For Google smart bidding, a common floor is about 30 conversions per campaign over 30 days. If your budget cannot cover both floors, put everything on the cheaper platform.',
+  },
+  {
+    q: 'Why compare platforms on CAC and not CPL?',
+    a: 'Leads from different platforms book and buy at different rates. A higher cost per lead on Google can still mean a lower cost per client if those leads close more often. Compare on cost per client for lead generation and on CPA and ROAS for ecommerce.',
+  },
+  {
+    q: 'How much should go to a Google brand campaign?',
+    a: 'Only run one if people already search for your brand name. A small share, around 10% of the Google budget, is usually enough to protect those clicks from competitors.',
+  },
+  {
+    q: 'Both platforms claim the same sale. Which one is right?',
+    a: 'Probably neither alone. Each platform attributes conversions with its own rules, so the same order can be counted twice. Use your CRM or store as the source of truth and compare totals against it.',
+  },
+]
+
+"How much should go to Meta and how much to Google?" is one of the first questions in any media plan, and one of the most argued about. Some advertisers swear by search because the intent is high. Others prefer Meta because it scales. Both are right in different situations, and the right split for your business can be worked out instead of guessed.
+
+This guide shows the logic the [planner](/calculator) uses: platform minimums first, then cost per result at the margin, then each platform's limits, and finally the split inside each platform.
+
+## How the two platforms differ
+
+**Google Search** shows ads to people who type a query. Intent is high, so conversion rates are often strong. But there are only so many searches. Once you show for most relevant queries, extra budget mostly buys more expensive clicks on the same searches.
+
+**Meta** shows ads to people based on who they are and how they behave, not what they search for. It can reach far more people and absorb much larger budgets, but each person is less ready to buy, so conversion rates are usually lower.
+
+That difference shapes the whole split: Google is limited by **demand**, Meta is limited mostly by **cost**.
+
+## Step 1: can you afford both?
+
+Each platform needs a minimum amount of data to optimize well:
+
+- **Meta**: about 10 results a week keeps delivery steady. In money, that is 10 × expected cost per result × 4.345 weeks.
+- **Google**: smart bidding typically wants about 30 conversions per campaign over 30 days. That is 30 × expected cost per result.
+
+<Formula>Meta minimum = 10 × cost per result × 4.345, Google minimum = 30 × cost per result</Formula>
+
+Suppose a clinic expects 26 per lead on Meta and 31 per lead on Google. The Meta minimum is 10 × 26 × 4.345, about 1,130 a month. The Google minimum is 30 × 31, about 930. Running both needs at least 2,060 a month.
+
+With a 1,500 budget, the clinic cannot fund both properly. The better choice is to **put everything on the platform with the lowest expected cost per client** and explain why, rather than splitting into two underpowered campaigns.
+
+## Step 2: for new accounts, start from intent and limits
+
+Without account history, the planner uses simple, defensible defaults:
+
+- **Lead generation**: Google Search first, up to its maximum useful spend, then the rest on Meta. People searching for a dentist or a lawyer are already in the market, and search usually brings the best leads first.
+- **Ecommerce**: Meta first, with a smaller share for Google Search. Most product sales start with discovery, which Meta does well.
+- **Low search volume**: if few people search for what you sell, Google's useful maximum is small, so most of the budget goes to Meta.
+
+### How much can Google actually spend?
+
+For a new account, the most Google Search can usefully spend comes from Keyword Planner data:
+
+<Formula>Max useful Google spend = monthly searches × expected impression share × CTR × average CPC</Formula>
+
+Take 20,000 monthly searches, an expected impression share of 60%, a 6% click-through rate and bids between 2 and 4, so an average CPC of 3. That gives 12,000 impressions, 720 clicks and a maximum useful spend of 2,160 a month. At a 12% conversion rate, the most Google can deliver is about 86 leads a month.
+
+With a 5,000 budget, the clinic would give Google its 2,160 and Meta the remaining 2,840. Spending more on Google would not find more searches; it would only raise the price of the same clicks.
+
+<TryPlanner text="Select Meta and Google Search in the planner to see your own split, each platform's minimum and Google's ceiling." />
+
+## Step 3: with data, follow the marginal cost
+
+Once you have real results on both platforms, the planner stops using defaults and allocates the budget in small steps. Each step goes to the platform where **the next result is cheapest**, based on that platform's scaling curve. Because costs rise as spend grows on each platform, the cheaper platform gets steps until its next result costs more than the other platform's, and then the budget starts flowing to both. The [scaling guide](/guides/scaling-ad-spend-costs) explains the curve behind this.
+
+For Google, the ceiling comes from **search lost impression share due to budget**. If you show on 60% of eligible searches and lose 20% to budget, there are roughly a third more impressions available. Multiply those by your click rate and cost per click, and you get the extra spend Google can absorb. The planner stops giving Google budget at that ceiling.
+
+### Compare on what matters
+
+For lead generation, compare platforms on **cost per client (CAC)**, never on cost per lead alone. A Google lead at 40 that books and buys far more often can be cheaper per client than a Meta lead at 25. The [CAC guide](/guides/cost-per-lead-to-cac) shows a full example. For ecommerce, compare on CPA and ROAS, using store data where possible.
+
+## Step 4: split inside each platform
+
+A budget line called "Meta" still needs a plan. The planner splits it into three parts:
+
+- **Creative testing**: each creative gets about 2.5 times your target cost per result to prove itself.
+- **Retargeting**: sized to show recent website visitors and engagers your ads about 8 times a month, capped at 20% of the Meta budget. It is skipped when the audience is under about 1,000 people, and for new accounts it starts after 2 to 4 weeks.
+- **Prospecting**: everything else. This is where new customers come from.
+
+Google Search splits into:
+
+- **Brand campaign**: about 10% of the Google budget, only if people already search for your brand.
+- **Non-brand search**: the rest, for people searching for what you sell.
+
+Every line in the planner's split table carries a short reason, so you can explain each number to a client.
+
+## Step 5: ramp up, do not jump
+
+Whatever the split, move to it gradually. Raising daily budgets by about 20% every three days protects the learning phase on Meta and gives smart bidding time to adjust on Google. The [learning phase guide](/guides/meta-learning-phase-50-results) explains why.
+
+## Watch for double counting
+
+Meta and Google both attribute conversions using their own rules and windows. A customer who clicks a Meta ad, later searches your brand on Google and then buys may be counted by both platforms. Added together, platform-reported results can exceed what actually happened.
+
+Always reconcile with your CRM or store. If the platforms together claim 130 sales and your store shows 100, adjust your cost per sale on each platform before you decide how to split the next month's budget.
+
+## A split checklist
+
+- Check that the budget covers each platform's minimum; if not, use the cheaper platform only.
+- For new accounts: lead generation starts with Google up to its ceiling, ecommerce starts with Meta.
+- With data, allocate by marginal cost per result and stop Google at its ceiling.
+- Compare platforms on CAC for leads and on CPA and ROAS for ecommerce.
+- Split Meta into testing, retargeting and prospecting, and Google into brand and non-brand.
+- Ramp gradually and reconcile results with your own data.
+
+Try different budgets in the [planner](/calculator) to see how the split changes and why.

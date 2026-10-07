@@ -1,0 +1,127 @@
+export const faq = [
+  {
+    q: 'Why does my cost per result go up when I increase the budget?',
+    a: 'Platforms show your ads to the most responsive people first. As you spend more, you reach people who are less likely to convert and compete in more expensive auctions. Each extra result costs more than the last, so the average cost rises.',
+  },
+  {
+    q: 'How much do costs rise when I double my budget?',
+    a: 'It varies by account, niche and audience size. A planning assumption of 15% higher cost per result for each doubling of spend works for many accounts. Replace it with your own number once you have scaled before and can measure it.',
+  },
+  {
+    q: 'What is the profitable limit?',
+    a: 'It is the highest monthly budget at which the projected cost per result still stays at or below your break-even cost. Above it, the extra spend loses money even if the average still looks acceptable for a while.',
+  },
+  {
+    q: 'How fast can I scale a Meta budget?',
+    a: 'A safe rhythm is about 20% every three days. Bigger jumps can reset the learning phase and make costs spike. Duplicating ad sets with higher budgets is another option, but it splits data.',
+  },
+  {
+    q: 'Does Google Search have the same diminishing returns?',
+    a: 'Partly. Up to the point where you stop losing impressions to budget, Google costs stay fairly flat. Beyond that, the only way to get more clicks is to bid higher for the same searches, so costs rise quickly. That point is the Google search ceiling.',
+  },
+]
+
+The most tempting idea in advertising is linear scaling: if 3,000 a month brings 100 sales, then 6,000 should bring 200. It almost never works that way. Double the budget and you usually get far fewer than double the results, because each extra result costs more than the one before it.
+
+This guide explains why costs rise as budgets grow, how to model the effect with one simple assumption, and how to find the highest budget that is still profitable. You can see the same projection for your account in the scaling table of the [planner](/calculator).
+
+## Why costs rise as you spend more
+
+Ad platforms are very good at finding the cheapest results first. When your budget is small, Meta and Google spend it on the people and searches most likely to convert. As you spend more:
+
+- **You reach less responsive people.** The best prospects are already seeing your ads; the next group converts less often.
+- **You see the same people more often.** Frequency rises, and each extra impression is less likely to change their mind.
+- **You enter more expensive auctions.** To win more delivery, the platform bids into placements and audiences that cost more.
+- **On search, you run out of searches.** Once you show for most relevant searches, the only way to get more clicks is to pay more for the same ones.
+
+The result is **diminishing returns**: results keep growing with spend, but more slowly than the budget.
+
+## A simple model: cost per doubling
+
+You do not need a complex model to plan around this. One assumption captures most of it: **each time spend doubles, cost per result rises by a fixed percentage**. A common planning value is 15%.
+
+<Formula>Projected cost = current cost × (1 + increase per doubling) ^ log2(new budget ÷ current budget)</Formula>
+
+The log2 part simply counts how many doublings you made. Doubling once gives one step of 15%, doubling twice gives two steps, and a 50% increase gives just over half a step. Below your current spend level, the model keeps the current cost.
+
+### A worked example
+
+An online store spent 3,000 over 30 days, which is about 3,040 for an average month of 30.4 days, at 30 per purchase. With a 15% increase per doubling:
+
+<table>
+  <thead>
+    <tr><th scope="col">Monthly budget</th><th scope="col">Cost per sale</th><th scope="col">Sales</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">3,040</th><td>30.00</td><td>101</td></tr>
+    <tr><th scope="row">6,080</th><td>34.50</td><td>176</td></tr>
+    <tr><th scope="row">12,160</th><td>39.68</td><td>306</td></tr>
+    <tr><th scope="row">24,320</th><td>45.63</td><td>533</td></tr>
+  </tbody>
+</table>
+
+Doubling the budget from 3,040 to 6,080 brings 75 more sales, not 101. Those 75 extra sales cost 3,040, or about 40.50 each. That number, the **marginal cost** of the extra results, is much higher than the new average of 34.50. It is the number to watch when deciding whether to spend more.
+
+<Callout title="Average vs marginal cost">
+<p>The average cost per result can look fine long after the extra spend has stopped being profitable. If your break-even cost is 45, the average at 12,160 (39.68) still looks comfortable, but the last results you bought cost far more. Planning on the projected curve rather than the current average keeps you honest.</p>
+</Callout>
+
+## Finding your profitable limit
+
+Every account has a budget above which the projected cost per result passes break-even. You can solve for it directly:
+
+<Formula>Profitable limit = current budget × 2 ^ (ln(break-even cost ÷ current cost) ÷ ln(1 + increase per doubling))</Formula>
+
+For the store above, with a break-even CPA of 45, the limit is 3,040 × 2 ^ (ln 1.5 ÷ ln 1.15), or about 22,700 a month. If the store wants to keep a 25% profit buffer, its target CPA is 36 and the comfortable limit is about 7,500 a month.
+
+The planner marks this limit on the scaling chart and the table, so you can see at a glance which budgets are profitable.
+
+<TryPlanner text="See your own scaling table, the projected cost at each budget and your profitable limit." />
+
+## Budgeting for a target instead of a budget
+
+Often the question is the other way round: how much do I need to spend to reach a target? Because cost rises with spend, you cannot just multiply the target by today's cost. The planner searches for the budget where projected results meet the target.
+
+For the store to reach 200 sales a month, simple maths says 200 × 30 = 6,000. The projection says about 7,130, at a cost per sale near 35.65. That is still under the 36 target, so the plan works, but it costs almost 20% more than the naive estimate. Lead generation works the same way: the [CAC guide](/guides/cost-per-lead-to-cac) shows a clinic that needs about 4,520 rather than 3,850 to reach its client target.
+
+## Choosing your increase per doubling
+
+15% is a reasonable default, but your account may behave differently:
+
+- **Broad audiences and large markets** often scale with smaller increases, because there are many similar buyers left to reach.
+- **Narrow niches and small countries** hit limits faster, so increases of 25% or more are common.
+- **Strong creative refreshes** can reset the curve for a while, because new ads re-engage people who ignored old ones.
+- **Seasonal peaks** add their own cost increases on top. See the [seasonality guide](/guides/seasonality-q4-ad-costs).
+
+If you have scaled before, measure it. Compare a month at one budget with a month at roughly double the budget, with similar creatives and season, and calculate how much the cost per result rose. Enter that number in the planner's advanced settings.
+
+## Google Search scales differently
+
+Search is limited by how many people search. Google reports **search lost impression share due to budget**, the share of eligible searches you missed because the budget ran out. Up to the point where that share reaches zero, extra budget mostly buys more searches at a similar cost. Beyond it, more budget can only raise bids for the same searches.
+
+The planner calls this point the **Google search ceiling** and stops giving Google more budget once it is reached. The [Meta vs Google split guide](/guides/meta-vs-google-budget-split) explains how the ceiling interacts with Meta in a combined plan.
+
+## How to scale without breaking things
+
+Even with the right target budget, how you get there matters:
+
+1. **Raise budgets gradually.** Increase daily budgets by no more than about 20% every three days. A campaign at 100 a day reaches 235 a day in about two weeks this way.
+2. **Watch the marginal cost, not just the average.** If the last increase brought results at a cost above your target, stop and hold.
+3. **Refresh creatives as frequency rises.** Fresh ads slow down the cost increase.
+4. **Keep the structure simple.** Scaling across many small ad sets splits data and keeps them in learning. See the [learning phase guide](/guides/meta-learning-phase-50-results).
+5. **Re-measure monthly.** Update the plan with each month's real cost and spend so the projection starts from fresh data.
+
+## Signs you have scaled too far
+
+The projection is a plan, not a promise. Watch for these signals in the first weeks at a new budget level:
+
+- **Frequency climbs above about 3 to 5** while click-through rate falls. The audience is tired of your ads.
+- **The cost per result rises faster than projected**, for example 30% after a single doubling instead of 15%.
+- **Lead quality drops.** More leads arrive, but booking or close rates fall, so the cost per client rises even when the cost per lead looks stable.
+- **Google lost impression share due to budget is already near zero**, yet you keep adding Google budget.
+
+If you see two or more of these, step back to the last budget that met your target, refresh creatives, and try again more slowly.
+
+## Summary
+
+Costs rise as budgets grow because platforms reach the best prospects first. A simple assumption of about 15% higher cost per doubling of spend turns that into a usable plan: it predicts the budget for a target, shows the marginal cost of extra results and marks the highest profitable budget. Run your numbers through the [planner](/calculator) to see the full scaling table for your account.
