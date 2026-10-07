@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Plan your ad budget with confidence",
+    "subtitle": "Find the monthly budget your business needs on Meta and Google Search, then turn it into a clear media buying plan.",
+    "ctaPrimary": "Build my media plan",
+    "ctaSecondary": "How it works"
+  },
+  "preview": {
+    "budget": "Recommended monthly budget",
+    "verdict": "Profitable, room to scale",
+    "infoTooltip": "This is a sample plan. Your numbers will appear here after you use the planner."
+  }
+}

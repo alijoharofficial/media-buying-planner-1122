@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "tagline": "Ad budget calculator and media buying planner for Meta and Google",
+    "description": "Calculate the monthly ad budget you need on Meta and Google Search and turn it into a clear media buying plan."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "logoAlt": "{brand} logo",
+    "homeLink": "{brand} home"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "system": "System theme"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "Coming soon",
+    "moreInfo": "More information",
+    "close": "Close"
+  }
+}
