@@ -8,9 +8,12 @@ import { GuideCard } from '@/components/content/GuideCard';
 import { HowStepper } from '@/components/content/HowStepper';
 import { Reveal, RevealItem } from '@/components/content/Reveal';
 import { Hero } from '@/components/home/Hero';
+import { JsonLd } from '@/components/JsonLd';
+import { graph, webApplication } from '@/lib/jsonld';
 import { SupportBanner } from '@/components/SupportBanner';
 import { ButtonLink } from '@/components/ui/Button';
 import { BRAND_NAME } from '@/lib/brand';
+import { buildMetadata } from '@/lib/seo';
 import { FAQ_IDS, GUIDES, HOME_FAQ_COUNT } from '@/lib/site';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -18,7 +21,7 @@ type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'home.meta' });
-  return { title: { absolute: `${BRAND_NAME} | ${t('title')}` }, description: t('description') };
+  return buildMetadata({ locale, path: '/', title: `${BRAND_NAME} | ${t('title')}`, absoluteTitle: true, description: t('description'), ogTitle: t('title') });
 }
 
 function Section({ id, title, intro, children, cta }: { id?: string; title: string; intro?: string; children: ReactNode; cta?: ReactNode }) {
@@ -52,6 +55,7 @@ export default function HomePage({ params }: Props) {
   return (
     <main id="main">
       <Hero />
+      <JsonLd data={graph(webApplication(locale, t('meta.description')))} />
 
       {/* Trust strip */}
       <div className="border-y border-border bg-surface/60">

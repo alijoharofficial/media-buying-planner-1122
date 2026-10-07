@@ -39,7 +39,17 @@
 - Decisions: contact API fails closed in production without `TURNSTILE_SECRET_KEY` / `RESEND_API_KEY` + `CONTACT_FROM_EMAIL` (accepts and logs in development). Email via Resend REST (no extra library). Rate limit is in-memory per instance (5 per 10 min per IP). Honeypot submissions get a silent success. `global-error.tsx` is the one page without translations (root layout failed), so it shows brand, code and a reload icon only.
 - Next: Phase 6, SEO (buildMetadata, hreflang, OG images, JSON-LD, sitemap, robots) and security (CSP nonces, headers, deterrents) (brief sections 16, 17).
 
+## Phase 6: SEO + security (done)
+- Done: `buildMetadata()` (canonical, hreflang for 7 locales + x-default, OG + Twitter) on every page; one OG template route `/og` (logo, brand, title; CJK font loaded on demand); JSON-LD helper (Organization + WebSite in layout, WebApplication on home/planner, FAQPage, BreadcrumbList with visible breadcrumbs, Article builder ready for Phase 7); `sitemap.xml` (91 URLs, alternates, lastModified; articles appear once their MDX exists); `robots.txt`.
+- Done: all security headers in `proxy.ts` (nonce CSP with 'strict-dynamic', HSTS, nosniff, frame-ancestors 'none' + X-Frame-Options DENY, Referrer-Policy, Permissions-Policy); nonce passed to next-themes and JSON-LD; verified every script tag carries the nonce. Deterrents hook `components/Deterrents.tsx` (context menu, copy/cut toast, selection off outside fields, F12/devtools/view-source/save shortcuts, image drag) mounted once.
+- Files: `lib/{seo,jsonld,logo-svg}.ts`, `components/{JsonLd,Deterrents}.tsx`, `components/content/Breadcrumbs.tsx`, `app/{sitemap,robots}.ts`, `app/og/route.tsx`; updated `proxy.ts`, layout, all page metadata.
+- Decisions: per-request nonces cannot live in static HTML, so pages are now server-rendered on request (still full HTML for crawlers). This trades the brief's "static generation" for its "CSP with nonces"; cache at the CDN if needed. Styles keep 'unsafe-inline' (Framer Motion/Recharts style attributes). Arabic OG cards show brand only (the image renderer cannot shape Arabic).
+- Decisions: `npm audit --omit=dev` is clean; the full audit reports a `braces` advisory with no patched version, reachable only through dev-only `eslint-config-next` (its "fix" downgrades to Next 14), so left as is. JSON-LD uses `dangerouslySetInnerHTML` with our own escaped data only.
+- Next: Phase 7, English guide articles (brief section 12), 2 to 3 per session.
+
 ## Deliverables
+- [x] sitemap.xml, robots.txt, structured data, hreflang
+- [x] Security headers and deterrents
 - [x] Animated "Your Media Buying Plan" results screen + "Show the calculation" view
 - [x] Engine module with passing unit tests for all fixtures in 9.9
 - [x] Logo set, favicons and web manifest

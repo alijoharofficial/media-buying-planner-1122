@@ -6,7 +6,7 @@ import { ButtonLink } from '@/components/ui/Button';
 import { pageMetadata, type PageProps } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: PageProps) {
-  return pageMetadata((await params).locale, 'pages.howTo');
+  return pageMetadata((await params).locale, 'pages.howTo', '/how-to-use');
 }
 
 const TABS = ['setup', 'business', 'account', 'estimates', 'planning', 'advanced'] as const;
@@ -31,12 +31,13 @@ function TabIllustration({ index }: { index: number }) {
 export default async function HowToUsePage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tn = await getTranslations('common.nav');
   const t = await getTranslations('pages.howTo');
   const tt = await getTranslations('planner.tabs');
 
   return (
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
+      <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} crumb={{ name: tn('howToUse'), path: '/how-to-use' }} />
       <div className="mt-14">
         <HowStepper />
       </div>

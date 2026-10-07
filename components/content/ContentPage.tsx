@@ -1,12 +1,14 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/cn';
+import { Breadcrumbs, type Crumb } from './Breadcrumbs';
 
 export type ContentSection = { heading: string; body?: string[]; list?: string[] };
 
 /** Page header used by every inner page: one H1 per page. */
-export function PageHeader({ eyebrow, title, intro, className }: { eyebrow?: string; title: string; intro?: string; className?: string }) {
+export function PageHeader({ eyebrow, title, intro, className, crumb }: { eyebrow?: string; title: string; intro?: string; className?: string; crumb?: Crumb }) {
   return (
     <header className={cn('mx-auto max-w-3xl text-center', className)}>
+      {crumb && <Breadcrumbs items={[crumb]} />}
       {eyebrow && <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-accent">{eyebrow}</p>}
       <h1 className="text-3xl font-extrabold tracking-tight md:text-5xl">{title}</h1>
       {intro && <p className="mt-4 text-lg text-fg-muted">{intro}</p>}
@@ -23,6 +25,7 @@ export function ContentPage({
   sections,
   children,
   footer,
+  crumb,
 }: {
   eyebrow?: string;
   title: string;
@@ -31,10 +34,11 @@ export function ContentPage({
   sections: ContentSection[];
   children?: ReactNode;
   footer?: ReactNode;
+  crumb?: Crumb;
 }) {
   return (
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <PageHeader eyebrow={eyebrow} title={title} intro={intro} />
+      <PageHeader eyebrow={eyebrow} title={title} intro={intro} crumb={crumb} />
       {updated && <p className="mt-4 text-center text-sm text-fg-subtle">{updated}</p>}
       <article className="mx-auto mt-12 flex max-w-3xl flex-col gap-10">
         {sections.map((s) => (

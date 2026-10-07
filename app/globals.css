@@ -265,3 +265,16 @@ html[lang='zh'] {
     transform: translateY(-4px);
   }
 }
+
+/* Copy deterrent (see components/Deterrents.tsx): no text selection on content, fields stay selectable. */
+html.protect body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+html.protect :is(input, textarea, select, [contenteditable='true']) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+html.protect img {
+  -webkit-user-drag: none;
+}

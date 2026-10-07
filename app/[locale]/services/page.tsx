@@ -7,18 +7,19 @@ import { pageMetadata, type PageProps } from '@/lib/metadata';
 import { EXTERNAL, SERVICES } from '@/lib/site';
 
 export async function generateMetadata({ params }: PageProps) {
-  return pageMetadata((await params).locale, 'pages.services');
+  return pageMetadata((await params).locale, 'pages.services', '/services');
 }
 
 export default async function ServicesPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const tn = await getTranslations('common.nav');
   const t = await getTranslations('pages.services');
   const tf = await getTranslations('features.items');
 
   return (
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} />
+      <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} crumb={{ name: tn('services'), path: '/services' }} />
       <Reveal className="mx-auto mt-12 flex max-w-4xl flex-col gap-5">
         {SERVICES.map((s) => (
           <RevealItem key={s.id}>

@@ -75,5 +75,10 @@
     "retry": "Try again",
     "home": "Go to the home page",
     "planner": "Open the planner"
+  },
+  "protected": "This content is protected",
+  "breadcrumbs": {
+    "home": "Home",
+    "label": "Breadcrumb"
   }
 }

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -6,7 +7,10 @@ import type { ReactNode } from 'react';
 import { CookieConsent } from '@/components/layout/CookieConsent';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { Deterrents } from '@/components/Deterrents';
+import { JsonLd } from '@/components/JsonLd';
 import { Providers } from '@/components/Providers';
+import { graph, organization, website } from '@/lib/jsonld';
 import { BRAND_NAME, SITE_URL } from '@/lib/brand';
 import { fontVariables } from '@/lib/fonts';
 import { getDirection, routing } from '@/i18n/routing';
@@ -40,6 +44,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'common.a11y' });
+  const tm = await getTranslations({ locale, namespace: 'common.meta' });
+  // Reading the per-request CSP nonce (set in proxy.ts) makes pages render on request.
+  const nonce = (await headers()).get('x-nonce') ?? undefined;
 
   return (
     // suppressHydrationWarning: next-themes sets the theme class before hydration (no flash).
@@ -52,11 +59,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           {t('skipToContent')}
         </a>
         <NextIntlClientProvider>
-          <Providers>
+          <Providers nonce={nonce}>
             <Header />
             {children}
             <Footer />
             <CookieConsent />
+            <Deterrents />
+            <JsonLd data={graph(organization(), website(locale, tm('description')))} />
           </Providers>
         </NextIntlClientProvider>
       </body>

@@ -3,7 +3,7 @@ import { LegalPage } from '@/components/content/LegalPage';
 import { pageMetadata, type PageProps } from '@/lib/metadata';
 
 export async function generateMetadata({ params }: PageProps) {
-  return pageMetadata((await params).locale, 'legal.terms');
+  return pageMetadata((await params).locale, 'legal.terms', '/terms');
 }
 
 export default async function Page({ params }: PageProps) {
