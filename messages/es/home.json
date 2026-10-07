@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Calculadora de presupuesto de anuncios para Meta y Google Ads",
+    "description": "Planificador de compra de medios gratuito: calcula el presupuesto mensual de anuncios que necesitas en Meta y en la Búsqueda de Google, tus costes de equilibrio y un reparto claro del presupuesto. Para generación de leads y ecommerce."
+  },
+  "hero": {
+    "title": "Planifica tu presupuesto de anuncios con confianza",
+    "subtitle": "Descubre el presupuesto mensual que tu negocio necesita en Meta y en la Búsqueda de Google y conviértelo en un plan de compra de medios claro que puedas explicar a cualquiera.",
+    "ctaPrimary": "Crear mi plan de medios",
+    "ctaSecondary": "Cómo funciona"
+  },
+  "preview": {
+    "title": "Plan de compra de medios",
+    "sample": "Ejemplo",
+    "alt": "Plan de compra de medios de ejemplo: presupuesto mensual recomendado de 4.550, presupuesto diario de 150, 154 leads a 29,50 por lead, veredicto rentable con margen para escalar.",
+    "budget": "Presupuesto mensual recomendado",
+    "daily": "Presupuesto diario",
+    "leads": "Leads esperados",
+    "cpl": "Coste por lead",
+    "verdict": "Rentable, con margen para escalar",
+    "sectionTitle": "Tu plan en minutos, sin hojas de cálculo",
+    "sectionText": "Responde cuatro preguntas, rellena las pestañas que te afectan y obtén un presupuesto, un veredicto y un reparto entre Meta y la Búsqueda de Google. Cada número viene con la fórmula que lo explica."
+  },
+  "trust": {
+    "types": "Para generación de leads y ecommerce",
+    "platforms": "Meta y Búsqueda de Google",
+    "accounts": "Cuentas nuevas o con historial",
+    "languages": "7 idiomas"
+  },
+  "features": {
+    "title": "Todo lo que revisa un media buyer, en un solo planificador",
+    "intro": "Desde los costes de equilibrio hasta la fase de aprendizaje, cada herramienta responde a una pregunta que normalmente resolverías a mano.",
+    "cta": "Ver todas las funciones"
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "intro": "Cuatro pasos desde los números de tu negocio hasta un plan con el que actuar.",
+    "steps": {
+      "business": {
+        "title": "Elige tu tipo de negocio",
+        "desc": "Generación de leads o ecommerce, cuenta nueva o con historial, Meta y Búsqueda de Google."
+      },
+      "numbers": {
+        "title": "Introduce tus números",
+        "desc": "Valor del cliente o costes del pedido, más datos de la cuenta o estimaciones. Las ayudas te dicen dónde encontrar cada uno."
+      },
+      "plan": {
+        "title": "Obtén tu plan de medios",
+        "desc": "Un presupuesto recomendado, los resultados esperados, un veredicto y un reparto entre plataformas."
+      },
+      "calculation": {
+        "title": "Mira el cálculo",
+        "desc": "Abre cada paso con la fórmula y tus números ya aplicados."
+      }
+    }
+  },
+  "guides": {
+    "title": "Guías y consejos",
+    "intro": "Guías prácticas del equipo de TECH24 sobre presupuestos, pruebas y escalado.",
+    "cta": "Leer todas las guías"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "cta": "Ver todas las preguntas"
+  }
+}

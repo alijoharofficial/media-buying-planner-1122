@@ -1,0 +1,130 @@
+{
+  "features": {
+    "meta": {
+      "title": "Funciones: presupuesto, CAC, ROAS y escalado",
+      "description": "Todas las herramientas del planificador de compra de medios: calculadora de presupuesto, CAC y ROAS de equilibrio, planificador de pruebas, fase de aprendizaje, tabla de escalado, reparto del presupuesto y más."
+    },
+    "eyebrow": "Funciones",
+    "title": "Todas las comprobaciones de un media buyer, integradas",
+    "intro": "Diez herramientas que trabajan juntas. Cada una responde a una pregunta que de otro modo resolverías en una hoja de cálculo.",
+    "cta": "Crear mi plan de medios"
+  },
+  "howTo": {
+    "meta": {
+      "title": "Cómo usar el planificador de presupuesto publicitario",
+      "description": "Paso a paso: elige tu tipo de negocio, introduce tus números, lee tu plan de compra de medios y mira el cálculo. Además, dónde encontrar cada número en Meta y Google Ads."
+    },
+    "eyebrow": "Cómo usarlo",
+    "title": "De tus números a un plan de compra de medios",
+    "intro": "La mayoría de los planes llevan entre cinco y diez minutos. Esto es lo que pide cada paso y cada pestaña, y dónde encontrar los números.",
+    "tabsTitle": "Las pestañas del planificador",
+    "tabsIntro": "Solo verás las pestañas que se aplican a tu tipo de negocio y a tu cuenta.",
+    "tabs": {
+      "setup": "Elige tu nicho, regiones, mes de planificación y moneda, y después tus clientes o ventas objetivo, o tu presupuesto mensual fijo.",
+      "business": "Para generación de leads: valor del cliente, margen y tus tasas de reserva, asistencia y cierre. Para ecommerce: valor del pedido, coste del producto, envío, comisiones y devoluciones.",
+      "account": "Solo para cuentas con datos: inversión, impresiones, alcance, clics y resultados por país, más los números de la Búsqueda de Google. Puedes importar un CSV.",
+      "estimates": "Solo para cuentas nuevas: CPM, CTR y tasas de conversión para Meta, y volumen de búsqueda, pujas y tasas para Google, cada uno con una etiqueta de fuente.",
+      "planning": "Cuántos conjuntos de anuncios y creatividades de Meta piensas usar, la duración de la prueba y si incluyes retargeting.",
+      "advanced": "Umbrales de aprendizaje, márgenes, multiplicadores de rango y estacionalidad. Ya vienen valores por defecto, así que la mayoría no los cambia nunca."
+    },
+    "whereTitle": "Dónde encontrar cada número",
+    "whereIntro": "Usa el mismo intervalo de fechas en todas las plataformas. 30 días es un buen punto de partida.",
+    "where": {
+      "number": "Número",
+      "meta": "Administrador de anuncios de Meta",
+      "google": "Google Ads",
+      "rows": {
+        "spend": { "name": "Inversión", "meta": "Columnas → Rendimiento → Importe gastado", "google": "Campañas → Coste" },
+        "impressions": { "name": "Impresiones", "meta": "Columnas → Rendimiento → Impresiones", "google": "Campañas → Impr." },
+        "reach": { "name": "Alcance", "meta": "Columnas → Rendimiento → Alcance", "google": "No se usa en Búsqueda" },
+        "clicks": { "name": "Clics", "meta": "Columnas → Rendimiento y clics → Clics en el enlace", "google": "Campañas → Clics" },
+        "leads": { "name": "Leads", "meta": "Resultados (campañas de clientes potenciales) o clientes potenciales en el sitio web", "google": "Conversiones (acción principal de lead)" },
+        "purchases": { "name": "Compras y valor", "meta": "Columnas → Conversiones → Compras, valor de conversión de compras", "google": "Conversiones y Valor de conv." },
+        "impressionShare": { "name": "Cuota de impresiones", "meta": "No disponible", "google": "Columnas → Métricas de competencia → Cuota de impr. de búsqueda" },
+        "lostBudget": { "name": "Cuota de impresiones perdida", "meta": "No disponible", "google": "Cuota de impr. perdida de búsqueda (presupuesto) y (ranking)" },
+        "searchVolume": { "name": "Volumen de búsqueda", "meta": "No disponible", "google": "Herramientas → Planificador de palabras clave → Búsquedas mensuales promedio" },
+        "bids": { "name": "Pujas", "meta": "No disponible", "google": "Planificador de palabras clave → Puja por la parte superior de la página (intervalo bajo y alto)" }
+      }
+    },
+    "cta": "Empezar a planificar"
+  },
+  "about": {
+    "meta": {
+      "title": "Acerca de",
+      "description": "Qué hace el planificador, cómo calcula los presupuestos en lenguaje sencillo y por qué cada resultado es una estimación."
+    },
+    "eyebrow": "Acerca de",
+    "title": "Acerca de {brand}",
+    "intro": "{brand} convierte los números de tu negocio en un presupuesto publicitario y un plan de compra de medios para Meta y la Búsqueda de Google.",
+    "sections": [
+      {
+        "heading": "Qué hace",
+        "body": [
+          "Responde a las preguntas que se hace cualquier media buyer antes de invertir: cuánto presupuesto necesitamos, qué conseguirá, si podemos permitírnoslo y cómo repartirlo entre plataformas.",
+          "Funciona para generación de leads y ecommerce, para cuentas nuevas y cuentas con historial, y en siete idiomas."
+        ]
+      },
+      {
+        "heading": "Cómo funciona, en lenguaje sencillo",
+        "body": [
+          "Los números de tu negocio fijan los límites. El valor del cliente y el margen, o el valor del pedido y los costes, deciden lo máximo que puedes pagar por un cliente, un lead o una venta.",
+          "Los datos o las pruebas encuentran el coste real. Con historial en la cuenta partimos de lo que realmente te cuestan los resultados. Sin él, planificamos un presupuesto de prueba y reglas claras para cuando lleguen los costes reales.",
+          "Después tenemos en cuenta cómo suben los costes al escalar, la fase de aprendizaje de cada plataforma y cuánto puede dar realmente la Búsqueda de Google."
+        ]
+      },
+      {
+        "heading": "Los resultados son estimaciones",
+        "body": [
+          "Cada plan es una estimación, no una promesa. Los costes publicitarios cambian con tus creatividades, tu oferta, la competencia, la temporada y las actualizaciones de las plataformas. Usa el plan para decidir qué probar y cuánto arriesgar, y actualízalo con resultados reales."
+        ]
+      },
+      {
+        "heading": "Tus datos se quedan contigo",
+        "body": ["Los datos del planificador solo se guardan en tu navegador. Nada de lo que introduces en el planificador se envía a nuestros servidores."]
+      }
+    ],
+    "creditsTitle": "Guías y créditos",
+    "creditsText": "Las guías de este sitio las escribe el equipo de TECH24.",
+    "creditsLink": "Visitar TECH24"
+  },
+  "services": {
+    "meta": {
+      "title": "Servicios: herramientas del planificador y opinión experta",
+      "description": "Calculadoras de presupuesto para leads y ecommerce, planificador de pruebas para cuentas nuevas, fase de aprendizaje, tabla de escalado, reparto del presupuesto, techo de Google y detector de cuellos de botella, además de opinión experta."
+    },
+    "eyebrow": "Servicios",
+    "title": "Herramientas para cada decisión de presupuesto",
+    "intro": "Cada herramienta forma parte del planificador. Ábrela, introduce tus números y obtén una respuesta en minutos.",
+    "useIt": "Usarla",
+    "useItFor": "Usar: {service}",
+    "expertTitle": "Opinión experta",
+    "expertText": "¿Quieres que un profesional revise tus números, tu embudo y tu plan de escalado antes de invertir? Pide una opinión experta.",
+    "expertCta": "Pedir opinión experta"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto",
+      "description": "¿Preguntas, comentarios o ideas para el planificador de compra de medios? Envíanos un mensaje."
+    },
+    "eyebrow": "Contacto",
+    "title": "Ponte en contacto",
+    "intro": "¿Preguntas, comentarios o una función que te gustaría ver? Envía un mensaje y te responderemos por correo electrónico.",
+    "fields": { "name": "Tu nombre", "email": "Correo electrónico", "message": "Mensaje", "website": "Deja este campo vacío" },
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Gracias. Tu mensaje se ha enviado.",
+    "privacy": "Solo usamos tus datos para responder a tu mensaje.",
+    "errors": {
+      "name": "Introduce tu nombre (de 2 a 100 caracteres).",
+      "email": "Introduce un correo electrónico válido.",
+      "message": "Escribe al menos 10 caracteres.",
+      "verification": "Completa la verificación de seguridad.",
+      "rateLimited": "Demasiados mensajes. Inténtalo de nuevo dentro de unos minutos.",
+      "invalid": "Algunos campos no son válidos. Revisa el formulario e inténtalo de nuevo.",
+      "unavailable": "No hemos podido enviar tu mensaje ahora mismo. Inténtalo más tarde."
+    },
+    "expertTitle": "¿Necesitas una opinión experta?",
+    "expertText": "Para una revisión profesional de tu presupuesto, tu embudo y tu plan de escalado, pide una opinión experta.",
+    "expertLink": "Pedir opinión experta"
+  }
+}

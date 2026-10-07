@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Preguntas frecuentes",
+    "description": "Respuestas sobre cómo el planificador calcula los presupuestos de anuncios, la fase de aprendizaje, el CAC frente al CPL, los límites de la Búsqueda de Google y qué pasa con tus datos."
+  },
+  "eyebrow": "Preguntas frecuentes",
+  "title": "Preguntas frecuentes",
+  "intro": "Cómo funciona el planificador, qué significan los números y qué pasa con tus datos.",
+  "more": "¿Tienes otra pregunta?",
+  "contact": "Contáctanos",
+  "items": {
+    "guaranteed": { "q": "¿El resultado está garantizado?", "a": "No. El plan es una estimación basada en tus números y en reglas de planificación habituales. Los costes reales dependen de tus anuncios, tu oferta, tu mercado, la competencia y los cambios de las plataformas. Usa el plan para decidir qué probar y cuánto arriesgar, y actualízalo con resultados reales." },
+    "noData": { "q": "¿Y si no tengo datos previos?", "a": "Elige \"Cuenta nueva\". El planificador usa tus estimaciones de CPM, CTR y tasa de conversión, añade una penalización por cuenta nueva y te da un presupuesto de prueba, un stop-loss y reglas de decisión. Después de la prueba, cambia a \"Con datos previos\" con tus números reales." },
+    "learningPerAdSet": { "q": "¿Por qué la fase de aprendizaje es por conjunto de anuncios?", "a": "Meta optimiza la entrega a nivel de conjunto de anuncios, y cada conjunto necesita unos 50 eventos de optimización por semana para salir del aprendizaje. Repartir un presupuesto pequeño entre muchos conjuntos deja a cada uno sin datos suficientes, así que el planificador recomienda cuántos conjuntos puede sostener tu presupuesto." },
+    "cacVsCpl": { "q": "¿Por qué comparar plataformas por CAC y no por CPL?", "a": "Los leads de distintas plataformas reservan y compran en proporciones diferentes. Un lead barato que nunca reserva sale caro por cliente. El coste por cliente (CAC) muestra lo que pagas de verdad por los ingresos, así que el planificador compara plataformas por CAC en generación de leads y por CPA y ROAS en ecommerce." },
+    "googleAds": { "q": "¿Funciona con Google Ads?", "a": "Sí, con la Búsqueda de Google. El planificador modela el volumen de búsqueda, la cuota de impresiones y el coste por clic, y muestra los resultados máximos que Google puede dar. Google Shopping, Performance Max, YouTube y TikTok llegarán más adelante." },
+    "dataStored": { "q": "¿Se guardan mis datos?", "a": "Los datos del planificador se quedan en tu navegador. Se guardan en el almacenamiento local para que no los pierdas y nunca se envían a nuestros servidores. Solo el formulario de contacto envía datos, y solo lo que escribes en él." },
+    "impressionShare": { "q": "¿Dónde encuentro la cuota de impresiones?", "a": "En Google Ads, abre Campañas, haz clic en Columnas, luego en Modificar columnas, y añade Cuota de impr. de búsqueda, Cuota de impr. perdida de búsqueda (presupuesto) y Cuota de impr. perdida de búsqueda (ranking) desde Métricas de competencia." },
+    "whichBudget": { "q": "¿Uso un objetivo o un presupuesto fijo?", "a": "Usa un objetivo cuando sepas cuántos clientes o ventas necesitas. Usa un presupuesto fijo cuando la inversión ya está decidida y quieres saber qué puede conseguir y si es suficiente." },
+    "newAccountPenalty": { "q": "¿Qué es la penalización por cuenta nueva?", "a": "Las cuentas nuevas suelen pagar más al principio, mientras la plataforma aprende quién convierte. Por defecto, el planificador añade un 25% a los costes estimados. Puedes cambiarlo en Ajustes avanzados." },
+    "scalingCost": { "q": "¿Por qué sube el coste por resultado cuando invierto más?", "a": "Primero se llega a los compradores más baratos y probables. Al crecer la inversión, la plataforma llega a personas menos receptivas y las subastas se vuelven más competitivas. El planificador supone que el coste sube un 15% cada vez que se duplica la inversión, y puedes cambiarlo." },
+    "multiCountry": { "q": "¿Puedo planificar para varios países?", "a": "Sí. Añade una fila por país en Datos de la cuenta. Los costes varían mucho entre países, así que el planificador te avisa de que las cifras combinadas pueden ocultar mercados caros." },
+    "leadSource": { "q": "¿Formularios instantáneos o landing pages?", "a": "Los formularios instantáneos suelen ser más baratos por lead porque la persona no sale de la app, pero esos leads tienden a reservar menos. Introduce la tasa de reserva real de cada uno para que el planificador los compare por coste por cliente." },
+    "returns": { "q": "¿Por qué importan tanto las devoluciones?", "a": "Un pedido devuelto te sigue costando la inversión en anuncios y a menudo el envío. En categorías como la moda, las devoluciones pueden eliminar una gran parte del beneficio por pedido, lo que reduce el CPA que te puedes permitir." },
+    "currency": { "q": "¿Qué moneda debo usar?", "a": "La que factura tu cuenta publicitaria. El planificador sugiere una moneda a partir de tu primera región, y todos los campos de dinero la usan." },
+    "benchmarks": { "q": "¿De dónde salen los benchmarks por defecto?", "a": "Los valores por defecto son provisionales para empezar y deberías sustituirlos por tus propios números. Guarda resultados de tus cuentas en \"Mis benchmarks\" y el planificador los reutilizará para nuevos clientes del mismo nicho y región." },
+    "share": { "q": "¿Cómo comparto un plan con un cliente?", "a": "Usa \"Copiar enlace para compartir\". El enlace contiene solo los datos del planificador, codificados en la dirección, y no se guarda nada en ningún servidor. También puedes exportar el plan a PDF." },
+    "free": { "q": "¿El planificador es gratuito?", "a": "Sí. El planificador es gratuito. Si quieres que un profesional revise tus números, puedes pedir una opinión experta." }
+  }
+}

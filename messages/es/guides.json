@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Guías y consejos sobre presupuestos de anuncios y compra de medios",
+    "description": "Guías prácticas sobre presupuestos en Meta y Google, CAC, ROAS de equilibrio, fase de aprendizaje, escalado y presupuestos de prueba, escritas por el equipo de TECH24."
+  },
+  "eyebrow": "Guías y consejos",
+  "title": "Guías y consejos para presupuestos de anuncios más inteligentes",
+  "intro": "Guías paso a paso del equipo de TECH24. Cada una enlaza con el planificador para que lo pruebes con tus propios números.",
+  "categories": {
+    "budgets": "Presupuestos",
+    "metaAds": "Anuncios en Meta",
+    "ecommerce": "Ecommerce",
+    "strategy": "Estrategia"
+  },
+  "items": {
+    "meta-ads-budget-new-account": {
+      "title": "Cómo calcular el presupuesto de Meta Ads para una cuenta publicitaria nueva",
+      "summary": "Empieza por lo que puedes pagar por resultado y planifica una prueba capaz de salir del aprendizaje."
+    },
+    "cost-per-lead-to-cac": {
+      "title": "Presupuestos de generación de leads: del coste por lead al coste por cliente (CAC)",
+      "summary": "Por qué el coste por lead por sí solo engaña y cómo las tasas de reserva, asistencia y cierre fijan tu límite real."
+    },
+    "ecommerce-break-even-roas": {
+      "title": "CPA y ROAS de equilibrio en ecommerce, con devoluciones y comisiones",
+      "summary": "Calcula el beneficio que deja un pedido para anuncios y el ROAS que necesitas para no perder dinero."
+    },
+    "meta-learning-phase-50-results": {
+      "title": "La fase de aprendizaje de Meta: por qué importan 50 resultados por conjunto de anuncios (CBO, ABO, Advantage+)",
+      "summary": "Cómo el tipo de presupuesto cambia el número de conjuntos que necesitan datos y qué hacer con presupuestos pequeños."
+    },
+    "scaling-ad-spend-costs": {
+      "title": "Escalar la inversión publicitaria: por qué suben los costes al crecer el presupuesto",
+      "summary": "Rendimientos decrecientes, el coste de cada duplicación y cómo encontrar tu límite rentable."
+    },
+    "meta-vs-google-budget-split": {
+      "title": "Meta frente a la Búsqueda de Google: cómo repartir tu presupuesto",
+      "summary": "Mínimos por plataforma, coste marginal y límites del volumen de búsqueda, en lenguaje sencillo."
+    },
+    "test-budget-decision-rules": {
+      "title": "Cómo planificar un presupuesto de prueba y las reglas de decisión posteriores",
+      "summary": "Cuánto probar, cuándo parar y qué resultado significa escalar, optimizar o detener."
+    },
+    "seasonality-q4-ad-costs": {
+      "title": "Estacionalidad: cómo el cuarto trimestre y los meses pico cambian tus costes publicitarios",
+      "summary": "Por qué noviembre y diciembre cuestan más y cómo planificar el presupuesto alrededor de los meses pico."
+    },
+    "benchmarks-before-launch": {
+      "title": "Dónde encontrar benchmarks de CPM, CTR y tasa de conversión antes de lanzar",
+      "summary": "Fuentes fiables para tus estimaciones y cómo indicar cuánto confías en cada una."
+    },
+    "lead-funnel-bottleneck": {
+      "title": "Cómo encontrar el cuello de botella de tu embudo de leads (tasas de reserva, asistencia y cierre)",
+      "summary": "Qué etapa te cuesta más y cuánto vale una mejora de 10 puntos."
+    }
+  },
+  "index": {
+    "searchLabel": "Buscar guías",
+    "searchPlaceholder": "Buscar guías",
+    "filterLabel": "Filtrar por categoría",
+    "all": "Todas",
+    "count": "{count, plural, one {# guía mostrada} other {# guías mostradas}}",
+    "noResults": "Ninguna guía coincide con tu búsqueda."
+  },
+  "article": {
+    "titleSuffix": "Guías",
+    "byline": "Guía de TECH24",
+    "readingTime": "{minutes} min de lectura",
+    "faqTitle": "Preguntas frecuentes",
+    "relatedTitle": "Guías relacionadas",
+    "authorTitle": "Escrito por el equipo de TECH24",
+    "authorText": "TECH24 escribe guías prácticas sobre publicidad digital, compra de medios y crecimiento para profesionales del marketing y propietarios de negocios.",
+    "authorLink": "Visitar TECH24",
+    "cta": {
+      "title": "Pruébalo en {brand}",
+      "text": "Introduce tus propios números y obtén en minutos un presupuesto, un veredicto y el cálculo que hay detrás.",
+      "button": "Abrir el planificador"
+    }
+  }
+}

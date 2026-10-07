@@ -1,7 +1,10 @@
-import { useFormatter, useTranslations } from 'next-intl';
+import { useFormatter, useLocale, useTranslations } from 'next-intl';
 import { Icon } from '@/components/ui/Icon';
 import { Link } from '@/i18n/navigation';
+import { localizedSlug } from '@/lib/slugs';
 import type { GuideMeta } from '@/lib/site';
+
+const guidePath = (slug: string, locale: string) => `/guides/${localizedSlug(slug, locale)}`;
 
 const HUES: Record<GuideMeta['category'], string> = {
   budgets: 'from-indigo-500/25 to-cyan-400/25',
@@ -29,13 +32,14 @@ export function GuideCover({ guide, large }: { guide: GuideMeta; large?: boolean
 export function GuideCard({ guide, minutes }: { guide: GuideMeta; minutes?: number }) {
   const t = useTranslations('guides');
   const format = useFormatter();
+  const locale = useLocale();
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface shadow-soft transition-[transform,box-shadow] duration-200 hover:-translate-y-1 hover:shadow-lift">
       <GuideCover guide={guide} />
       <div className="flex flex-1 flex-col gap-2 p-5">
         <span className="text-xs font-semibold uppercase tracking-wide text-accent">{t(`categories.${guide.category}`)}</span>
         <h3 className="font-semibold leading-snug">
-          <Link href={`/guides/${guide.slug}`} className="after:absolute after:inset-0 focus-glow rounded">
+          <Link href={guidePath(guide.slug, locale)} className="after:absolute after:inset-0 focus-glow rounded">
             {t(`items.${guide.slug}.title`)}
           </Link>
         </h3>

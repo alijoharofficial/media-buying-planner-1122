@@ -1,0 +1,130 @@
+export const faq = [
+  {
+    q: '¿Qué es el ROAS de equilibrio?',
+    a: 'El ROAS de equilibrio es el retorno de la inversión publicitaria con el que un pedido ni gana ni pierde dinero. Es el valor medio del pedido dividido entre el beneficio por pedido antes de los costes publicitarios. Por debajo pierdes dinero en cada venta; por encima ganas algo.',
+  },
+  {
+    q: '¿Cómo calculo el CPA de equilibrio?',
+    a: 'Parte del valor medio del pedido y resta el coste del producto, el envío, las comisiones de pago y el valor medio perdido por devoluciones. Lo que queda es el beneficio por pedido antes de anuncios, y eso es lo máximo que puedes pagar por venta: tu CPA de equilibrio.',
+  },
+  {
+    q: '¿Debo incluir las devoluciones en el ROAS de equilibrio?',
+    a: 'Sí. Un pedido devuelto también consumió inversión publicitaria y a menudo envío. En moda, unas devoluciones del 20% o más pueden subir el ROAS de equilibrio casi a la mitad. Usa la proporción de ingresos que pierdes por devoluciones y reembolsos en un periodo reciente.',
+  },
+  {
+    q: '¿Puedo usar el valor de vida en lugar del primer pedido?',
+    a: 'Solo si las compras repetidas están demostradas en tus propios datos y puedes permitirte esperarlas. Valorar por el valor de vida te deja pagar más por cliente nuevo, pero inmoviliza caja y depende de que la retención se mantenga.',
+  },
+  {
+    q: '¿Por qué mi ROAS en Meta es más alto de lo que sugiere mi beneficio real?',
+    a: 'El ROAS de la plataforma usa su propia ventana de atribución, cuenta ingresos brutos antes de devoluciones y puede solaparse con otros canales. Contrasta los resultados con los datos de tu tienda y valora el beneficio por lo que realmente se quedó en el banco.',
+  },
+]
+
+Toda tienda online acaba haciéndose la misma pregunta: ¿qué ROAS necesitamos? Las respuestas habituales son reglas generales como "apunta a 3x" o "4x está bien". Esas cifras vienen de los negocios de otras personas. Tu punto de equilibrio depende de tu propio coste de producto, envío, comisiones de pago y devoluciones, y puede ser muy distinto del de cualquier otro.
+
+Esta guía muestra cómo calcular tu beneficio real por pedido, convertirlo en un coste por adquisición (CPA) de equilibrio y en un ROAS de equilibrio, y fijar un objetivo que deje margen de beneficio. Puedes introducir los mismos números en el [planificador](/calculator) y ver cada paso.
+
+## Paso 1: beneficio por pedido antes de anuncios
+
+Empieza por lo que te deja un pedido medio después de todos los costes salvo la publicidad:
+
+<Formula>Beneficio por pedido = AOV − coste del producto − envío − (AOV × comisiones de pago) − (AOV × tasa de devolución)</Formula>
+
+Toma una tienda con estos números:
+
+- **Valor medio del pedido (AOV)**: 60
+- **Coste del producto por pedido**: 18, embalaje incluido
+- **Envío por pedido**: 5
+- **Comisiones de pago**: el 3% del pedido, es decir, 1,80
+- **Devoluciones**: el 10% de los ingresos se pierde en devoluciones y reembolsos, es decir, 6,00
+
+El beneficio por pedido es 60 − 18 − 5 − 1,80 − 6,00 = **29,20**.
+
+Dos de estos costes se olvidan con facilidad. Las comisiones de pago parecen pequeñas, pero al 3% suelen ser mayores de lo que se cree, sobre todo con opciones de pago aplazado. Las devoluciones son el coste más subestimado del ecommerce: normalmente pierdes el envío de ida, a veces el de vuelta y en ocasiones el propio producto.
+
+## Paso 2: CPA de equilibrio
+
+El beneficio por pedido es lo máximo que puedes pagar en anuncios para conseguir ese pedido sin perder dinero. Ese es tu **CPA de equilibrio**:
+
+<Formula>CPA de equilibrio = beneficio por pedido</Formula>
+
+Para la tienda del ejemplo, el CPA de equilibrio es 29,20. Si Meta o Google te cobran 29,20 por compra, no ganas nada. A 35, pierdes 5,80 en cada pedido.
+
+## Paso 3: ROAS de equilibrio
+
+El ROAS son los ingresos divididos entre la inversión publicitaria. En el equilibrio, gastas exactamente tu beneficio por pedido para conseguir una venta que vale el AOV:
+
+<Formula>ROAS de equilibrio = AOV ÷ beneficio por pedido</Formula>
+
+Para la tienda del ejemplo, 60 ÷ 29,20 = **2,05**. Cualquier ROAS por encima de 2,05 gana dinero en el primer pedido; cualquiera por debajo lo pierde.
+
+<Callout title="La trampa del margen bruto">
+<p>Un atajo habitual es usar solo el margen bruto. Aquí el margen del producto es (60 − 18) ÷ 60 = 70%, lo que sugiere un ROAS de equilibrio de 1 ÷ 0,70 = 1,43. El ROAS de equilibrio real es 2,05 cuando se incluyen envío, comisiones y devoluciones. Una tienda con un ROAS de 1,8 creería que es rentable mientras pierde dinero en cada venta.</p>
+</Callout>
+
+## Paso 4: fija un objetivo con margen
+
+El equilibrio es un límite, no una meta. Necesitas margen para gastos generales, semanas flojas y errores de medición. Una forma sencilla es un margen de seguridad: divide el CPA de equilibrio entre 1 más el margen.
+
+<Formula>CPA objetivo = CPA de equilibrio ÷ (1 + margen de seguridad)</Formula>
+
+Con un margen del 25%, el CPA objetivo es 29,20 ÷ 1,25 = 23,36, que equivale a un ROAS objetivo de 60 ÷ 23,36 = unos 2,57. Las campañas en 23,36 por venta o por debajo están sanas. Las que están entre 23,36 y 29,20 cubren costes o ganan poco y conviene optimizarlas. Por encima de 29,20, para y arregla algo.
+
+<TryPlanner text="Introduce el valor del pedido, el coste del producto, el envío, las comisiones y las devoluciones para ver al instante tu CPA y tu ROAS de equilibrio." />
+
+## Cómo cambian las devoluciones todo en moda
+
+Las devoluciones golpean a unas categorías mucho más que a otras. Imagina que la misma tienda vende moda con una tasa de devolución del 25% en lugar del 10%. Las devoluciones cuestan ahora 15 por pedido:
+
+- Beneficio por pedido: 60 − 18 − 5 − 1,80 − 15 = 20,20
+- CPA de equilibrio: 20,20
+- ROAS de equilibrio: 60 ÷ 20,20 = **2,97**
+
+Los mismos productos, precios y anuncios necesitan ahora casi un ROAS de 3x solo para cubrir costes, frente al 2,05 anterior. Muchas marcas de moda que "llegan a 2,5x" están perdiendo dinero sin darse cuenta precisamente por esto. Si vendes ropa o calzado, mide con cuidado tu tasa de devolución y actualízala cada trimestre.
+
+## Descuentos y envío gratis
+
+Las promociones también cambian las cuentas. Un descuento del 10% sobre la misma cesta baja el AOV a 54, pero deja igual el coste del producto y del envío:
+
+- Comisiones de pago: 1,62. Devoluciones al 10%: 5,40.
+- Beneficio por pedido: 54 − 18 − 5 − 1,62 − 5,40 = 23,98
+- ROAS de equilibrio: 54 ÷ 23,98 = **2,25**
+
+Un descuento que parece pequeño en la etiqueta recorta casi una quinta parte del beneficio disponible para anuncios. Planifica los periodos de rebajas con sus propios números de equilibrio, sobre todo en el cuarto trimestre, cuando además suben los costes publicitarios. La [guía de estacionalidad](/guides/seasonality-q4-ad-costs) cubre esa parte.
+
+## ¿Primer pedido o valor de vida?
+
+Algunas tiendas venden productos que la gente vuelve a comprar: cosmética, suplementos, café. Si un cliente hace 1,5 pedidos de media, el beneficio de un cliente nuevo es 29,20 × 1,5 = 43,80, así que podrías pagar hasta 43,80 por conseguirlo.
+
+Es una ventaja real, pero úsala con cuidado:
+
+- **Demuéstralo con datos.** Usa las tasas de recompra de tu propia tienda, de al menos seis a doce meses.
+- **Cuida la caja.** Pagas por el cliente hoy y cobras el beneficio extra a lo largo de meses.
+- **Mantén también la vista del primer pedido.** El planificador mantiene el ROAS de equilibrio sobre el primer pedido y te deja elegir si valoras la rentabilidad por el primer pedido o por el valor de vida.
+
+## Revisar una cuenta existente
+
+Si tu tienda ya hace publicidad, compara tus números reales con estos límites. Imagina una tienda con un AOV de 90 y un beneficio por pedido de 45 que invirtió 3.000 el mes pasado en Meta y registró 100 compras por valor de 9.000:
+
+- CPA = 3.000 ÷ 100 = 30, por debajo del CPA de equilibrio de 45 y del CPA objetivo de 36
+- ROAS = 9.000 ÷ 3.000 = 3,0, por encima del ROAS de equilibrio de 2,0
+
+La cuenta es rentable y tiene margen para escalar. Para llegar a 200 ventas al mes, la tienda no puede simplemente duplicar el presupuesto al mismo CPA, porque los costes suben al crecer la inversión. Con un aumento del coste del 15% por cada duplicación, el planificador proyecta un presupuesto de unos 7.130 con un CPA cercano a 35,65, todavía por debajo del objetivo de 36. Lee la [guía de escalado](/guides/scaling-ad-spend-costs) para ver cómo funciona esa proyección.
+
+### El ROAS de la plataforma no es el ROAS de la tienda
+
+Las plataformas publicitarias reportan los ingresos que se atribuyen a sí mismas, dentro de sus propias ventanas de atribución y antes de devoluciones. Si Meta y Google se atribuyen el mismo pedido, se cuenta dos veces. Antes de fiarte de un ROAS de 3,0, compara las compras que reporta la plataforma con los pedidos de tu tienda en el mismo periodo y descuenta las devoluciones. Tu tienda es la fuente de verdad.
+
+## Cuando el presupuesto es demasiado pequeño para aprender
+
+Una tienda nueva necesita unas 50 compras a la semana por conjunto de anuncios para que Meta salga de la fase de aprendizaje. Con un CPA de equilibrio de 29,20, una prueba completa son unos 50 × 29,20 = 1.460. Si no llegas a esa cifra, optimiza para añadir al carrito la primera semana para dar más señales al algoritmo y después cambia a compra. Con una tasa de añadir al carrito a compra del 30%, mantén el coste por añadido al carrito por debajo de unos 29,20 × 0,30 = 8,76. La [guía para cuentas nuevas](/guides/meta-ads-budget-new-account) explica el plan de prueba completo.
+
+## Resumen
+
+- El beneficio por pedido es el AOV menos el coste del producto, el envío, las comisiones de pago y las devoluciones.
+- El CPA de equilibrio es igual al beneficio por pedido; el ROAS de equilibrio es el AOV dividido entre él.
+- Fija un objetivo con margen y valora las campañas frente al objetivo y al equilibrio.
+- Vuelve a calcular para las devoluciones, los descuentos y las temporadas, porque cada uno mueve la línea.
+
+Introduce tus propios números en el [planificador](/calculator) para ver tu CPA y tu ROAS de equilibrio y un plan de compra de medios completo construido sobre ellos.

@@ -1,10 +1,11 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import type { ComponentProps, ReactNode } from 'react';
 import { ButtonLink } from '@/components/ui/Button';
 import { Icon } from '@/components/ui/Icon';
 import { Link } from '@/i18n/navigation';
 import { BRAND_NAME } from '@/lib/brand';
 import { EXTERNAL } from '@/lib/site';
+import { localizedSlug } from '@/lib/slugs';
 
 /** "Try it in Media Buying Planner" CTA box, used inside every article. */
 export function TryPlanner({ text }: { text?: string }) {
@@ -39,6 +40,8 @@ export function Formula({ children }: { children: ReactNode }) {
 
 /** Internal links stay in the current locale; external links open in a new tab. */
 export function SmartLink({ href = '', children, ...rest }: ComponentProps<'a'>) {
+  const locale = useLocale();
+  if (href.startsWith('/guides/')) return <Link href={`/guides/${localizedSlug(href.slice('/guides/'.length), locale)}`}>{children}</Link>;
   if (href.startsWith('/')) return <Link href={href}>{children}</Link>;
   return (
     <a href={href} target="_blank" rel="noopener" {...rest}>

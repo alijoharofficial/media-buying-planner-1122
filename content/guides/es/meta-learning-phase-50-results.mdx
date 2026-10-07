@@ -1,0 +1,137 @@
+export const faq = [
+  {
+    q: '¿Qué significa "aprendizaje limitado" en Meta?',
+    a: 'Significa que no se espera que el conjunto de anuncios consiga unos 50 eventos de optimización por semana, así que la entrega puede ser menos estable. Es un aviso, no un fracaso. Si el coste por resultado está en el objetivo, un conjunto con aprendizaje limitado puede seguir siendo rentable.',
+  },
+  {
+    q: '¿La regla de los 50 resultados es por campaña o por conjunto de anuncios?',
+    a: 'Por conjunto de anuncios. Meta optimiza la entrega a nivel de conjunto, así que cada conjunto necesita sus propios eventos. Con CBO solo cuentan los conjuntos que reciben presupuesto; las campañas Advantage+ de compras y ventas se comportan como una sola unidad.',
+  },
+  {
+    q: '¿Qué reinicia la fase de aprendizaje?',
+    a: 'Los cambios importantes: cambiar el evento de optimización, la segmentación, la creatividad o la estrategia de puja, pausar una semana o más, o subidas grandes de presupuesto. Subir los presupuestos en pasos de alrededor del 20% cada pocos días reduce las interrupciones.',
+  },
+  {
+    q: '¿Y si no puedo permitirme 50 resultados a la semana?',
+    a: 'No fuerces el presupuesto al alza. Usa un solo conjunto de anuncios con una audiencia amplia para que todos los resultados caigan en un sitio y valóralo por el coste por resultado. En ecommerce, optimizar durante un tiempo para añadir al carrito puede dar más eventos al algoritmo.',
+  },
+  {
+    q: '¿Google Ads también tiene fase de aprendizaje?',
+    a: 'Sí. Las estrategias de puja inteligente aprenden de las conversiones, y una regla habitual es de al menos 30 conversiones por campaña en 30 días. Consulta la recomendación actual de Google, porque cambia.',
+  },
+]
+
+Todo media buyer ha visto la etiqueta amarilla "Aprendizaje" o "Aprendizaje limitado" en el Administrador de anuncios de Meta. Aparece tan a menudo que mucha gente o entra en pánico o la ignora por completo. Ninguna de las dos cosas ayuda. La fase de aprendizaje es simplemente una señal de cuántos datos recibe cada conjunto de anuncios y, una vez la entiendes, se convierte en una de las herramientas de planificación más útiles que tienes.
+
+Esta guía explica por qué Meta quiere unos 50 resultados por conjunto de anuncios y semana, cómo cambia esa cifra con campañas CBO, ABO y Advantage+, y cómo planificar un presupuesto que la respete sin malgastar dinero. Puedes revisar tu propia estructura en el [planificador](/calculator).
+
+## Qué es realmente la fase de aprendizaje
+
+Cuando lanzas o cambias de forma importante un conjunto de anuncios, Meta todavía no sabe qué personas de tu audiencia tienen más probabilidades de hacer la acción para la que optimizas. Explora, muestra los anuncios a personas distintas y aprende de los resultados. Durante este periodo el rendimiento es menos estable y el coste por resultado suele ser más alto.
+
+Meta indica que un conjunto de anuncios suele necesitar **unos 50 eventos de optimización en una semana** después del último cambio importante para salir del aprendizaje. Un evento de optimización es aquello para lo que le pediste a Meta que optimizara: una compra, un lead, un añadido al carrito.
+
+Hay dos palabras clave en esa frase: **conjunto de anuncios** y **semana**.
+
+## Por qué es por conjunto de anuncios
+
+Cada conjunto de anuncios se optimiza por separado. Repartir el mismo presupuesto entre más conjuntos no crea más datos; divide los que ya tienes. Cinco conjuntos con 12 compras a la semana cada uno son cinco conjuntos atascados en aprendizaje. Un conjunto con 60 compras a la semana ha salido del aprendizaje y puede optimizar bien.
+
+Este es el error de presupuesto más común en Meta: demasiados conjuntos de anuncios para el presupuesto.
+
+## ¿Cuántos conjuntos de anuncios tienes realmente?
+
+El número que importa son los **conjuntos efectivos**, los que compiten de verdad por resultados. Depende del tipo de presupuesto de la campaña:
+
+- **ABO (presupuesto del conjunto)**: cada conjunto tiene su propio presupuesto, así que cuenta cada conjunto activo.
+- **CBO (presupuesto de campaña)**: Meta reparte un presupuesto entre los conjuntos y suele concentrar la inversión en unos pocos. Cuenta solo los que reciben una inversión significativa. Una campaña CBO con tres conjuntos en la que dos se llevan casi todo el presupuesto tiene dos conjuntos efectivos.
+- **Campañas Advantage+**: se comportan como una sola unidad, así que cuenta uno.
+
+Suma los conjuntos efectivos de tus campañas de captación. Ese es el número entre el que divides tus resultados.
+
+## La aritmética del aprendizaje
+
+Parte de los resultados que consigues, o esperas conseguir, en un mes y conviértelos en una cifra semanal por conjunto:
+
+<Formula>Resultados por conjunto y semana = resultados mensuales ÷ 4,345 ÷ conjuntos efectivos</Formula>
+
+Un mes tiene unas 4,345 semanas. Ahora compara el resultado con el umbral de 50.
+
+También puedes hacerlo al revés y preguntar cuánto necesita un conjunto para salir del aprendizaje:
+
+<Formula>Presupuesto mensual para un conjunto = 50 × coste por resultado × 4,345</Formula>
+
+Y cuántos conjuntos puede sostener un presupuesto:
+
+<Formula>Conjuntos soportados = presupuesto semanal ÷ (50 × coste por resultado), al menos 1</Formula>
+
+### Un ejemplo práctico
+
+Una tienda online paga unos 30 por compra e invierte 3.000 al mes en captación:
+
+- Presupuesto semanal: 3.000 ÷ 4,345 = unos 690
+- Compras por semana: 690 ÷ 30 = unas 23
+- Presupuesto para que un conjunto salga del aprendizaje: 50 × 30 × 4,345 = unos 6.518 al mes
+
+Esta tienda no puede sacar del aprendizaje ni un solo conjunto con su presupuesto actual. Si tiene cinco conjuntos ABO, cada uno recibe unas 4,6 compras a la semana, muy por debajo de 50. La solución no es más dinero. Son menos conjuntos de anuncios.
+
+<Callout title="Lo que recomienda el planificador">
+<p>Cuando el presupuesto está por debajo del mínimo para un conjunto, el planificador recomienda <strong>un conjunto de anuncios con una audiencia amplia</strong> y muestra la nota "El aprendizaje limitado es aceptable si el coste por resultado se mantiene en el objetivo". En ecommerce también sugiere optimizar para añadir al carrito hasta que aumente el volumen de compras. Cuando el presupuesto supera ese mínimo, recomienda el número de conjuntos que el presupuesto puede sostener.</p>
+</Callout>
+
+## El aprendizaje limitado no es un fracaso
+
+"Aprendizaje limitado" significa que Meta no espera que el conjunto llegue a 50 eventos por semana. La entrega puede ser menos eficiente de lo que podría, pero eso no hace que el conjunto deje de ser rentable. Un pequeño negocio que invierte 2.000 al mes con un coste por lead de 25 consigue unos 18 leads por semana. Nunca saldrá del aprendizaje en sentido estricto, y no lo necesita. Si 25 por lead está por debajo del coste objetivo por lead del negocio, la campaña está haciendo su trabajo.
+
+Valora los conjuntos de anuncios por el **coste por resultado frente a tus límites**, no por la etiqueta de aprendizaje. La [guía del coste por cliente](/guides/cost-per-lead-to-cac) muestra cómo fijar esos límites en generación de leads, y la [guía del ROAS de equilibrio](/guides/ecommerce-break-even-roas) hace lo mismo en ecommerce.
+
+<TryPlanner text="Introduce tus campañas, tipos de presupuesto y conjuntos de anuncios en el planificador para ver los resultados por conjunto y semana y cuántos conjuntos soporta tu presupuesto." />
+
+## Cómo cambia el panorama con CBO
+
+A menudo se recomienda CBO para presupuestos pequeños porque Meta mueve el dinero hacia los conjuntos que mejor funcionan. Eso ayuda, pero también oculta la estructura real. Una campaña CBO con ocho conjuntos puede dedicar el 80% del presupuesto a dos de ellos. Los otros seis reciben un goteo de inversión y nunca aprenden.
+
+Cuando planifiques con CBO:
+
+- Mira la inversión por conjunto de los últimos 7 a 14 días.
+- Cuenta como efectivos los conjuntos con una inversión significativa.
+- Plantéate eliminar los conjuntos que no reciben casi nada; añaden ruido sin añadir datos.
+
+En el planificador, las campañas CBO piden los "conjuntos con una inversión significativa" precisamente por esto. El número de conjuntos efectivos nunca puede ser mayor que el número de conjuntos de la campaña.
+
+## Advantage+ y la consolidación
+
+Las campañas Advantage+ de compras y ventas van más allá y dejan que Meta decida la audiencia y las ubicaciones dentro de una sola estructura. A efectos de aprendizaje se comportan como un único conjunto, y por eso pueden funcionar bien con presupuestos modestos: todos los datos de conversión alimentan un solo modelo.
+
+La contrapartida es el control. Ves menos sobre qué audiencias convierten, y la prueba de creatividades gana importancia porque la creatividad es una de las pocas palancas que quedan. Muchos anunciantes combinan una campaña Advantage+ con una pequeña campaña ABO para pruebas de creatividades estructuradas.
+
+## Prueba de creatividades y aprendizaje
+
+Las creatividades nuevas también necesitan inversión. Una regla práctica es dar a cada creatividad unas 2,5 veces tu coste objetivo por resultado antes de valorarla. Tres creatividades con un coste objetivo de 24 necesitan unos 180 de inversión de prueba. Pon las pruebas de creatividades en un conjunto o una campaña aparte para que no alteren el aprendizaje del conjunto principal, y mantén el número de creatividades de cada prueba lo bastante bajo para el presupuesto.
+
+## Evita reiniciar el aprendizaje
+
+El aprendizaje vuelve a empezar tras cambios importantes. Los desencadenantes más comunes son:
+
+- Cambiar el evento de optimización o la ubicación de la conversión
+- Cambios grandes en la segmentación o en las ubicaciones
+- Añadir muchos anuncios nuevos a la vez
+- Pausar un conjunto de anuncios siete días o más
+- Grandes saltos de presupuesto
+
+En los presupuestos, sube como mucho **un 20% cada tres días**. Una campaña de 100 al día llega a 235 al día en unas dos semanas de esta forma: 100, 120, 144, 173, 207 y después 235. El planificador crea este calendario de subida automáticamente. La [guía de escalado](/guides/scaling-ad-spend-costs) explica por qué suben los costes al escalar, que es la otra mitad de la historia.
+
+## ¿Y Google Ads?
+
+Las estrategias de puja inteligente de Google, como Maximizar conversiones o CPA objetivo, también aprenden de los datos de conversión. Una regla habitual es de **al menos 30 conversiones por campaña en 30 días**, aunque la recomendación de Google cambia, así que consulta la vigente. La lección es la misma: pocas campañas bien financiadas aprenden más rápido que muchas campañas finas. Si tu campaña de marca solo consigue un puñado de conversiones, plantéate una estrategia de puja más sencilla para ella.
+
+## Lista de comprobación de la fase de aprendizaje
+
+- Cuenta los conjuntos efectivos: todos en ABO, los que tienen inversión en CBO, uno en Advantage+.
+- Calcula los resultados por conjunto y semana y compáralos con 50.
+- Si estás por debajo del mínimo, consolida en un conjunto con una audiencia amplia.
+- Valora los conjuntos por el coste por resultado, no por la etiqueta de aprendizaje.
+- Mantén las pruebas de creatividades aparte y ajustadas al presupuesto.
+- Sube los presupuestos alrededor de un 20% cada tres días.
+
+Pasa tu propia estructura por el [planificador](/calculator) para ver exactamente cuántos conjuntos de anuncios puede alimentar tu presupuesto.

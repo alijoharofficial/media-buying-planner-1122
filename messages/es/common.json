@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "tagline": "Calculadora de presupuesto publicitario y planificador de compra de medios para Meta y Google",
+    "description": "Calcula el presupuesto mensual de anuncios que necesitas en Meta y en la Búsqueda de Google y conviértelo en un plan de compra de medios claro."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "logoAlt": "Logotipo de {brand}",
+    "homeLink": "Inicio de {brand}"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Modo claro",
+    "dark": "Modo oscuro",
+    "system": "Tema del sistema"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "Próximamente",
+    "moreInfo": "Más información",
+    "close": "Cerrar"
+  },
+  "support": {
+    "tagline": "Ya tienes tus números. ¿Quieres que un profesional los revise?",
+    "subline": "Obtén la opinión de un experto sobre tu presupuesto, tu embudo y tu plan de escalado.",
+    "button": "Pedir opinión experta"
+  },
+  "nav": {
+    "label": "Principal",
+    "menu": "Menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "planner": "Planificador",
+    "features": "Funciones",
+    "howToUse": "Cómo usarlo",
+    "guides": "Guías",
+    "faq": "Preguntas frecuentes",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "disclaimer": "Aviso legal",
+    "cookies": "Política de cookies"
+  },
+  "footer": {
+    "expertText": "¿Necesitas otra mirada sobre tu presupuesto?",
+    "expertLink": "Opinión experta",
+    "quickLinks": "Enlaces rápidos",
+    "features": "Herramientas del planificador",
+    "qr": "Generador de códigos QR gratis",
+    "guidesBy": "Guías de TECH24"
+  },
+  "cookie": {
+    "label": "Consentimiento de cookies",
+    "text": "Solo usamos el almacenamiento esencial del navegador para guardar los datos del planificador. Con tu permiso, también usamos cookies de analítica para entender cómo se usa el sitio.",
+    "policy": "Leer la política de cookies",
+    "accept": "Aceptar analítica",
+    "reject": "Solo esenciales"
+  },
+  "errors": {
+    "notFoundTitle": "Esta página no existe",
+    "notFoundText": "Puede que el enlace sea antiguo o esté mal escrito. Los datos que guardaste en el planificador siguen seguros en tu navegador.",
+    "serverTitle": "Algo ha salido mal",
+    "serverText": "Un error inesperado impidió cargar esta página. Inténtalo de nuevo.",
+    "retry": "Reintentar",
+    "home": "Ir a la página de inicio",
+    "planner": "Abrir el planificador"
+  },
+  "protected": "Este contenido está protegido",
+  "breadcrumbs": {
+    "home": "Inicio",
+    "label": "Ruta de navegación"
+  }
+}

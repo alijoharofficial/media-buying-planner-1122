@@ -5,11 +5,15 @@ import { BRAND_NAME, SITE_URL } from './brand';
 /** Absolute URL for a locale + path ("/" for home). */
 export const localeUrl = (locale: string, path = '/') => `${SITE_URL}/${locale}${path === '/' ? '' : path}`;
 
+/** Path for a locale: the same path everywhere, or a per-locale function (translated article slugs). */
+export type LocalePath = string | ((locale: string) => string);
+const pathFor = (p: LocalePath, locale: string) => (typeof p === 'function' ? p(locale) : p);
+
 /** hreflang alternates for all 7 locales plus x-default (English). */
-export function languageAlternates(path = '/') {
+export function languageAlternates(path: LocalePath = '/') {
   return {
-    ...Object.fromEntries(locales.map((l) => [l, localeUrl(l, path)])),
-    'x-default': localeUrl(routing.defaultLocale, path),
+    ...Object.fromEntries(locales.map((l) => [l, localeUrl(l, pathFor(path, l))])),
+    'x-default': localeUrl(routing.defaultLocale, pathFor(path, routing.defaultLocale)),
   };
 }
 
@@ -21,8 +25,8 @@ export const ogImageUrl = (title: string, locale: string, eyebrow?: string) =>
 
 type BuildArgs = {
   locale: string;
-  /** Path without locale, e.g. "/faq". */
-  path: string;
+  /** Path without locale, e.g. "/faq", or a per-locale function for translated slugs. */
+  path: LocalePath;
   title: string;
   description: string;
   /** When true, title is used as-is (home, articles) instead of the "%s | Media Buying Planner" template. */
@@ -36,7 +40,7 @@ type BuildArgs = {
 /** One metadata builder for every page: canonical, hreflang, Open Graph and Twitter cards. */
 export function buildMetadata({ locale, path, title, description, absoluteTitle, type = 'website', publishedTime, ogTitle }: BuildArgs): Metadata {
   const fullTitle = absoluteTitle ? title : `${title} | ${BRAND_NAME}`;
-  const url = localeUrl(locale, path);
+  const url = localeUrl(locale, pathFor(path, locale));
   const image = { url: ogImageUrl(ogTitle ?? title, locale), width: 1200, height: 630, alt: ogTitle ?? title };
   return {
     title: absoluteTitle ? { absolute: title } : title,

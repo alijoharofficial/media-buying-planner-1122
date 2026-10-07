@@ -1,0 +1,127 @@
+export const faq = [
+  {
+    q: '¿Por qué sube mi coste por resultado cuando aumento el presupuesto?',
+    a: 'Las plataformas muestran tus anuncios primero a las personas más receptivas. Al invertir más, llegas a personas con menos probabilidad de convertir y compites en subastas más caras. Cada resultado extra cuesta más que el anterior, así que el coste medio sube.',
+  },
+  {
+    q: '¿Cuánto suben los costes cuando duplico el presupuesto?',
+    a: 'Depende de la cuenta, el nicho y el tamaño de la audiencia. Un supuesto de planificación de un 15% más de coste por resultado por cada duplicación de la inversión funciona para muchas cuentas. Sustitúyelo por tu propio número cuando ya hayas escalado antes y puedas medirlo.',
+  },
+  {
+    q: '¿Qué es el límite rentable?',
+    a: 'Es el presupuesto mensual más alto con el que el coste por resultado proyectado sigue en tu coste de equilibrio o por debajo. Por encima, la inversión extra pierde dinero aunque la media siga pareciendo aceptable durante un tiempo.',
+  },
+  {
+    q: '¿A qué ritmo puedo escalar un presupuesto en Meta?',
+    a: 'Un ritmo seguro es de alrededor de un 20% cada tres días. Los saltos más grandes pueden reiniciar la fase de aprendizaje y disparar los costes. Duplicar conjuntos de anuncios con presupuestos más altos es otra opción, pero divide los datos.',
+  },
+  {
+    q: '¿La Búsqueda de Google tiene los mismos rendimientos decrecientes?',
+    a: 'En parte. Hasta el punto en que dejas de perder impresiones por presupuesto, los costes en Google se mantienen bastante estables. A partir de ahí, la única forma de conseguir más clics es pujar más por las mismas búsquedas, así que los costes suben rápido. Ese punto es el techo de la Búsqueda de Google.',
+  },
+]
+
+La idea más tentadora de la publicidad es escalar de forma lineal: si 3.000 al mes traen 100 ventas, entonces 6.000 deberían traer 200. Casi nunca funciona así. Duplica el presupuesto y normalmente consigues bastante menos del doble de resultados, porque cada resultado extra cuesta más que el anterior.
+
+Esta guía explica por qué suben los costes al crecer el presupuesto, cómo modelar el efecto con un único supuesto sencillo y cómo encontrar el presupuesto más alto que sigue siendo rentable. Puedes ver la misma proyección para tu cuenta en la tabla de escalado del [planificador](/calculator).
+
+## Por qué suben los costes al invertir más
+
+Las plataformas publicitarias son muy buenas encontrando primero los resultados más baratos. Cuando tu presupuesto es pequeño, Meta y Google lo gastan en las personas y búsquedas con más probabilidad de convertir. Al invertir más:
+
+- **Llegas a personas menos receptivas.** Los mejores prospectos ya ven tus anuncios; el siguiente grupo convierte con menos frecuencia.
+- **Ves a las mismas personas más a menudo.** La frecuencia sube y cada impresión extra tiene menos probabilidad de hacerles cambiar de opinión.
+- **Entras en subastas más caras.** Para ganar más entrega, la plataforma puja en ubicaciones y audiencias que cuestan más.
+- **En búsqueda, te quedas sin búsquedas.** Cuando ya apareces en la mayoría de las búsquedas relevantes, la única forma de conseguir más clics es pagar más por las mismas.
+
+El resultado son los **rendimientos decrecientes**: los resultados siguen creciendo con la inversión, pero más despacio que el presupuesto.
+
+## Un modelo sencillo: coste por duplicación
+
+No necesitas un modelo complejo para planificar alrededor de esto. Un solo supuesto recoge casi todo: **cada vez que la inversión se duplica, el coste por resultado sube un porcentaje fijo**. Un valor de planificación habitual es el 15%.
+
+<Formula>Coste proyectado = coste actual × (1 + aumento por duplicación) ^ log2(nuevo presupuesto ÷ presupuesto actual)</Formula>
+
+La parte del log2 simplemente cuenta cuántas duplicaciones has hecho. Duplicar una vez da un paso del 15%, duplicar dos veces da dos pasos, y un aumento del 50% da algo más de medio paso. Por debajo de tu nivel de inversión actual, el modelo mantiene el coste actual.
+
+### Un ejemplo práctico
+
+Una tienda online invirtió 3.000 en 30 días, unos 3.040 para un mes medio de 30,4 días, a 30 por compra. Con un aumento del 15% por duplicación:
+
+<table>
+  <thead>
+    <tr><th scope="col">Presupuesto mensual</th><th scope="col">Coste por venta</th><th scope="col">Ventas</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">3.040</th><td>30,00</td><td>101</td></tr>
+    <tr><th scope="row">6.080</th><td>34,50</td><td>176</td></tr>
+    <tr><th scope="row">12.160</th><td>39,68</td><td>306</td></tr>
+    <tr><th scope="row">24.320</th><td>45,63</td><td>533</td></tr>
+  </tbody>
+</table>
+
+Duplicar el presupuesto de 3.040 a 6.080 trae 75 ventas más, no 101. Esas 75 ventas extra cuestan 3.040, unos 40,50 cada una. Esa cifra, el **coste marginal** de los resultados extra, es mucho más alta que la nueva media de 34,50. Es el número que hay que vigilar al decidir si invertir más.
+
+<Callout title="Coste medio frente a coste marginal">
+<p>El coste medio por resultado puede parecer correcto mucho después de que la inversión extra haya dejado de ser rentable. Si tu coste de equilibrio es 45, la media de 12.160 (39,68) todavía parece cómoda, pero los últimos resultados que compraste costaron bastante más. Planificar con la curva proyectada y no con la media actual te mantiene honesto.</p>
+</Callout>
+
+## Encontrar tu límite rentable
+
+Toda cuenta tiene un presupuesto por encima del cual el coste por resultado proyectado supera el equilibrio. Puedes calcularlo directamente:
+
+<Formula>Límite rentable = presupuesto actual × 2 ^ (ln(coste de equilibrio ÷ coste actual) ÷ ln(1 + aumento por duplicación))</Formula>
+
+Para la tienda anterior, con un CPA de equilibrio de 45, el límite es 3.040 × 2 ^ (ln 1,5 ÷ ln 1,15), unos 22.700 al mes. Si la tienda quiere mantener un margen de seguridad del 25%, su CPA objetivo es 36 y el límite cómodo es de unos 7.500 al mes.
+
+El planificador marca este límite en el gráfico y en la tabla de escalado, para que veas de un vistazo qué presupuestos son rentables.
+
+<TryPlanner text="Mira tu propia tabla de escalado, el coste proyectado para cada presupuesto y tu límite rentable." />
+
+## Presupuestar para un objetivo en lugar de para un presupuesto
+
+A menudo la pregunta es la contraria: ¿cuánto tengo que invertir para llegar a un objetivo? Como el coste sube con la inversión, no puedes multiplicar el objetivo por el coste de hoy sin más. El planificador busca el presupuesto con el que los resultados proyectados alcanzan el objetivo.
+
+Para que la tienda llegue a 200 ventas al mes, la cuenta simple dice 200 × 30 = 6.000. La proyección dice unos 7.130, con un coste por venta cercano a 35,65. Sigue por debajo del objetivo de 36, así que el plan funciona, pero cuesta casi un 20% más que la estimación ingenua. La generación de leads funciona igual: la [guía del CAC](/guides/cost-per-lead-to-cac) muestra una clínica que necesita unos 4.520 en lugar de 3.850 para alcanzar su objetivo de clientes.
+
+## Cómo elegir tu aumento por duplicación
+
+El 15% es un valor razonable por defecto, pero tu cuenta puede comportarse de otra forma:
+
+- **Las audiencias amplias y los mercados grandes** suelen escalar con aumentos menores, porque quedan muchos compradores parecidos por alcanzar.
+- **Los nichos estrechos y los países pequeños** llegan antes a sus límites, así que son habituales aumentos del 25% o más.
+- **Una buena renovación de creatividades** puede reiniciar la curva durante un tiempo, porque los anuncios nuevos vuelven a captar a quienes ignoraron los antiguos.
+- **Los picos estacionales** suman sus propios aumentos de coste. Consulta la [guía de estacionalidad](/guides/seasonality-q4-ad-costs).
+
+Si ya has escalado antes, mídelo. Compara un mes con un presupuesto con otro mes con aproximadamente el doble, con creatividades y temporada parecidas, y calcula cuánto subió el coste por resultado. Introduce ese número en los ajustes avanzados del planificador.
+
+## La Búsqueda de Google escala de otra forma
+
+La búsqueda está limitada por cuánta gente busca. Google informa de la **cuota de impresiones perdida de búsqueda por presupuesto**, la proporción de búsquedas aptas que perdiste porque se agotó el presupuesto. Hasta el punto en que esa cuota llega a cero, más presupuesto compra sobre todo más búsquedas a un coste parecido. A partir de ahí, más presupuesto solo puede subir las pujas por las mismas búsquedas.
+
+El planificador llama a ese punto el **techo de la Búsqueda de Google** y deja de asignar presupuesto a Google cuando se alcanza. La [guía del reparto entre Meta y Google](/guides/meta-vs-google-budget-split) explica cómo interactúa ese techo con Meta en un plan combinado.
+
+## Cómo escalar sin romper nada
+
+Incluso con el presupuesto objetivo correcto, importa cómo llegas a él:
+
+1. **Sube los presupuestos poco a poco.** Aumenta los presupuestos diarios como mucho un 20% cada tres días. Una campaña de 100 al día llega así a 235 al día en unas dos semanas.
+2. **Vigila el coste marginal, no solo la media.** Si la última subida trajo resultados a un coste por encima de tu objetivo, para y mantén.
+3. **Renueva las creatividades cuando suba la frecuencia.** Los anuncios nuevos frenan el aumento del coste.
+4. **Mantén una estructura sencilla.** Escalar con muchos conjuntos pequeños divide los datos y los mantiene en aprendizaje. Consulta la [guía de la fase de aprendizaje](/guides/meta-learning-phase-50-results).
+5. **Vuelve a medir cada mes.** Actualiza el plan con el coste y la inversión reales de cada mes para que la proyección parta de datos recientes.
+
+## Señales de que has escalado demasiado
+
+La proyección es un plan, no una promesa. Vigila estas señales en las primeras semanas con un nuevo nivel de presupuesto:
+
+- **La frecuencia sube por encima de 3 a 5** mientras baja el CTR. La audiencia está cansada de tus anuncios.
+- **El coste por resultado sube más rápido de lo proyectado**, por ejemplo un 30% tras una sola duplicación en lugar de un 15%.
+- **Baja la calidad de los leads.** Llegan más leads, pero bajan las tasas de reserva o de cierre, así que el coste por cliente sube aunque el coste por lead parezca estable.
+- **La cuota de impresiones perdida por presupuesto en Google ya está cerca de cero** y aun así sigues añadiendo presupuesto a Google.
+
+Si ves dos o más de estas señales, vuelve al último presupuesto que cumplía tu objetivo, renueva las creatividades e inténtalo de nuevo más despacio.
+
+## Resumen
+
+Los costes suben al crecer los presupuestos porque las plataformas llegan primero a los mejores prospectos. Un supuesto sencillo de alrededor de un 15% más de coste por cada duplicación de la inversión convierte eso en un plan útil: predice el presupuesto para un objetivo, muestra el coste marginal de los resultados extra y marca el presupuesto rentable más alto. Pasa tus números por el [planificador](/calculator) para ver la tabla de escalado completa de tu cuenta.

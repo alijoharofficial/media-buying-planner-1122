@@ -64,6 +64,13 @@
 - Decisions: examples come from engine runs (new ecommerce test: expected CPA 27.78, risky, Option A 1,460, scale line 20.44, stop-loss 58.40 to 87.60; bottleneck savings 1,103 / 707 / 804 on a 4,522 budget). Seasonality guide describes the real engine behaviour (multiplier applied to new-account estimates, warning only for existing accounts). Benchmark ranges are hedged general ranges, no invented statistics.
 - Next: Phase 8, translations: UI strings then articles, one locale per session (es first).
 
+## Phase 8, session 1: Spanish (es) (done)
+- Done: all 9 UI namespaces in `messages/es/`, all 10 guides in `content/guides/es/` (1,370 to 1,780 words each, FAQs translated), translated article slugs (`slugs.es` in `lib/site.ts`).
+- Done: translated slug system: `localizedSlug`/`guidePath`/`resolveGuideSlug` (`lib/slugs.ts`, `lib/guides.ts`); a slug from another language 308-redirects to the current language's slug (keeps the language switcher working on articles); hreflang, sitemap, breadcrumbs, cards and in-article links all use localized slugs.
+- Done: `lib/__tests__/messages-parity.test.ts` checks every translated namespace has exactly the English keys and {placeholders}, no brand text and no em dashes (es: 9/9 pass).
+- Decisions: Spanish uses Spain conventions (decimal comma, "1.460") in prose; UI numbers still format via Intl. Acronyms (CPM, CTR, CPL, CAC, ROAS, AOV) kept and explained in tooltips/first use.
+- Next: Phase 8, session 2: French (fr), same process (UI namespaces, 10 guides, `slugs.fr`).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

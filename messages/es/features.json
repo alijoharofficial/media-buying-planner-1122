@@ -1,0 +1,62 @@
+{
+  "items": {
+    "budgetCalculator": {
+      "title": "Calculadora de presupuesto",
+      "desc": "El presupuesto mensual y diario para tu objetivo, o lo que consigue un presupuesto fijo.",
+      "long": "Parte de tus costes reales cuando tienes datos, o de estimaciones y un plan de prueba cuando no los tienes. Los costes suben a medida que crece la inversión, así que el presupuesto tiene en cuenta los rendimientos decrecientes."
+    },
+    "leadFunnel": {
+      "title": "Embudo de leads y análisis del CAC",
+      "desc": "Del coste por lead al coste por cliente, pasando por las tasas de reserva, asistencia y cierre.",
+      "long": "Convierte el valor del cliente y el margen en lo máximo que puedes pagar por cliente (CAC, coste de adquisición de cliente) y por lead (CPL), y compara tu embudo real con esos límites.",
+      "service": "Calculadora de presupuesto para leads"
+    },
+    "ecomBreakEven": {
+      "title": "Equilibrio y ROAS en ecommerce",
+      "desc": "CPA y ROAS de equilibrio después del coste de producto, el envío, las comisiones y las devoluciones.",
+      "long": "Muestra exactamente cuánto beneficio deja un pedido para anuncios, valorado sobre el primer pedido o sobre el valor de vida del cliente, con un CPA objetivo que mantiene un margen de seguridad.",
+      "service": "Calculadora de presupuesto para ecommerce"
+    },
+    "testPlanner": {
+      "title": "Planificador de pruebas para cuentas nuevas",
+      "desc": "Un presupuesto de prueba, la inversión diaria y reglas claras para después de la prueba.",
+      "long": "Para cuentas sin datos: lo que puedes permitirte probar, un stop-loss y reglas para escalar, optimizar o parar cuando lleguen los costes reales.",
+      "service": "Planificador de pruebas para cuentas nuevas"
+    },
+    "learningCheck": {
+      "title": "Comprobación de la fase de aprendizaje",
+      "desc": "Comprueba que cada conjunto de anuncios de Meta y cada campaña de Google reciben suficientes resultados para aprender.",
+      "long": "Cuenta los conjuntos de anuncios efectivos en CBO, ABO y Advantage+, compara los resultados semanales por conjunto con el umbral de aprendizaje y recomienda cuántos conjuntos soporta tu presupuesto.",
+      "service": "Comprobación de la fase de aprendizaje"
+    },
+    "scalingTable": {
+      "title": "Tabla de escalado",
+      "desc": "Presupuesto frente a resultados y coste por resultado, con el límite rentable marcado.",
+      "long": "Proyecta cómo sube el coste por resultado al escalar y muestra el presupuesto mensual más alto que sigue por debajo del equilibrio.",
+      "service": "Tabla de escalado"
+    },
+    "budgetSplit": {
+      "title": "Planificador del reparto de presupuesto",
+      "desc": "Cuánto va a Meta, a la Búsqueda de Google, a pruebas, a retargeting y a marca, y por qué.",
+      "long": "Asigna cada tramo de presupuesto a la plataforma con el menor coste para el siguiente resultado, respeta los mínimos de cada plataforma y añade un calendario de subida seguro.",
+      "service": "Planificador del reparto de presupuesto"
+    },
+    "googleCeiling": {
+      "title": "Techo de la Búsqueda de Google",
+      "desc": "Lo máximo que la Búsqueda de Google puede invertir y conseguir antes de que suban los costes.",
+      "long": "Usa el volumen de búsqueda, la cuota de impresiones y la cuota perdida por presupuesto para encontrar el punto en el que más inversión en Google deja de comprar más búsquedas.",
+      "service": "Techo de la Búsqueda de Google"
+    },
+    "bottleneck": {
+      "title": "Detector de cuellos de botella",
+      "desc": "La etapa más débil de tu embudo de leads y lo que vale mejorarla.",
+      "long": "Prueba una mejora de 10 puntos en las etapas de reserva, asistencia y cierre, y muestra el presupuesto que ahorrarías o los clientes adicionales que conseguirías.",
+      "service": "Detector de cuellos de botella"
+    },
+    "showCalculation": {
+      "title": "Mostrar el cálculo",
+      "desc": "Cada número explicado paso a paso, con tus valores aplicados.",
+      "long": "Una línea de tiempo con cada fórmula en lenguaje sencillo y etiquetas de color que separan tus datos, las suposiciones y los ajustes, para que puedas defender el plan ante un cliente."
+    }
+  }
+}

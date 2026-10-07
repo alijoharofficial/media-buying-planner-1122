@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { FaqAccordion } from '@/components/content/FaqAccordion';
@@ -9,25 +9,27 @@ import { JsonLd } from '@/components/JsonLd';
 import { SupportBanner } from '@/components/SupportBanner';
 import { locales } from '@/i18n/routing';
 import { BRAND_NAME } from '@/lib/brand';
-import { GUIDE_CONTENT, contentLocale, getGuide, publishedGuides, readingMinutes } from '@/lib/guides';
+import { GUIDE_CONTENT, contentLocale, guidePath, localizedSlug, publishedGuides, readingMinutes, resolveGuideSlug } from '@/lib/guides';
 import { article, faqPage, graph } from '@/lib/jsonld';
 import { buildMetadata, ogImageUrl } from '@/lib/seo';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => publishedGuides().map((g) => ({ locale, slug: g.slug })));
+  return locales.flatMap((locale) => publishedGuides().map((g) => ({ locale, slug: localizedSlug(g.slug, locale) })));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = await params;
-  const guide = getGuide(slug);
-  if (!guide) return {};
+  const { locale, slug: urlSlug } = await params;
+  const resolved = resolveGuideSlug(urlSlug, locale);
+  if (!resolved?.exact) return {};
+  const guide = resolved.guide;
+  const slug = guide.slug;
   const t = await getTranslations({ locale, namespace: 'guides' });
   const title = t(`items.${slug}.title`);
   return buildMetadata({
     locale,
-    path: `/guides/${slug}`,
+    path: (l) => guidePath(slug, l),
     title: `${title} | ${BRAND_NAME} ${t('article.titleSuffix')}`,
     absoluteTitle: true,
     ogTitle: title,
@@ -39,9 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 /** Shared article layout: cover, H1, byline, MDX body, FAQ, CTA, author box, related guides, support banner. */
 export default async function GuidePage({ params }: Props) {
-  const { locale, slug } = await params;
-  const guide = getGuide(slug);
-  if (!guide) notFound();
+  const { locale, slug: urlSlug } = await params;
+  const resolved = resolveGuideSlug(urlSlug, locale);
+  if (!resolved) notFound();
+  // A slug from another language (e.g. after switching language): go to this language's slug.
+  if (!resolved.exact) permanentRedirect(`/${locale}${guidePath(resolved.guide.slug, locale)}`);
+  const guide = resolved.guide;
+  const slug = guide.slug;
   setRequestLocale(locale);
   const t = await getTranslations('guides');
   const tn = await getTranslations('common.nav');
@@ -58,10 +64,10 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-      <Breadcrumbs items={[{ name: tn('guides'), path: '/guides' }, { name: title, path: `/guides/${slug}` }]} />
+      <Breadcrumbs items={[{ name: tn('guides'), path: '/guides' }, { name: title, path: guidePath(slug, locale) }]} />
       <JsonLd
         data={graph(
-          article({ locale, path: `/guides/${slug}`, title, description: t(`items.${slug}.summary`), date: guide.date, image: ogImageUrl(title, locale) }),
+          article({ locale, path: guidePath(slug, locale), title, description: t(`items.${slug}.summary`), date: guide.date, image: ogImageUrl(title, locale) }),
           ...(faq.length ? [faqPage(faq)] : []),
         )}
       />

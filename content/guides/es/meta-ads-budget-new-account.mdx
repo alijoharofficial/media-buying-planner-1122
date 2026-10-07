@@ -1,0 +1,121 @@
+export const faq = [
+  {
+    q: '¿Cuánto debo invertir en Meta Ads con una cuenta totalmente nueva?',
+    a: 'Lo suficiente para que un conjunto de anuncios consiga unos 50 resultados al máximo que puedes pagar por resultado. Para un negocio de generación de leads que puede pagar hasta 40 por lead, eso es un presupuesto de prueba de unos 2.000. Si es demasiado, empieza con menos, con un solo conjunto de anuncios y una audiencia amplia, y valora la prueba por el coste por resultado y no por el estado de aprendizaje.',
+  },
+  {
+    q: '¿Por qué añadir una penalización a los costes estimados de una cuenta nueva?',
+    a: 'Una cuenta publicitaria nueva no tiene historial de conversiones, así que Meta tiene que aprender quién responde antes de que la entrega sea eficiente. Los costes de las primeras semanas suelen ser más altos de lo que indican los benchmarks. Sumar alrededor de un 25% a los costes estimados mantiene el plan realista.',
+  },
+  {
+    q: '¿Debo usar los resultados diarios estimados de Meta?',
+    a: 'Úsalos como comprobación, no como plan. Divide el presupuesto diario entre los resultados estimados para obtener un coste por resultado implícito y compáralo con el número que calculaste a partir del CPM, el CTR y la tasa de conversión.',
+  },
+  {
+    q: '¿Cuánto debe durar la primera prueba?',
+    a: 'Catorce días es un buen punto de partida. Cubre dos semanas completas de comportamiento entre semana y fines de semana y da tiempo al algoritmo para estabilizarse. Para antes solo si el gasto alcanza tu stop-loss sin resultados.',
+  },
+  {
+    q: '¿Qué pasa después de la prueba?',
+    a: 'Compara el coste real por resultado con tus límites. Si está en el 70% del máximo o por debajo, escala. Entre esa línea y el máximo, optimiza y vuelve a probar. Por encima del máximo, arregla la oferta, el precio o el embudo antes de invertir más.',
+  },
+]
+
+Una cuenta publicitaria nueva es el lugar más difícil para planificar un presupuesto. No hay historial del que aprender, cada número es una estimación y la propia plataforma todavía no sabe quiénes son tus compradores. La mayoría responde a la pregunta "¿cuánto deberíamos invertir?" con una cifra redonda que parece segura. Esa cifra suele ser o demasiado pequeña para enseñar algo al algoritmo o demasiado grande para el riesgo que puede asumir el negocio.
+
+Esta guía muestra una forma mejor. Partes de lo que tu negocio puede pagar por un resultado, estimas lo que costará realmente ese resultado y después dimensionas una prueba capaz de dar una respuesta clara. Cada paso usa aritmética sencilla y puedes hacer los mismos cálculos en el [planificador](/calculator) en pocos minutos.
+
+## Empieza por lo que puedes pagar, no por lo que quieres invertir
+
+El primer número de cualquier presupuesto publicitario no es el presupuesto. Es el **coste máximo por resultado** que tu negocio puede pagar sin perder dinero. Todo lo demás se mide contra él.
+
+En un negocio de generación de leads, trabaja hacia atrás desde el cliente:
+
+- El **beneficio por cliente** es el valor del cliente multiplicado por tu margen. Una clínica que ingresa 600 por cliente nuevo con un margen del 60% se queda con 360 para conseguir ese cliente.
+- La **tasa de lead a cliente** es tu tasa de reserva por tu tasa de asistencia por tu tasa de cierre. Si el 35% de los leads reserva, el 65% de las reservas acude y el 50% de los asistentes compra, el 11,4% de los leads se convierte en cliente.
+- El **coste máximo por lead** es el beneficio por cliente multiplicado por la tasa de lead a cliente. Aquí es 360 × 11,375%, unos 40,95.
+
+<Formula>Coste máximo por lead = valor del cliente × margen × tasa de reserva × tasa de asistencia × tasa de cierre</Formula>
+
+En ecommerce la lógica es la misma, pero la unidad es el pedido. Toma el valor medio del pedido y resta el coste del producto, el envío, las comisiones de pago y el valor perdido por devoluciones. Lo que queda es el beneficio por pedido, que también es tu coste por venta de equilibrio. La [guía de equilibrio en ecommerce](/guides/ecommerce-break-even-roas) explica ese cálculo en detalle.
+
+La mayoría de los negocios también quiere un margen de seguridad. Dividir el máximo entre 1,25 da un **coste objetivo** que mantiene un 25% de margen. En el ejemplo de la clínica, el coste objetivo por lead es de unos 32,76.
+
+## Estima lo que costará de verdad un resultado
+
+Sin historial en la cuenta, construyes el coste por resultado a partir de tres estimaciones:
+
+1. **CPM**: lo que cuestan 1.000 impresiones en tu país y tu nicho.
+2. **CTR (enlace)**: la proporción de personas que hacen clic.
+3. **Tasa de conversión**: la proporción de clics que se convierten en lead o en venta. En formularios instantáneos, usa la tasa de envío del formulario.
+
+<Formula>Coste estimado por resultado = CPM ÷ (1.000 × CTR × tasa de conversión)</Formula>
+
+Con un CPM de 20, un CTR de enlace del 1,2% y una tasa de conversión de la landing page del 8%, el coste estimado por lead es 20 ÷ (1.000 × 0,012 × 0,08) = 20,83.
+
+Ese número es demasiado optimista para una cuenta recién creada. Meta no tiene datos de conversión con los que optimizar, tus creatividades no están probadas y tu píxel no ha visto ni un solo lead. Añade una **penalización por cuenta nueva** de alrededor del 25% y ajusta según la temporada si planificas un mes con mucha actividad. El coste esperado por lead pasa a ser 20,83 × 1,25 = 26,04.
+
+### Indica cuánto confías en cada estimación
+
+No todas las estimaciones merecen la misma confianza. Un CPM tomado de otra cuenta que gestionas en el mismo país es mucho más fiable que una suposición. En el planificador, cada estimación lleva una etiqueta de fuente: tus cuentas, la estimación de Meta, un benchmark publicado o una suposición. Las fuentes menos fiables tienen un rango más amplio. Una suposición podría salir un 30% mejor o un 60% peor de lo esperado, así que el planificador muestra un coste bajo, uno esperado y uno alto en lugar de un único número. La [guía de benchmarks](/guides/benchmarks-before-launch) explica dónde encontrar cada estimación.
+
+## Comprueba que la idea es viable antes de invertir
+
+Ahora compara el coste esperado con el máximo que puedes pagar:
+
+- **Viable**: incluso el extremo prudente del rango queda por debajo de tu máximo.
+- **Arriesgado**: el coste esperado está por debajo del máximo, pero el extremo alto no.
+- **No viable**: el coste esperado ya supera el máximo.
+
+En el ejemplo de la clínica, el coste esperado por lead es 26,04 y el máximo 40,95. Si las tres estimaciones salen de benchmarks publicados, el extremo prudente del rango es un 40% más alto, unos 36,46, que queda por debajo del límite: viable. Si la tasa de conversión es solo una suposición, el extremo prudente es un 60% más alto, unos 41,66, justo por encima del límite: arriesgado. La prueba sigue mereciendo la pena, pero la tasa de conversión es la mayor suposición que hay que vigilar. Si el coste esperado hubiera sido 45, ningún presupuesto lo arreglaría. Primero habría que trabajar la oferta, el precio o el embudo.
+
+Esta comprobación lleva un minuto y ahorra mucho dinero. Muchos lanzamientos fallidos nunca fueron viables sobre el papel.
+
+<TryPlanner text="Introduce el valor del cliente, las tasas de tu embudo y tus estimaciones, y mira el presupuesto de prueba y la viabilidad de tu cuenta." />
+
+## Dimensiona la prueba para que te enseñe algo
+
+Meta optimiza cada conjunto de anuncios por separado y necesita aproximadamente **50 resultados por conjunto y semana** para salir de la fase de aprendizaje. Ese umbral también es un buen tamaño de prueba: 50 resultados bastan para valorar el coste real por resultado con cierta confianza.
+
+<Formula>Presupuesto de prueba = 50 × coste máximo por resultado</Formula>
+
+Usar el máximo y no el coste esperado es deliberado. Te dice lo máximo que necesitarías invertir para llegar a 50 resultados si los costes salen justo en tu límite. Para la clínica, el presupuesto de prueba es de hasta 50 × 40,95 = 2.047. Repartido en una prueba de 14 días, son unos 146 al día.
+
+En ecommerce, la misma regla da la **opción A**: 50 × CPA de equilibrio. Una tienda con un CPA de equilibrio de 29,20 necesita unos 1.460 para llegar a 50 compras en equilibrio. Si es más de lo que puedes invertir, usa la **opción B**: optimiza para añadir al carrito la primera semana para que el algoritmo reciba más señales y después cambia a compra. Mantén el coste por añadido al carrito por debajo de tu CPA de equilibrio multiplicado por tu tasa de añadir al carrito a compra.
+
+### Cuando el presupuesto es menor que la prueba
+
+No tienes que forzar el presupuesto al alza. Con menos dinero, usa un solo conjunto de anuncios y una audiencia amplia para que todos los resultados caigan en el mismo sitio. El conjunto puede quedarse en "aprendizaje limitado", y eso es aceptable mientras el coste por resultado se mantenga en el objetivo. Lo que debes evitar es repartir un presupuesto pequeño entre muchos conjuntos, porque cada uno se queda con muy pocos datos para aprender. La [guía de la fase de aprendizaje](/guides/meta-learning-phase-50-results) explica los detalles en campañas CBO, ABO y Advantage+.
+
+### Deja margen para probar creatividades
+
+Cada creatividad nueva necesita algo de inversión antes de poder valorarla. Una regla práctica es unas 2,5 veces tu coste objetivo por resultado por creatividad. Tres creatividades con un objetivo de 32,76 necesitan unos 246. Si probar todas tus creatividades cuesta más que todo el presupuesto de prueba, prueba menos a la vez.
+
+## Fija las reglas antes de empezar la prueba
+
+Los errores más caros llegan después del lanzamiento, cuando se reacciona a pocos días de datos. Decide de antemano qué significa cada resultado:
+
+- **Escala** si el coste real por resultado está en el 70% de tu máximo o por debajo. En el ejemplo de la clínica, esa línea está en unos 28,67 por lead. Cambia el plan a "con datos previos" y calcula un presupuesto de escalado con números reales.
+- **Optimiza y vuelve a probar** si el coste está entre esa línea y el máximo. Trabaja las creatividades, la audiencia o la landing page y prueba de nuevo.
+- **Para** si el coste supera el máximo. Arregla la oferta, el precio o el embudo antes de invertir más.
+
+Añade también un **stop-loss**. Si un conjunto de anuncios o una creatividad gasta entre dos y tres veces tu coste máximo por resultado sin ningún resultado, páusalo. Para la clínica, eso es entre 82 y 123 sin ningún lead.
+
+### Recuerda lo que una prueba de leads no puede decirte
+
+Una prueba de 2.000 que consigue 78 leads a 26 cada uno traerá solo unos 9 clientes con una tasa de lead a cliente del 11,4%. Nueve clientes no bastan para confirmar tu tasa de cierre. Sigue registrando reservas, asistencias y ventas en tu CRM después de la prueba y trata el plan de escalado como una estimación hasta que esos números se estabilicen. La guía sobre el [coste por cliente (CAC)](/guides/cost-per-lead-to-cac) explica por qué esto importa tanto.
+
+## Convierte la prueba en un presupuesto mensual
+
+Cuando la prueba te da un coste real por resultado, el presupuesto de escalado se deduce de tu objetivo. Si necesitas 20 clientes nuevos al mes con una tasa de lead a cliente del 11,4%, necesitas unos 176 leads. Al coste esperado de 26,04 son unos 4.580 al mes, con un rango de unos 3.200 a 7.300 según cómo se cumplan las estimaciones. Después de la prueba, sustituye la estimación por datos reales: los costes también suben al crecer la inversión, algo que explica la [guía de escalado](/guides/scaling-ad-spend-costs).
+
+## Lista rápida para cuentas nuevas
+
+- Calcula primero tu coste máximo y tu coste objetivo por resultado.
+- Construye el coste esperado a partir del CPM, el CTR y la tasa de conversión, más una penalización por cuenta nueva.
+- Comprueba la viabilidad con el extremo prudente del rango.
+- Dimensiona la prueba en 50 resultados a tu coste máximo y mantén pocos conjuntos de anuncios.
+- Escribe las reglas de escalar, optimizar y parar, y el stop-loss, antes del lanzamiento.
+- Después de la prueba, cambia a datos reales y vuelve a calcular.
+
+El [planificador](/calculator) hace cada uno de estos pasos por ti y muestra el cálculo detrás de cada número, para que puedas explicar el plan a un cliente o a un responsable con confianza.
