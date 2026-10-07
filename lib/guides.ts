@@ -11,6 +11,10 @@ export const GUIDE_CONTENT: Record<string, () => Promise<{ default: ComponentTyp
   'en/meta-learning-phase-50-results': () => import('@/content/guides/en/meta-learning-phase-50-results.mdx'),
   'en/scaling-ad-spend-costs': () => import('@/content/guides/en/scaling-ad-spend-costs.mdx'),
   'en/meta-vs-google-budget-split': () => import('@/content/guides/en/meta-vs-google-budget-split.mdx'),
+  'en/test-budget-decision-rules': () => import('@/content/guides/en/test-budget-decision-rules.mdx'),
+  'en/seasonality-q4-ad-costs': () => import('@/content/guides/en/seasonality-q4-ad-costs.mdx'),
+  'en/benchmarks-before-launch': () => import('@/content/guides/en/benchmarks-before-launch.mdx'),
+  'en/lead-funnel-bottleneck': () => import('@/content/guides/en/lead-funnel-bottleneck.mdx'),
 };
 
 export type FaqEntry = { q: string; a: string };

@@ -1,0 +1,124 @@
+export const faq = [
+  {
+    q: 'How big should a test budget be?',
+    a: 'Big enough to reach about 50 results at the most you can afford per result. That is the point where Meta can exit learning and where the real cost per result becomes reliable. For a store with a break-even CPA of 29.20, that is about 1,460.',
+  },
+  {
+    q: 'How long should a test run?',
+    a: 'Fourteen days is a good default. It covers two weekends and gives the platform time to settle after launch. Shorter tests overreact to early noise; longer ones delay decisions without adding much certainty.',
+  },
+  {
+    q: 'What is a stop-loss in advertising?',
+    a: 'A spending limit with no results, decided before launch. If an ad set or creative spends two to three times your maximum cost per result without a single conversion, you pause it. It stops one bad ad from eating the whole test.',
+  },
+  {
+    q: 'When should I scale after a test?',
+    a: 'When the real cost per result is at or below about 70% of your maximum. That leaves room for the cost increase that comes with higher spend. Between 70% and 100% of the maximum, optimize and test again first.',
+  },
+  {
+    q: 'What if my test budget is too small for 50 purchases?',
+    a: 'Use one ad set and optimize for Add to Cart in the first week, then switch to Purchase. Keep the cost per add to cart under your break-even CPA multiplied by your add to cart to purchase rate.',
+  },
+]
+
+Most ad tests fail before they launch. Not because the ads are bad, but because nobody decided in advance how much to spend, how long to wait or what result would count as success. Without those decisions, every test ends the same way: a few days of mixed numbers, a nervous budget cut, and no clear answer.
+
+A good test is a small experiment with a fixed budget and written rules. This guide shows how to size one, what to watch while it runs and how to decide what happens next. The [planner](/calculator) builds the same test plan from your numbers.
+
+## Start with the question the test must answer
+
+A first test on a new account has one job: **find out what a result really costs**. Everything else, from creative winners to audience insights, is a bonus. That means the budget has to be large enough to produce enough results to measure the cost with some confidence, and the rules have to say what each possible cost means for the business.
+
+Before you size anything, you need your limits:
+
+- For ecommerce, the **break-even CPA** is the profit per order after product, shipping, fees and returns. The [break-even guide](/guides/ecommerce-break-even-roas) shows the calculation.
+- For lead generation, the **maximum cost per lead** is the profit per client multiplied by the lead to client rate. See the [cost per client guide](/guides/cost-per-lead-to-cac).
+
+The examples below use a store with an average order of 60 and a break-even CPA of 29.20.
+
+## Size the test: 50 results at your maximum
+
+Meta needs about 50 results per ad set per week to leave the learning phase, and 50 results is also a sensible sample for judging the cost. So the test budget is:
+
+<Formula>Test budget = 50 × maximum cost per result</Formula>
+
+For the store, 50 × 29.20 = **1,460**. This is **Option A**: optimize for Purchase from day one. Over a 14 day test that is about 104 a day.
+
+Why use the maximum and not the expected cost? Because the test should be able to reach 50 results even if costs come in right at your limit. If they come in lower, you reach 50 sooner and keep the change.
+
+### Option B for small budgets
+
+If 1,460 is more than you can spend, do not spread a smaller amount across several ad sets. Use one ad set and **optimize for Add to Cart in the first week**. Add to carts happen several times more often than purchases, so Meta gets enough signals to learn. Then switch the optimization to Purchase.
+
+During the Add to Cart week, keep the cost per add to cart under a guide value:
+
+<Formula>Max cost per add to cart = break-even CPA × add to cart to purchase rate</Formula>
+
+With 30% of add to carts turning into purchases, that is 29.20 × 0.30 = **8.76**. Treat it as an estimate; your real add to cart to purchase rate will become clear during the test.
+
+## Check the idea is viable before spending
+
+Build the expected cost per sale from three estimates: CPM, click-through rate and site conversion rate. With a CPM of 10, a CTR of 1.5% and a conversion rate of 3%:
+
+<Formula>Estimated CPA = CPM ÷ (1,000 × CTR × conversion rate) = 10 ÷ 0.45 = 22.22</Formula>
+
+Add 25% for a new account and the expected CPA is **27.78**, just below the 29.20 break-even. If the estimates come from published benchmarks, the cautious end of the range is 40% higher, about 38.89. Since the expected cost is under break-even but the cautious end is above it, the planner labels this test **risky**. It is still worth running, but the margin for error is small, so the stop-loss and decision rules matter even more.
+
+The planner also names the **biggest assumption**: the estimate with the least reliable source. That is the number to check first when real data arrives. The [benchmarks guide](/guides/benchmarks-before-launch) explains how to choose and label each estimate.
+
+<TryPlanner text="Choose 'New account' in the planner to get your test budget, daily spend, stop-loss and decision rules." />
+
+## Budget for creatives
+
+A test usually compares a few creatives. Each needs enough spend to show what it can do, about 2.5 times your target cost per result. With a 25% profit buffer, the store's target CPA is 29.20 ÷ 1.25 = 23.36, so four creatives need about 4 × 2.5 × 23.36 = **234**. That fits comfortably inside a 1,460 test. If creative testing ever costs more than the whole test budget, test fewer creatives at once.
+
+## Write the rules before launch
+
+These three rules turn the real cost per result into a decision. Write them down before the first euro, dollar or dirham is spent.
+
+**1. Scale** if the real CPA is at or below **70% of break-even**. For the store, that line is 0.70 × 29.20 = **20.44**. Below it, there is room for the cost increase that comes with higher spend. Switch the plan to "has previous data" and calculate a scale budget from the real numbers.
+
+**2. Optimize and retest** if the real CPA is between 20.44 and 29.20. The campaign is not losing money, but scaling would push it over break-even. Improve creatives, the landing page or the offer, then run another test.
+
+**3. Stop** if the real CPA is above **29.20**. More budget will not fix it. Look at the offer, the price, the product page and the checkout before spending again.
+
+<Callout title="Three possible outcomes for the same test">
+<p>Real CPA of 19: below the 20.44 line, so scale.</p>
+<p>Real CPA of 25: between the lines, so optimize and retest.</p>
+<p>Real CPA of 33: above break-even, so stop and fix the funnel.</p>
+</Callout>
+
+## Set a stop-loss
+
+Inside the test, some ad sets or creatives will simply not work. A stop-loss keeps them from eating the budget:
+
+<Formula>Stop-loss = 2 to 3 × maximum cost per result, with no results</Formula>
+
+For the store, any ad set or creative that spends between **58.40 and 87.60** without a single purchase gets paused. Use the low end for clearly weak signals, such as a very low click-through rate, and the high end when clicks look healthy but conversions have not arrived yet.
+
+## While the test runs
+
+- **Do not edit in the first few days.** Big changes reset learning and make the test longer.
+- **Check daily, decide weekly.** Look for broken tracking, disapproved ads and stop-loss hits every day. Judge cost per result at the end of each week.
+- **Watch the funnel, not just the result.** Clicks, landing page views, add to carts and checkouts show where people drop off, which tells you what to fix if the result disappoints.
+- **Keep the store or CRM as the source of truth.** Compare platform-reported purchases with real orders.
+
+## Lead generation tests need extra patience
+
+Lead tests have one extra trap. A test that produces 80 leads at a 16% lead to client rate brings only about 13 clients. That is too few to confirm the close rate. Judge the test on cost per lead against your maximum, but keep tracking bookings, shows and sales for several weeks afterwards before you trust the cost per client. The [new account guide](/guides/meta-ads-budget-new-account) works through a full lead generation test.
+
+## After the test: from estimate to plan
+
+The scale budget shown before the test is only an estimate. For the store, 100 sales a month would cost between about 2,220 and 3,890 at the expected cost range, with 2,780 as the middle. After the test, replace the estimates with real data: actual spend, purchases and cost per result. The plan then projects how cost rises as you scale, which the [scaling guide](/guides/scaling-ad-spend-costs) explains.
+
+## A test plan checklist
+
+- Know your maximum cost per result before you start.
+- Size the test at 50 results at that maximum, over about 14 days.
+- Use Option B (Add to Cart first) when the budget is smaller.
+- Check viability and note the biggest assumption.
+- Budget about 2.5 times your target cost per creative.
+- Write the scale, optimize and stop rules and the stop-loss in advance.
+- Replace the estimate with real data once the test ends.
+
+Build your own test plan in the [planner](/calculator) and keep the rules next to your ads dashboard.

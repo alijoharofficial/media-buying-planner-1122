@@ -59,6 +59,11 @@
 - Decisions: worked examples reuse engine numbers (scaling table 3,040 → 24,320 at 15% per doubling, profitable limit ~22,700, Google max useful spend 2,160 and the 2,160 / 2,840 split from the engine test).
 - Next: Phase 7, session 3: guides 7 to 10 (test budget rules, seasonality, benchmarks, funnel bottleneck).
 
+## Phase 7, session 3: Guides 7 to 10 (done, Phase 7 complete)
+- Done: 7 `test-budget-decision-rules` (~1,380 words), 8 `seasonality-q4-ad-costs` (~1,230), 9 `benchmarks-before-launch` (~1,340), 10 `lead-funnel-bottleneck` (~1,260), plus 5-question FAQs. All 10 English guides live; every internal guide link returns 200; sitemap 161 URLs.
+- Decisions: examples come from engine runs (new ecommerce test: expected CPA 27.78, risky, Option A 1,460, scale line 20.44, stop-loss 58.40 to 87.60; bottleneck savings 1,103 / 707 / 804 on a 4,522 budget). Seasonality guide describes the real engine behaviour (multiplier applied to new-account estimates, warning only for existing accounts). Benchmark ranges are hedged general ranges, no invented statistics.
+- Next: Phase 8, translations: UI strings then articles, one locale per session (es first).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

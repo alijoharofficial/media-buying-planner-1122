@@ -1,0 +1,114 @@
+export const faq = [
+  {
+    q: 'How much more do ads cost in Q4?',
+    a: 'It depends on your market, but CPMs in November and December are often 20% to 50% higher than in quieter months, with the biggest jump around Black Friday and Cyber Monday. The planner uses editable placeholders of 1.3 for November and 1.2 for December for ecommerce, which you should replace with your own history.',
+  },
+  {
+    q: 'Do conversion rates also rise in peak season?',
+    a: 'Often, yes. Shoppers are actively buying, so a higher CPM can be partly offset by a better conversion rate. Plan for higher costs, and treat any conversion rate lift as a bonus to measure, not an assumption.',
+  },
+  {
+    q: 'Should I launch a new ad account in November?',
+    a: 'It is usually better to launch and learn in September or October. A new account already pays a premium while Meta learns, and adding peak season costs on top can turn a viable plan into an unviable one.',
+  },
+  {
+    q: 'Does seasonality matter for lead generation?',
+    a: 'Yes, but the peaks differ by niche. Education often peaks before enrolment periods, beauty clinics before holidays and weddings, and many B2B services slow down in late December. Use your own lead history to set monthly multipliers.',
+  },
+  {
+    q: 'How do discounts change my break-even ROAS?',
+    a: 'A discount lowers the order value but not the product cost, so the profit per order falls faster than the price. A 20% discount can raise break-even ROAS by a quarter or more, at exactly the time ad costs are highest.',
+  },
+]
+
+Every year, many ecommerce brands discover the same thing in late November: the campaigns that were profitable in October suddenly are not. Nothing changed in the ads. The auction changed. Thousands of advertisers raise budgets at the same time, competing for the same people, and the price of attention climbs.
+
+Seasonality is predictable, which means it can be planned. This guide explains how peak months change ad costs, how to account for them in a budget, and how discounts make the picture tighter. The [planner](/calculator) includes editable seasonal multipliers for exactly this reason.
+
+## Why costs rise in peak months
+
+Meta and Google sell ad space in auctions. When more advertisers bid for the same audiences, prices go up. In Q4 several things happen at once:
+
+- **More advertisers enter the auction.** Retailers that barely advertise all year spend heavily in November and December.
+- **Budgets rise across the board.** Existing advertisers scale up for Black Friday, Cyber Monday and the holidays.
+- **Attention is limited.** People do not spend twice as long on social media just because more brands want to reach them.
+
+The result is a higher **CPM**, the cost per 1,000 impressions. For many ecommerce accounts, November CPMs run 20% to 50% above a normal month, with daily spikes much higher around Black Friday. December stays elevated until the last shipping dates pass, then drops sharply.
+
+## How a higher CPM flows into your cost per sale
+
+The cost per sale is built from three numbers:
+
+<Formula>Cost per sale = CPM ÷ (1,000 × CTR × conversion rate)</Formula>
+
+If the CPM rises 30% and nothing else changes, the cost per sale also rises 30%. A store paying 30 per sale at a CPM of 12 in September would pay about 39 per sale at a CPM of 15.60 in November.
+
+In practice, click-through and conversion rates often improve in peak season, because people are actively shopping and your offers are stronger. That can absorb part of the CPM increase. But it is safer to plan for the full increase and treat any improvement as upside you measure, not a cost reduction you assume.
+
+<Callout title="Same account, different month">
+<p>The store's break-even CPA is 45 and its target CPA is 36. At 30 per sale in September, it is comfortably profitable. At 39 in November it is still under break-even, but now above target. Any scaling in November pushes it closer to the line, because costs also rise with spend.</p>
+</Callout>
+
+## Seasonal multipliers in the planner
+
+The planner handles seasonality with a simple multiplier for each month and business profile. A value of 1.0 means a normal month; 1.3 means costs 30% higher.
+
+By default all months are 1.0, with two **editable placeholders** for ecommerce: **1.3 for November** and **1.2 for December**. These are estimates to start from, not measured data. You can change any month in Advanced Settings, and you should replace them with your own numbers once you have a year of history.
+
+How the multiplier is used:
+
+- **New accounts**: the expected cost per result from your CPM, CTR and conversion rate estimates is multiplied by the planning month's multiplier, along with the new account penalty.
+- **Existing accounts**: the planner works from your recent real costs and shows a seasonality warning when the planning month's multiplier is not 1.0, so you know the recent average may not hold.
+
+### How to measure your own multipliers
+
+1. Export monthly CPM (or cost per result) from your account for the last 12 to 24 months.
+2. Calculate your average for the quieter months, often February to September.
+3. Divide each month's CPM by that average. A November CPM of 15.60 against an average of 12 gives a multiplier of 1.3.
+4. Repeat for a second year if you have it, and use the average of both.
+
+Keep separate multipliers for different markets if you sell in several countries; peaks are not the same everywhere.
+
+<TryPlanner text="Set your planning month in the planner and adjust the seasonal multipliers in Advanced Settings to see how peak months change your budget." />
+
+## New accounts and peak season do not mix well
+
+A new ad account already pays a premium while the platform learns, around 25% in the planner's default settings. Launching in November stacks the seasonal increase on top.
+
+Take a new store with a break-even CPA of 29.20 and an expected cost of 27.78 per sale in a normal month. In November, with a 1.3 multiplier, the expected cost becomes 27.78 × 1.3 = **36.11**, well above break-even. A plan that was risky but workable in September is not viable in November.
+
+The practical advice is simple: **launch and learn in September or October**. Use the quieter months to find working creatives and audiences, build retargeting pools and get out of the learning phase. Then scale into November with an account that already has data. The [test budget guide](/guides/test-budget-decision-rules) covers how to run that first test.
+
+## Discounts make the squeeze tighter
+
+Peak season usually comes with promotions, and discounts change your break-even point at the same time as ad costs rise.
+
+A store with an average order of 90 and a product cost of 45 has a profit per order of 45 and a break-even ROAS of 2.0. Offer 20% off and the average order drops to 72, but the product still costs 45:
+
+- Profit per order: 72 − 45 = **27**
+- Break-even CPA: 27
+- Break-even ROAS: 72 ÷ 27 = **2.67**
+
+At a November cost of 39 per sale, this discount loses 12 on every order. The campaign would need a big improvement in conversion rate just to break even. Before agreeing to a peak season discount, recalculate your break-even CPA and ROAS with the discounted order value, as shown in the [break-even guide](/guides/ecommerce-break-even-roas). Bundles, gifts with purchase and free shipping thresholds often protect profit better than straight percentage discounts.
+
+## Lead generation has its own seasons
+
+Seasonality is not only an ecommerce problem. Lead generation peaks depend on the niche:
+
+- **Education**: before enrolment and application deadlines.
+- **Beauty and aesthetic clinics**: before summer, holidays and wedding season.
+- **Real estate**: spring and early autumn in many markets.
+- **Legal and B2B services**: often slower in the last two weeks of December.
+
+Lead costs can also fall in months when competitors pull back. If your business can serve clients in those months, they can be the cheapest time to buy leads.
+
+## Plan the peak, month by month
+
+- **August to September**: launch tests, find winning creatives, set up tracking and retargeting audiences.
+- **October**: scale gradually towards your peak budget, about 20% every three days, so learning is stable before the rush. See the [scaling guide](/guides/scaling-ad-spend-costs).
+- **November**: keep structures stable, avoid big edits, watch cost per sale daily against break-even, and shift budget to retargeting and warm audiences where returns hold up best.
+- **December**: slow spend after the last shipping date, and plan January as a reset month with lower costs.
+
+## Summary
+
+Peak months raise CPMs, and higher CPMs raise your cost per result unless conversion rates improve to match. Use seasonal multipliers to plan for it, launch new accounts before the peak, recalculate break-even for every discount, and set your own multipliers from past data. Set your planning month in the [planner](/calculator) to see the effect on your budget.

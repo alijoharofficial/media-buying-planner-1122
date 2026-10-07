@@ -1,0 +1,140 @@
+export const faq = [
+  {
+    q: 'What is a good CTR for Meta ads?',
+    a: 'Link click-through rates between about 0.8% and 1.5% are common on Meta, but the range is wide by niche, country and creative. Use it only as a starting estimate and replace it with your own data as soon as you have a week or two of results.',
+  },
+  {
+    q: 'Where can I find CPM benchmarks for my country?',
+    a: 'The best source is another account you run in the same country and niche. Next best is Meta’s own estimate in Ads Manager, then recent published reports. Always check the date, country and objective of a published benchmark before using it.',
+  },
+  {
+    q: 'How do I get search volume and CPC for Google Ads?',
+    a: 'Use Keyword Planner in Google Ads (Tools, then Keyword Planner, then Get search volume and forecasts). It shows average monthly searches and the top of page bid range for each keyword in your chosen locations.',
+  },
+  {
+    q: 'How reliable is Meta’s estimated daily results?',
+    a: 'It is a useful cross-check but not a forecast. It is based on Meta’s model of your audience and bid, not your offer or creative. Divide the daily budget by the estimated results to see the implied cost per result and compare it with your own estimate.',
+  },
+  {
+    q: 'Why does the planner ask for a source for each estimate?',
+    a: 'Because a guess and a number from your own accounts deserve different levels of trust. The planner widens the cost range for less reliable sources and names the least reliable estimate as the biggest assumption to check first.',
+  },
+]
+
+When you plan a budget for a brand new account, every number is an estimate. How much will 1,000 impressions cost? How many people will click? How many will buy or leave their details? The quality of those three estimates decides whether your plan is useful or fiction.
+
+This guide explains where to find each estimate before launch, how much to trust each source and how to turn several sources into one range. The [planner](/calculator) asks for a source label next to every estimate for exactly this reason.
+
+## The three numbers you need for Meta
+
+A new account plan on Meta is built from:
+
+1. **CPM**: the cost of 1,000 impressions in your country, niche and season.
+2. **CTR (link)**: the share of people who see the ad and click the link.
+3. **Conversion rate**: the share of clicks that become a lead or a purchase. For instant forms, the share of people who open the form and submit it.
+
+<Formula>Estimated cost per result = CPM ÷ (1,000 × CTR × conversion rate)</Formula>
+
+Each one has different sources, and each source has a different level of reliability.
+
+## Source 1: your own accounts
+
+Numbers from accounts you already run are the most reliable, as long as they match on the things that matter:
+
+- **Same country.** CPMs can differ several times over between countries.
+- **Same niche and offer type.** A clinic and an online shop in the same city behave very differently.
+- **Same objective.** Leads, purchases and traffic campaigns produce different CPMs and rates.
+- **Similar season.** Q4 costs are not a good guide for March.
+
+If you manage several clients, keep a simple record of CPM, CTR, conversion rate and cost per result for each niche, region, platform and month. The planner's **My benchmarks** panel does this in your browser: save a row from each account, and the **Use my benchmarks** button averages the three most recent matching rows (same niche, region and platform) and fills them in with the source "Your accounts".
+
+## Source 2: Meta's own estimate
+
+When you set up an ad set, Ads Manager shows **estimated daily results** for the daily budget you enter, as a range. It is useful as a cross-check:
+
+<Formula>Implied cost per result = daily budget ÷ estimated daily results</Formula>
+
+With a daily budget of 50 and an estimate of 2 to 6 results a day, the implied cost per result is between about 8.33 and 25. If your own estimate is 26, the two are close enough to proceed. If your estimate is 10 and Meta implies 25, look again at your conversion rate.
+
+Meta's estimate knows your audience size and the auction, but not your offer, your landing page or your creative. Treat it as a range to compare with, not as the plan. In the planner you can enter it in the optional cross-check fields, and it shows the implied cost per result next to your estimates.
+
+## Source 3: published benchmarks
+
+Industry reports from ad platforms, agencies and analytics companies publish average CPMs, CTRs and conversion rates by industry. They are helpful when you have nothing else, with some care:
+
+- **Check the date.** Ad costs move every year; a three year old benchmark is history.
+- **Check the country.** Many reports are based mostly on one market.
+- **Check the definition.** "CTR" may be all clicks or link clicks; "conversion" may be any event.
+- **Use the median, not the best case.** Averages in reports are often pulled up by large, experienced advertisers.
+
+As rough starting points, link CTRs of about 0.8% to 1.5% are common on Meta, ecommerce site conversion rates often fall between about 1% and 3%, and landing page conversion rates for lead generation vary widely, often 5% to 15%. Instant form completion rates of about 10% to 20% are typical. These ranges are wide on purpose: your own data will narrow them quickly.
+
+<TryPlanner text="Label each estimate with its source in the planner, and it will widen or narrow the cost range to match." />
+
+## Source 4: a reasoned guess
+
+Sometimes there is nothing to go on: a new niche, a new country, a new type of offer. A guess is acceptable as long as it is labelled as one and the plan reflects the uncertainty. Make the guess from the closest thing you know, write down why, and plan to replace it after the first week.
+
+## How the source changes the range
+
+The planner turns every estimate into a range using multipliers based on the least reliable source used:
+
+<table>
+  <thead>
+    <tr><th scope="col">Source</th><th scope="col">Low</th><th scope="col">High</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Your accounts</th><td>0.85 ×</td><td>1.2 ×</td></tr>
+    <tr><th scope="row">Meta estimate</th><td>0.8 ×</td><td>1.3 ×</td></tr>
+    <tr><th scope="row">Published benchmark</th><td>0.8 ×</td><td>1.4 ×</td></tr>
+    <tr><th scope="row">Guess</th><td>0.7 ×</td><td>1.6 ×</td></tr>
+  </tbody>
+</table>
+
+If you expect a cost per lead of 26 and your conversion rate is a guess, the range runs from about 18 to about 42. If all three estimates come from your own accounts, it narrows to about 22 to 31. You can change these multipliers in Advanced Settings.
+
+The planner also names the **biggest assumption**, the estimate with the least reliable source. That is the first number to check when real data arrives. The [new account guide](/guides/meta-ads-budget-new-account) shows how the range feeds into the viability check.
+
+## Google Search: Keyword Planner first
+
+For Google Search, the most important estimates come from **Keyword Planner** in your Google Ads account:
+
+- **Average monthly searches** for your main keywords in your target locations.
+- **Top of page bid**, low and high range. The planner uses the middle as the expected cost per click.
+
+Then you need three rates:
+
+- **Expected impression share**: the share of those searches you expect to show on. New accounts often reach 30% to 60%, depending on budget and competition.
+- **Expected CTR**: often 3% to 7% for well-matched keywords.
+- **Expected conversion rate**: search traffic usually converts better than social, because people are actively looking.
+
+Together these give the most Google Search can deliver: searches × impression share × CTR × conversion rate. The [budget split guide](/guides/meta-vs-google-budget-split) explains how that ceiling shapes the split between Meta and Google.
+
+## A worked example: a clinic entering a new country
+
+A clinic group that already runs ads at home opens a branch in a neighbouring country. How would it build the estimates?
+
+- **CPM**: it has no account in the new country, so it uses Meta's estimated daily results as a cross-check and a recent regional report as the main estimate. Source: published benchmark.
+- **CTR**: its creatives are similar to the ones at home, so it uses its own home-country CTR. Source: your accounts.
+- **Landing page conversion rate**: the page is new and translated, so it uses its home rate reduced slightly. Source: guess.
+
+Because the conversion rate is a guess, the whole plan uses the widest range, and the planner names the conversion rate as the biggest assumption. The clinic watches that number first in the test, and saves the real results to My benchmarks for the next branch.
+
+## Replace estimates as fast as you can
+
+Estimates are only for the first decision. After a week of live data you will know your real CPM and CTR. After the test you will know your real cost per result. At that point:
+
+1. Switch the plan to "Has previous data".
+2. Enter real spend, impressions, clicks and results.
+3. Save the numbers to **My benchmarks** so the next similar client starts from better estimates.
+
+## A benchmark checklist
+
+- Prefer your own accounts in the same country, niche, objective and season.
+- Use Meta's estimated daily results as a cross-check, not a forecast.
+- Use recent, relevant published benchmarks, and read their definitions.
+- Label every estimate with its source and accept the wider range for weaker sources.
+- For Google, start from Keyword Planner.
+- Replace estimates with real data as soon as it exists, and save it for next time.
+
+Start with your best estimates in the [planner](/calculator), and let the source labels show how confident the plan really is.
