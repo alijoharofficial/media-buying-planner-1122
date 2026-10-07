@@ -1,0 +1,127 @@
+export const faq = [
+  {
+    q: "Pourquoi mon coût par résultat augmente-t-il quand j'augmente le budget ?",
+    a: "Les plateformes montrent d'abord vos publicités aux personnes les plus réceptives. En dépensant plus, vous touchez des personnes moins susceptibles de convertir et vous entrez dans des enchères plus chères. Chaque résultat supplémentaire coûte plus que le précédent, donc le coût moyen augmente.",
+  },
+  {
+    q: "De combien les coûts augmentent-ils quand je double mon budget ?",
+    a: "Cela dépend du compte, de la niche et de la taille de l'audience. Une hypothèse de planification de 15 % de coût par résultat en plus à chaque doublement de la dépense convient à de nombreux comptes. Remplacez-la par votre propre chiffre dès que vous avez déjà accéléré et pouvez le mesurer.",
+  },
+  {
+    q: "Qu'est-ce que la limite rentable ?",
+    a: "C'est le budget mensuel le plus élevé auquel le coût par résultat projeté reste égal ou inférieur à votre coût d'équilibre. Au-delà, la dépense supplémentaire perd de l'argent, même si la moyenne paraît encore acceptable pendant un temps.",
+  },
+  {
+    q: "À quel rythme puis-je augmenter un budget Meta ?",
+    a: "Un rythme sûr est d'environ 20 % tous les trois jours. Des hausses plus fortes peuvent relancer la phase d'apprentissage et faire bondir les coûts. Dupliquer des ensembles de publicités avec des budgets plus élevés est une autre option, mais cela divise les données.",
+  },
+  {
+    q: "Le Réseau de Recherche Google a-t-il les mêmes rendements décroissants ?",
+    a: "En partie. Jusqu'au point où vous ne perdez plus d'impressions faute de budget, les coûts Google restent assez stables. Au-delà, la seule façon d'obtenir plus de clics est d'enchérir plus haut sur les mêmes recherches, donc les coûts montent vite. Ce point est le plafond du Réseau de Recherche Google.",
+  },
+]
+
+L'idée la plus tentante en publicité est la montée en charge linéaire : si 3 000 par mois apportent 100 ventes, alors 6 000 devraient en apporter 200. Cela ne fonctionne presque jamais ainsi. Doublez le budget et vous obtenez généralement bien moins du double de résultats, car chaque résultat supplémentaire coûte plus que le précédent.
+
+Ce guide explique pourquoi les coûts augmentent avec le budget, comment modéliser l'effet avec une seule hypothèse simple et comment trouver le budget le plus élevé qui reste rentable. Vous pouvez voir la même projection pour votre compte dans le tableau de montée en charge du [planificateur](/calculator).
+
+## Pourquoi les coûts augmentent quand vous dépensez plus
+
+Les plateformes publicitaires savent très bien trouver d'abord les résultats les moins chers. Quand votre budget est petit, Meta et Google le dépensent sur les personnes et les recherches les plus susceptibles de convertir. Quand vous dépensez plus :
+
+- **Vous touchez des personnes moins réceptives.** Les meilleurs prospects voient déjà vos publicités ; le groupe suivant convertit moins souvent.
+- **Vous voyez les mêmes personnes plus souvent.** La répétition augmente, et chaque impression supplémentaire a moins de chances de les faire changer d'avis.
+- **Vous entrez dans des enchères plus chères.** Pour obtenir plus de diffusion, la plateforme enchérit sur des placements et des audiences plus coûteux.
+- **Sur la recherche, vous manquez de recherches.** Une fois présent sur la plupart des recherches pertinentes, la seule façon d'obtenir plus de clics est de payer plus cher les mêmes.
+
+Le résultat, ce sont des **rendements décroissants** : les résultats continuent de croître avec la dépense, mais moins vite que le budget.
+
+## Un modèle simple : le coût par doublement
+
+Pas besoin d'un modèle complexe pour en tenir compte. Une seule hypothèse en capture l'essentiel : **chaque fois que la dépense double, le coût par résultat augmente d'un pourcentage fixe**. Une valeur de planification courante est de 15 %.
+
+<Formula>Coût projeté = coût actuel × (1 + hausse par doublement) ^ log2(nouveau budget ÷ budget actuel)</Formula>
+
+La partie log2 compte simplement le nombre de doublements. Doubler une fois donne une hausse de 15 %, doubler deux fois en donne deux, et une hausse de 50 % donne un peu plus d'une demi-étape. En dessous de votre niveau de dépense actuel, le modèle conserve le coût actuel.
+
+### Un exemple concret
+
+Une boutique en ligne a dépensé 3 000 sur 30 jours, soit environ 3 040 pour un mois moyen de 30,4 jours, à 30 par achat. Avec une hausse de 15 % par doublement :
+
+<table>
+  <thead>
+    <tr><th scope="col">Budget mensuel</th><th scope="col">Coût par vente</th><th scope="col">Ventes</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">3 040</th><td>30,00</td><td>101</td></tr>
+    <tr><th scope="row">6 080</th><td>34,50</td><td>176</td></tr>
+    <tr><th scope="row">12 160</th><td>39,68</td><td>306</td></tr>
+    <tr><th scope="row">24 320</th><td>45,63</td><td>533</td></tr>
+  </tbody>
+</table>
+
+Doubler le budget de 3 040 à 6 080 apporte 75 ventes de plus, pas 101. Ces 75 ventes supplémentaires coûtent 3 040, soit environ 40,50 chacune. Ce chiffre, le **coût marginal** des résultats supplémentaires, est bien plus élevé que la nouvelle moyenne de 34,50. C'est le chiffre à surveiller pour décider de dépenser plus.
+
+<Callout title="Coût moyen et coût marginal">
+<p>Le coût moyen par résultat peut sembler correct bien après que la dépense supplémentaire a cessé d'être rentable. Si votre coût d'équilibre est de 45, la moyenne à 12 160 (39,68) paraît encore confortable, mais les derniers résultats achetés ont coûté bien plus. Planifier sur la courbe projetée plutôt que sur la moyenne actuelle vous garde lucide.</p>
+</Callout>
+
+## Trouver votre limite rentable
+
+Chaque compte a un budget au-delà duquel le coût par résultat projeté dépasse l'équilibre. Vous pouvez le calculer directement :
+
+<Formula>Limite rentable = budget actuel × 2 ^ (ln(coût d'équilibre ÷ coût actuel) ÷ ln(1 + hausse par doublement))</Formula>
+
+Pour la boutique ci-dessus, avec un CPA d'équilibre de 45, la limite est de 3 040 × 2 ^ (ln 1,5 ÷ ln 1,15), soit environ 22 700 par mois. Si la boutique veut garder une marge de sécurité de 25 %, son CPA cible est de 36 et la limite confortable est d'environ 7 500 par mois.
+
+Le planificateur indique cette limite sur le graphique et dans le tableau de montée en charge, pour voir d'un coup d'œil quels budgets sont rentables.
+
+<TryPlanner text="Consultez votre propre tableau de montée en charge, le coût projeté pour chaque budget et votre limite rentable." />
+
+## Budgéter pour un objectif plutôt que pour un budget
+
+Souvent, la question est inverse : combien dois-je dépenser pour atteindre un objectif ? Comme le coût augmente avec la dépense, vous ne pouvez pas simplement multiplier l'objectif par le coût d'aujourd'hui. Le planificateur cherche le budget auquel les résultats projetés atteignent l'objectif.
+
+Pour que la boutique atteigne 200 ventes par mois, le calcul simple donne 200 × 30 = 6 000. La projection donne environ 7 130, pour un coût par vente proche de 35,65. C'est encore sous la cible de 36 : le plan fonctionne, mais il coûte près de 20 % de plus que l'estimation naïve. La génération de leads fonctionne de la même façon : le [guide du CAC](/guides/cost-per-lead-to-cac) montre une clinique qui a besoin d'environ 4 520 au lieu de 3 850 pour atteindre son objectif de clients.
+
+## Choisir votre hausse par doublement
+
+15 % est une valeur par défaut raisonnable, mais votre compte peut se comporter autrement :
+
+- **Les audiences larges et les grands marchés** montent souvent en charge avec des hausses plus faibles, car il reste beaucoup d'acheteurs similaires à toucher.
+- **Les niches étroites et les petits pays** atteignent leurs limites plus vite : des hausses de 25 % ou plus sont fréquentes.
+- **Un bon renouvellement des créations** peut relancer la courbe un temps, car les nouvelles publicités touchent à nouveau ceux qui ignoraient les anciennes.
+- **Les pics saisonniers** ajoutent leurs propres hausses de coûts. Consultez le [guide de la saisonnalité](/guides/seasonality-q4-ad-costs).
+
+Si vous avez déjà accéléré, mesurez-le. Comparez un mois à un budget donné avec un mois au double environ, avec des créations et une saison comparables, et calculez de combien le coût par résultat a augmenté. Saisissez ce chiffre dans les paramètres avancés du planificateur.
+
+## Le Réseau de Recherche Google évolue différemment
+
+La recherche est limitée par le nombre de personnes qui cherchent. Google indique le **taux d'impressions perdu sur le Réseau de Recherche en raison du budget**, la part des recherches éligibles manquées parce que le budget était épuisé. Jusqu'au point où ce taux atteint zéro, plus de budget achète surtout plus de recherches à un coût similaire. Au-delà, plus de budget ne peut qu'augmenter les enchères sur les mêmes recherches.
+
+Le planificateur appelle ce point le **plafond du Réseau de Recherche Google** et cesse d'attribuer du budget à Google une fois atteint. Le [guide de la répartition entre Meta et Google](/guides/meta-vs-google-budget-split) explique comment ce plafond interagit avec Meta dans un plan combiné.
+
+## Accélérer sans tout casser
+
+Même avec le bon budget cible, la manière d'y parvenir compte :
+
+1. **Augmentez progressivement.** Augmentez les budgets quotidiens d'au plus environ 20 % tous les trois jours. Une campagne à 100 par jour atteint ainsi 235 par jour en environ deux semaines.
+2. **Surveillez le coût marginal, pas seulement la moyenne.** Si la dernière hausse a apporté des résultats à un coût supérieur à votre cible, arrêtez et stabilisez.
+3. **Renouvelez les créations quand la répétition augmente.** Les nouvelles publicités ralentissent la hausse des coûts.
+4. **Gardez une structure simple.** Accélérer avec beaucoup de petits ensembles divise les données et les maintient en apprentissage. Consultez le [guide de la phase d'apprentissage](/guides/meta-learning-phase-50-results).
+5. **Remesurez chaque mois.** Mettez à jour le plan avec le coût et la dépense réels de chaque mois pour que la projection parte de données récentes.
+
+## Les signes que vous êtes allé trop loin
+
+La projection est un plan, pas une promesse. Surveillez ces signaux pendant les premières semaines à un nouveau niveau de budget :
+
+- **La répétition dépasse 3 à 5** pendant que le CTR baisse. L'audience est lassée de vos publicités.
+- **Le coût par résultat augmente plus vite que prévu**, par exemple de 30 % après un seul doublement au lieu de 15 %.
+- **La qualité des leads baisse.** Plus de leads arrivent, mais les taux de rendez-vous ou de vente chutent, donc le coût par client augmente même si le coût par lead paraît stable.
+- **Le taux d'impressions perdu en raison du budget sur Google est déjà proche de zéro**, et vous continuez pourtant à ajouter du budget Google.
+
+Si vous observez au moins deux de ces signes, revenez au dernier budget qui respectait votre objectif, renouvelez les créations et réessayez plus lentement.
+
+## Résumé
+
+Les coûts augmentent avec le budget parce que les plateformes touchent d'abord les meilleurs prospects. Une hypothèse simple d'environ 15 % de coût en plus à chaque doublement de la dépense en fait un plan exploitable : elle prédit le budget pour un objectif, montre le coût marginal des résultats supplémentaires et indique le budget rentable le plus élevé. Passez vos chiffres dans le [planificateur](/calculator) pour voir le tableau de montée en charge complet de votre compte.

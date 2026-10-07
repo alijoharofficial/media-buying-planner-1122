@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Guides et conseils sur les budgets publicitaires et l'achat média",
+    "description": "Des guides pratiques sur les budgets Meta et Google, le CAC, le ROAS d'équilibre, la phase d'apprentissage, la montée en charge et les budgets de test, rédigés par l'équipe TECH24."
+  },
+  "eyebrow": "Guides et conseils",
+  "title": "Guides et conseils pour des budgets publicitaires plus intelligents",
+  "intro": "Des guides pas à pas de l'équipe TECH24. Chacun renvoie au planificateur pour que vous puissiez l'essayer avec vos propres chiffres.",
+  "categories": {
+    "budgets": "Budgets",
+    "metaAds": "Publicités Meta",
+    "ecommerce": "E-commerce",
+    "strategy": "Stratégie"
+  },
+  "items": {
+    "meta-ads-budget-new-account": {
+      "title": "Comment calculer un budget Meta Ads pour un nouveau compte publicitaire",
+      "summary": "Partez de ce que vous pouvez payer par résultat, puis planifiez un test capable de sortir de l'apprentissage."
+    },
+    "cost-per-lead-to-cac": {
+      "title": "Budgets de génération de leads : du coût par lead au coût par client (CAC)",
+      "summary": "Pourquoi le coût par lead seul induit en erreur, et comment les taux de rendez-vous, de présence et de vente fixent votre vraie limite."
+    },
+    "ecommerce-break-even-roas": {
+      "title": "CPA et ROAS d'équilibre en e-commerce, retours et frais compris",
+      "summary": "Calculez le bénéfice qu'une commande laisse pour la publicité et le ROAS nécessaire pour ne pas perdre d'argent."
+    },
+    "meta-learning-phase-50-results": {
+      "title": "La phase d'apprentissage Meta : pourquoi 50 résultats par ensemble de publicités comptent (CBO, ABO, Advantage+)",
+      "summary": "Comment le type de budget change le nombre d'ensembles qui ont besoin de données, et que faire avec un petit budget."
+    },
+    "scaling-ad-spend-costs": {
+      "title": "Augmenter ses dépenses publicitaires : pourquoi les coûts montent avec le budget",
+      "summary": "Rendements décroissants, coût de chaque doublement et comment trouver votre limite rentable."
+    },
+    "meta-vs-google-budget-split": {
+      "title": "Meta ou Réseau de Recherche Google : comment répartir votre budget",
+      "summary": "Minimums par plateforme, coût marginal et limites du volume de recherche, en langage simple."
+    },
+    "test-budget-decision-rules": {
+      "title": "Planifier un budget de test et les règles de décision qui suivent",
+      "summary": "Combien tester, quand arrêter et quel résultat signifie accélérer, optimiser ou arrêter."
+    },
+    "seasonality-q4-ad-costs": {
+      "title": "Saisonnalité : comment le quatrième trimestre et les pics d'activité changent vos coûts publicitaires",
+      "summary": "Pourquoi novembre et décembre coûtent plus cher et comment planifier votre budget autour des pics."
+    },
+    "benchmarks-before-launch": {
+      "title": "Où trouver des benchmarks de CPM, de CTR et de taux de conversion avant de lancer",
+      "summary": "Des sources fiables pour vos estimations, et comment indiquer le degré de confiance de chacune."
+    },
+    "lead-funnel-bottleneck": {
+      "title": "Trouver le goulot d'étranglement de votre tunnel de leads (rendez-vous, présence et vente)",
+      "summary": "Quelle étape vous coûte le plus, et ce que vaut une amélioration de 10 points."
+    }
+  },
+  "index": {
+    "searchLabel": "Rechercher des guides",
+    "searchPlaceholder": "Rechercher des guides",
+    "filterLabel": "Filtrer par catégorie",
+    "all": "Tous",
+    "count": "{count, plural, one {# guide affiché} other {# guides affichés}}",
+    "noResults": "Aucun guide ne correspond à votre recherche."
+  },
+  "article": {
+    "titleSuffix": "Guides",
+    "byline": "Guide par TECH24",
+    "readingTime": "{minutes} min de lecture",
+    "faqTitle": "Questions fréquentes",
+    "relatedTitle": "Guides associés",
+    "authorTitle": "Rédigé par l'équipe TECH24",
+    "authorText": "TECH24 rédige des guides pratiques sur la publicité digitale, l'achat média et la croissance pour les marketeurs et les chefs d'entreprise.",
+    "authorLink": "Visiter TECH24",
+    "cta": {
+      "title": "Essayez-le dans {brand}",
+      "text": "Saisissez vos propres chiffres et obtenez en quelques minutes un budget, un verdict et le calcul qui se cache derrière.",
+      "button": "Ouvrir le planificateur"
+    }
+  }
+}

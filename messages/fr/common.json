@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "tagline": "Calculateur de budget publicitaire et planificateur d'achat média pour Meta et Google",
+    "description": "Calculez le budget publicitaire mensuel dont vous avez besoin sur Meta et sur le Réseau de Recherche Google, puis transformez-le en un plan d'achat média clair."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "logoAlt": "Logo de {brand}",
+    "homeLink": "Accueil de {brand}"
+  },
+  "theme": {
+    "toggle": "Changer de thème",
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "system": "Thème du système"
+  },
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "Bientôt disponible",
+    "moreInfo": "Plus d'informations",
+    "close": "Fermer"
+  },
+  "support": {
+    "tagline": "Vos chiffres sont prêts. Vous voulez qu'un pro les vérifie ?",
+    "subline": "Obtenez l'avis d'un expert sur votre budget, votre tunnel et votre plan de montée en charge.",
+    "button": "Demander l'avis d'un expert"
+  },
+  "nav": {
+    "label": "Principal",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "planner": "Planificateur",
+    "features": "Fonctionnalités",
+    "howToUse": "Mode d'emploi",
+    "guides": "Guides",
+    "faq": "FAQ",
+    "about": "À propos",
+    "contact": "Contact",
+    "services": "Services",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "disclaimer": "Avertissement",
+    "cookies": "Politique de cookies"
+  },
+  "footer": {
+    "expertText": "Besoin d'un second regard sur votre budget ?",
+    "expertLink": "Avis d'expert",
+    "quickLinks": "Liens rapides",
+    "features": "Outils du planificateur",
+    "qr": "Générateur de QR code gratuit",
+    "guidesBy": "Guides par TECH24"
+  },
+  "cookie": {
+    "label": "Consentement aux cookies",
+    "text": "Nous utilisons uniquement le stockage essentiel du navigateur pour enregistrer vos données du planificateur. Avec votre accord, nous utilisons aussi des cookies de mesure d'audience pour comprendre l'utilisation du site.",
+    "policy": "Lire la politique de cookies",
+    "accept": "Accepter la mesure d'audience",
+    "reject": "Essentiels uniquement"
+  },
+  "errors": {
+    "notFoundTitle": "Cette page n'existe pas",
+    "notFoundText": "Le lien est peut-être ancien ou mal saisi. Vos données enregistrées dans le planificateur restent en sécurité dans votre navigateur.",
+    "serverTitle": "Un problème est survenu",
+    "serverText": "Une erreur inattendue a empêché le chargement de cette page. Veuillez réessayer.",
+    "retry": "Réessayer",
+    "home": "Aller à l'accueil",
+    "planner": "Ouvrir le planificateur"
+  },
+  "protected": "Ce contenu est protégé",
+  "breadcrumbs": {
+    "home": "Accueil",
+    "label": "Fil d'Ariane"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "features": {
+    "meta": {
+      "title": "Fonctionnalités : budget, CAC, ROAS et montée en charge",
+      "description": "Tous les outils du planificateur d'achat média : calculateur de budget, CAC et ROAS d'équilibre, planificateur de test, phase d'apprentissage, tableau de montée en charge, répartition du budget et plus encore."
+    },
+    "eyebrow": "Fonctionnalités",
+    "title": "Toutes les vérifications d'un media buyer, intégrées",
+    "intro": "Dix outils qui fonctionnent ensemble. Chacun répond à une question que vous traiteriez sinon dans un tableur.",
+    "cta": "Créer mon plan média"
+  },
+  "howTo": {
+    "meta": {
+      "title": "Mode d'emploi du planificateur de budget publicitaire",
+      "description": "Pas à pas : choisissez votre type d'activité, saisissez vos chiffres, lisez votre plan d'achat média et consultez le calcul. Plus : où trouver chaque chiffre dans Meta et Google Ads."
+    },
+    "eyebrow": "Mode d'emploi",
+    "title": "De vos chiffres à un plan d'achat média",
+    "intro": "La plupart des plans prennent cinq à dix minutes. Voici ce que demande chaque étape et chaque onglet, et où trouver les chiffres.",
+    "tabsTitle": "Les onglets du planificateur",
+    "tabsIntro": "Vous ne voyez que les onglets qui s'appliquent à votre type d'activité et à votre compte.",
+    "tabs": {
+      "setup": "Choisissez votre niche, vos régions, le mois de planification et la devise, puis vos clients ou ventes cibles, ou votre budget mensuel fixe.",
+      "business": "Pour la génération de leads : valeur client, marge et vos taux de rendez-vous, de présence et de vente. Pour l'e-commerce : valeur de commande, coût produit, livraison, frais et retours.",
+      "account": "Uniquement pour les comptes avec données : dépenses, impressions, couverture, clics et résultats par pays, plus les chiffres du Réseau de Recherche Google. Vous pouvez importer un CSV.",
+      "estimates": "Uniquement pour les nouveaux comptes : CPM, CTR et taux de conversion pour Meta, et volume de recherche, enchères et taux pour Google, chacun avec une étiquette de source.",
+      "planning": "Combien d'ensembles de publicités et de créations Meta vous prévoyez, la durée du test et l'inclusion ou non du retargeting.",
+      "advanced": "Seuils d'apprentissage, marges, multiplicateurs de fourchette et saisonnalité. Les valeurs par défaut sont déjà remplies, la plupart des gens n'y touchent jamais."
+    },
+    "whereTitle": "Où trouver chaque chiffre",
+    "whereIntro": "Utilisez la même période sur chaque plateforme. 30 jours est un bon point de départ.",
+    "where": {
+      "number": "Chiffre",
+      "meta": "Gestionnaire de publicités Meta",
+      "google": "Google Ads",
+      "rows": {
+        "spend": { "name": "Dépenses", "meta": "Colonnes → Performances → Montant dépensé", "google": "Campagnes → Coût" },
+        "impressions": { "name": "Impressions", "meta": "Colonnes → Performances → Impressions", "google": "Campagnes → Impr." },
+        "reach": { "name": "Couverture", "meta": "Colonnes → Performances → Couverture", "google": "Non utilisé pour le Réseau de Recherche" },
+        "clicks": { "name": "Clics", "meta": "Colonnes → Performances et clics → Clics sur un lien", "google": "Campagnes → Clics" },
+        "leads": { "name": "Leads", "meta": "Résultats (campagnes de prospects) ou prospects sur le site web", "google": "Conversions (action principale de lead)" },
+        "purchases": { "name": "Achats et valeur", "meta": "Colonnes → Conversions → Achats, valeur de conversion des achats", "google": "Conversions et Valeur de conv." },
+        "impressionShare": { "name": "Taux d'impressions", "meta": "Non disponible", "google": "Colonnes → Statistiques sur la concurrence → Taux d'impressions sur le Réseau de Recherche" },
+        "lostBudget": { "name": "Taux d'impressions perdu", "meta": "Non disponible", "google": "Taux d'impressions perdu sur le Réseau de Recherche (budget) et (classement)" },
+        "searchVolume": { "name": "Volume de recherche", "meta": "Non disponible", "google": "Outils → Outil de planification des mots clés → Nombre moyen de recherches mensuelles" },
+        "bids": { "name": "Enchères", "meta": "Non disponible", "google": "Outil de planification des mots clés → Enchère en haut de page (fourchette basse et haute)" }
+      }
+    },
+    "cta": "Commencer la planification"
+  },
+  "about": {
+    "meta": {
+      "title": "À propos",
+      "description": "Ce que fait le planificateur, comment il calcule les budgets en langage simple, et pourquoi chaque résultat est une estimation."
+    },
+    "eyebrow": "À propos",
+    "title": "À propos de {brand}",
+    "intro": "{brand} transforme les chiffres de votre entreprise en budget publicitaire et en plan d'achat média pour Meta et le Réseau de Recherche Google.",
+    "sections": [
+      {
+        "heading": "Ce qu'il fait",
+        "body": [
+          "Il répond aux questions que se pose tout media buyer avant de dépenser : de quel budget avons-nous besoin, que va-t-il rapporter, pouvons-nous nous le permettre et comment le répartir entre les plateformes ?",
+          "Il fonctionne pour la génération de leads et l'e-commerce, pour les nouveaux comptes comme pour ceux qui ont un historique, et en sept langues."
+        ]
+      },
+      {
+        "heading": "Comment il fonctionne, en langage simple",
+        "body": [
+          "Les chiffres de votre entreprise fixent les limites. La valeur client et la marge, ou la valeur de commande et les coûts, déterminent le maximum que vous pouvez payer pour un client, un lead ou une vente.",
+          "Les données ou les tests révèlent le coût réel. Avec un historique de compte, nous partons de ce que les résultats vous coûtent vraiment. Sans historique, nous planifions un budget de test et des règles claires pour la suite, une fois les coûts réels connus.",
+          "Nous tenons ensuite compte de la hausse des coûts quand vous augmentez les dépenses, de la phase d'apprentissage de chaque plateforme et de ce que le Réseau de Recherche Google peut réellement apporter."
+        ]
+      },
+      {
+        "heading": "Les résultats sont des estimations",
+        "body": [
+          "Chaque plan est une estimation, pas une promesse. Les coûts publicitaires évoluent avec vos créations, votre offre, la concurrence, la saison et les mises à jour des plateformes. Utilisez le plan pour décider quoi tester et combien risquer, puis mettez-le à jour avec des résultats réels."
+        ]
+      },
+      {
+        "heading": "Vos données restent chez vous",
+        "body": ["Les données du planificateur sont enregistrées uniquement dans votre navigateur. Rien de ce que vous saisissez dans le planificateur n'est envoyé à nos serveurs."]
+      }
+    ],
+    "creditsTitle": "Guides et crédits",
+    "creditsText": "Les guides de ce site sont rédigés par l'équipe TECH24.",
+    "creditsLink": "Visiter TECH24"
+  },
+  "services": {
+    "meta": {
+      "title": "Services : outils du planificateur et avis d'expert",
+      "description": "Calculateurs de budget leads et e-commerce, planificateur de test pour nouveaux comptes, phase d'apprentissage, tableau de montée en charge, répartition du budget, plafond Google et détecteur de goulot d'étranglement, plus un avis d'expert."
+    },
+    "eyebrow": "Services",
+    "title": "Des outils pour chaque décision budgétaire",
+    "intro": "Chaque outil fait partie du planificateur. Ouvrez-le, saisissez vos chiffres et obtenez une réponse en quelques minutes.",
+    "useIt": "L'utiliser",
+    "useItFor": "Utiliser : {service}",
+    "expertTitle": "Avis d'expert",
+    "expertText": "Vous voulez qu'un professionnel vérifie vos chiffres, votre tunnel et votre plan de montée en charge avant de dépenser ? Demandez l'avis d'un expert.",
+    "expertCta": "Demander l'avis d'un expert"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Des questions, des remarques ou des idées pour le planificateur d'achat média ? Envoyez-nous un message."
+    },
+    "eyebrow": "Contact",
+    "title": "Nous contacter",
+    "intro": "Des questions, des remarques ou une fonctionnalité que vous aimeriez voir ? Envoyez un message et nous vous répondrons par e-mail.",
+    "fields": { "name": "Votre nom", "email": "Adresse e-mail", "message": "Message", "website": "Laissez ce champ vide" },
+    "send": "Envoyer le message",
+    "sending": "Envoi...",
+    "success": "Merci. Votre message a bien été envoyé.",
+    "privacy": "Nous utilisons vos coordonnées uniquement pour répondre à votre message.",
+    "errors": {
+      "name": "Saisissez votre nom (2 à 100 caractères).",
+      "email": "Saisissez une adresse e-mail valide.",
+      "message": "Écrivez au moins 10 caractères.",
+      "verification": "Veuillez effectuer la vérification de sécurité.",
+      "rateLimited": "Trop de messages. Réessayez dans quelques minutes.",
+      "invalid": "Certains champs ne sont pas valides. Vérifiez le formulaire et réessayez.",
+      "unavailable": "Nous n'avons pas pu envoyer votre message pour le moment. Réessayez plus tard."
+    },
+    "expertTitle": "Besoin d'un avis d'expert ?",
+    "expertText": "Pour une revue professionnelle de votre budget, de votre tunnel et de votre plan de montée en charge, demandez l'avis d'un expert.",
+    "expertLink": "Demander l'avis d'un expert"
+  }
+}

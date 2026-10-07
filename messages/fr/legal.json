@@ -1,0 +1,52 @@
+{
+  "eyebrow": "Mentions légales",
+  "updated": "Dernière mise à jour : {date}",
+  "date": "7 octobre 2026",
+  "privacy": {
+    "meta": { "title": "Politique de confidentialité", "description": "Comment le planificateur d'achat média traite vos données : les données du planificateur restent dans votre navigateur, et la mesure d'audience n'est activée qu'avec votre consentement." },
+    "title": "Politique de confidentialité",
+    "intro": "Cette politique explique quelles données {brand} traite et pourquoi. En bref : vos données du planificateur ne quittent jamais votre navigateur.",
+    "sections": [
+      { "heading": "Les données du planificateur restent dans votre navigateur", "body": ["Tout ce que vous saisissez dans le planificateur, y compris les scénarios et benchmarks enregistrés, est stocké dans le stockage local du navigateur de votre appareil. Rien n'est envoyé à nos serveurs et nous ne pouvons pas le voir.", "Les liens de partage contiennent vos données du planificateur encodées dans le lien lui-même. Toute personne disposant du lien peut voir ces données, partagez-le donc uniquement avec des personnes de confiance."] },
+      { "heading": "Le formulaire de contact", "body": ["Lorsque vous utilisez le formulaire de contact, nous recevons votre nom, votre adresse e-mail et votre message. Nous les utilisons uniquement pour vous répondre et ne les conservons pas plus longtemps que nécessaire.", "Pour éviter le spam, le formulaire utilise Cloudflare Turnstile, qui peut traiter des données techniques comme votre adresse IP."] },
+      { "heading": "Mesure d'audience", "body": ["Nous utilisons la mesure d'audience (Google Analytics 4) uniquement si vous acceptez les cookies de mesure dans le bandeau cookies. Elle nous aide à comprendre quelles pages sont utiles. Les adresses IP sont anonymisées. Vous pouvez modifier votre choix à tout moment en effaçant les données de ce site dans votre navigateur."] },
+      { "heading": "Vos droits", "list": ["Accéder aux données personnelles que nous détenons sur vous (messages du formulaire de contact), les rectifier ou les supprimer.", "Retirer votre consentement à la mesure d'audience à tout moment.", "Déposer une réclamation auprès de votre autorité locale de protection des données."] },
+      { "heading": "Contact", "body": ["Pour toute question sur la confidentialité, utilisez le formulaire de contact ou écrivez à {email}."] }
+    ]
+  },
+  "terms": {
+    "meta": { "title": "Conditions d'utilisation", "description": "Les conditions d'utilisation du planificateur d'achat média gratuit et de ses guides." },
+    "title": "Conditions d'utilisation",
+    "intro": "En utilisant {brand}, vous acceptez ces conditions.",
+    "sections": [
+      { "heading": "Le service", "body": ["{brand} est un outil de planification gratuit qui estime des budgets publicitaires et des plans d'achat média à partir des chiffres que vous fournissez. Les guides sont fournis à titre d'information générale."] },
+      { "heading": "Aucune garantie", "body": ["Les résultats sont des estimations fondées sur vos données et sur des hypothèses de planification. Ils ne garantissent ni les coûts, ni les résultats, ni les bénéfices. Vous êtes responsable de vos décisions et de vos budgets publicitaires."] },
+      { "heading": "Utilisation acceptable", "list": ["N'essayez pas de perturber, de surcharger ou d'attaquer le service.", "N'utilisez pas le formulaire de contact de manière abusive et n'envoyez pas de messages non sollicités.", "Ne copiez pas et ne republiez pas le contenu du site sans autorisation."] },
+      { "heading": "Propriété intellectuelle", "body": ["Le design du site, les textes, les guides et le code sont protégés. Les guides sont rédigés par l'équipe TECH24, qui est créditée sur chaque article."] },
+      { "heading": "Limitation de responsabilité", "body": ["Dans la mesure permise par la loi, {brand} n'est pas responsable des pertes résultant de l'utilisation du planificateur ou de ses guides, ou de la confiance qui leur est accordée."] },
+      { "heading": "Modifications", "body": ["Nous pouvons mettre à jour ces conditions. La date indiquée en haut correspond à la version la plus récente."] }
+    ]
+  },
+  "disclaimer": {
+    "meta": { "title": "Avertissement", "description": "Les résultats du planificateur sont des estimations, pas des garanties. Découvrez comment les utiliser de manière responsable." },
+    "title": "Avertissement",
+    "intro": "{brand} fournit des estimations pour vous aider à planifier. Il ne prédit pas l'avenir.",
+    "sections": [
+      { "heading": "Les résultats sont des estimations, pas des garanties", "body": ["Chaque budget, coût et résultat affiché est une estimation fondée sur vos données, les paramètres par défaut et des benchmarks provisoires. Les résultats publicitaires réels dépendent des créations, des offres, des pages de destination, de la concurrence, de la saisonnalité, du suivi et des évolutions des plateformes."] },
+      { "heading": "Les benchmarks sont provisoires", "body": ["Les valeurs de benchmark par défaut sont provisoires et doivent être remplacées par vos propres données avant de vous y fier."] },
+      { "heading": "Pas un conseil financier ou juridique", "body": ["Rien sur ce site ne constitue un conseil financier, juridique ou fiscal. Pour les décisions ayant un impact financier important, faites appel à un professionnel."] },
+      { "heading": "Plateformes tierces", "body": ["Meta, Facebook, Instagram, Google et Google Ads sont des marques de leurs propriétaires respectifs. {brand} n'est ni affilié à eux ni soutenu par eux. Les règles et recommandations des plateformes, comme les seuils d'apprentissage, peuvent changer à tout moment."] }
+    ]
+  },
+  "cookies": {
+    "meta": { "title": "Politique de cookies", "description": "Quels stockages du navigateur et quels cookies le planificateur d'achat média utilise, et comment les contrôler." },
+    "title": "Politique de cookies",
+    "intro": "{brand} utilise le moins de stockage possible dans le navigateur.",
+    "sections": [
+      { "heading": "Stockage essentiel", "body": ["Nous utilisons le stockage local pour enregistrer vos données du planificateur, vos scénarios, vos benchmarks, votre thème et votre choix concernant les cookies. Un cookie de langue (NEXT_LOCALE) mémorise la langue choisie. Ils sont nécessaires au fonctionnement du site et ne vous suivent pas."] },
+      { "heading": "Cookies de mesure d'audience (facultatifs)", "body": ["Si vous acceptez la mesure d'audience, Google Analytics 4 dépose des cookies comme _ga pour compter les visites et les pages vues. Ils ne sont pas déposés si vous ne les acceptez pas."] },
+      { "heading": "Sécurité", "body": ["Le formulaire de contact utilise Cloudflare Turnstile pour bloquer le spam, qui peut déposer des cookies nécessaires à cette vérification."] },
+      { "heading": "Gérer votre choix", "body": ["Vous pouvez effacer le stockage et les cookies de ce site dans les paramètres de votre navigateur à tout moment. Le bandeau cookies réapparaîtra pour que vous puissiez choisir."] }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+export const faq = [
+  {
+    q: "Que signifie « apprentissage limité » sur Meta ?",
+    a: "Cela signifie que l'ensemble de publicités ne devrait pas obtenir environ 50 événements d'optimisation par semaine, donc la diffusion peut rester moins stable. C'est un avertissement, pas un échec. Si le coût par résultat respecte l'objectif, un ensemble en apprentissage limité peut tout à fait être rentable.",
+  },
+  {
+    q: "La règle des 50 résultats s'applique-t-elle par campagne ou par ensemble de publicités ?",
+    a: "Par ensemble de publicités. Meta optimise la diffusion au niveau de l'ensemble, donc chaque ensemble a besoin de ses propres événements. En CBO, seuls comptent les ensembles qui reçoivent du budget ; les campagnes Advantage+ d'achats et de ventes se comportent comme une seule unité.",
+  },
+  {
+    q: "Qu'est-ce qui relance la phase d'apprentissage ?",
+    a: "Les modifications importantes : changer l'événement d'optimisation, le ciblage, la création ou la stratégie d'enchères, une pause d'une semaine ou plus, ou de fortes hausses de budget. Augmenter les budgets par paliers d'environ 20 % tous les quelques jours limite les perturbations.",
+  },
+  {
+    q: "Et si je ne peux pas me permettre 50 résultats par semaine ?",
+    a: "Ne forcez pas le budget à la hausse. Utilisez un seul ensemble de publicités avec une audience large pour que tous les résultats arrivent au même endroit, et jugez-le sur le coût par résultat. En e-commerce, optimiser un temps pour l'ajout au panier peut donner plus d'événements à l'algorithme.",
+  },
+  {
+    q: "Google Ads a-t-il aussi une phase d'apprentissage ?",
+    a: "Oui. Les stratégies d'enchères intelligentes apprennent des conversions, et une règle empirique courante est d'au moins 30 conversions par campagne sur 30 jours. Consultez la recommandation actuelle de Google, car elle évolue.",
+  },
+]
+
+Tous les media buyers ont déjà vu l'étiquette jaune « Apprentissage » ou « Apprentissage limité » dans le Gestionnaire de publicités Meta. Elle apparaît si souvent que beaucoup paniquent ou l'ignorent complètement. Aucune des deux réactions n'aide. La phase d'apprentissage est simplement un signal sur la quantité de données que reçoit chaque ensemble de publicités, et une fois comprise, elle devient l'un des outils de planification les plus utiles.
+
+Ce guide explique pourquoi Meta veut environ 50 résultats par ensemble de publicités et par semaine, comment ce chiffre change avec les campagnes CBO, ABO et Advantage+, et comment planifier un budget qui le respecte sans gaspiller d'argent. Vous pouvez vérifier votre propre structure dans le [planificateur](/calculator).
+
+## Ce qu'est vraiment la phase d'apprentissage
+
+Quand vous lancez ou modifiez fortement un ensemble de publicités, Meta ne sait pas encore quelles personnes de votre audience sont les plus susceptibles de réaliser l'action pour laquelle vous optimisez. Il explore, montre les publicités à des personnes différentes et apprend des résultats. Pendant cette période, les performances sont moins stables et le coût par résultat est souvent plus élevé.
+
+Meta indique qu'un ensemble de publicités a généralement besoin d'**environ 50 événements d'optimisation en une semaine** après la dernière modification importante pour sortir de l'apprentissage. Un événement d'optimisation est ce pour quoi vous avez demandé à Meta d'optimiser : un achat, un lead, un ajout au panier.
+
+Deux mots comptent dans cette phrase : **ensemble de publicités** et **semaine**.
+
+## Pourquoi c'est par ensemble de publicités
+
+Chaque ensemble de publicités est optimisé séparément. Répartir le même budget sur plus d'ensembles ne crée pas plus de données ; cela divise celles que vous avez. Cinq ensembles qui obtiennent chacun 12 achats par semaine sont cinq ensembles bloqués en apprentissage. Un ensemble avec 60 achats par semaine est sorti de l'apprentissage et peut optimiser correctement.
+
+C'est l'erreur de budget la plus fréquente sur Meta : trop d'ensembles de publicités pour le budget.
+
+## Combien d'ensembles de publicités utilisez-vous vraiment ?
+
+Le chiffre qui compte, ce sont les **ensembles effectifs**, ceux qui se disputent réellement les résultats. Il dépend du type de budget de la campagne :
+
+- **ABO (budget d'ensemble)** : chaque ensemble a son propre budget, donc chaque ensemble actif compte.
+- **CBO (budget de campagne)** : Meta répartit un budget entre les ensembles et concentre généralement la dépense sur quelques-uns. Ne comptez que les ensembles qui reçoivent une dépense significative. Une campagne CBO avec trois ensembles dont deux captent presque tout le budget a deux ensembles effectifs.
+- **Campagnes Advantage+** : elles se comportent comme une seule unité, comptez-en une.
+
+Additionnez les ensembles effectifs de vos campagnes de prospection. C'est le nombre par lequel vous divisez vos résultats.
+
+## L'arithmétique de l'apprentissage
+
+Partez des résultats que vous obtenez, ou espérez obtenir, sur un mois, et convertissez-les en chiffre hebdomadaire par ensemble :
+
+<Formula>Résultats par ensemble et par semaine = résultats mensuels ÷ 4,345 ÷ ensembles effectifs</Formula>
+
+Un mois compte environ 4,345 semaines. Comparez ensuite le résultat au seuil de 50.
+
+Vous pouvez aussi raisonner dans l'autre sens et vous demander ce dont un ensemble a besoin pour sortir de l'apprentissage :
+
+<Formula>Budget mensuel pour un ensemble = 50 × coût par résultat × 4,345</Formula>
+
+Et combien d'ensembles un budget peut soutenir :
+
+<Formula>Ensembles soutenus = budget hebdomadaire ÷ (50 × coût par résultat), au moins 1</Formula>
+
+### Un exemple concret
+
+Une boutique en ligne paie environ 30 par achat et dépense 3 000 par mois en prospection :
+
+- Budget hebdomadaire : 3 000 ÷ 4,345 = environ 690
+- Achats par semaine : 690 ÷ 30 = environ 23
+- Budget pour qu'un ensemble sorte de l'apprentissage : 50 × 30 × 4,345 = environ 6 518 par mois
+
+Cette boutique ne peut sortir aucun ensemble de l'apprentissage avec son budget actuel. Si elle utilise cinq ensembles ABO, chacun obtient environ 4,6 achats par semaine, très loin de 50. La solution n'est pas plus d'argent. C'est moins d'ensembles de publicités.
+
+<Callout title="Ce que recommande le planificateur">
+<p>Quand le budget est inférieur au minimum pour un ensemble, le planificateur recommande <strong>un seul ensemble de publicités avec une audience large</strong> et affiche la note « L'apprentissage limité est acceptable si le coût par résultat reste dans l'objectif ». En e-commerce, il suggère aussi d'optimiser pour l'ajout au panier jusqu'à ce que le volume d'achats augmente. Quand le budget dépasse ce minimum, il recommande le nombre d'ensembles que le budget peut soutenir.</p>
+</Callout>
+
+## L'apprentissage limité n'est pas un échec
+
+« Apprentissage limité » signifie que Meta ne s'attend pas à ce que l'ensemble atteigne 50 événements par semaine. La diffusion peut être moins efficace qu'elle ne pourrait l'être, mais cela ne rend pas l'ensemble non rentable. Une petite entreprise qui dépense 2 000 par mois avec un coût par lead de 25 obtient environ 18 leads par semaine. Elle ne sortira jamais de l'apprentissage au sens strict, et elle n'en a pas besoin. Si 25 par lead est inférieur à son coût cible par lead, la campagne fait son travail.
+
+Jugez les ensembles de publicités sur le **coût par résultat par rapport à vos limites**, pas sur l'étiquette d'apprentissage. Le [guide du coût par client](/guides/cost-per-lead-to-cac) montre comment fixer ces limites en génération de leads, et le [guide du ROAS d'équilibre](/guides/ecommerce-break-even-roas) fait de même pour l'e-commerce.
+
+<TryPlanner text="Saisissez vos campagnes, types de budget et ensembles de publicités dans le planificateur pour voir les résultats par ensemble et par semaine et le nombre d'ensembles que votre budget peut soutenir." />
+
+## Ce que change la CBO
+
+La CBO est souvent recommandée pour les petits budgets, car Meta déplace l'argent vers les ensembles les plus performants. Cela aide, mais cela masque aussi la structure réelle. Une campagne CBO avec huit ensembles peut consacrer 80 % du budget à deux d'entre eux. Les six autres reçoivent un filet de dépense et n'apprennent jamais.
+
+Quand vous planifiez avec la CBO :
+
+- Regardez la dépense par ensemble sur les 7 à 14 derniers jours.
+- Comptez comme effectifs les ensembles qui reçoivent une dépense significative.
+- Envisagez de supprimer les ensembles qui ne reçoivent presque rien ; ils ajoutent du bruit sans ajouter de données.
+
+Dans le planificateur, les campagnes CBO demandent les « ensembles recevant une dépense significative » précisément pour cette raison. Le nombre d'ensembles effectifs ne peut jamais dépasser le nombre d'ensembles de la campagne.
+
+## Advantage+ et la consolidation
+
+Les campagnes Advantage+ d'achats et de ventes vont plus loin et laissent Meta décider de l'audience et des placements dans une seule structure. Pour l'apprentissage, elles se comportent comme un seul ensemble, ce qui explique qu'elles fonctionnent bien avec des budgets modestes : toutes les données de conversion alimentent un seul modèle.
+
+La contrepartie, c'est le contrôle. Vous voyez moins quelles audiences convertissent, et le test des créations devient plus important car la création est l'un des rares leviers restants. Beaucoup d'annonceurs combinent une campagne Advantage+ avec une petite campagne ABO pour des tests de créations structurés.
+
+## Test des créations et apprentissage
+
+Les nouvelles créations ont aussi besoin de dépense. Une règle pratique consiste à donner à chaque création environ 2,5 fois votre coût cible par résultat avant de la juger. Trois créations avec un coût cible de 24 nécessitent environ 180 de dépense de test. Placez les tests de créations dans un ensemble ou une campagne à part pour ne pas perturber l'apprentissage de l'ensemble principal, et gardez le nombre de créations de chaque test adapté au budget.
+
+## Évitez de relancer l'apprentissage
+
+L'apprentissage redémarre après des modifications importantes. Les déclencheurs courants sont :
+
+- Changer l'événement d'optimisation ou l'emplacement de la conversion
+- Modifier fortement le ciblage ou les placements
+- Ajouter beaucoup de nouvelles publicités en même temps
+- Mettre un ensemble en pause sept jours ou plus
+- De fortes hausses de budget
+
+Pour les budgets, augmentez d'au plus **environ 20 % tous les trois jours**. Une campagne à 100 par jour atteint ainsi 235 par jour en environ deux semaines : 100, 120, 144, 173, 207, puis 235. Le planificateur crée ce calendrier de hausse automatiquement. Le [guide de la montée en charge](/guides/scaling-ad-spend-costs) explique pourquoi les coûts augmentent quand vous accélérez, l'autre moitié de l'histoire.
+
+## Et Google Ads ?
+
+Les stratégies d'enchères intelligentes de Google, comme Maximiser les conversions ou CPA cible, apprennent aussi des données de conversion. Une règle empirique courante est d'**au moins 30 conversions par campagne sur 30 jours**, même si la recommandation de Google évolue ; vérifiez la version actuelle. La leçon est la même : peu de campagnes bien financées apprennent plus vite que beaucoup de campagnes maigres. Si votre campagne de marque n'obtient qu'une poignée de conversions, envisagez une stratégie d'enchères plus simple pour elle.
+
+## Liste de vérification de la phase d'apprentissage
+
+- Comptez les ensembles effectifs : tous en ABO, ceux qui ont du budget en CBO, un seul en Advantage+.
+- Calculez les résultats par ensemble et par semaine et comparez-les à 50.
+- Sous le minimum, regroupez en un seul ensemble avec une audience large.
+- Jugez les ensembles sur le coût par résultat, pas sur l'étiquette d'apprentissage.
+- Gardez les tests de créations à part et adaptés au budget.
+- Augmentez les budgets d'environ 20 % tous les trois jours.
+
+Passez votre propre structure dans le [planificateur](/calculator) pour voir exactement combien d'ensembles de publicités votre budget peut alimenter.

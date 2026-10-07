@@ -1,0 +1,124 @@
+export const faq = [
+  {
+    q: "Quelle doit être la taille d'un budget de test ?",
+    a: "Assez grande pour atteindre environ 50 résultats au coût maximum que vous pouvez payer par résultat. C'est le point où Meta peut sortir de l'apprentissage et où le vrai coût par résultat devient fiable. Pour une boutique avec un CPA d'équilibre de 29,20, cela représente environ 1 460.",
+  },
+  {
+    q: "Combien de temps doit durer un test ?",
+    a: "Quatorze jours sont une bonne valeur par défaut. Cela couvre deux week-ends et laisse à la plateforme le temps de se stabiliser après le lancement. Les tests plus courts surréagissent au bruit des premiers jours ; les plus longs retardent les décisions sans apporter beaucoup plus de certitude.",
+  },
+  {
+    q: "Qu'est-ce qu'un stop-loss en publicité ?",
+    a: "Une limite de dépense sans résultat, décidée avant le lancement. Si un ensemble de publicités ou une création dépense deux à trois fois votre coût maximum par résultat sans une seule conversion, vous le mettez en pause. Cela empêche une mauvaise publicité d'engloutir tout le test.",
+  },
+  {
+    q: "Quand accélérer après un test ?",
+    a: "Quand le coût réel par résultat est égal ou inférieur à environ 70 % de votre maximum. Cela laisse de la place pour la hausse de coût qui accompagne une dépense plus élevée. Entre 70 % et 100 % du maximum, optimisez et testez de nouveau d'abord.",
+  },
+  {
+    q: "Et si mon budget de test est trop petit pour 50 achats ?",
+    a: "Utilisez un seul ensemble de publicités et optimisez pour l'ajout au panier la première semaine, puis passez à l'achat. Gardez le coût par ajout au panier sous votre CPA d'équilibre multiplié par votre taux d'ajout au panier à achat.",
+  },
+]
+
+La plupart des tests publicitaires échouent avant même leur lancement. Pas parce que les publicités sont mauvaises, mais parce que personne n'a décidé à l'avance combien dépenser, combien de temps attendre ni quel résultat compterait comme un succès. Sans ces décisions, chaque test se termine de la même façon : quelques jours de chiffres contradictoires, une baisse de budget nerveuse et aucune réponse claire.
+
+Un bon test est une petite expérience avec un budget fixe et des règles écrites. Ce guide montre comment le dimensionner, quoi surveiller pendant qu'il tourne et comment décider de la suite. Le [planificateur](/calculator) construit le même plan de test à partir de vos chiffres.
+
+## Partez de la question à laquelle le test doit répondre
+
+Un premier test sur un nouveau compte a une seule mission : **découvrir ce que coûte réellement un résultat**. Tout le reste, des créations gagnantes aux enseignements sur les audiences, est un bonus. Le budget doit donc être assez important pour produire suffisamment de résultats afin de mesurer le coût avec une certaine confiance, et les règles doivent dire ce que chaque coût possible signifie pour l'entreprise.
+
+Avant de dimensionner quoi que ce soit, il vous faut vos limites :
+
+- En e-commerce, le **CPA d'équilibre** est le bénéfice par commande après produit, livraison, frais et retours. Le [guide du ROAS d'équilibre](/guides/ecommerce-break-even-roas) présente le calcul.
+- En génération de leads, le **coût maximum par lead** est le bénéfice par client multiplié par le taux de lead à client. Consultez le [guide du coût par client](/guides/cost-per-lead-to-cac).
+
+Les exemples ci-dessous utilisent une boutique avec un panier moyen de 60 et un CPA d'équilibre de 29,20.
+
+## Dimensionnez le test : 50 résultats à votre maximum
+
+Meta a besoin d'environ 50 résultats par ensemble de publicités et par semaine pour sortir de la phase d'apprentissage, et 50 résultats constituent aussi un échantillon raisonnable pour juger le coût. Le budget de test est donc :
+
+<Formula>Budget de test = 50 × coût maximum par résultat</Formula>
+
+Pour la boutique, 50 × 29,20 = **1 460**. C'est l'**option A** : optimiser pour l'achat dès le premier jour. Sur un test de 14 jours, cela fait environ 104 par jour.
+
+Pourquoi utiliser le maximum et pas le coût attendu ? Parce que le test doit pouvoir atteindre 50 résultats même si les coûts arrivent exactement à votre limite. S'ils sont plus bas, vous atteignez 50 plus tôt et gardez la différence.
+
+### Option B pour les petits budgets
+
+Si 1 460 dépasse ce que vous pouvez dépenser, ne répartissez pas un montant plus faible sur plusieurs ensembles de publicités. Utilisez un seul ensemble et **optimisez pour l'ajout au panier la première semaine**. Les ajouts au panier sont plusieurs fois plus fréquents que les achats, donc Meta reçoit assez de signaux pour apprendre. Passez ensuite l'optimisation à l'achat.
+
+Pendant la semaine d'ajout au panier, gardez le coût par ajout au panier sous une valeur de référence :
+
+<Formula>Coût maximum par ajout au panier = CPA d'équilibre × taux d'ajout au panier à achat</Formula>
+
+Si 30 % des ajouts au panier se transforment en achats, cela donne 29,20 × 0,30 = **8,76**. Considérez-le comme une estimation ; votre vrai taux d'ajout au panier à achat apparaîtra pendant le test.
+
+## Vérifiez que l'idée est viable avant de dépenser
+
+Construisez le coût attendu par vente à partir de trois estimations : CPM, taux de clics et taux de conversion du site. Avec un CPM de 10, un CTR de 1,5 % et un taux de conversion de 3 % :
+
+<Formula>CPA estimé = CPM ÷ (1 000 × CTR × taux de conversion) = 10 ÷ 0,45 = 22,22</Formula>
+
+Ajoutez 25 % pour un nouveau compte et le CPA attendu est de **27,78**, juste sous l'équilibre de 29,20. Si les estimations viennent de benchmarks publiés, le haut prudent de la fourchette est 40 % plus élevé, environ 38,89. Comme le coût attendu est sous l'équilibre mais que le haut prudent le dépasse, le planificateur qualifie ce test de **risqué**. Il vaut quand même la peine d'être lancé, mais la marge d'erreur est faible, donc le stop-loss et les règles de décision comptent encore plus.
+
+Le planificateur indique aussi l'**hypothèse la plus importante** : l'estimation dont la source est la moins fiable. C'est le chiffre à vérifier en premier quand les données réelles arrivent. Le [guide des benchmarks](/guides/benchmarks-before-launch) explique comment choisir et étiqueter chaque estimation.
+
+<TryPlanner text="Choisissez « Nouveau compte » dans le planificateur pour obtenir votre budget de test, votre dépense quotidienne, votre stop-loss et vos règles de décision." />
+
+## Prévoyez un budget pour les créations
+
+Un test compare généralement quelques créations. Chacune a besoin d'assez de dépense pour montrer ce qu'elle vaut, environ 2,5 fois votre coût cible par résultat. Avec une marge de sécurité de 25 %, le CPA cible de la boutique est de 29,20 ÷ 1,25 = 23,36, donc quatre créations nécessitent environ 4 × 2,5 × 23,36 = **234**. Cela tient largement dans un test de 1 460. Si le test des créations coûte un jour plus que tout le budget de test, testez moins de créations à la fois.
+
+## Écrivez les règles avant le lancement
+
+Ces trois règles transforment le coût réel par résultat en décision. Écrivez-les avant de dépenser le premier euro, dollar ou dirham.
+
+**1. Accélérer** si le CPA réel est égal ou inférieur à **70 % de l'équilibre**. Pour la boutique, ce seuil est de 0,70 × 29,20 = **20,44**. En dessous, il reste de la place pour la hausse de coût qui accompagne une dépense plus élevée. Passez le plan en « Avec données » et calculez un budget de montée en charge à partir des chiffres réels.
+
+**2. Optimiser et retester** si le CPA réel se situe entre 20,44 et 29,20. La campagne ne perd pas d'argent, mais accélérer la ferait passer au-dessus de l'équilibre. Améliorez les créations, la page de destination ou l'offre, puis lancez un autre test.
+
+**3. Arrêter** si le CPA réel dépasse **29,20**. Plus de budget ne réglera rien. Examinez l'offre, le prix, la fiche produit et le paiement avant de dépenser de nouveau.
+
+<Callout title="Trois issues possibles pour le même test">
+<p>CPA réel de 19 : sous le seuil de 20,44, donc accélérer.</p>
+<p>CPA réel de 25 : entre les deux seuils, donc optimiser et retester.</p>
+<p>CPA réel de 33 : au-dessus de l'équilibre, donc arrêter et corriger le tunnel.</p>
+</Callout>
+
+## Fixez un stop-loss
+
+Au sein du test, certains ensembles de publicités ou certaines créations ne fonctionneront tout simplement pas. Un stop-loss les empêche d'engloutir le budget :
+
+<Formula>Stop-loss = 2 à 3 × coût maximum par résultat, sans résultat</Formula>
+
+Pour la boutique, tout ensemble ou toute création qui dépense entre **58,40 et 87,60** sans un seul achat est mis en pause. Utilisez le bas de la fourchette pour des signaux clairement faibles, comme un taux de clics très bas, et le haut quand les clics semblent sains mais que les conversions ne sont pas encore arrivées.
+
+## Pendant le test
+
+- **Ne modifiez rien les premiers jours.** Les changements importants relancent l'apprentissage et allongent le test.
+- **Vérifiez chaque jour, décidez chaque semaine.** Cherchez chaque jour un suivi cassé, des publicités refusées et des stop-loss atteints. Jugez le coût par résultat à la fin de chaque semaine.
+- **Surveillez le tunnel, pas seulement le résultat.** Les clics, les vues de page de destination, les ajouts au panier et les paiements montrent où les gens décrochent, ce qui indique quoi corriger si le résultat déçoit.
+- **Gardez la boutique ou le CRM comme source de vérité.** Comparez les achats déclarés par la plateforme aux commandes réelles.
+
+## Les tests de génération de leads demandent plus de patience
+
+Les tests de leads comportent un piège supplémentaire. Un test qui produit 80 leads avec un taux de lead à client de 16 % n'apporte qu'environ 13 clients. C'est trop peu pour confirmer le taux de vente. Jugez le test sur le coût par lead par rapport à votre maximum, mais continuez à suivre les rendez-vous, les présences et les ventes pendant plusieurs semaines avant de vous fier au coût par client. Le [guide des nouveaux comptes](/guides/meta-ads-budget-new-account) déroule un test complet de génération de leads.
+
+## Après le test : de l'estimation au plan
+
+Le budget de montée en charge affiché avant le test n'est qu'une estimation. Pour la boutique, 100 ventes par mois coûteraient entre environ 2 220 et 3 890 selon la fourchette de coût attendue, avec 2 780 au milieu. Après le test, remplacez les estimations par des données réelles : dépense effective, achats et coût par résultat. Le plan projette alors l'augmentation des coûts quand vous accélérez, ce qu'explique le [guide de la montée en charge](/guides/scaling-ad-spend-costs).
+
+## Liste de vérification du plan de test
+
+- Connaissez votre coût maximum par résultat avant de commencer.
+- Dimensionnez le test à 50 résultats à ce maximum, sur environ 14 jours.
+- Utilisez l'option B (ajout au panier d'abord) quand le budget est plus petit.
+- Vérifiez la viabilité et notez l'hypothèse la plus importante.
+- Prévoyez environ 2,5 fois votre coût cible par création.
+- Écrivez à l'avance les règles d'accélération, d'optimisation et d'arrêt, ainsi que le stop-loss.
+- Remplacez l'estimation par des données réelles une fois le test terminé.
+
+Construisez votre propre plan de test dans le [planificateur](/calculator) et gardez les règles à côté de votre tableau de bord publicitaire.

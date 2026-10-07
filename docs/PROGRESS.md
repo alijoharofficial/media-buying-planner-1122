@@ -71,6 +71,12 @@
 - Decisions: Spanish uses Spain conventions (decimal comma, "1.460") in prose; UI numbers still format via Intl. Acronyms (CPM, CTR, CPL, CAC, ROAS, AOV) kept and explained in tooltips/first use.
 - Next: Phase 8, session 2: French (fr), same process (UI namespaces, 10 guides, `slugs.fr`).
 
+## Phase 8, session 2: French (fr) (done)
+- Done: all 9 UI namespaces in `messages/fr/` (parity 9/9), all 10 guides in `content/guides/fr/` (1,730 to 2,080 words), `slugs.fr` in `lib/site.ts`, loaders in `lib/guides.ts`.
+- Decisions: French conventions (decimal comma, space thousands "1 460", « » quotes, space before : ; ? !); FAQ strings use double quotes because of apostrophes. Guide UI references match planner labels ("Avec données", "Mes benchmarks").
+- Verified: tsc, lint, parity tests, build; /fr pages 200, English slug 308s to French slug.
+- Next: Phase 8, session 3: German (de).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

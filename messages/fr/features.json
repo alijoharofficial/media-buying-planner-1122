@@ -1,0 +1,62 @@
+{
+  "items": {
+    "budgetCalculator": {
+      "title": "Calculateur de budget",
+      "desc": "Le budget mensuel et quotidien pour atteindre votre objectif, ou ce que permet un budget fixe.",
+      "long": "Il part de vos coûts réels quand vous avez des données, ou d'estimations et d'un plan de test quand vous n'en avez pas. Les coûts augmentent avec les dépenses, donc le budget tient compte des rendements décroissants."
+    },
+    "leadFunnel": {
+      "title": "Tunnel de leads et analyse du CAC",
+      "desc": "Du coût par lead au coût par client, en passant par les taux de prise de rendez-vous, de présence et de conversion en vente.",
+      "long": "Transforme la valeur client et la marge en montant maximum à payer par client (CAC, coût d'acquisition client) et par lead (CPL), puis compare votre tunnel réel à ces limites.",
+      "service": "Calculateur de budget pour leads"
+    },
+    "ecomBreakEven": {
+      "title": "Seuil de rentabilité et ROAS e-commerce",
+      "desc": "CPA et ROAS d'équilibre après coût produit, livraison, frais de paiement et retours.",
+      "long": "Montre exactement le bénéfice qu'une commande laisse pour la publicité, sur la première commande ou sur la valeur vie client, avec un CPA cible qui garde une marge de sécurité.",
+      "service": "Calculateur de budget e-commerce"
+    },
+    "testPlanner": {
+      "title": "Planificateur de test pour nouveaux comptes",
+      "desc": "Un budget de test, une dépense quotidienne et des règles claires pour l'après-test.",
+      "long": "Pour les comptes sans données : ce que vous pouvez vous permettre de tester, un stop-loss et des règles pour accélérer, optimiser ou arrêter une fois les coûts réels connus.",
+      "service": "Planificateur de test pour nouveaux comptes"
+    },
+    "learningCheck": {
+      "title": "Vérification de la phase d'apprentissage",
+      "desc": "Vérifie que chaque ensemble de publicités Meta et chaque campagne Google obtiennent assez de résultats pour apprendre.",
+      "long": "Compte les ensembles de publicités effectifs en CBO, ABO et Advantage+, compare les résultats hebdomadaires par ensemble au seuil d'apprentissage et recommande combien d'ensembles votre budget peut soutenir.",
+      "service": "Vérification de la phase d'apprentissage"
+    },
+    "scalingTable": {
+      "title": "Tableau de montée en charge",
+      "desc": "Budget face aux résultats et au coût par résultat, avec la limite rentable indiquée.",
+      "long": "Projette la hausse du coût par résultat quand vous augmentez les dépenses et affiche le budget mensuel le plus élevé qui reste sous le seuil de rentabilité.",
+      "service": "Tableau de montée en charge"
+    },
+    "budgetSplit": {
+      "title": "Planificateur de répartition du budget",
+      "desc": "Combien va à Meta, au Réseau de Recherche Google, aux tests, au retargeting et à la marque, et pourquoi.",
+      "long": "Attribue chaque tranche de budget à la plateforme dont le prochain résultat coûte le moins, respecte les minimums de chaque plateforme et ajoute un calendrier de hausse progressif.",
+      "service": "Planificateur de répartition du budget"
+    },
+    "googleCeiling": {
+      "title": "Plafond du Réseau de Recherche Google",
+      "desc": "Le maximum que le Réseau de Recherche Google peut dépenser et rapporter avant que les coûts n'augmentent.",
+      "long": "Utilise le volume de recherche, le taux d'impressions et le taux d'impressions perdu en raison du budget pour trouver le point où dépenser plus sur Google n'achète plus de recherches supplémentaires.",
+      "service": "Plafond du Réseau de Recherche Google"
+    },
+    "bottleneck": {
+      "title": "Détecteur de goulot d'étranglement",
+      "desc": "L'étape la plus faible de votre tunnel de leads et ce que vaut son amélioration.",
+      "long": "Teste une amélioration de 10 points aux étapes de prise de rendez-vous, de présence et de vente, et affiche le budget économisé ou les clients supplémentaires gagnés.",
+      "service": "Détecteur de goulot d'étranglement"
+    },
+    "showCalculation": {
+      "title": "Afficher le calcul",
+      "desc": "Chaque chiffre expliqué étape par étape, avec vos valeurs appliquées.",
+      "long": "Une frise chronologique de chaque formule en langage simple, avec des étiquettes de couleur qui distinguent vos données, les hypothèses et les paramètres, pour défendre le plan devant un client."
+    }
+  }
+}

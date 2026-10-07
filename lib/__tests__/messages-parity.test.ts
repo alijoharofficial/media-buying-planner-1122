@@ -31,6 +31,8 @@ describe.each(locales.filter((l) => l !== 'en'))('%s messages', (locale) => {
       for (const [k, v] of Object.entries(en)) expect([...args(tr[k] ?? '')].sort(), `${ns}.${k}`).toEqual([...args(v)].sort());
       for (const v of Object.values(tr)) expect(v.includes('Media Buying Planner'), 'brand must come from the constant').toBe(false);
       for (const v of Object.values(tr)) expect(v.includes('—'), 'no em dashes').toBe(false);
+      // In ICU messages an apostrophe directly before a brace escapes it, which would print the placeholder literally.
+      for (const [k, v] of Object.entries(tr)) expect(/['’]\{/.test(v), `${ns}.${k}: apostrophe before placeholder`).toBe(false);
     });
   }
 });

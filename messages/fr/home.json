@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Calculateur de budget publicitaire pour Meta et Google Ads",
+    "description": "Planificateur d'achat média gratuit : calculez le budget publicitaire mensuel nécessaire sur Meta et sur le Réseau de Recherche Google, vos coûts d'équilibre et une répartition claire du budget. Pour la génération de leads et l'e-commerce."
+  },
+  "hero": {
+    "title": "Planifiez votre budget publicitaire en toute confiance",
+    "subtitle": "Trouvez le budget mensuel dont votre entreprise a besoin sur Meta et sur le Réseau de Recherche Google, puis transformez-le en un plan d'achat média clair que vous pouvez expliquer à tout le monde.",
+    "ctaPrimary": "Créer mon plan média",
+    "ctaSecondary": "Comment ça marche"
+  },
+  "preview": {
+    "title": "Plan d'achat média",
+    "sample": "Exemple",
+    "alt": "Exemple de plan d'achat média : budget mensuel recommandé de 4 550, budget quotidien de 150, 154 leads à 29,50 par lead, verdict rentable avec marge de croissance.",
+    "budget": "Budget mensuel recommandé",
+    "daily": "Budget quotidien",
+    "leads": "Leads attendus",
+    "cpl": "Coût par lead",
+    "verdict": "Rentable, marge pour accélérer",
+    "sectionTitle": "Votre plan en quelques minutes, sans tableur",
+    "sectionText": "Répondez à quatre questions, remplissez les onglets qui vous concernent et obtenez un budget, un verdict et une répartition entre Meta et le Réseau de Recherche Google. Chaque chiffre est accompagné de la formule qui l'explique."
+  },
+  "trust": {
+    "types": "Pour la génération de leads et l'e-commerce",
+    "platforms": "Meta et Réseau de Recherche Google",
+    "accounts": "Comptes nouveaux ou existants",
+    "languages": "7 langues"
+  },
+  "features": {
+    "title": "Tout ce qu'un media buyer vérifie, dans un seul planificateur",
+    "intro": "Des coûts d'équilibre à la phase d'apprentissage, chaque outil répond à une question que vous traiteriez sinon à la main.",
+    "cta": "Voir toutes les fonctionnalités"
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "intro": "Quatre étapes pour passer des chiffres de votre entreprise à un plan concret.",
+    "steps": {
+      "business": {
+        "title": "Choisissez votre type d'activité",
+        "desc": "Génération de leads ou e-commerce, compte nouveau ou existant, Meta et Réseau de Recherche Google."
+      },
+      "numbers": {
+        "title": "Saisissez vos chiffres",
+        "desc": "Valeur client ou coûts de commande, plus les données du compte ou des estimations. Les infobulles indiquent où trouver chaque chiffre."
+      },
+      "plan": {
+        "title": "Obtenez votre plan média",
+        "desc": "Un budget recommandé, les résultats attendus, un verdict et une répartition entre plateformes."
+      },
+      "calculation": {
+        "title": "Consultez le calcul",
+        "desc": "Ouvrez chaque étape avec la formule et vos chiffres déjà appliqués."
+      }
+    }
+  },
+  "guides": {
+    "title": "Guides et conseils",
+    "intro": "Des guides pratiques de l'équipe TECH24 sur les budgets, les tests et la montée en charge.",
+    "cta": "Lire tous les guides"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "cta": "Voir toutes les questions"
+  }
+}

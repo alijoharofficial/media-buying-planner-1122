@@ -1,0 +1,121 @@
+export const faq = [
+  {
+    q: "Combien dépenser en publicité Meta avec un compte tout neuf ?",
+    a: "Assez pour qu'un ensemble de publicités obtienne environ 50 résultats au maximum que vous pouvez payer par résultat. Pour une activité de génération de leads qui peut payer jusqu'à 40 par lead, cela représente un budget de test d'environ 2 000. Si c'est trop, commencez plus petit avec un seul ensemble de publicités et une audience large, et jugez le test sur le coût par résultat plutôt que sur le statut d'apprentissage.",
+  },
+  {
+    q: "Pourquoi ajouter une pénalité aux coûts estimés d'un nouveau compte ?",
+    a: "Un nouveau compte publicitaire n'a aucun historique de conversions, donc Meta doit apprendre qui réagit avant que la diffusion devienne efficace. Les coûts des premières semaines sont généralement plus élevés que ne le suggèrent les benchmarks. Ajouter environ 25 % aux coûts estimés garde le plan réaliste.",
+  },
+  {
+    q: "Faut-il utiliser les résultats quotidiens estimés de Meta ?",
+    a: "Utilisez-les comme vérification, pas comme plan. Divisez le budget quotidien par les résultats estimés pour obtenir un coût par résultat implicite, puis comparez-le au chiffre calculé à partir du CPM, du CTR et du taux de conversion.",
+  },
+  {
+    q: "Combien de temps doit durer le premier test ?",
+    a: "Quatorze jours est un bon point de départ. Cela couvre deux semaines complètes de comportement en semaine et le week-end, et laisse à l'algorithme le temps de se stabiliser. N'arrêtez plus tôt que si la dépense atteint votre stop-loss sans résultat.",
+  },
+  {
+    q: "Que se passe-t-il après le test ?",
+    a: "Comparez le coût réel par résultat à vos limites. À 70 % du maximum ou moins, accélérez. Entre ce seuil et le maximum, optimisez et retestez. Au-dessus du maximum, corrigez l'offre, le prix ou le tunnel avant de dépenser plus.",
+  },
+]
+
+Un nouveau compte publicitaire est l'endroit le plus difficile pour planifier un budget. Il n'y a aucun historique dont tirer des enseignements, chaque chiffre est une estimation, et la plateforme elle-même ne sait pas encore qui sont vos acheteurs. La plupart des gens répondent à la question « combien devons-nous dépenser ? » par un chiffre rond qui paraît prudent. Ce chiffre est généralement soit trop faible pour apprendre quoi que ce soit à l'algorithme, soit trop élevé pour le risque que l'entreprise peut prendre.
+
+Ce guide présente une meilleure méthode. Vous partez de ce que votre entreprise peut payer pour un résultat, vous estimez ce que ce résultat coûtera réellement, puis vous dimensionnez un test capable de donner une réponse claire. Chaque étape repose sur une arithmétique simple, et vous pouvez faire les mêmes calculs dans le [planificateur](/calculator) en quelques minutes.
+
+## Partez de ce que vous pouvez payer, pas de ce que vous voulez dépenser
+
+Le premier chiffre de tout budget publicitaire n'est pas le budget. C'est le **coût maximum par résultat** que votre entreprise peut payer sans perdre d'argent. Tout le reste se mesure par rapport à lui.
+
+Pour une activité de génération de leads, raisonnez à rebours depuis le client :
+
+- Le **bénéfice par client** est la valeur client multipliée par votre marge. Une clinique qui gagne 600 par nouveau client avec une marge de 60 % garde 360 pour conquérir ce client.
+- Le **taux de lead à client** est votre taux de rendez-vous multiplié par votre taux de présence et votre taux de vente. Si 35 % des leads prennent rendez-vous, que 65 % des rendez-vous sont honorés et que 50 % des personnes présentes achètent, 11,4 % des leads deviennent clients.
+- Le **coût maximum par lead** est le bénéfice par client multiplié par le taux de lead à client. Ici, 360 × 11,375 %, soit environ 40,95.
+
+<Formula>Coût maximum par lead = valeur client × marge × taux de rendez-vous × taux de présence × taux de vente</Formula>
+
+En e-commerce, la logique est la même, mais l'unité est la commande. Prenez le panier moyen et soustrayez le coût produit, la livraison, les frais de paiement et la valeur perdue en retours. Ce qui reste est le bénéfice par commande, qui est aussi votre coût par vente d'équilibre. Le [guide du seuil de rentabilité en e-commerce](/guides/ecommerce-break-even-roas) détaille ce calcul.
+
+La plupart des entreprises veulent aussi une marge de sécurité. Diviser le maximum par 1,25 donne un **coût cible** qui garde 25 % de marge. Dans l'exemple de la clinique, le coût cible par lead est d'environ 32,76.
+
+## Estimez ce que coûtera vraiment un résultat
+
+Sans historique, vous construisez le coût par résultat à partir de trois estimations :
+
+1. **CPM** : ce que coûtent 1 000 impressions dans votre pays et votre niche.
+2. **CTR (lien)** : la part des personnes qui cliquent.
+3. **Taux de conversion** : la part des clics qui deviennent un lead ou une vente. Pour les formulaires instantanés, utilisez le taux d'envoi du formulaire.
+
+<Formula>Coût estimé par résultat = CPM ÷ (1 000 × CTR × taux de conversion)</Formula>
+
+Avec un CPM de 20, un CTR lien de 1,2 % et un taux de conversion de la page de destination de 8 %, le coût estimé par lead est 20 ÷ (1 000 × 0,012 × 0,08) = 20,83.
+
+Ce chiffre est trop optimiste pour un compte tout neuf. Meta n'a aucune donnée de conversion pour optimiser, vos créations ne sont pas testées et votre pixel n'a pas encore vu un seul lead. Ajoutez une **pénalité de nouveau compte** d'environ 25 %, et ajustez selon la saison si vous planifiez un mois chargé. Le coût attendu par lead devient 20,83 × 1,25 = 26,04.
+
+### Indiquez votre degré de confiance dans chaque estimation
+
+Toutes les estimations ne méritent pas la même confiance. Un CPM issu d'un autre compte que vous gérez dans le même pays est bien plus fiable qu'une supposition. Dans le planificateur, chaque estimation porte une étiquette de source : vos comptes, l'estimation de Meta, un benchmark publié ou une supposition. Les sources moins fiables ont une fourchette plus large. Une supposition peut se révéler 30 % meilleure ou 60 % moins bonne que prévu, donc le planificateur affiche un coût bas, attendu et haut plutôt qu'un seul chiffre. Le [guide des benchmarks](/guides/benchmarks-before-launch) explique où trouver chaque estimation.
+
+## Vérifiez que l'idée est viable avant de dépenser
+
+Comparez maintenant le coût attendu au maximum que vous pouvez payer :
+
+- **Viable** : même la borne prudente de la fourchette reste sous votre maximum.
+- **Risqué** : le coût attendu est sous le maximum, mais pas la borne haute.
+- **Non viable** : le coût attendu dépasse déjà le maximum.
+
+Dans l'exemple de la clinique, le coût attendu par lead est de 26,04 et le maximum de 40,95. Si les trois estimations proviennent de benchmarks publiés, la borne prudente est 40 % plus élevée, environ 36,46, ce qui reste sous la limite : viable. Si le taux de conversion n'est qu'une supposition, la borne prudente est 60 % plus élevée, environ 41,66, juste au-dessus de la limite : risqué. Le test vaut quand même la peine, mais le taux de conversion est l'hypothèse la plus forte à surveiller. Si le coût attendu avait été de 45, aucun budget n'y changerait rien. Il faudrait d'abord retravailler l'offre, le prix ou le tunnel.
+
+Cette vérification prend une minute et évite beaucoup de pertes. De nombreux lancements ratés n'ont jamais été viables sur le papier.
+
+<TryPlanner text="Saisissez votre valeur client, les taux de votre tunnel et vos estimations, et découvrez le budget de test et la viabilité pour votre compte." />
+
+## Dimensionnez le test pour qu'il vous apprenne quelque chose
+
+Meta optimise chaque ensemble de publicités séparément et a besoin d'environ **50 résultats par ensemble et par semaine** pour sortir de la phase d'apprentissage. Ce seuil est aussi une bonne taille de test : 50 résultats suffisent pour juger le coût réel par résultat avec une certaine confiance.
+
+<Formula>Budget de test = 50 × coût maximum par résultat</Formula>
+
+Utiliser le maximum plutôt que le coût attendu est voulu. Cela indique le maximum à dépenser pour atteindre 50 résultats si les coûts tombent pile sur votre limite. Pour la clinique, le budget de test va jusqu'à 50 × 40,95 = 2 047. Sur un test de 14 jours, cela fait environ 146 par jour.
+
+En e-commerce, la même règle donne l'**option A** : 50 × CPA d'équilibre. Une boutique dont le CPA d'équilibre est de 29,20 a besoin d'environ 1 460 pour atteindre 50 achats à l'équilibre. Si c'est plus que ce que vous pouvez dépenser, utilisez l'**option B** : optimisez pour l'ajout au panier la première semaine afin que l'algorithme reçoive plus de signaux, puis passez à l'achat. Gardez le coût par ajout au panier sous votre CPA d'équilibre multiplié par votre taux d'ajout au panier à achat.
+
+### Quand le budget est inférieur au test
+
+Vous n'êtes pas obligé de forcer le budget à la hausse. Avec moins d'argent, utilisez un seul ensemble de publicités et une audience large pour que tous les résultats arrivent au même endroit. L'ensemble peut rester en « apprentissage limité », et c'est acceptable tant que le coût par résultat reste dans l'objectif. Ce qu'il faut éviter, c'est de répartir un petit budget sur de nombreux ensembles, qui se retrouvent chacun avec trop peu de données pour apprendre. Le [guide de la phase d'apprentissage](/guides/meta-learning-phase-50-results) détaille le cas des campagnes CBO, ABO et Advantage+.
+
+### Prévoyez de la place pour tester les créations
+
+Chaque nouvelle création a besoin d'un peu de dépense avant de pouvoir être jugée. Une règle pratique est d'environ 2,5 fois votre coût cible par résultat et par création. Trois créations avec un coût cible de 32,76 nécessitent environ 246. Si tester toutes vos créations coûte plus que tout le budget de test, testez-en moins à la fois.
+
+## Fixez les règles avant le début du test
+
+Les erreurs les plus coûteuses surviennent après le lancement, quand on réagit à quelques jours de données. Décidez à l'avance ce que signifie chaque résultat :
+
+- **Accélérez** si le coût réel par résultat est à 70 % de votre maximum ou moins. Dans l'exemple de la clinique, ce seuil est d'environ 28,67 par lead. Passez le plan en « avec données » et calculez un budget d'accélération à partir des chiffres réels.
+- **Optimisez et retestez** si le coût se situe entre ce seuil et le maximum. Travaillez les créations, l'audience ou la page de destination, puis testez de nouveau.
+- **Arrêtez** si le coût dépasse le maximum. Corrigez l'offre, le prix ou le tunnel avant de dépenser plus.
+
+Ajoutez aussi un **stop-loss**. Si un ensemble de publicités ou une création dépense deux à trois fois votre coût maximum par résultat sans aucun résultat, mettez-le en pause. Pour la clinique, cela représente 82 à 123 sans aucun lead.
+
+### Souvenez-vous de ce qu'un test de leads ne peut pas vous dire
+
+Un test de 2 000 qui produit 78 leads à 26 chacun n'apportera qu'environ 9 clients avec un taux de lead à client de 11,4 %. Neuf clients ne suffisent pas pour confirmer votre taux de vente. Continuez à suivre les rendez-vous, les présences et les ventes dans votre CRM après le test, et considérez le plan d'accélération comme une estimation jusqu'à ce que ces chiffres se stabilisent. Le guide sur le [coût par client (CAC)](/guides/cost-per-lead-to-cac) explique pourquoi c'est si important.
+
+## Transformez le test en budget mensuel
+
+Une fois que le test vous donne un coût réel par résultat, le budget d'accélération découle de votre objectif. S'il vous faut 20 nouveaux clients par mois avec un taux de lead à client de 11,4 %, il vous faut environ 176 leads. Au coût attendu de 26,04, cela représente environ 4 580 par mois, avec une fourchette d'environ 3 200 à 7 300 selon la justesse des estimations. Après le test, remplacez l'estimation par des données réelles : les coûts augmentent aussi avec la dépense, ce que traite le [guide de la montée en charge](/guides/scaling-ad-spend-costs).
+
+## Une liste rapide pour les nouveaux comptes
+
+- Calculez d'abord votre coût maximum et votre coût cible par résultat.
+- Construisez le coût attendu à partir du CPM, du CTR et du taux de conversion, plus une pénalité de nouveau compte.
+- Vérifiez la viabilité avec la borne prudente de la fourchette.
+- Dimensionnez le test à 50 résultats au coût maximum, avec peu d'ensembles de publicités.
+- Écrivez les règles d'accélération, d'optimisation et d'arrêt, ainsi que le stop-loss, avant le lancement.
+- Après le test, passez aux données réelles et recalculez.
+
+Le [planificateur](/calculator) réalise chacune de ces étapes pour vous et affiche le calcul derrière chaque chiffre, pour que vous puissiez expliquer le plan à un client ou à un responsable en toute confiance.
