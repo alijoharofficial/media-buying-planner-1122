@@ -1,0 +1,124 @@
+export const faq = [
+  {
+    q: "Wie groß sollte ein Testbudget sein?",
+    a: "Groß genug, um etwa 50 Ergebnisse zu den maximalen Kosten pro Ergebnis zu erreichen, die Sie sich leisten können. An diesem Punkt kann Meta die Lernphase verlassen, und die echten Kosten pro Ergebnis werden verlässlich. Für einen Shop mit einem Break-even-CPA von 29,20 sind das etwa 1.460.",
+  },
+  {
+    q: "Wie lange sollte ein Test laufen?",
+    a: "Vierzehn Tage sind ein guter Standard. Das umfasst zwei Wochenenden und gibt der Plattform Zeit, sich nach dem Start einzupendeln. Kürzere Tests überreagieren auf frühes Rauschen, längere verzögern Entscheidungen, ohne viel mehr Sicherheit zu bringen.",
+  },
+  {
+    q: "Was ist ein Stop-Loss in der Werbung?",
+    a: "Eine Ausgabengrenze ohne Ergebnis, die vor dem Start festgelegt wird. Gibt eine Anzeigengruppe oder ein Creative das Zwei- bis Dreifache Ihrer maximalen Kosten pro Ergebnis ohne eine einzige Conversion aus, pausieren Sie es. So verhindert man, dass eine schlechte Anzeige den ganzen Test aufzehrt.",
+  },
+  {
+    q: "Wann sollte ich nach einem Test skalieren?",
+    a: "Wenn die echten Kosten pro Ergebnis bei höchstens etwa 70 % Ihres Maximums liegen. Das lässt Raum für den Kostenanstieg, der mit höheren Ausgaben einhergeht. Zwischen 70 % und 100 % des Maximums optimieren Sie zuerst und testen erneut.",
+  },
+  {
+    q: "Was, wenn mein Testbudget für 50 Käufe zu klein ist?",
+    a: "Nutzen Sie eine Anzeigengruppe und optimieren Sie in der ersten Woche auf „In den Warenkorb“, dann wechseln Sie zu Kauf. Halten Sie die Kosten pro Warenkorb-Hinzufügung unter Ihrem Break-even-CPA mal Ihrer Quote von Warenkorb zu Kauf.",
+  },
+]
+
+Die meisten Werbetests scheitern, bevor sie starten. Nicht weil die Anzeigen schlecht sind, sondern weil niemand vorher festgelegt hat, wie viel ausgegeben wird, wie lange man wartet und welches Ergebnis als Erfolg gilt. Ohne diese Entscheidungen endet jeder Test gleich: ein paar Tage mit widersprüchlichen Zahlen, eine nervöse Budgetkürzung und keine klare Antwort.
+
+Ein guter Test ist ein kleines Experiment mit festem Budget und schriftlichen Regeln. Dieser Ratgeber zeigt, wie Sie ihn dimensionieren, worauf Sie während der Laufzeit achten und wie Sie über die nächsten Schritte entscheiden. Der [Planer](/calculator) erstellt denselben Testplan aus Ihren Zahlen.
+
+## Beginnen Sie mit der Frage, die der Test beantworten muss
+
+Ein erster Test auf einem neuen Konto hat eine einzige Aufgabe: **herauszufinden, was ein Ergebnis wirklich kostet**. Alles andere, von siegreichen Creatives bis zu Erkenntnissen über Zielgruppen, ist ein Bonus. Das Budget muss also groß genug sein, um genügend Ergebnisse zu liefern und die Kosten mit einiger Sicherheit zu messen, und die Regeln müssen festlegen, was jeder mögliche Kostenwert für das Unternehmen bedeutet.
+
+Bevor Sie etwas dimensionieren, brauchen Sie Ihre Grenzen:
+
+- Im E-Commerce ist der **Break-even-CPA** der Gewinn pro Bestellung nach Produkt, Versand, Gebühren und Retouren. Der [Ratgeber zum Break-even-ROAS](/guides/ecommerce-break-even-roas) zeigt die Rechnung.
+- Bei Leadgenerierung sind die **maximalen Kosten pro Lead** der Gewinn pro Kunde mal die Lead-zu-Kunde-Quote. Siehe den [Ratgeber zu den Kosten pro Kunde](/guides/cost-per-lead-to-cac).
+
+Die folgenden Beispiele nutzen einen Shop mit einem durchschnittlichen Bestellwert von 60 und einem Break-even-CPA von 29,20.
+
+## Dimensionieren Sie den Test: 50 Ergebnisse zu Ihrem Maximum
+
+Meta braucht etwa 50 Ergebnisse pro Anzeigengruppe und Woche, um die Lernphase zu verlassen, und 50 Ergebnisse sind auch eine sinnvolle Stichprobe, um die Kosten zu beurteilen. Das Testbudget lautet also:
+
+<Formula>Testbudget = 50 × maximale Kosten pro Ergebnis</Formula>
+
+Für den Shop sind das 50 × 29,20 = **1.460**. Das ist **Option A**: ab dem ersten Tag auf Kauf optimieren. Über einen 14-tägigen Test sind das etwa 104 pro Tag.
+
+Warum das Maximum und nicht die erwarteten Kosten? Weil der Test 50 Ergebnisse auch dann erreichen soll, wenn die Kosten genau an Ihrer Grenze liegen. Fallen sie niedriger aus, erreichen Sie 50 früher und behalten den Rest.
+
+### Option B für kleine Budgets
+
+Liegt 1.460 über dem, was Sie ausgeben können, verteilen Sie einen kleineren Betrag nicht auf mehrere Anzeigengruppen. Nutzen Sie eine Anzeigengruppe und **optimieren Sie in der ersten Woche auf „In den Warenkorb“**. Warenkorb-Hinzufügungen passieren um ein Vielfaches häufiger als Käufe, also erhält Meta genug Signale zum Lernen. Stellen Sie die Optimierung dann auf Kauf um.
+
+Halten Sie in der Warenkorb-Woche die Kosten pro Warenkorb-Hinzufügung unter einem Richtwert:
+
+<Formula>Maximale Kosten pro Warenkorb-Hinzufügung = Break-even-CPA × Quote von Warenkorb zu Kauf</Formula>
+
+Werden 30 % der Warenkorb-Hinzufügungen zu Käufen, sind das 29,20 × 0,30 = **8,76**. Behandeln Sie das als Schätzung; Ihre echte Quote von Warenkorb zu Kauf zeigt sich während des Tests.
+
+## Prüfen Sie die Tragfähigkeit, bevor Sie Geld ausgeben
+
+Bauen Sie die erwarteten Kosten pro Verkauf aus drei Schätzungen auf: CPM, Klickrate und Conversion-Rate des Shops. Mit einem CPM von 10, einer CTR von 1,5 % und einer Conversion-Rate von 3 %:
+
+<Formula>Geschätzter CPA = CPM ÷ (1.000 × CTR × Conversion-Rate) = 10 ÷ 0,45 = 22,22</Formula>
+
+Rechnen Sie 25 % für ein neues Konto hinzu, liegt der erwartete CPA bei **27,78**, knapp unter dem Break-even von 29,20. Stammen die Schätzungen aus veröffentlichten Benchmarks, liegt das vorsichtige Ende der Spanne 40 % höher, bei etwa 38,89. Da die erwarteten Kosten unter dem Break-even liegen, das vorsichtige Ende aber darüber, stuft der Planer diesen Test als **riskant** ein. Er lohnt sich trotzdem, aber der Spielraum für Fehler ist klein, also sind Stop-Loss und Entscheidungsregeln umso wichtiger.
+
+Der Planer nennt außerdem die **größte Annahme**: die Schätzung mit der am wenigsten verlässlichen Quelle. Das ist die Zahl, die Sie zuerst prüfen, wenn echte Daten eintreffen. Der [Ratgeber zu Benchmarks](/guides/benchmarks-before-launch) erklärt, wie Sie jede Schätzung wählen und kennzeichnen.
+
+<TryPlanner text="Wählen Sie im Planer „Neues Konto“, um Ihr Testbudget, die täglichen Ausgaben, den Stop-Loss und die Entscheidungsregeln zu erhalten." />
+
+## Planen Sie Budget für Creatives ein
+
+Ein Test vergleicht meist einige Creatives. Jedes braucht genug Budget, um zu zeigen, was es kann, etwa das 2,5-Fache Ihrer Zielkosten pro Ergebnis. Mit einem Gewinnpuffer von 25 % liegt der Ziel-CPA des Shops bei 29,20 ÷ 1,25 = 23,36, vier Creatives brauchen also etwa 4 × 2,5 × 23,36 = **234**. Das passt bequem in einen Test von 1.460. Kosten Creative-Tests je mehr als das gesamte Testbudget, testen Sie weniger Creatives gleichzeitig.
+
+## Schreiben Sie die Regeln vor dem Start auf
+
+Diese drei Regeln machen aus den echten Kosten pro Ergebnis eine Entscheidung. Schreiben Sie sie auf, bevor der erste Euro, Dollar oder Dirham ausgegeben ist.
+
+**1. Skalieren**, wenn der echte CPA bei höchstens **70 % des Break-even** liegt. Für den Shop liegt diese Linie bei 0,70 × 29,20 = **20,44**. Darunter bleibt Raum für den Kostenanstieg, der mit höheren Ausgaben einhergeht. Stellen Sie den Plan auf „Mit Daten“ um und berechnen Sie ein Skalierungsbudget aus den echten Zahlen.
+
+**2. Optimieren und erneut testen**, wenn der echte CPA zwischen 20,44 und 29,20 liegt. Die Kampagne verliert kein Geld, doch Skalieren würde sie über den Break-even schieben. Verbessern Sie Creatives, Landingpage oder Angebot und starten Sie dann einen weiteren Test.
+
+**3. Stoppen**, wenn der echte CPA über **29,20** liegt. Mehr Budget löst das nicht. Prüfen Sie Angebot, Preis, Produktseite und Checkout, bevor Sie erneut Geld ausgeben.
+
+<Callout title="Drei mögliche Ergebnisse desselben Tests">
+<p>Echter CPA von 19: unter der Linie von 20,44, also skalieren.</p>
+<p>Echter CPA von 25: zwischen den Linien, also optimieren und erneut testen.</p>
+<p>Echter CPA von 33: über dem Break-even, also stoppen und den Funnel reparieren.</p>
+</Callout>
+
+## Legen Sie einen Stop-Loss fest
+
+Innerhalb des Tests werden manche Anzeigengruppen oder Creatives schlicht nicht funktionieren. Ein Stop-Loss verhindert, dass sie das Budget aufzehren:
+
+<Formula>Stop-Loss = 2 bis 3 × maximale Kosten pro Ergebnis, ohne Ergebnis</Formula>
+
+Für den Shop wird jede Anzeigengruppe und jedes Creative pausiert, das zwischen **58,40 und 87,60** ohne einen einzigen Kauf ausgibt. Nutzen Sie das untere Ende bei klar schwachen Signalen wie einer sehr niedrigen Klickrate und das obere Ende, wenn die Klicks gesund aussehen, die Conversions aber noch ausstehen.
+
+## Während der Test läuft
+
+- **Ändern Sie in den ersten Tagen nichts.** Große Änderungen starten die Lernphase neu und verlängern den Test.
+- **Täglich prüfen, wöchentlich entscheiden.** Suchen Sie jeden Tag nach defektem Tracking, abgelehnten Anzeigen und erreichten Stop-Loss-Grenzen. Bewerten Sie die Kosten pro Ergebnis am Ende jeder Woche.
+- **Beobachten Sie den Funnel, nicht nur das Ergebnis.** Klicks, Landingpage-Aufrufe, Warenkorb-Hinzufügungen und Bezahlvorgänge zeigen, wo Menschen abspringen, und damit, was zu reparieren ist, falls das Ergebnis enttäuscht.
+- **Bleiben Sie beim Shop oder CRM als verlässlicher Quelle.** Vergleichen Sie die von der Plattform gemeldeten Käufe mit den echten Bestellungen.
+
+## Tests bei Leadgenerierung brauchen mehr Geduld
+
+Lead-Tests haben eine zusätzliche Falle. Ein Test mit 80 Leads bei einer Lead-zu-Kunde-Quote von 16 % bringt nur etwa 13 Kunden. Das ist zu wenig, um die Abschlussquote zu bestätigen. Bewerten Sie den Test nach den Kosten pro Lead im Verhältnis zu Ihrem Maximum, verfolgen Sie aber Termine, Erscheinen und Verkäufe noch mehrere Wochen weiter, bevor Sie den Kosten pro Kunde vertrauen. Der [Ratgeber für neue Konten](/guides/meta-ads-budget-new-account) geht einen vollständigen Test bei Leadgenerierung durch.
+
+## Nach dem Test: von der Schätzung zum Plan
+
+Das vor dem Test gezeigte Skalierungsbudget ist nur eine Schätzung. Für den Shop würden 100 Verkäufe pro Monat je nach erwarteter Kostenspanne zwischen etwa 2.220 und 3.890 kosten, mit 2.780 in der Mitte. Ersetzen Sie die Schätzungen nach dem Test durch echte Daten: tatsächliche Ausgaben, Käufe und Kosten pro Ergebnis. Der Plan projiziert dann, wie die Kosten beim Skalieren steigen, was der [Ratgeber zur Skalierung](/guides/scaling-ad-spend-costs) erklärt.
+
+## Checkliste für den Testplan
+
+- Kennen Sie Ihre maximalen Kosten pro Ergebnis, bevor Sie starten.
+- Dimensionieren Sie den Test auf 50 Ergebnisse zu diesem Maximum, über etwa 14 Tage.
+- Nutzen Sie Option B (zuerst Warenkorb), wenn das Budget kleiner ist.
+- Prüfen Sie die Tragfähigkeit und notieren Sie die größte Annahme.
+- Planen Sie etwa das 2,5-Fache Ihrer Zielkosten pro Creative ein.
+- Schreiben Sie die Regeln zum Skalieren, Optimieren und Stoppen sowie den Stop-Loss vorab auf.
+- Ersetzen Sie die Schätzung nach dem Test durch echte Daten.
+
+Erstellen Sie Ihren eigenen Testplan im [Planer](/calculator) und legen Sie die Regeln neben Ihr Werbe-Dashboard.

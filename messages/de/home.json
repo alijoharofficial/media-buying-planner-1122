@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Werbebudget-Rechner für Meta und Google Ads",
+    "description": "Kostenloser Media-Buying-Planer: Berechnen Sie das monatliche Werbebudget für Meta und die Google-Suche, Ihre Break-even-Kosten und eine klare Budgetaufteilung. Für Leadgenerierung und E-Commerce."
+  },
+  "hero": {
+    "title": "Planen Sie Ihr Werbebudget mit Sicherheit",
+    "subtitle": "Finden Sie das monatliche Budget, das Ihr Unternehmen auf Meta und in der Google-Suche braucht, und machen Sie daraus einen klaren Media-Buying-Plan, den Sie jedem erklären können.",
+    "ctaPrimary": "Meinen Mediaplan erstellen",
+    "ctaSecondary": "So funktioniert es"
+  },
+  "preview": {
+    "title": "Media-Buying-Plan",
+    "sample": "Beispiel",
+    "alt": "Beispiel für einen Media-Buying-Plan: empfohlenes Monatsbudget 4.550, Tagesbudget 150, 154 Leads zu 29,50 pro Lead, Urteil profitabel mit Spielraum zum Skalieren.",
+    "budget": "Empfohlenes Monatsbudget",
+    "daily": "Tagesbudget",
+    "leads": "Erwartete Leads",
+    "cpl": "Kosten pro Lead",
+    "verdict": "Profitabel, Spielraum zum Skalieren",
+    "sectionTitle": "Ihr Plan in Minuten statt in Tabellen",
+    "sectionText": "Beantworten Sie vier Fragen, füllen Sie die passenden Reiter aus und erhalten Sie ein Budget, ein Urteil und eine Aufteilung auf Meta und die Google-Suche. Zu jeder Zahl gibt es die Formel dahinter."
+  },
+  "trust": {
+    "types": "Für Leadgenerierung und E-Commerce",
+    "platforms": "Meta und Google-Suche",
+    "accounts": "Neue oder bestehende Konten",
+    "languages": "7 Sprachen"
+  },
+  "features": {
+    "title": "Alles, was ein Media Buyer prüft, in einem Planer",
+    "intro": "Von Break-even-Kosten bis zur Lernphase: Jedes Werkzeug beantwortet eine Frage, die Sie sonst von Hand ausrechnen würden.",
+    "cta": "Alle Funktionen ansehen"
+  },
+  "how": {
+    "title": "So funktioniert es",
+    "intro": "Vier Schritte von Ihren Geschäftszahlen zu einem umsetzbaren Plan.",
+    "steps": {
+      "business": {
+        "title": "Geschäftsmodell wählen",
+        "desc": "Leadgenerierung oder E-Commerce, neues oder bestehendes Konto, Meta und Google-Suche."
+      },
+      "numbers": {
+        "title": "Zahlen eingeben",
+        "desc": "Kundenwert oder Bestellkosten sowie Kontodaten oder Schätzungen. Tooltips zeigen, wo Sie jeden Wert finden."
+      },
+      "plan": {
+        "title": "Mediaplan erhalten",
+        "desc": "Ein empfohlenes Budget, erwartete Ergebnisse, ein Urteil und eine Aufteilung auf die Plattformen."
+      },
+      "calculation": {
+        "title": "Berechnung ansehen",
+        "desc": "Öffnen Sie jeden Schritt mit Formel und Ihren eingesetzten Zahlen."
+      }
+    }
+  },
+  "guides": {
+    "title": "Ratgeber und Tipps",
+    "intro": "Praktische Ratgeber des TECH24-Teams zu Budgets, Tests und Skalierung.",
+    "cta": "Alle Ratgeber lesen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "cta": "Alle Fragen ansehen"
+  }
+}

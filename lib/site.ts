@@ -96,14 +96,14 @@ export type GuideMeta = { slug: string; category: 'budgets' | 'metaAds' | 'ecomm
 
 /** Guides registry (newest first). Titles and summaries: guides.items.<slug>. Articles are written in Phase 7. */
 export const GUIDES: GuideMeta[] = [
-  { slug: 'lead-funnel-bottleneck', category: 'strategy', icon: 'target', date: '2026-10-05', slugs: { es: 'cuello-botella-embudo-leads', fr: 'goulot-etranglement-tunnel-leads' } },
-  { slug: 'benchmarks-before-launch', category: 'strategy', icon: 'globe', date: '2026-10-04', slugs: { es: 'benchmarks-antes-de-lanzar', fr: 'benchmarks-avant-lancement' } },
-  { slug: 'seasonality-q4-ad-costs', category: 'strategy', icon: 'layers', date: '2026-10-03', slugs: { es: 'estacionalidad-q4-costes-publicitarios', fr: 'saisonnalite-q4-couts-publicitaires' } },
-  { slug: 'test-budget-decision-rules', category: 'budgets', icon: 'flask', date: '2026-10-02', slugs: { es: 'presupuesto-prueba-reglas-decision', fr: 'budget-test-regles-decision' } },
-  { slug: 'meta-vs-google-budget-split', category: 'budgets', icon: 'pie', date: '2026-10-01', slugs: { es: 'reparto-presupuesto-meta-google', fr: 'repartition-budget-meta-google' } },
-  { slug: 'scaling-ad-spend-costs', category: 'budgets', icon: 'table', date: '2026-09-30', slugs: { es: 'escalar-inversion-publicitaria-costes', fr: 'augmenter-depenses-publicitaires-couts' } },
-  { slug: 'meta-learning-phase-50-results', category: 'metaAds', icon: 'gauge', date: '2026-09-29', slugs: { es: 'fase-aprendizaje-meta-50-resultados', fr: 'phase-apprentissage-meta-50-resultats' } },
-  { slug: 'ecommerce-break-even-roas', category: 'ecommerce', icon: 'cart', date: '2026-09-28', slugs: { es: 'cpa-roas-equilibrio-ecommerce', fr: 'cpa-roas-equilibre-ecommerce' } },
-  { slug: 'cost-per-lead-to-cac', category: 'budgets', icon: 'funnel', date: '2026-09-27', slugs: { es: 'coste-por-lead-a-cac', fr: 'cout-par-lead-cac' } },
-  { slug: 'meta-ads-budget-new-account', category: 'metaAds', icon: 'calculator', date: '2026-09-26', slugs: { es: 'presupuesto-meta-ads-cuenta-nueva', fr: 'budget-meta-ads-nouveau-compte' } },
+  { slug: 'lead-funnel-bottleneck', category: 'strategy', icon: 'target', date: '2026-10-05', slugs: { es: 'cuello-botella-embudo-leads', fr: 'goulot-etranglement-tunnel-leads', de: 'engpass-lead-funnel' } },
+  { slug: 'benchmarks-before-launch', category: 'strategy', icon: 'globe', date: '2026-10-04', slugs: { es: 'benchmarks-antes-de-lanzar', fr: 'benchmarks-avant-lancement', de: 'benchmarks-vor-dem-start' } },
+  { slug: 'seasonality-q4-ad-costs', category: 'strategy', icon: 'layers', date: '2026-10-03', slugs: { es: 'estacionalidad-q4-costes-publicitarios', fr: 'saisonnalite-q4-couts-publicitaires', de: 'saisonalitaet-q4-werbekosten' } },
+  { slug: 'test-budget-decision-rules', category: 'budgets', icon: 'flask', date: '2026-10-02', slugs: { es: 'presupuesto-prueba-reglas-decision', fr: 'budget-test-regles-decision', de: 'testbudget-entscheidungsregeln' } },
+  { slug: 'meta-vs-google-budget-split', category: 'budgets', icon: 'pie', date: '2026-10-01', slugs: { es: 'reparto-presupuesto-meta-google', fr: 'repartition-budget-meta-google', de: 'budgetaufteilung-meta-google' } },
+  { slug: 'scaling-ad-spend-costs', category: 'budgets', icon: 'table', date: '2026-09-30', slugs: { es: 'escalar-inversion-publicitaria-costes', fr: 'augmenter-depenses-publicitaires-couts', de: 'werbeausgaben-skalieren-kosten' } },
+  { slug: 'meta-learning-phase-50-results', category: 'metaAds', icon: 'gauge', date: '2026-09-29', slugs: { es: 'fase-aprendizaje-meta-50-resultados', fr: 'phase-apprentissage-meta-50-resultats', de: 'meta-lernphase-50-ergebnisse' } },
+  { slug: 'ecommerce-break-even-roas', category: 'ecommerce', icon: 'cart', date: '2026-09-28', slugs: { es: 'cpa-roas-equilibrio-ecommerce', fr: 'cpa-roas-equilibre-ecommerce', de: 'break-even-roas-ecommerce' } },
+  { slug: 'cost-per-lead-to-cac', category: 'budgets', icon: 'funnel', date: '2026-09-27', slugs: { es: 'coste-por-lead-a-cac', fr: 'cout-par-lead-cac', de: 'kosten-pro-lead-cac' } },
+  { slug: 'meta-ads-budget-new-account', category: 'metaAds', icon: 'calculator', date: '2026-09-26', slugs: { es: 'presupuesto-meta-ads-cuenta-nueva', fr: 'budget-meta-ads-nouveau-compte', de: 'meta-ads-budget-neues-konto' } },
 ];

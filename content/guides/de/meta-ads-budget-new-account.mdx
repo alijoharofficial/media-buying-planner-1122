@@ -1,0 +1,121 @@
+export const faq = [
+  {
+    q: "Wie viel sollte ich mit einem brandneuen Konto für Meta-Anzeigen ausgeben?",
+    a: "Genug, um einer Anzeigengruppe etwa 50 Ergebnisse zu den maximalen Kosten pro Ergebnis zu ermöglichen, die Sie sich leisten können. Für ein Unternehmen mit Leadgenerierung, das bis zu 40 pro Lead zahlen kann, ist das ein Testbudget von etwa 2.000. Ist das zu viel, starten Sie kleiner mit einer Anzeigengruppe und breiter Zielgruppe und bewerten Sie den Test nach den Kosten pro Ergebnis statt nach dem Lernstatus.",
+  },
+  {
+    q: "Warum einen Aufschlag auf die geschätzten Kosten eines neuen Kontos rechnen?",
+    a: "Ein neues Werbekonto hat keine Conversion-Historie, daher muss Meta erst lernen, wer reagiert, bevor die Auslieferung effizient wird. Die Kosten der ersten Wochen liegen meist über dem, was Benchmarks vermuten lassen. Ein Aufschlag von rund 25 % auf die geschätzten Kosten hält den Plan ehrlich.",
+  },
+  {
+    q: "Soll ich die von Meta geschätzten täglichen Ergebnisse nutzen?",
+    a: "Nutzen Sie sie zum Abgleich, nicht als Plan. Teilen Sie das Tagesbudget durch die geschätzten Ergebnisse, um die implizierten Kosten pro Ergebnis zu erhalten, und vergleichen Sie diese mit dem Wert, den Sie aus CPM, CTR und Conversion-Rate berechnet haben.",
+  },
+  {
+    q: "Wie lange sollte der erste Test laufen?",
+    a: "Vierzehn Tage sind ein guter Standard. Das deckt zwei volle Wochen mit Werktags- und Wochenendverhalten ab und gibt dem Algorithmus Zeit, sich einzupendeln. Stoppen Sie früher nur, wenn die Ausgaben Ihren Stop-Loss ohne Ergebnis erreichen.",
+  },
+  {
+    q: "Was passiert nach dem Test?",
+    a: "Vergleichen Sie die echten Kosten pro Ergebnis mit Ihren Grenzen. Bei höchstens etwa 70 % des Maximums skalieren Sie. Zwischen dieser Linie und dem Maximum optimieren Sie und testen erneut. Über dem Maximum verbessern Sie Angebot, Preis oder Funnel, bevor Sie mehr ausgeben.",
+  },
+]
+
+Ein neues Werbekonto ist der schwierigste Ort, um ein Budget zu planen. Es gibt keine Historie, aus der man lernen könnte, jede Zahl ist eine Schätzung, und selbst die Plattform weiß noch nicht, wer Ihre Käufer sind. Die meisten beantworten die Frage „Wie viel sollen wir ausgeben?“ mit einer runden Zahl, die sich sicher anfühlt. Diese Zahl ist meist entweder zu klein, um dem Algorithmus etwas beizubringen, oder zu groß für das Risiko, das sich das Unternehmen leisten kann.
+
+Dieser Ratgeber zeigt einen besseren Weg. Sie starten bei dem, was Ihr Unternehmen für ein Ergebnis zahlen kann, schätzen, was dieses Ergebnis tatsächlich kosten wird, und dimensionieren dann einen Test, der eine klare Antwort liefert. Jeder Schritt nutzt einfache Rechnungen, und Sie können dieselben Zahlen in wenigen Minuten im [Planer](/calculator) durchspielen.
+
+## Starten Sie bei dem, was Sie sich leisten können, nicht bei dem, was Sie ausgeben möchten
+
+Die erste Zahl jedes Werbebudgets ist nicht das Budget. Es sind die **maximalen Kosten pro Ergebnis**, die Ihr Unternehmen zahlen kann, ohne Geld zu verlieren. Alles andere wird daran gemessen.
+
+Bei Leadgenerierung rechnen Sie rückwärts vom Kunden aus:
+
+- **Gewinn pro Kunde** ist der Kundenwert mal Ihre Marge. Eine Klinik, die pro Neukunde 600 einnimmt und eine Marge von 60 % hat, behält 360, um diesen Kunden zu gewinnen.
+- **Lead-zu-Kunde-Quote** ist Ihre Terminquote mal Erscheinensquote mal Abschlussquote. Wenn 35 % der Leads einen Termin buchen, 65 % der Termine wahrgenommen werden und 50 % der Erschienenen kaufen, werden 11,4 % der Leads zu Kunden.
+- **Maximale Kosten pro Lead** sind der Gewinn pro Kunde mal die Lead-zu-Kunde-Quote. Hier sind das 360 × 11,375 %, also etwa 40,95.
+
+<Formula>Maximale Kosten pro Lead = Kundenwert × Marge × Terminquote × Erscheinensquote × Abschlussquote</Formula>
+
+Im E-Commerce ist die Logik dieselbe, nur ist die Einheit eine Bestellung. Nehmen Sie den durchschnittlichen Bestellwert und ziehen Sie Produktkosten, Versand, Zahlungsgebühren und den durch Retouren verlorenen Wert ab. Was übrig bleibt, ist der Gewinn pro Bestellung und zugleich Ihr Break-even pro Verkauf. Der [Ratgeber zum Break-even im E-Commerce](/guides/ecommerce-break-even-roas) geht diese Rechnung im Detail durch.
+
+Die meisten Unternehmen wollen außerdem einen Sicherheitsabstand. Teilen Sie das Maximum durch 1,25, erhalten Sie **Zielkosten**, die einen Gewinnpuffer von 25 % wahren. Im Klinikbeispiel liegen die Zielkosten pro Lead bei etwa 32,76.
+
+## Schätzen Sie, was ein Ergebnis wirklich kosten wird
+
+Ohne Kontohistorie bauen Sie die Kosten pro Ergebnis aus drei Schätzungen auf:
+
+1. **CPM**: was 1.000 Impressionen in Ihrem Land und Ihrer Nische kosten.
+2. **CTR (Link)**: der Anteil der Menschen, die durchklicken.
+3. **Conversion-Rate**: der Anteil der Klicks, die zu einem Lead oder Verkauf werden. Bei Sofortformularen nehmen Sie stattdessen die Abschlussrate des Formulars.
+
+<Formula>Geschätzte Kosten pro Ergebnis = CPM ÷ (1.000 × CTR × Conversion-Rate)</Formula>
+
+Bei einem CPM von 20, einer Link-CTR von 1,2 % und einer Conversion-Rate der Landingpage von 8 % liegen die geschätzten Kosten pro Lead bei 20 ÷ (1.000 × 0,012 × 0,08) = 20,83.
+
+Für ein brandneues Konto ist diese Zahl zu optimistisch. Meta hat keine Conversion-Daten zum Optimieren, Ihre Creatives sind ungetestet, und Ihr Pixel hat noch keinen einzigen Lead gesehen. Rechnen Sie einen **Aufschlag für neue Konten** von etwa 25 % hinzu und passen Sie für die Saison an, wenn Sie einen starken Monat planen. Die erwarteten Kosten pro Lead werden zu 20,83 × 1,25 = 26,04.
+
+### Kennzeichnen Sie, wie sehr Sie jeder Schätzung vertrauen
+
+Nicht jede Schätzung verdient dasselbe Vertrauen. Ein CPM aus einem anderen Konto, das Sie im selben Land betreuen, ist weit verlässlicher als eine Vermutung. Im Planer trägt jede Schätzung eine Quellenangabe: Ihre Konten, Meta-Schätzung, veröffentlichter Benchmark oder Vermutung. Weniger verlässliche Quellen erhalten eine breitere Spanne. Eine Vermutung kann 30 % besser oder 60 % schlechter ausfallen als erwartet, daher zeigt der Planer niedrige, erwartete und hohe Kosten statt einer einzigen Zahl. Der [Ratgeber zu Benchmarks](/guides/benchmarks-before-launch) zeigt, wo Sie jede Schätzung finden.
+
+## Prüfen Sie die Tragfähigkeit, bevor Sie Geld ausgeben
+
+Vergleichen Sie nun die erwarteten Kosten mit dem Maximum, das Sie sich leisten können:
+
+- **Tragfähig**: Selbst das vorsichtige obere Ende der Spanne liegt unter Ihrem Maximum.
+- **Riskant**: Die erwarteten Kosten liegen unter dem Maximum, das obere Ende aber nicht.
+- **Nicht tragfähig**: Die erwarteten Kosten liegen bereits über dem Maximum.
+
+Im Klinikbeispiel liegen die erwarteten Kosten pro Lead bei 26,04 und das Maximum bei 40,95. Stammen alle drei Schätzungen aus veröffentlichten Benchmarks, liegt das vorsichtige Ende der Spanne 40 % höher, bei etwa 36,46, also noch unter der Grenze: tragfähig. Ist die Conversion-Rate nur eine Vermutung, liegt das vorsichtige Ende 60 % höher, bei etwa 41,66, knapp über der Grenze: riskant. Der Test lohnt sich trotzdem, aber die Conversion-Rate ist die größte Annahme, die Sie im Blick behalten müssen. Hätten die erwarteten Kosten bei 45 gelegen, hätte kein Budget das gelöst. Dann müssten zuerst Angebot, Preis oder Funnel verbessert werden.
+
+Diese Prüfung dauert eine Minute und spart viel Geld. Viele gescheiterte Starts waren schon auf dem Papier nie tragfähig.
+
+<TryPlanner text="Geben Sie Kundenwert, Funnel-Quoten und Schätzungen ein und sehen Sie Testbudget und Tragfähigkeit für Ihr Konto." />
+
+## Dimensionieren Sie den Test so, dass er Ihnen etwas beibringt
+
+Meta optimiert jede Anzeigengruppe einzeln und braucht etwa **50 Ergebnisse pro Anzeigengruppe und Woche**, um die Lernphase zu verlassen. Diese Schwelle ist auch eine gute Testgröße: 50 Ergebnisse reichen, um die echten Kosten pro Ergebnis mit einiger Sicherheit zu beurteilen.
+
+<Formula>Testbudget = 50 × maximale Kosten pro Ergebnis</Formula>
+
+Das Maximum statt der erwarteten Kosten zu nehmen, ist Absicht. So wissen Sie, wie viel Sie höchstens ausgeben müssten, um 50 Ergebnisse zu erreichen, falls die Kosten genau an Ihrer Grenze liegen. Für die Klinik beträgt das Testbudget bis zu 50 × 40,95 = 2.047. Über einen 14-tägigen Test verteilt sind das etwa 146 pro Tag.
+
+Im E-Commerce ergibt dieselbe Regel **Option A**: 50 × Break-even-CPA. Ein Shop mit einem Break-even-CPA von 29,20 braucht etwa 1.460, um 50 Käufe zum Break-even zu erreichen. Ist das mehr, als Sie ausgeben können, nutzen Sie **Option B**: Optimieren Sie in der ersten Woche auf „In den Warenkorb“, damit der Algorithmus mehr Signale erhält, und wechseln Sie dann zu Kauf. Halten Sie die Kosten pro Warenkorb-Hinzufügung unter Ihrem Break-even-CPA mal Ihrer Quote von Warenkorb zu Kauf.
+
+### Wenn das Budget kleiner ist als der Test
+
+Sie müssen das Budget nicht künstlich erhöhen. Mit weniger Geld nutzen Sie eine Anzeigengruppe mit breiter Zielgruppe, damit jedes Ergebnis an derselben Stelle landet. Die Anzeigengruppe bleibt dann vielleicht in „Eingeschränkte Lernphase“, und das ist in Ordnung, solange die Kosten pro Ergebnis im Ziel bleiben. Vermeiden müssen Sie, ein kleines Budget auf viele Anzeigengruppen zu verteilen, denn dann hat jede zu wenig Daten zum Lernen. Der [Ratgeber zur Lernphase](/guides/meta-learning-phase-50-results) erklärt die Details für CBO-, ABO- und Advantage+-Kampagnen.
+
+### Lassen Sie Raum für Creative-Tests
+
+Jedes neue Creative braucht etwas Budget, bevor Sie es beurteilen können. Eine praktische Regel sind etwa 2,5-mal Ihre Zielkosten pro Ergebnis pro Creative. Drei Creatives bei Zielkosten von 32,76 brauchen etwa 246. Kostet der Test aller Creatives mehr als das gesamte Testbudget, testen Sie weniger gleichzeitig.
+
+## Legen Sie die Regeln vor dem Teststart fest
+
+Die teuersten Fehler passieren nach dem Start, wenn auf ein paar Tage Daten reagiert wird. Entscheiden Sie vorher, was jedes Ergebnis bedeutet:
+
+- **Skalieren**, wenn die echten Kosten pro Ergebnis höchstens 70 % Ihres Maximums betragen. Im Klinikbeispiel liegt diese Linie bei etwa 28,67 pro Lead. Stellen Sie den Plan auf „Mit Daten“ um und berechnen Sie ein Skalierungsbudget aus echten Zahlen.
+- **Optimieren und erneut testen**, wenn die Kosten zwischen dieser Linie und dem Maximum liegen. Arbeiten Sie an Creatives, Zielgruppe oder Landingpage und testen Sie dann erneut.
+- **Stoppen**, wenn die Kosten über dem Maximum liegen. Verbessern Sie Angebot, Preis oder Funnel, bevor Sie mehr ausgeben.
+
+Ergänzen Sie außerdem einen **Stop-Loss**. Gibt eine Anzeigengruppe oder ein Creative das Zwei- bis Dreifache Ihrer maximalen Kosten pro Ergebnis ganz ohne Ergebnis aus, pausieren Sie es. Für die Klinik sind das 82 bis 123 ohne einen einzigen Lead.
+
+### Bedenken Sie, was ein Lead-Test nicht verraten kann
+
+Ein Test mit 2.000, der 78 Leads zu je 26 bringt, liefert bei einer Lead-zu-Kunde-Quote von 11,4 % nur etwa 9 Kunden. Neun Kunden reichen nicht, um Ihre Abschlussquote zu bestätigen. Verfolgen Sie Termine, Erscheinen und Verkäufe nach dem Test weiter in Ihrem CRM und behandeln Sie den Skalierungsplan als Schätzung, bis sich diese Zahlen stabilisieren. Der Ratgeber zu den [Kosten pro Kunde (CAC)](/guides/cost-per-lead-to-cac) erklärt, warum das so wichtig ist.
+
+## Machen Sie aus dem Test ein Monatsbudget
+
+Sobald der Test echte Kosten pro Ergebnis liefert, ergibt sich das Skalierungsbudget aus Ihrem Ziel. Brauchen Sie 20 Neukunden pro Monat bei einer Lead-zu-Kunde-Quote von 11,4 %, benötigen Sie etwa 176 Leads. Zu den erwarteten Kosten von 26,04 sind das rund 4.580 pro Monat, mit einer Spanne von etwa 3.200 bis 7.300, je nachdem, wie sich die Schätzungen bewähren. Ersetzen Sie die Schätzung nach dem Test durch echte Daten: Die Kosten steigen außerdem mit den Ausgaben, wie der [Ratgeber zur Skalierung](/guides/scaling-ad-spend-costs) erklärt.
+
+## Eine kurze Checkliste für neue Konten
+
+- Ermitteln Sie zuerst Ihre maximalen Kosten und Zielkosten pro Ergebnis.
+- Bauen Sie die erwarteten Kosten aus CPM, CTR und Conversion-Rate auf, plus Aufschlag für neue Konten.
+- Prüfen Sie die Tragfähigkeit mit dem vorsichtigen Ende der Spanne.
+- Dimensionieren Sie den Test auf 50 Ergebnisse zu Ihren maximalen Kosten und halten Sie die Zahl der Anzeigengruppen niedrig.
+- Notieren Sie die Regeln zum Skalieren, Optimieren und Stoppen sowie den Stop-Loss vor dem Start.
+- Wechseln Sie nach dem Test zu echten Daten und rechnen Sie neu.
+
+Der [Planer](/calculator) erledigt jeden dieser Schritte für Sie und zeigt die Berechnung hinter jeder Zahl, damit Sie den Plan einem Kunden oder einer Führungskraft mit Sicherheit erklären können.

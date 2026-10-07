@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Ratgeber und Tipps zu Werbebudgets und Media Buying",
+    "description": "Praktische Ratgeber zu Werbebudgets für Meta und Google, CAC, Break-even-ROAS, Lernphase, Skalierung und Testbudgets, geschrieben vom TECH24-Team."
+  },
+  "eyebrow": "Ratgeber und Tipps",
+  "title": "Ratgeber und Tipps für klügere Werbebudgets",
+  "intro": "Schritt-für-Schritt-Ratgeber des TECH24-Teams. Jeder verlinkt auf den Planer, damit Sie es mit Ihren eigenen Zahlen ausprobieren können.",
+  "categories": {
+    "budgets": "Budgets",
+    "metaAds": "Meta-Anzeigen",
+    "ecommerce": "E-Commerce",
+    "strategy": "Strategie"
+  },
+  "items": {
+    "meta-ads-budget-new-account": {
+      "title": "So berechnen Sie ein Meta-Ads-Budget für ein neues Werbekonto",
+      "summary": "Starten Sie mit dem, was Sie sich pro Ergebnis leisten können, und planen Sie einen Test, der die Lernphase verlassen kann."
+    },
+    "cost-per-lead-to-cac": {
+      "title": "Budgets für Leadgenerierung: von den Kosten pro Lead zu den Kosten pro Kunde (CAC)",
+      "summary": "Warum die Kosten pro Lead allein in die Irre führen und wie Termin-, Erscheinens- und Abschlussquote Ihre echte Grenze bestimmen."
+    },
+    "ecommerce-break-even-roas": {
+      "title": "Break-even-CPA und -ROAS im E-Commerce erklärt, inklusive Retouren und Gebühren",
+      "summary": "Ermitteln Sie, wie viel Gewinn eine Bestellung für Werbung übrig lässt und welchen ROAS Sie für den Break-even brauchen."
+    },
+    "meta-learning-phase-50-results": {
+      "title": "Die Meta-Lernphase: warum 50 Ergebnisse pro Anzeigengruppe zählen (CBO, ABO, Advantage+)",
+      "summary": "Wie die Budgetart die Zahl der Anzeigengruppen verändert, die Daten brauchen, und was bei kleinen Budgets zu tun ist."
+    },
+    "scaling-ad-spend-costs": {
+      "title": "Werbeausgaben skalieren: warum die Kosten mit dem Budget steigen",
+      "summary": "Abnehmende Erträge, die Kosten jeder Verdopplung und wie Sie Ihre profitable Grenze finden."
+    },
+    "meta-vs-google-budget-split": {
+      "title": "Meta oder Google-Suche: so teilen Sie Ihr Budget auf",
+      "summary": "Plattform-Mindestbudgets, Grenzkosten und Grenzen des Suchvolumens, verständlich erklärt."
+    },
+    "test-budget-decision-rules": {
+      "title": "Ein Testbudget planen und die Entscheidungsregeln danach",
+      "summary": "Wie viel Sie testen, wann Sie stoppen und welches Ergebnis Skalieren, Optimieren oder Stoppen bedeutet."
+    },
+    "seasonality-q4-ad-costs": {
+      "title": "Saisonalität: wie Q4 und Spitzenmonate Ihre Werbekosten verändern",
+      "summary": "Warum November und Dezember mehr kosten und wie Sie Budgets rund um Spitzenmonate planen."
+    },
+    "benchmarks-before-launch": {
+      "title": "Wo Sie vor dem Start Benchmarks für CPM, CTR und Conversion-Rate finden",
+      "summary": "Verlässliche Quellen für Schätzungen und wie Sie kennzeichnen, wie sehr Sie jeder vertrauen."
+    },
+    "lead-funnel-bottleneck": {
+      "title": "Den Engpass in Ihrem Lead-Funnel finden (Termin-, Erscheinens- und Abschlussquote)",
+      "summary": "Welche Stufe Sie am meisten kostet und was eine Verbesserung um 10 Punkte wert ist."
+    }
+  },
+  "index": {
+    "searchLabel": "Ratgeber durchsuchen",
+    "searchPlaceholder": "Ratgeber durchsuchen",
+    "filterLabel": "Nach Kategorie filtern",
+    "all": "Alle",
+    "count": "{count, plural, one {# Ratgeber} other {# Ratgeber}} angezeigt",
+    "noResults": "Keine Ratgeber passen zu Ihrer Suche."
+  },
+  "article": {
+    "titleSuffix": "Ratgeber",
+    "byline": "Ratgeber von TECH24",
+    "readingTime": "{minutes} Min. Lesezeit",
+    "faqTitle": "Häufig gestellte Fragen",
+    "relatedTitle": "Ähnliche Ratgeber",
+    "authorTitle": "Geschrieben vom TECH24-Team",
+    "authorText": "TECH24 schreibt praktische Ratgeber zu digitaler Werbung, Media Buying und Wachstum für Marketer und Unternehmer.",
+    "authorLink": "TECH24 besuchen",
+    "cta": {
+      "title": "Probieren Sie es in {brand} aus",
+      "text": "Geben Sie Ihre eigenen Zahlen ein und erhalten Sie in Minuten ein Budget, ein Urteil und die Berechnung dahinter.",
+      "button": "Planer öffnen"
+    }
+  }
+}

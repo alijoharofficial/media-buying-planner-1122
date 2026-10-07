@@ -1,0 +1,130 @@
+{
+  "features": {
+    "meta": {
+      "title": "Funktionen: Werkzeuge für Budget, CAC, ROAS und Skalierung",
+      "description": "Alle Werkzeuge des Media-Buying-Planers: Budgetrechner, CAC und Break-even-ROAS, Testplaner, Lernphasen-Check, Skalierungstabelle, Budgetaufteilung und mehr."
+    },
+    "eyebrow": "Funktionen",
+    "title": "Jede Prüfung eines Media Buyers, direkt eingebaut",
+    "intro": "Zehn Werkzeuge, die zusammenarbeiten. Jedes beantwortet eine Frage, die Sie sonst in einer Tabelle lösen würden.",
+    "cta": "Meinen Mediaplan erstellen"
+  },
+  "howTo": {
+    "meta": {
+      "title": "So nutzen Sie den Werbebudget-Planer",
+      "description": "Schritt für Schritt: Geschäftsmodell wählen, Zahlen eingeben, Media-Buying-Plan lesen und Berechnung ansehen. Dazu, wo Sie jede Zahl in Meta und Google Ads finden."
+    },
+    "eyebrow": "Anleitung",
+    "title": "Von Ihren Zahlen zum Media-Buying-Plan",
+    "intro": "Die meisten Pläne dauern fünf bis zehn Minuten. Hier sehen Sie, was jeder Schritt und jeder Reiter abfragt und wo Sie die Zahlen finden.",
+    "tabsTitle": "Die Reiter des Planers",
+    "tabsIntro": "Sie sehen nur die Reiter, die zu Ihrem Geschäftsmodell und Ihrem Konto passen.",
+    "tabs": {
+      "setup": "Wählen Sie Nische, Regionen, Planungsmonat und Währung, dann Ihre Zielzahl an Kunden oder Verkäufen oder Ihr festes Monatsbudget.",
+      "business": "Für Leadgenerierung: Kundenwert, Marge sowie Termin-, Erscheinens- und Abschlussquote. Für E-Commerce: Bestellwert, Produktkosten, Versand, Gebühren und Retouren.",
+      "account": "Nur für Konten mit Daten: Ausgaben, Impressionen, Reichweite, Klicks und Ergebnisse pro Land sowie Zahlen der Google-Suche. Sie können einen CSV-Export importieren.",
+      "estimates": "Nur für neue Konten: CPM, CTR und Conversion-Raten für Meta sowie Suchvolumen, Gebote und Raten für Google, jeweils mit Quellenangabe.",
+      "planning": "Wie viele Meta-Anzeigengruppen und Creatives Sie planen, die Testdauer und ob Retargeting dazugehört.",
+      "advanced": "Lernschwellen, Puffer, Spannenfaktoren und Saisonalität. Standardwerte sind ausgefüllt, die meisten ändern sie nie."
+    },
+    "whereTitle": "Wo Sie jede Zahl finden",
+    "whereIntro": "Verwenden Sie auf jeder Plattform denselben Zeitraum. 30 Tage sind ein guter Standard.",
+    "where": {
+      "number": "Zahl",
+      "meta": "Meta-Werbeanzeigenmanager",
+      "google": "Google Ads",
+      "rows": {
+        "spend": { "name": "Ausgaben", "meta": "Spalten → Performance → Ausgegebener Betrag", "google": "Kampagnen → Kosten" },
+        "impressions": { "name": "Impressionen", "meta": "Spalten → Performance → Impressionen", "google": "Kampagnen → Impr." },
+        "reach": { "name": "Reichweite", "meta": "Spalten → Performance → Reichweite", "google": "Für die Suche nicht verwendet" },
+        "clicks": { "name": "Klicks", "meta": "Spalten → Performance und Klicks → Link-Klicks", "google": "Kampagnen → Klicks" },
+        "leads": { "name": "Leads", "meta": "Ergebnisse (Lead-Kampagnen) oder Leads auf der Website", "google": "Conversions (primäre Lead-Aktion)" },
+        "purchases": { "name": "Käufe und Wert", "meta": "Spalten → Conversions → Käufe, Conversion-Wert der Käufe", "google": "Conversions und Conv.-Wert" },
+        "impressionShare": { "name": "Anteil an möglichen Impressionen", "meta": "Nicht verfügbar", "google": "Spalten → Wettbewerbsmesswerte → Anteil an möglichen Impressionen im Suchnetzwerk" },
+        "lostBudget": { "name": "Entgangener Anteil an Impressionen", "meta": "Nicht verfügbar", "google": "Wegen Budget bzw. wegen Rang entgangener Anteil an möglichen Impressionen (Suche)" },
+        "searchVolume": { "name": "Suchvolumen", "meta": "Nicht verfügbar", "google": "Tools → Keyword-Planer → Durchschn. monatl. Suchanfragen" },
+        "bids": { "name": "Gebote", "meta": "Nicht verfügbar", "google": "Keyword-Planer → Gebot für obere Seitenposition (unterer und oberer Bereich)" }
+      }
+    },
+    "cta": "Mit der Planung beginnen"
+  },
+  "about": {
+    "meta": {
+      "title": "Über uns",
+      "description": "Was der Planer macht, wie er Budgets berechnet, in verständlicher Sprache, und warum jedes Ergebnis eine Schätzung ist."
+    },
+    "eyebrow": "Über uns",
+    "title": "Über {brand}",
+    "intro": "{brand} macht aus Ihren Geschäftszahlen ein Werbebudget und einen Media-Buying-Plan für Meta und die Google-Suche.",
+    "sections": [
+      {
+        "heading": "Was der Planer macht",
+        "body": [
+          "Er beantwortet die Fragen, die sich jeder Media Buyer vor dem Ausgeben stellt: Wie viel Budget brauchen wir, was bringt es, können wir es uns leisten und wie verteilen wir es auf die Plattformen?",
+          "Er funktioniert für Leadgenerierung und E-Commerce, für neue Konten und Konten mit Historie, und in sieben Sprachen."
+        ]
+      },
+      {
+        "heading": "So funktioniert es, verständlich erklärt",
+        "body": [
+          "Ihre Geschäftszahlen setzen die Grenzen. Kundenwert und Marge oder Bestellwert und Kosten bestimmen, wie viel Sie höchstens für einen Kunden, einen Lead oder einen Verkauf zahlen können.",
+          "Daten oder Tests ermitteln die echten Kosten. Mit Kontohistorie gehen wir davon aus, was Ergebnisse Sie tatsächlich kosten. Ohne Historie planen wir ein Testbudget und klare Regeln für die Zeit, wenn echte Kosten vorliegen.",
+          "Danach berücksichtigen wir, wie die Kosten beim Skalieren steigen, die Lernphase auf jeder Plattform und wie viel die Google-Suche tatsächlich liefern kann."
+        ]
+      },
+      {
+        "heading": "Ergebnisse sind Schätzungen",
+        "body": [
+          "Jeder Plan ist eine Schätzung, kein Versprechen. Werbekosten ändern sich mit Ihren Creatives, Ihrem Angebot, dem Wettbewerb, der Saison und Plattform-Updates. Nutzen Sie den Plan, um zu entscheiden, was Sie testen und wie viel Sie riskieren, und aktualisieren Sie ihn dann mit echten Ergebnissen."
+        ]
+      },
+      {
+        "heading": "Ihre Daten bleiben bei Ihnen",
+        "body": ["Eingaben im Planer werden nur in Ihrem Browser gespeichert. Nichts, was Sie im Planer eingeben, wird an unsere Server gesendet."]
+      }
+    ],
+    "creditsTitle": "Ratgeber und Mitwirkende",
+    "creditsText": "Die Ratgeber auf dieser Website schreibt das TECH24-Team.",
+    "creditsLink": "TECH24 besuchen"
+  },
+  "services": {
+    "meta": {
+      "title": "Leistungen: Planer-Werkzeuge und Expertenmeinung",
+      "description": "Budgetrechner für Leads und E-Commerce, Testplaner für neue Konten, Lernphasen-Check, Skalierungstabelle, Budgetaufteilung, Google-Obergrenze und Engpass-Finder, dazu eine Expertenmeinung."
+    },
+    "eyebrow": "Leistungen",
+    "title": "Werkzeuge für jede Budgetentscheidung",
+    "intro": "Jedes Werkzeug ist Teil des Planers. Öffnen Sie es, geben Sie Ihre Zahlen ein und erhalten Sie in Minuten eine Antwort.",
+    "useIt": "Nutzen",
+    "useItFor": "{service} nutzen",
+    "expertTitle": "Expertenmeinung",
+    "expertText": "Soll ein Profi Ihre Zahlen, Ihren Funnel und Ihren Skalierungsplan prüfen, bevor Sie Geld ausgeben? Holen Sie sich eine Expertenmeinung.",
+    "expertCta": "Expertenmeinung einholen"
+  },
+  "contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Fragen, Feedback oder Ideen zum Media-Buying-Planer? Schreiben Sie uns."
+    },
+    "eyebrow": "Kontakt",
+    "title": "Kontakt aufnehmen",
+    "intro": "Fragen, Feedback oder eine Funktion, die Sie sich wünschen? Schreiben Sie uns, wir antworten per E-Mail.",
+    "fields": { "name": "Ihr Name", "email": "E-Mail-Adresse", "message": "Nachricht", "website": "Dieses Feld leer lassen" },
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank. Ihre Nachricht wurde gesendet.",
+    "privacy": "Wir verwenden Ihre Angaben nur, um auf Ihre Nachricht zu antworten.",
+    "errors": {
+      "name": "Geben Sie Ihren Namen ein (2 bis 100 Zeichen).",
+      "email": "Geben Sie eine gültige E-Mail-Adresse ein.",
+      "message": "Schreiben Sie mindestens 10 Zeichen.",
+      "verification": "Bitte schließen Sie die Verifizierung ab.",
+      "rateLimited": "Zu viele Nachrichten. Bitte versuchen Sie es in einigen Minuten erneut.",
+      "invalid": "Einige Felder sind ungültig. Prüfen Sie das Formular und versuchen Sie es erneut.",
+      "unavailable": "Wir konnten Ihre Nachricht gerade nicht senden. Bitte versuchen Sie es später erneut."
+    },
+    "expertTitle": "Brauchen Sie eine Expertenmeinung?",
+    "expertText": "Für eine professionelle Prüfung von Budget, Funnel und Skalierungsplan fordern Sie eine Expertenmeinung an.",
+    "expertLink": "Expertenmeinung einholen"
+  }
+}

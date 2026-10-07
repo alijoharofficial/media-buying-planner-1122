@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "tagline": "Werbebudget-Rechner und Media-Buying-Planer für Meta und Google",
+    "description": "Berechnen Sie das monatliche Werbebudget, das Sie für Meta und die Google-Suche brauchen, und machen Sie daraus einen klaren Media-Buying-Plan."
+  },
+  "a11y": {
+    "skipToContent": "Zum Inhalt springen",
+    "logoAlt": "Logo von {brand}",
+    "homeLink": "Startseite von {brand}"
+  },
+  "theme": {
+    "toggle": "Design wechseln",
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus",
+    "system": "Systemeinstellung"
+  },
+  "language": {
+    "label": "Sprache",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "Demnächst verfügbar",
+    "moreInfo": "Weitere Informationen",
+    "close": "Schließen"
+  },
+  "support": {
+    "tagline": "Ihre Zahlen stehen. Soll ein Profi sie prüfen?",
+    "subline": "Holen Sie sich eine Expertenmeinung zu Budget, Funnel und Skalierungsplan.",
+    "button": "Expertenmeinung einholen"
+  },
+  "nav": {
+    "label": "Hauptmenü",
+    "menu": "Menü",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "planner": "Planer",
+    "features": "Funktionen",
+    "howToUse": "Anleitung",
+    "guides": "Ratgeber",
+    "faq": "FAQ",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "services": "Leistungen",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "disclaimer": "Haftungsausschluss",
+    "cookies": "Cookie-Richtlinie"
+  },
+  "footer": {
+    "expertText": "Soll jemand Ihr Budget noch einmal prüfen?",
+    "expertLink": "Expertenmeinung",
+    "quickLinks": "Schnellzugriff",
+    "features": "Planer-Werkzeuge",
+    "qr": "Kostenloser QR-Code-Generator",
+    "guidesBy": "Ratgeber von TECH24"
+  },
+  "cookie": {
+    "label": "Cookie-Einwilligung",
+    "text": "Wir nutzen nur notwendigen Browserspeicher, um Ihre Eingaben im Planer zu sichern. Mit Ihrer Erlaubnis verwenden wir außerdem Analyse-Cookies, um zu verstehen, wie die Website genutzt wird.",
+    "policy": "Cookie-Richtlinie lesen",
+    "accept": "Analyse erlauben",
+    "reject": "Nur notwendige"
+  },
+  "errors": {
+    "notFoundTitle": "Diese Seite gibt es nicht",
+    "notFoundText": "Der Link ist vielleicht veraltet oder falsch geschrieben. Ihre gespeicherten Planer-Eingaben sind weiterhin sicher in Ihrem Browser.",
+    "serverTitle": "Etwas ist schiefgelaufen",
+    "serverText": "Ein unerwarteter Fehler hat das Laden dieser Seite verhindert. Bitte versuchen Sie es erneut.",
+    "retry": "Erneut versuchen",
+    "home": "Zur Startseite",
+    "planner": "Planer öffnen"
+  },
+  "protected": "Dieser Inhalt ist geschützt",
+  "breadcrumbs": {
+    "home": "Startseite",
+    "label": "Brotkrumennavigation"
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "title": "Werbebudget-Rechner und Media-Buying-Plan",
+    "description": "Beantworten Sie vier Fragen, geben Sie Ihre Zahlen ein und erhalten Sie ein monatliches Werbebudget, erwartete Ergebnisse und eine Budgetaufteilung für Meta und die Google-Suche."
+  },
+  "title": "Erstellen Sie Ihren Media-Buying-Plan",
+  "intro": "Beantworten Sie vier kurze Fragen und füllen Sie dann die Reiter aus. Alles bleibt in Ihrem Browser.",
+  "step0": {
+    "progress": "Frage {current} von {total}",
+    "back": "Zurück",
+    "next": "Weiter",
+    "start": "Planung starten",
+    "done": "Zurück zum Formular",
+    "comingSoon": "Demnächst",
+    "questions": {
+      "businessType": {
+        "title": "Für welche Art von Geschäft planen Sie?",
+        "hint": "Davon hängt ab, welche Zahlen wir abfragen und wie wir den Gewinn bewerten.",
+        "short": "Geschäftsmodell"
+      },
+      "accountStatus": {
+        "title": "Hat das Werbekonto bisherige Daten?",
+        "hint": "Mit Daten starten wir bei Ihren echten Kosten. Ohne Daten planen wir zuerst einen Test.",
+        "short": "Kontostatus"
+      },
+      "platforms": {
+        "title": "Welche Plattformen nutzen Sie?",
+        "hint": "Wählen Sie eine oder beide. Weitere Plattformen folgen.",
+        "short": "Plattformen"
+      },
+      "goalType": {
+        "title": "Was ist Ihr Ziel?",
+        "hint": "Sagen Sie uns, wie viele Ergebnisse Sie möchten oder wie viel Sie ausgeben können.",
+        "short": "Ziel"
+      }
+    },
+    "options": {
+      "leads": {
+        "label": "Leadgenerierung",
+        "desc": "Sie sammeln Leads und vereinbaren dann Gespräche oder Termine, aus denen Kunden werden."
+      },
+      "ecommerce": {
+        "label": "E-Commerce",
+        "desc": "Sie verkaufen Produkte online, und Kunden kaufen in Ihrem Shop."
+      },
+      "new": {
+        "label": "Neues Konto",
+        "desc": "Noch keine brauchbare Historie. Wir planen ein Testbudget und Entscheidungsregeln."
+      },
+      "existing": {
+        "label": "Mit Daten",
+        "desc": "Mindestens einige Wochen Ausgaben und Ergebnisse, aus denen wir lernen können."
+      },
+      "meta": {
+        "label": "Meta",
+        "desc": "Anzeigen auf Facebook und Instagram."
+      },
+      "google": {
+        "label": "Google-Suche",
+        "desc": "Suchanzeigen bei Google."
+      },
+      "shopping": {
+        "label": "Google Shopping / PMax"
+      },
+      "youtube": {
+        "label": "YouTube"
+      },
+      "tiktok": {
+        "label": "TikTok"
+      },
+      "target": {
+        "label": "Zielanzahl an Ergebnissen",
+        "desc": "Ich weiß, wie viele Kunden oder Verkäufe ich pro Monat möchte."
+      },
+      "budget": {
+        "label": "Festes Monatsbudget",
+        "desc": "Ich weiß, wie viel ich pro Monat ausgeben kann."
+      }
+    }
+  },
+  "chips": {
+    "label": "Ihre Antworten",
+    "edit": "{item} ändern, derzeit {value}"
+  },
+  "tabs": {
+    "label": "Bereiche des Planers",
+    "setup": "Grundlagen",
+    "business": "Geschäftszahlen",
+    "account": "Kontodaten",
+    "estimates": "Schätzungen",
+    "planning": "Planung",
+    "advanced": "Erweiterte Einstellungen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "calculate": "Meinen Plan berechnen",
+    "fixErrors": "{count, plural, one {# Problem beheben, um zu berechnen} other {# Probleme beheben, um zu berechnen}}",
+    "showIssues": "{count, plural, one {# Problem anzeigen} other {# Probleme anzeigen}}",
+    "errorsCount": "{count, plural, one {# Fehler} other {# Fehler}}",
+    "warningsCount": "{count, plural, one {# Warnung} other {# Warnungen}}"
+  },
+  "tabIntro": {
+    "setup": "Sagen Sie uns, was Sie verkaufen, wo und wann. Das bestimmt Benchmarks, Saisonalität und Währung.",
+    "business": "Ihre Geschäftszahlen setzen die Grenzen: was Sie sich für einen Lead, einen Kunden oder einen Verkauf leisten können.",
+    "account": "Geben Sie die Ergebnisse Ihrer Werbekonten für einen aktuellen Zeitraum ein oder importieren Sie einen CSV-Export.",
+    "estimates": "Ihre besten Schätzungen für ein neues Konto. Wählen Sie für jede eine Quelle, damit wir wissen, wie sicher sie ist.",
+    "planning": "Wie Sie Kampagnen und Creative-Tests strukturieren möchten.",
+    "advanced": "Sinnvolle Standardwerte sind bereits ausgefüllt. Ändern Sie sie nur, wenn Sie wissen, dass sich Ihre Konten anders verhalten."
+  },
+  "groups": {
+    "metaPerformance": "Meta-Zielgruppe",
+    "googlePerformance": "Leistung in der Google-Suche",
+    "metaEstimates": "Meta-Schätzungen",
+    "metaCrossCheck": "Von Meta geschätzte tägliche Ergebnisse (optionaler Abgleich)",
+    "googleEstimates": "Schätzungen für die Google-Suche",
+    "learning": "Lernphase und Datensicherheit",
+    "costs": "Kosten und Puffer",
+    "testing": "Tests und Entscheidungsregeln",
+    "retargeting": "Retargeting",
+    "budgetSteps": "Budgetaufteilung und Steigerung",
+    "ranges": "Spannenfaktoren nach Quelle",
+    "seasonal": "Saisonale CPM-Faktoren",
+    "campaigns": "Meta-Kampagnen",
+    "metaRows": "Meta-Leistung nach Land"
+  },
+  "fields": {
+    "niche": {
+      "label": "Nische",
+      "placeholder": "Nischen durchsuchen",
+      "tooltip": "Wählen Sie, was Ihrem Angebot am nächsten kommt. Das bestimmt Standard-Benchmarks und Saisonalität, zum Beispiel höhere Kosten im E-Commerce in Q4."
+    },
+    "regions": {
+      "label": "Region(en)",
+      "placeholder": "Länder durchsuchen",
+      "tooltip": "Die Länder, auf die Sie zielen. Werbekosten unterscheiden sich stark je nach Land, daher planen wir jedes Land einzeln, wenn Sie Daten für mehrere haben."
+    },
+    "month": {
+      "label": "Planungsmonat",
+      "tooltip": "Der Monat, für den Sie planen. Starke Monate wie November und Dezember kosten meist mehr pro Impression."
+    },
+    "currency": {
+      "label": "Währung",
+      "tooltip": "Alle Geldfelder verwenden diese Währung. Wir schlagen eine anhand Ihrer ersten Region vor, Sie können sie ändern."
+    },
+    "targetResults": {
+      "label_leads": "Ziel: Neukunden pro Monat",
+      "label_ecommerce": "Ziel: Verkäufe pro Monat",
+      "tooltip": "Wie viele Neukunden (Leadgenerierung) oder Bestellungen (E-Commerce) Sie pro Monat möchten. Davon rechnen wir rückwärts auf das Budget."
+    },
+    "monthlyBudget": {
+      "label": "Verfügbares Monatsbudget",
+      "tooltip": "Das Maximum, das Sie pro Monat für Werbung ausgeben können. Wir zeigen, was es liefern kann und ob es reicht, um die Lernphase zu verlassen."
+    },
+    "clientValue": {
+      "label": "Durchschnittlicher Kundenwert",
+      "tooltip": "Was ein Neukunde Ihnen im Schnitt zahlt: den Paketpreis oder den ersten Kauf. Sie finden ihn in Ihrem CRM oder Ihren Verkaufsunterlagen."
+    },
+    "margin": {
+      "label": "Marge",
+      "tooltip": "Gewinn nach Erbringung der Leistung, vor Werbekosten. Eine Marge von 60 % auf 600 lässt 360, um diesen Kunden zu gewinnen."
+    },
+    "bookingRate": {
+      "label": "Terminquote",
+      "tooltip": "Anteil der Leads, die ein Gespräch oder eine Beratung buchen. Termine ÷ Leads, aus Ihrem CRM oder Kalender."
+    },
+    "showRate": {
+      "label": "Erscheinensquote",
+      "tooltip": "Anteil der Termine, die tatsächlich wahrgenommen werden. Erschienene ÷ Termine."
+    },
+    "closeRate": {
+      "label": "Abschlussquote",
+      "tooltip": "Anteil der Erschienenen, die kaufen. Kunden ÷ Erschienene. Mit bisherigen Daten nutzen wir stattdessen Ihren echten Funnel."
+    },
+    "rateSource": {
+      "label": "Quelle dieser Quoten",
+      "tooltip": "Woher Termin-, Erscheinens- und Abschlussquote stammen. CRM-Daten sind am verlässlichsten und ergeben eine engere Spanne."
+    },
+    "leadSource": {
+      "label": "Lead-Quelle",
+      "tooltip": "Sofortformulare sammeln Leads direkt in Meta und sind meist günstiger, doch diese Leads buchen seltener Termine als Leads von Landingpages."
+    },
+    "aov": {
+      "label": "Durchschnittlicher Bestellwert (AOV)",
+      "tooltip": "Durchschnittlicher Umsatz pro Bestellung. Für einen neuen Shop nehmen Sie den Preis Ihres Hauptprodukts oder Bundles."
+    },
+    "productCost": {
+      "label": "Produktkosten pro Bestellung",
+      "tooltip": "Was Sie die Produkte einer durchschnittlichen Bestellung kosten, einschließlich Verpackung."
+    },
+    "shipping": {
+      "label": "Versandkosten pro Bestellung",
+      "tooltip": "Was Sie für den Versand einer durchschnittlichen Bestellung zahlen. Tragen Sie 0 ein, wenn der Kunde den Versand voll bezahlt."
+    },
+    "paymentFee": {
+      "label": "Zahlungsgebühren",
+      "tooltip": "Gebühren des Zahlungsanbieters als Anteil am Bestellwert, oft 2 % bis 4 %."
+    },
+    "returnRate": {
+      "label": "Retourenquote",
+      "tooltip": "Anteil des Umsatzes, der durch Retouren und Erstattungen verloren geht. Wichtig in der Mode, wo er 20 % oder mehr betragen kann."
+    },
+    "ordersPerCustomer": {
+      "label": "Bestellungen pro Kunde",
+      "tooltip": "Durchschnittliche Zahl der Bestellungen eines Kunden über die gesamte Kundenbeziehung. Wird nur genutzt, wenn Sie den Gewinn nach Kundenlebenswert bewerten."
+    },
+    "judgeOn": {
+      "label": "Gewinn bewerten nach",
+      "tooltip": "Die Erstbestellung ist der sichere Standard. Der Kundenlebenswert erlaubt höhere Kosten pro Kunde, aber nur, wenn Wiederholungskäufe belegt sind."
+    },
+    "days": {
+      "label": "Zeitraum (Tage)",
+      "tooltip": "Wie viele Tage die Kontodaten unten abdecken. 30 Tage sind ein guter Standard. Nutzen Sie in Meta und Google denselben Zeitraum."
+    },
+    "retargetingAudience": {
+      "label": "Größe der Retargeting-Zielgruppe",
+      "tooltip": "Website-Besucher plus Interaktionen in sozialen Netzwerken der letzten 30 Tage. Zu finden im Meta Events Manager oder in Ihren Custom Audiences."
+    },
+    "gCost": {
+      "label": "Kosten",
+      "tooltip": "Google Ads → Kampagnen → Kosten für denselben Zeitraum."
+    },
+    "gImpressions": {
+      "label": "Impressionen",
+      "tooltip": "Google Ads → Kampagnen → Impr."
+    },
+    "gClicks": {
+      "label": "Klicks",
+      "tooltip": "Google Ads → Kampagnen → Klicks."
+    },
+    "gConversions": {
+      "label": "Conversions",
+      "tooltip": "Google Ads → Kampagnen → Conversions. Zählen Sie nur die primäre Conversion (Lead oder Kauf)."
+    },
+    "gConversionValue": {
+      "label": "Conversion-Wert",
+      "tooltip": "Google Ads → Kampagnen → Conv.-Wert. Der von Google gemeldete Umsatz aus Käufen."
+    },
+    "gImpressionShare": {
+      "label": "Anteil an möglichen Impressionen (Suche)",
+      "tooltip": "Google Ads → Spalten → Wettbewerbsmesswerte → Anteil an möglichen Impressionen im Suchnetzwerk. Der Anteil berechtigter Suchanfragen, bei denen Ihre Anzeigen erschienen."
+    },
+    "gLostBudget": {
+      "label": "Wegen Budget entgangener Anteil (Suche)",
+      "tooltip": "Anteil der Suchanfragen, die Sie verpasst haben, weil das Budget aufgebraucht war. Das bestimmt, wie viel mehr Google aufnehmen kann."
+    },
+    "gLostRank": {
+      "label": "Wegen Rang entgangener Anteil (Suche)",
+      "tooltip": "Anteil der Suchanfragen, die Sie wegen eines niedrigen Anzeigenrangs verpasst haben. Mehr Budget hilft hier nicht, bessere Gebote und Qualität schon."
+    },
+    "gBrand": {
+      "label": "Suchen Menschen nach Ihrer Marke?",
+      "tooltip": "Wenn bereits nach Ihrem Markennamen gesucht wird, reservieren wir ein kleines Budget für eine Markenkampagne, um diese Klicks zu schützen."
+    },
+    "eCpm": {
+      "label": "CPM",
+      "tooltip": "Der CPM sind die Kosten pro 1.000 Impressionen. Nutzen Sie die Schätzung von Meta im Werbeanzeigenmanager, Ihre anderen Konten oder einen veröffentlichten Benchmark für Ihr Land."
+    },
+    "eCtr": {
+      "label": "CTR (Link)",
+      "tooltip": "Link-Klickrate: Link-Klicks ÷ Impressionen. 0,8 % bis 1,5 % sind auf Meta üblich."
+    },
+    "eCvr": {
+      "label_leads": "Conversion-Rate der Landingpage",
+      "label_ecommerce": "Conversion-Rate des Shops",
+      "tooltip": "Anteil der Link-Klicks, die zu einem Lead (Landingpage) oder Kauf (Shop) werden. Ihre Website-Analyse ist die beste Quelle."
+    },
+    "eFormRate": {
+      "label": "Abschlussrate des Sofortformulars",
+      "tooltip": "Anteil der Personen, die das Sofortformular öffnen und absenden. Oft 10 % bis 20 %."
+    },
+    "eAtcRate": {
+      "label": "Quote Warenkorb → Kauf",
+      "tooltip": "Anteil der Warenkorb-Hinzufügungen, die zu Käufen werden. Dient als Richtwert für einen Warenkorb-Test bei kleinem Budget."
+    },
+    "eDailyMin": {
+      "label": "Geschätzte tägliche Ergebnisse (min.)",
+      "tooltip": "Aus dem Bereich der Meta-Anzeigengruppe: das untere Ende der „Geschätzten täglichen Ergebnisse“. Nur zum Abgleich."
+    },
+    "eDailyMax": {
+      "label": "Geschätzte tägliche Ergebnisse (max.)",
+      "tooltip": "Das obere Ende der „Geschätzten täglichen Ergebnisse“ von Meta für dasselbe Tagesbudget."
+    },
+    "eDailyBudget": {
+      "label": "Tagesbudget dieser Schätzung",
+      "tooltip": "Das Tagesbudget, das Sie in Meta eingegeben hatten, als die Schätzung oben angezeigt wurde."
+    },
+    "gKeywords": {
+      "label": "Wichtigste Keywords",
+      "tooltip": "Optional. Die wichtigsten Suchbegriffe, auf die Sie bieten möchten, zu Ihrer eigenen Orientierung."
+    },
+    "gSearches": {
+      "label": "Monatliches Suchvolumen",
+      "tooltip": "Monatliche Suchanfragen insgesamt für Ihre Keywords in Ihren Regionen. Google Ads → Tools → Keyword-Planer."
+    },
+    "gBidLow": {
+      "label": "Gebot für obere Seitenposition (niedrig)",
+      "tooltip": "Keyword-Planer → „Gebot für obere Seitenposition (unterer Bereich)“. Den Mittelwert aus niedrigem und hohem Gebot nutzen wir als erwartete Kosten pro Klick."
+    },
+    "gBidHigh": {
+      "label": "Gebot für obere Seitenposition (hoch)",
+      "tooltip": "Keyword-Planer → „Gebot für obere Seitenposition (oberer Bereich)“."
+    },
+    "gIS": {
+      "label": "Erwarteter Anteil an Impressionen",
+      "tooltip": "Anteil dieser Suchanfragen, bei denen Sie voraussichtlich erscheinen. Neue Konten erreichen oft 30 % bis 60 %."
+    },
+    "gCtrNew": {
+      "label": "Erwartete CTR",
+      "tooltip": "Klicks ÷ Impressionen bei Suchanzeigen. 3 % bis 7 % sind bei gut passenden Keywords üblich."
+    },
+    "gCvrNew": {
+      "label": "Erwartete Conversion-Rate",
+      "tooltip": "Anteil der Suchklicks, die konvertieren. Suchtraffic konvertiert meist besser als Social-Traffic."
+    },
+    "gBrandNew": {
+      "label": "Suchen Menschen nach Ihrer Marke?",
+      "tooltip": "Wenn ja, behalten wir eine kleine Markenkampagne, damit Wettbewerber diese Klicks nicht abgreifen."
+    },
+    "adSets": {
+      "label": "Geplante Zahl an Meta-Anzeigengruppen",
+      "tooltip": "Jede Anzeigengruppe braucht etwa 50 Ergebnisse pro Woche, um die Lernphase zu verlassen. Weniger Anzeigengruppen bedeuten mehr Daten pro Anzeigengruppe."
+    },
+    "creatives": {
+      "label": "Zahl der zu testenden Creatives",
+      "tooltip": "Jedes Creative braucht etwas Budget, um sich zu beweisen, etwa 2,5 × Ihre Zielkosten pro Ergebnis."
+    },
+    "testDays": {
+      "label": "Testdauer (Tage)",
+      "tooltip": "Wie lange der erste Test läuft, bevor Sie über Skalieren, Optimieren oder Stoppen entscheiden. 14 Tage sind ein guter Standard."
+    },
+    "includeRetargeting": {
+      "label": "Retargeting einbeziehen",
+      "tooltip": "Anzeigen erneut an Personen ausspielen, die Ihre Website besucht oder interagiert haben. Bei neuen Konten ergänzen wir es nach 2 bis 4 Wochen."
+    },
+    "campaignName": {
+      "label": "Kampagnenname",
+      "tooltip": "Optional, damit Sie die Zeile wiedererkennen."
+    },
+    "budgetType": {
+      "label": "Budgetart",
+      "tooltip": "CBO: Meta verteilt ein Budget auf die Anzeigengruppen. ABO: Jede Anzeigengruppe hat ihr eigenes Budget. Advantage+: eine automatisierte Kampagne."
+    },
+    "campaignAdSets": {
+      "label": "Zahl der Anzeigengruppen",
+      "tooltip": "Aktive Anzeigengruppen in dieser Kampagne."
+    },
+    "adSetsWithSpend": {
+      "label": "Anzeigengruppen mit nennenswerten Ausgaben",
+      "tooltip": "Bei CBO gibt Meta oft nur in wenigen Anzeigengruppen Geld aus. Zählen Sie die, die einen echten Anteil des Budgets erhalten."
+    },
+    "rowCountry": {
+      "label": "Land",
+      "tooltip": "Das Land dieser Zeile. Leer lassen, wenn Sie eine Zeile für alle Länder haben."
+    },
+    "spend": {
+      "label": "Ausgegebener Betrag",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Performance → Ausgegebener Betrag."
+    },
+    "impressions": {
+      "label": "Impressionen",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Performance → Impressionen."
+    },
+    "reach": {
+      "label": "Reichweite",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Performance → Reichweite. Einzelne Personen, die Ihre Anzeigen gesehen haben."
+    },
+    "linkClicks": {
+      "label": "Link-Klicks",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Performance und Klicks → Link-Klicks."
+    },
+    "landingPageViews": {
+      "label": "Landingpage-Aufrufe",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Performance und Klicks → Landingpage-Aufrufe. Erfordert das Meta-Pixel."
+    },
+    "formLeads": {
+      "label": "Leads aus Sofortformularen",
+      "tooltip": "Werbeanzeigenmanager → Ergebnisse von Lead-Formular-Kampagnen (Leads auf Facebook)."
+    },
+    "landingLeads": {
+      "label": "Leads von Landingpages",
+      "tooltip": "Website-Leads, erfasst durch das Pixel oder Ihr CRM."
+    },
+    "bookings": {
+      "label": "Termine (CRM)",
+      "tooltip": "Aus diesen Leads gebuchte Gespräche oder Beratungen, aus Ihrem CRM oder Kalender."
+    },
+    "shows": {
+      "label": "Erschienene (CRM)",
+      "tooltip": "Personen mit Termin, die erschienen sind."
+    },
+    "clients": {
+      "label": "Kunden (CRM)",
+      "tooltip": "Erschienene, die gekauft haben."
+    },
+    "addToCarts": {
+      "label": "Zum Warenkorb hinzugefügt",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Conversions → Zum Warenkorb hinzugefügt."
+    },
+    "checkouts": {
+      "label": "Eingeleitete Bezahlvorgänge",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Conversions → Eingeleitete Bezahlvorgänge."
+    },
+    "purchases": {
+      "label": "Käufe",
+      "tooltip": "Werbeanzeigenmanager → Spalten → Conversions → Käufe. Weichen die Zahlen ab, gilt Ihr Shop."
+    },
+    "purchaseValue": {
+      "label": "Kaufwert",
+      "tooltip": "Werbeanzeigenmanager → Conversion-Wert der Käufe."
+    },
+    "learningThreshold": {
+      "label": "Meta-Lernschwelle (Ergebnisse pro Anzeigengruppe und Woche)",
+      "tooltip": "Meta braucht etwa 50 Optimierungsereignisse pro Anzeigengruppe und Woche, um die Lernphase zu verlassen."
+    },
+    "googleMinConversions": {
+      "label": "Minimum für Smart Bidding bei Google (Conversions pro Kampagne in 30 Tagen)",
+      "tooltip": "Eine gängige Faustregel für Smart Bidding. Prüfen Sie die aktuelle Empfehlung von Google, denn sie ändert sich."
+    },
+    "minResultsForConfidence": {
+      "label": "Mindestergebnisse für verlässliche Daten",
+      "tooltip": "Unterhalb dieser Ergebniszahl mischen wir Ihre Kosten mit einem Benchmark und kennzeichnen geringe Verlässlichkeit."
+    },
+    "scalingPenalty": {
+      "label": "Kostenanstieg pro Verdopplung der Ausgaben",
+      "tooltip": "Wie stark die Kosten pro Ergebnis bei jeder Verdopplung der Ausgaben steigen. 15 % sind eine gängige Planungsannahme."
+    },
+    "profitBuffer": {
+      "label": "Gewinnpuffer",
+      "tooltip": "Sicherheitsabstand unter dem Break-even. Die Zielkosten sind die Maximalkosten ÷ (1 + Puffer)."
+    },
+    "newAccountPenalty": {
+      "label": "Aufschlag für neue Konten",
+      "tooltip": "Neue Konten zahlen anfangs meist mehr. Wir rechnen diesen Aufschlag auf die geschätzten Kosten."
+    },
+    "creativeTestMultiplier": {
+      "label": "Testbudget pro Creative (× Zielkosten)",
+      "tooltip": "Budget, das jedes Creative erhält, um sich zu beweisen, als Vielfaches Ihrer Zielkosten pro Ergebnis."
+    },
+    "scaleThreshold": {
+      "label": "Skalierungsschwelle (Anteil am Break-even)",
+      "tooltip": "Liegen die echten Kosten nach dem Test bei oder unter diesem Anteil Ihres Maximums, skalieren Sie."
+    },
+    "stopLossLow": {
+      "label": "Stop-Loss niedrig (× Break-even)",
+      "tooltip": "Stoppen Sie eine Kampagne oder ein Creative, das dieses Vielfache Ihrer Maximalkosten ohne Ergebnis ausgibt."
+    },
+    "stopLossHigh": {
+      "label": "Stop-Loss hoch (× Break-even)",
+      "tooltip": "Oberes Ende der Stop-Loss-Spanne."
+    },
+    "retargetingViewsPerMonth": {
+      "label": "Retargeting-Kontakte pro Person und Monat",
+      "tooltip": "Wie oft jede Person der Retargeting-Zielgruppe Ihre Anzeigen sehen soll."
+    },
+    "retargetingCap": {
+      "label": "Retargeting-Obergrenze (Anteil am Meta-Budget)",
+      "tooltip": "Retargeting erhält nie mehr als diesen Anteil des Meta-Budgets."
+    },
+    "minRetargetingAudience": {
+      "label": "Mindestgröße der Retargeting-Zielgruppe",
+      "tooltip": "Unter dieser Größe entfällt Retargeting, weil es nicht effizient ausgeliefert werden kann."
+    },
+    "brandShare": {
+      "label": "Anteil der Markenkampagne am Google-Budget",
+      "tooltip": "Anteil des Google-Budgets, der für eine Markenkampagne reserviert wird, wenn nach Ihrer Marke gesucht wird."
+    },
+    "maxStepIncrease": {
+      "label": "Maximale Budgeterhöhung pro Schritt",
+      "tooltip": "Erhöhen Sie Budgets pro Schritt höchstens um diesen Wert, damit die Lernphase nicht neu startet."
+    },
+    "stepDays": {
+      "label": "Tage zwischen Budgetschritten",
+      "tooltip": "So viele Tage zwischen Budgeterhöhungen warten."
+    },
+    "rangeLow": {
+      "label": "{source}: unterer Faktor",
+      "tooltip": "Das optimistische Ende der Kostenspanne für Schätzungen aus dieser Quelle."
+    },
+    "rangeHigh": {
+      "label": "{source}: oberer Faktor",
+      "tooltip": "Das vorsichtige Ende der Kostenspanne für Schätzungen aus dieser Quelle. Weniger verlässliche Quellen erhalten eine breitere Spanne."
+    }
+  },
+  "options": {
+    "rateSource": {
+      "crm": "CRM-Daten",
+      "estimate": "Schätzung des Kunden",
+      "default": "Standard"
+    },
+    "leadSource": {
+      "form": "Sofortformular",
+      "landing": "Landingpage",
+      "both": "Beides"
+    },
+    "judgeOn": {
+      "first": "Erstbestellung",
+      "lifetime": "Kundenlebenswert"
+    },
+    "budgetType": {
+      "CBO": "CBO (Kampagnenbudget)",
+      "ABO": "ABO (Anzeigengruppenbudget)",
+      "ADVANTAGE": "Advantage+"
+    }
+  },
+  "sources": {
+    "accounts": "Ihre Konten",
+    "metaEstimate": "Meta-Schätzung",
+    "benchmark": "Veröffentlichter Benchmark",
+    "guess": "Vermutung"
+  },
+  "nicheGroups": {
+    "ecommerce": "E-Commerce",
+    "leads": "Dienstleistungen mit Leadgenerierung",
+    "messaging": "Messaging- und Buchungsdienste"
+  },
+  "niches": {
+    "fashion": "Mode",
+    "beautyProducts": "Kosmetikprodukte",
+    "electronics": "Elektronik",
+    "home": "Wohnen",
+    "ecommerceOther": "Sonstiger E-Commerce",
+    "beautyClinic": "Kosmetikklinik",
+    "bodyContouring": "Body Contouring",
+    "dental": "Zahnmedizin",
+    "realEstate": "Immobilien",
+    "legal": "Recht",
+    "education": "Bildung",
+    "leadsOther": "Sonstige Dienstleistungen",
+    "messaging": "Messaging- oder Buchungsdienste"
+  },
+  "ui": {
+    "required": "Pflichtfeld",
+    "optional": "Optional",
+    "increase": "Erhöhen",
+    "decrease": "Verringern",
+    "search": "Suchen",
+    "noResults": "Keine Treffer",
+    "removeItem": "{item} entfernen",
+    "addCountry": "Land hinzufügen",
+    "addCampaign": "Kampagne hinzufügen",
+    "rowN": "Länderzeile {n}",
+    "campaignN": "Kampagne {n}",
+    "yes": "Ja",
+    "no": "Nein",
+    "tagsHint": "Eingeben und Enter drücken",
+    "sourceLabel": "Quelle",
+    "moreInfoAbout": "Weitere Informationen zu {field}"
+  },
+  "errors": {
+    "required": "Dieses Feld ist erforderlich.",
+    "invalid": "Geben Sie eine gültige Zahl ein.",
+    "integer": "Verwenden Sie eine ganze Zahl.",
+    "min": "Muss mindestens {min} sein.",
+    "max": "Darf höchstens {max} sein.",
+    "range": "Muss zwischen {min} und {max} liegen.",
+    "rowsRequired": "Fügen Sie mindestens eine Zeile mit Kontodaten hinzu.",
+    "reachGtImpressions": "Die Reichweite kann nicht höher sein als die Impressionen.",
+    "clicksGtImpressions": "Klicks können nicht höher sein als Impressionen.",
+    "lpvGtClicks": "Landingpage-Aufrufe können nicht höher sein als Link-Klicks.",
+    "bookingsGtLeads": "Termine können nicht höher sein als Leads.",
+    "showsGtBookings": "Erschienene können nicht mehr sein als Termine.",
+    "clientsGtShows": "Kunden können nicht mehr sein als Erschienene.",
+    "costsGteAov": "Produktkosten, Versand, Gebühren und Retouren erreichen oder übersteigen den Bestellwert, es bleibt also kein Gewinn für Werbung.",
+    "adSetsSpendGtAdSets": "Anzeigengruppen mit Ausgaben können nicht mehr sein als die Zahl der Anzeigengruppen.",
+    "bidLowGtHigh": "Das niedrige Gebot kann nicht höher sein als das hohe.",
+    "stopLossOrder": "Der niedrige Stop-Loss kann nicht höher sein als der hohe.",
+    "nicheFirst": "Wählen Sie zuerst unter Grundlagen eine Nische."
+  },
+  "warnings": {
+    "purchasesGtCheckouts": "Es gibt mehr Käufe als Bezahlvorgänge. Prüfen Sie Ihr Tracking.",
+    "ctrHigh": "Eine CTR über 10 % ist ungewöhnlich. Prüfen Sie, ob Sie Link-Klicks verwendet haben.",
+    "cvrHigh": "Eine Conversion-Rate über 50 % ist ungewöhnlich. Prüfen Sie die Zahlen.",
+    "frequencyHigh": "Die Frequenz liegt über 5. Die Zielgruppe ist Ihrer Anzeigen vielleicht müde.",
+    "fewResults": "Nur {results} Ergebnisse in diesem Zeitraum (weniger als {min}). Wir mischen sie mit Benchmarks und kennzeichnen geringe Verlässlichkeit."
+  },
+  "actions": {
+    "loadExample": "Beispieldaten laden",
+    "exampleLoaded": "Beispieldaten für diesen Modus geladen.",
+    "clearAll": "Alles löschen",
+    "clearConfirm": "Zum Löschen erneut klicken",
+    "cleared": "Alle Eingaben gelöscht.",
+    "saveScenario": "Szenario speichern",
+    "scenarioName": "Name des Szenarios",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "savedToast": "Szenario in diesem Browser gespeichert.",
+    "scenarios": "Szenarien ({count})",
+    "scenarioLoaded": "Szenario geladen.",
+    "noScenarios": "Noch keine gespeicherten Szenarien. Speichern Sie eines, um es später zu vergleichen.",
+    "compareHint": "Markieren Sie bis zu {max} Szenarien, um sie nebeneinander zu vergleichen.",
+    "load": "Laden",
+    "delete": "Löschen",
+    "share": "Link zum Teilen kopieren",
+    "shareCopied": "Link kopiert. Er enthält nur Ihre Planer-Eingaben.",
+    "shareFailed": "Der Link konnte nicht kopiert werden. Kopieren Sie ihn aus der Adressleiste.",
+    "sharedLoaded": "Geteilter Plan geladen.",
+    "resetDefaults": "Auf Standard zurücksetzen",
+    "resetDone": "Erweiterte Einstellungen auf Standard zurückgesetzt."
+  },
+  "csv": {
+    "title": "CSV-Export importieren",
+    "intro": "Laden Sie einen Export aus dem Meta-Werbeanzeigenmanager oder aus Google Ads hoch. Wir ordnen die Spalten zu, Sie bestätigen, dann füllen wir die Felder.",
+    "choose": "CSV-Datei wählen",
+    "mappingTitle": "Spaltenzuordnung prüfen",
+    "targetLabel": "Art des Exports",
+    "target": {
+      "meta": "Meta-Werbeanzeigenmanager",
+      "google": "Google Ads"
+    },
+    "fields": {
+      "country": "Land",
+      "spend": "Ausgegebener Betrag",
+      "impressions": "Impressionen",
+      "reach": "Reichweite",
+      "linkClicks": "Link-Klicks",
+      "landingPageViews": "Landingpage-Aufrufe",
+      "formLeads": "Leads aus Sofortformularen",
+      "landingLeads": "Leads von Landingpages",
+      "addToCarts": "Zum Warenkorb hinzugefügt",
+      "checkouts": "Eingeleitete Bezahlvorgänge",
+      "purchases": "Käufe",
+      "purchaseValue": "Kaufwert",
+      "gCost": "Kosten",
+      "gImpressions": "Impressionen",
+      "gClicks": "Klicks",
+      "gConversions": "Conversions",
+      "gConversionValue": "Conversion-Wert",
+      "gImpressionShare": "Anteil an möglichen Impressionen (Suche)",
+      "gLostBudget": "Wegen Budget entgangener Anteil (Suche)",
+      "gLostRank": "Wegen Rang entgangener Anteil (Suche)"
+    },
+    "notMapped": "Nicht in dieser Datei",
+    "confirm": "Diese Zahlen importieren",
+    "imported": "{rows, plural, one {# Zeile importiert.} other {# Zeilen importiert.}} Prüfen Sie die Felder unten.",
+    "error": "Wir konnten die Datei nicht lesen. Exportieren Sie sie als CSV und versuchen Sie es erneut."
+  },
+  "benchmarks": {
+    "title": "Meine Benchmarks",
+    "intro": "Speichern Sie Zahlen aus Ihren eigenen Konten und nutzen Sie sie für neue Kunden in derselben Nische und Region.",
+    "use": "Meine Benchmarks nutzen",
+    "manage": "Verwalten ({count})",
+    "used": "{count, plural, one {Aus # Ihrer gespeicherten Zeilen ausgefüllt.} other {Aus # Ihrer gespeicherten Zeilen ausgefüllt.}}",
+    "usedDefaults": "Noch passt keine gespeicherte Zeile, daher haben wir vorläufige Benchmarks verwendet. Ersetzen Sie sie durch Ihre eigenen Zahlen.",
+    "none": "Für diese Nische gibt es noch keine Benchmarks.",
+    "platform": "Plattform",
+    "cpm": "CPM",
+    "ctr": "CTR",
+    "cvr": "Conversion-Rate",
+    "cost": "CPL / CPA",
+    "add": "Zeile speichern",
+    "saved": "Benchmark in diesem Browser gespeichert.",
+    "context": "Gespeichert mit Ihrer aktuellen Nische, Region ({region}) und Ihrem Monat ({month}).",
+    "empty": "Noch keine gespeicherten Benchmarks."
+  },
+  "crossCheck": {
+    "implied": "Die Schätzung von Meta ergibt Kosten pro Ergebnis zwischen {low} und {high}. Vergleichen Sie das mit Ihren Schätzungen oben."
+  },
+  "seasonal": {
+    "intro": "Faktoren für {profile}. 1,0 steht für einen normalen Monat. Es sind änderbare Schätzungen, keine gemessenen Daten."
+  },
+  "advanced": {
+    "benchmarksNote": "Die Standard-Benchmarks pro Nische und Plattform sind Platzhalter und sollten durch echte Daten ersetzt werden."
+  },
+  "compare": {
+    "budget": "Monatsbudget",
+    "results": "Ergebnisse",
+    "cpa_leads": "Kosten pro Lead",
+    "cpa_ecommerce": "Kosten pro Verkauf",
+    "verdict": "Urteil",
+    "verdicts": {
+      "profitable": "Profitabel, Spielraum zum Skalieren",
+      "optimize": "Erst optimieren",
+      "notViable": "Nicht tragfähig"
+    },
+    "incomplete": "Diesem Szenario fehlen Eingaben oder sie sind ungültig."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Antworten darauf, wie der Planer Werbebudgets berechnet, zur Lernphase, zu CAC und CPL, zu den Grenzen der Google-Suche und was mit Ihren Daten passiert."
+  },
+  "eyebrow": "FAQ",
+  "title": "Häufig gestellte Fragen",
+  "intro": "Wie der Planer funktioniert, was die Zahlen bedeuten und was mit Ihren Daten passiert.",
+  "more": "Noch Fragen?",
+  "contact": "Kontakt aufnehmen",
+  "items": {
+    "guaranteed": { "q": "Ist das Ergebnis garantiert?", "a": "Nein. Der Plan ist eine Schätzung aus Ihren Zahlen und gängigen Planungsregeln. Die echten Kosten hängen von Ihren Anzeigen, Ihrem Angebot, Ihrem Markt, dem Wettbewerb und Änderungen der Plattformen ab. Nutzen Sie den Plan, um zu entscheiden, was Sie testen und wie viel Sie riskieren, und aktualisieren Sie ihn dann mit echten Ergebnissen." },
+    "noData": { "q": "Was, wenn ich keine bisherigen Daten habe?", "a": "Wählen Sie „Neues Konto“. Der Planer nutzt Ihre Schätzungen für CPM, CTR und Conversion-Rate, rechnet einen Aufschlag für neue Konten hinzu und gibt Ihnen ein Testbudget, einen Stop-Loss und Entscheidungsregeln. Wechseln Sie nach dem Test mit Ihren echten Zahlen zu „Mit Daten“." },
+    "learningPerAdSet": { "q": "Warum gilt die Lernphase pro Anzeigengruppe?", "a": "Meta optimiert die Auslieferung auf Ebene der Anzeigengruppe, und jede Anzeigengruppe braucht etwa 50 Optimierungsereignisse pro Woche, um die Lernphase zu verlassen. Wer ein kleines Budget auf viele Anzeigengruppen verteilt, lässt jede mit zu wenig Daten zurück. Deshalb empfiehlt der Planer, wie viele Anzeigengruppen Ihr Budget trägt." },
+    "cacVsCpl": { "q": "Warum Plattformen nach CAC statt nach CPL vergleichen?", "a": "Leads von verschiedenen Plattformen buchen und kaufen unterschiedlich oft. Ein günstiger Lead, der nie einen Termin bucht, ist pro Kunde teuer. Die Kosten pro Kunde (CAC) zeigen, was Sie wirklich für Umsatz zahlen. Deshalb vergleicht der Planer Plattformen bei Leadgenerierung nach CAC und im E-Commerce nach CPA und ROAS." },
+    "googleAds": { "q": "Funktioniert das auch für Google Ads?", "a": "Ja, für die Google-Suche. Der Planer modelliert Suchvolumen, Anteil an möglichen Impressionen und Kosten pro Klick und zeigt die maximalen Ergebnisse, die Google liefern kann. Google Shopping, Performance Max, YouTube und TikTok folgen später." },
+    "dataStored": { "q": "Werden meine Daten gespeichert?", "a": "Ihre Eingaben im Planer bleiben in Ihrem Browser. Sie werden im lokalen Speicher gesichert, damit sie nicht verloren gehen, und nie an unsere Server gesendet. Nur das Kontaktformular sendet Daten, und nur das, was Sie dort eingeben." },
+    "impressionShare": { "q": "Wo finde ich den Anteil an möglichen Impressionen?", "a": "Öffnen Sie in Google Ads die Kampagnen, klicken Sie auf Spalten, dann auf Spalten ändern, und fügen Sie unter Wettbewerbsmesswerte „Anteil an möglichen Impressionen im Suchnetzwerk“, „Wegen Budget entgangener Anteil an möglichen Impressionen (Suche)“ und „Wegen Rang entgangener Anteil an möglichen Impressionen (Suche)“ hinzu." },
+    "whichBudget": { "q": "Soll ich ein Ziel oder ein festes Budget nutzen?", "a": "Nutzen Sie ein Ziel, wenn Sie wissen, wie viele Kunden oder Verkäufe Sie brauchen. Nutzen Sie ein festes Budget, wenn die Ausgaben bereits feststehen und Sie wissen möchten, was es liefern kann und ob es reicht." },
+    "newAccountPenalty": { "q": "Was ist der Aufschlag für neue Konten?", "a": "Neue Konten zahlen anfangs meist mehr, während die Plattform lernt, wer konvertiert. Standardmäßig schlägt der Planer 25 % auf die geschätzten Kosten auf. Sie können das in den erweiterten Einstellungen ändern." },
+    "scalingCost": { "q": "Warum steigen die Kosten pro Ergebnis, wenn ich mehr ausgebe?", "a": "Die günstigsten, kaufbereitesten Personen werden zuerst erreicht. Mit steigenden Ausgaben erreicht die Plattform weniger empfängliche Menschen, und die Auktionen werden umkämpfter. Der Planer nimmt an, dass die Kosten bei jeder Verdopplung der Ausgaben um 15 % steigen. Diesen Wert können Sie ändern." },
+    "multiCountry": { "q": "Kann ich für mehrere Länder planen?", "a": "Ja. Fügen Sie in den Kontodaten eine Zeile pro Land hinzu. Die Kosten unterscheiden sich stark je nach Land, daher warnt der Planer, dass gemischte Zahlen teure Märkte verdecken können." },
+    "leadSource": { "q": "Sofortformulare oder Landingpages?", "a": "Sofortformulare sind pro Lead meist günstiger, weil die Leute die App nie verlassen, doch diese Leads buchen seltener einen Termin. Geben Sie für beide die echte Terminquote ein, damit der Planer sie nach Kosten pro Kunde vergleichen kann." },
+    "returns": { "q": "Warum sind Retouren so wichtig?", "a": "Eine retournierte Bestellung kostet Sie trotzdem das Werbebudget und oft den Versand. In Kategorien wie Mode können Retouren einen großen Teil des Gewinns pro Bestellung aufzehren, was den CPA senkt, den Sie sich leisten können." },
+    "currency": { "q": "Welche Währung soll ich verwenden?", "a": "Die Währung, in der Ihr Werbekonto abrechnet. Der Planer schlägt eine Währung anhand Ihrer ersten Region vor, und alle Geldfelder verwenden sie." },
+    "benchmarks": { "q": "Woher stammen die Standard-Benchmarks?", "a": "Die Standardwerte sind Platzhalter für den Einstieg und sollten durch Ihre eigenen Zahlen ersetzt werden. Speichern Sie Ergebnisse Ihrer Konten unter „Meine Benchmarks“, dann nutzt der Planer sie für neue Kunden in derselben Nische und Region." },
+    "share": { "q": "Wie teile ich einen Plan mit einem Kunden?", "a": "Nutzen Sie „Link zum Teilen kopieren“. Der Link enthält nur Ihre Planer-Eingaben, kodiert in der Adresse, und nichts wird auf einem Server gespeichert. Sie können den Plan auch als PDF exportieren." },
+    "free": { "q": "Ist der Planer kostenlos?", "a": "Ja. Der Planer ist kostenlos. Wenn ein Profi Ihre Zahlen prüfen soll, können Sie eine Expertenmeinung anfordern." }
+  }
+}

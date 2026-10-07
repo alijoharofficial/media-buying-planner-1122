@@ -1,0 +1,52 @@
+{
+  "eyebrow": "Rechtliches",
+  "updated": "Zuletzt aktualisiert: {date}",
+  "date": "7. Oktober 2026",
+  "privacy": {
+    "meta": { "title": "Datenschutzerklärung", "description": "Wie der Media-Buying-Planer mit Ihren Daten umgeht: Planer-Eingaben bleiben in Ihrem Browser, Analysen laufen nur mit Ihrer Einwilligung." },
+    "title": "Datenschutzerklärung",
+    "intro": "Diese Erklärung beschreibt, welche Daten {brand} verarbeitet und warum. Kurz gesagt: Ihre Planer-Eingaben verlassen nie Ihren Browser.",
+    "sections": [
+      { "heading": "Planer-Eingaben bleiben in Ihrem Browser", "body": ["Alles, was Sie im Planer eingeben, einschließlich gespeicherter Szenarien und Benchmarks, liegt im lokalen Speicher Ihres Browsers auf Ihrem Gerät. Es wird nicht an unsere Server gesendet, und wir können es nicht sehen.", "Links zum Teilen enthalten Ihre Planer-Eingaben kodiert im Link selbst. Jeder mit dem Link kann diese Eingaben sehen, teilen Sie ihn also nur mit Personen, denen Sie vertrauen."] },
+      { "heading": "Das Kontaktformular", "body": ["Wenn Sie das Kontaktformular nutzen, erhalten wir Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht. Wir verwenden sie nur, um Ihnen zu antworten, und bewahren sie nicht länger auf als dafür nötig.", "Zum Schutz vor Spam nutzt das Formular Cloudflare Turnstile, das technische Daten wie Ihre IP-Adresse verarbeiten kann."] },
+      { "heading": "Analyse", "body": ["Wir nutzen Analysen (Google Analytics 4) nur, wenn Sie im Cookie-Banner Analyse-Cookies akzeptieren. Analysen helfen uns zu verstehen, welche Seiten nützlich sind. IP-Adressen werden anonymisiert. Sie können Ihre Wahl jederzeit ändern, indem Sie die Daten dieser Website in Ihrem Browser löschen."] },
+      { "heading": "Ihre Rechte", "list": ["Auskunft über, Berichtigung oder Löschung der personenbezogenen Daten, die wir über Sie speichern (Nachrichten aus dem Kontaktformular).", "Widerruf der Einwilligung in Analysen zu jeder Zeit.", "Beschwerde bei Ihrer zuständigen Datenschutzbehörde."] },
+      { "heading": "Kontakt", "body": ["Bei Fragen zum Datenschutz nutzen Sie das Kontaktformular oder schreiben Sie an {email}."] }
+    ]
+  },
+  "terms": {
+    "meta": { "title": "Nutzungsbedingungen", "description": "Die Bedingungen für die Nutzung des kostenlosen Media-Buying-Planers und seiner Ratgeber." },
+    "title": "Nutzungsbedingungen",
+    "intro": "Mit der Nutzung von {brand} stimmen Sie diesen Bedingungen zu.",
+    "sections": [
+      { "heading": "Der Dienst", "body": ["{brand} ist ein kostenloses Planungswerkzeug, das Werbebudgets und Media-Buying-Pläne aus den von Ihnen angegebenen Zahlen schätzt. Die Ratgeber dienen der allgemeinen Information."] },
+      { "heading": "Keine Garantie", "body": ["Ergebnisse sind Schätzungen auf Basis Ihrer Eingaben und Planungsannahmen. Sie garantieren keine Kosten, Ergebnisse oder Gewinne. Sie sind für Ihre Werbeentscheidungen und Budgets selbst verantwortlich."] },
+      { "heading": "Zulässige Nutzung", "list": ["Versuchen Sie nicht, den Dienst zu stören, zu überlasten oder anzugreifen.", "Missbrauchen Sie das Kontaktformular nicht und senden Sie keine unerwünschten Nachrichten.", "Kopieren oder veröffentlichen Sie die Inhalte der Website nicht ohne Erlaubnis."] },
+      { "heading": "Geistiges Eigentum", "body": ["Design, Texte, Ratgeber und Code der Website sind geschützt. Die Ratgeber schreibt das TECH24-Team, das in jedem Artikel genannt wird."] },
+      { "heading": "Haftungsbeschränkung", "body": ["Soweit gesetzlich zulässig, haftet {brand} nicht für Verluste, die aus der Nutzung des Planers oder seiner Ratgeber oder dem Vertrauen darauf entstehen."] },
+      { "heading": "Änderungen", "body": ["Wir können diese Bedingungen aktualisieren. Das Datum oben zeigt die neueste Fassung."] }
+    ]
+  },
+  "disclaimer": {
+    "meta": { "title": "Haftungsausschluss", "description": "Ergebnisse des Planers sind Schätzungen, keine Garantien. Lesen Sie, wie Sie sie verantwortungsvoll nutzen." },
+    "title": "Haftungsausschluss",
+    "intro": "{brand} liefert Schätzungen zur Unterstützung der Planung. Die Zukunft sagt es nicht voraus.",
+    "sections": [
+      { "heading": "Ergebnisse sind Schätzungen, keine Garantien", "body": ["Jedes angezeigte Budget, jede Kostenangabe und jedes Ergebnis ist eine Schätzung auf Basis Ihrer Eingaben, der Standardeinstellungen und vorläufiger Benchmarks. Echte Werbeergebnisse hängen von Creatives, Angeboten, Landingpages, Wettbewerb, Saisonalität, Tracking und Plattformänderungen ab."] },
+      { "heading": "Benchmarks sind Platzhalter", "body": ["Standard-Benchmarks sind Platzhalter und sollten durch Ihre eigenen Daten ersetzt werden, bevor Sie sich darauf verlassen."] },
+      { "heading": "Keine Finanz- oder Rechtsberatung", "body": ["Nichts auf dieser Website ist Finanz-, Rechts- oder Steuerberatung. Holen Sie für Entscheidungen mit erheblichen finanziellen Folgen professionellen Rat ein."] },
+      { "heading": "Plattformen Dritter", "body": ["Meta, Facebook, Instagram, Google und Google Ads sind Marken ihrer Inhaber. {brand} ist mit ihnen weder verbunden noch von ihnen unterstützt. Regeln und Empfehlungen der Plattformen, etwa Lernschwellen, können sich jederzeit ändern."] }
+    ]
+  },
+  "cookies": {
+    "meta": { "title": "Cookie-Richtlinie", "description": "Welchen Browserspeicher und welche Cookies der Media-Buying-Planer nutzt und wie Sie sie steuern." },
+    "title": "Cookie-Richtlinie",
+    "intro": "{brand} nutzt so wenig Browserspeicher wie möglich.",
+    "sections": [
+      { "heading": "Notwendiger Speicher", "body": ["Wir nutzen den lokalen Speicher, um Ihre Planer-Eingaben, Szenarien, Benchmarks, das Design und Ihre Cookie-Wahl zu sichern. Ein Sprach-Cookie (NEXT_LOCALE) merkt sich die gewählte Sprache. Diese sind für den Betrieb der Website nötig und verfolgen Sie nicht."] },
+      { "heading": "Analyse-Cookies (optional)", "body": ["Wenn Sie Analysen akzeptieren, setzt Google Analytics 4 Cookies wie _ga, um Besuche und Seitenaufrufe zu zählen. Ohne Ihre Zustimmung werden sie nicht gesetzt."] },
+      { "heading": "Sicherheit", "body": ["Das Kontaktformular nutzt Cloudflare Turnstile gegen Spam, das für diese Prüfung nötige Cookies setzen kann."] },
+      { "heading": "Ihre Wahl verwalten", "body": ["Sie können Speicher und Cookies dieser Website jederzeit in Ihren Browsereinstellungen löschen. Das Cookie-Banner erscheint dann erneut, damit Sie wählen können."] }
+    ]
+  }
+}

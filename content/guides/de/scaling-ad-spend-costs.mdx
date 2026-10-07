@@ -1,0 +1,127 @@
+export const faq = [
+  {
+    q: "Warum steigen meine Kosten pro Ergebnis, wenn ich das Budget erhöhe?",
+    a: "Die Plattformen zeigen Ihre Anzeigen zuerst den empfänglichsten Menschen. Wenn Sie mehr ausgeben, erreichen Sie Menschen, die seltener konvertieren, und Sie landen in teureren Auktionen. Jedes zusätzliche Ergebnis kostet mehr als das vorherige, also steigen die Durchschnittskosten.",
+  },
+  {
+    q: "Um wie viel steigen die Kosten, wenn ich mein Budget verdopple?",
+    a: "Das hängt von Konto, Nische und Größe der Zielgruppe ab. Eine Planungsannahme von 15 % höheren Kosten pro Ergebnis bei jeder Verdopplung der Ausgaben passt für viele Konten. Ersetzen Sie sie durch Ihre eigene Zahl, sobald Sie bereits skaliert haben und es messen können.",
+  },
+  {
+    q: "Was ist die profitable Grenze?",
+    a: "Das ist das höchste Monatsbudget, bei dem die projizierten Kosten pro Ergebnis bei oder unter Ihren Break-even-Kosten bleiben. Darüber verliert jede zusätzliche Ausgabe Geld, auch wenn der Durchschnitt eine Zeit lang noch akzeptabel wirkt.",
+  },
+  {
+    q: "Wie schnell kann ich ein Meta-Budget erhöhen?",
+    a: "Ein sicheres Tempo sind etwa 20 % alle drei Tage. Größere Sprünge können die Lernphase neu starten und die Kosten hochtreiben. Anzeigengruppen mit höheren Budgets zu duplizieren ist eine weitere Option, teilt aber die Daten.",
+  },
+  {
+    q: "Hat die Google-Suche dieselben abnehmenden Erträge?",
+    a: "Teilweise. Bis zu dem Punkt, an dem Sie keine Impressionen mehr wegen des Budgets verlieren, bleiben die Kosten bei Google recht stabil. Darüber hinaus bekommen Sie mehr Klicks nur, indem Sie für dieselben Suchanfragen höher bieten, also steigen die Kosten schnell. Dieser Punkt ist die Obergrenze der Google-Suche.",
+  },
+]
+
+Die verlockendste Idee in der Werbung ist lineare Skalierung: Wenn 3.000 pro Monat 100 Verkäufe bringen, sollten 6.000 doch 200 bringen. So funktioniert es fast nie. Verdoppeln Sie das Budget, erhalten Sie meist deutlich weniger als doppelt so viele Ergebnisse, weil jedes zusätzliche Ergebnis mehr kostet als das vorherige.
+
+Dieser Ratgeber erklärt, warum die Kosten mit dem Budget steigen, wie Sie den Effekt mit einer einzigen einfachen Annahme modellieren und wie Sie das höchste Budget finden, das noch profitabel bleibt. Dieselbe Projektion für Ihr Konto sehen Sie in der Skalierungstabelle des [Planers](/calculator).
+
+## Warum die Kosten steigen, wenn Sie mehr ausgeben
+
+Werbeplattformen sind sehr gut darin, zuerst die günstigsten Ergebnisse zu finden. Bei kleinem Budget geben Meta und Google es für die Menschen und Suchanfragen aus, die am ehesten konvertieren. Wenn Sie mehr ausgeben:
+
+- **Erreichen Sie weniger empfängliche Menschen.** Die besten Interessenten sehen Ihre Anzeigen bereits; die nächste Gruppe konvertiert seltener.
+- **Sehen dieselben Menschen Sie öfter.** Die Frequenz steigt, und jede weitere Impression hat weniger Chancen, jemanden umzustimmen.
+- **Landen Sie in teureren Auktionen.** Für mehr Auslieferung bietet die Plattform auf teurere Platzierungen und Zielgruppen.
+- **Gehen Ihnen in der Suche die Suchanfragen aus.** Sind Sie bei den meisten relevanten Suchanfragen präsent, bekommen Sie mehr Klicks nur, indem Sie für dieselben mehr zahlen.
+
+Das Ergebnis sind **abnehmende Erträge**: Die Ergebnisse wachsen mit den Ausgaben weiter, aber langsamer als das Budget.
+
+## Ein einfaches Modell: Kosten pro Verdopplung
+
+Sie brauchen kein komplexes Modell, um das zu berücksichtigen. Eine einzige Annahme erfasst das Wesentliche: **Jedes Mal, wenn sich die Ausgaben verdoppeln, steigen die Kosten pro Ergebnis um einen festen Prozentsatz.** Ein gängiger Planungswert sind 15 %.
+
+<Formula>Projizierte Kosten = aktuelle Kosten × (1 + Anstieg pro Verdopplung) ^ log2(neues Budget ÷ aktuelles Budget)</Formula>
+
+Der log2-Teil zählt einfach die Verdopplungen. Eine Verdopplung ergibt einen Anstieg von 15 %, zwei Verdopplungen ergeben zwei Anstiege, und eine Erhöhung um 50 % ergibt etwas mehr als einen halben Schritt. Unterhalb Ihres aktuellen Ausgabenniveaus behält das Modell die aktuellen Kosten bei.
+
+### Ein Rechenbeispiel
+
+Ein Onlineshop hat in 30 Tagen 3.000 ausgegeben, also etwa 3.040 für einen durchschnittlichen Monat von 30,4 Tagen, zu 30 pro Kauf. Bei einem Anstieg von 15 % pro Verdopplung:
+
+<table>
+  <thead>
+    <tr><th scope="col">Monatsbudget</th><th scope="col">Kosten pro Verkauf</th><th scope="col">Verkäufe</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">3.040</th><td>30,00</td><td>101</td></tr>
+    <tr><th scope="row">6.080</th><td>34,50</td><td>176</td></tr>
+    <tr><th scope="row">12.160</th><td>39,68</td><td>306</td></tr>
+    <tr><th scope="row">24.320</th><td>45,63</td><td>533</td></tr>
+  </tbody>
+</table>
+
+Das Budget von 3.040 auf 6.080 zu verdoppeln, bringt 75 Verkäufe mehr, nicht 101. Diese 75 zusätzlichen Verkäufe kosten 3.040, also etwa 40,50 pro Stück. Diese Zahl, die **Grenzkosten** der zusätzlichen Ergebnisse, liegt deutlich über dem neuen Durchschnitt von 34,50. Sie ist die Zahl, auf die Sie achten sollten, wenn Sie über mehr Ausgaben entscheiden.
+
+<Callout title="Durchschnittskosten und Grenzkosten">
+<p>Die Durchschnittskosten pro Ergebnis können noch lange gut aussehen, nachdem zusätzliche Ausgaben aufgehört haben, profitabel zu sein. Liegen Ihre Break-even-Kosten bei 45, wirkt der Durchschnitt bei 12.160 (39,68) noch komfortabel, doch die zuletzt gekauften Ergebnisse waren viel teurer. Wer nach der projizierten Kurve statt nach dem aktuellen Durchschnitt plant, bleibt klar.</p>
+</Callout>
+
+## Ihre profitable Grenze finden
+
+Jedes Konto hat ein Budget, ab dem die projizierten Kosten pro Ergebnis den Break-even überschreiten. Sie können es direkt berechnen:
+
+<Formula>Profitable Grenze = aktuelles Budget × 2 ^ (ln(Break-even-Kosten ÷ aktuelle Kosten) ÷ ln(1 + Anstieg pro Verdopplung))</Formula>
+
+Für den Shop oben mit einem Break-even-CPA von 45 liegt die Grenze bei 3.040 × 2 ^ (ln 1,5 ÷ ln 1,15), also etwa 22.700 pro Monat. Will der Shop einen Sicherheitspuffer von 25 % halten, liegt sein Ziel-CPA bei 36 und die komfortable Grenze bei etwa 7.500 pro Monat.
+
+Der Planer markiert diese Grenze im Diagramm und in der Skalierungstabelle, damit Sie auf einen Blick sehen, welche Budgets profitabel sind.
+
+<TryPlanner text="Sehen Sie Ihre eigene Skalierungstabelle, die projizierten Kosten für jedes Budget und Ihre profitable Grenze." />
+
+## Budget für ein Ziel statt Ziel für ein Budget
+
+Oft lautet die Frage umgekehrt: Wie viel muss ich ausgeben, um ein Ziel zu erreichen? Da die Kosten mit den Ausgaben steigen, können Sie das Ziel nicht einfach mit den heutigen Kosten multiplizieren. Der Planer sucht das Budget, bei dem die projizierten Ergebnisse das Ziel erreichen.
+
+Damit der Shop 200 Verkäufe pro Monat erreicht, ergibt die einfache Rechnung 200 × 30 = 6.000. Die Projektion ergibt etwa 7.130, bei Kosten pro Verkauf von rund 35,65. Das liegt noch unter dem Ziel von 36: Der Plan funktioniert, kostet aber fast 20 % mehr als die naive Schätzung. Leadgenerierung funktioniert genauso: Der [Ratgeber zum CAC](/guides/cost-per-lead-to-cac) zeigt eine Klinik, die etwa 4.520 statt 3.850 braucht, um ihr Kundenziel zu erreichen.
+
+## Ihren Anstieg pro Verdopplung wählen
+
+15 % sind ein vernünftiger Standard, doch Ihr Konto kann sich anders verhalten:
+
+- **Breite Zielgruppen und große Märkte** skalieren oft mit geringeren Anstiegen, weil es noch viele ähnliche Käufer zu erreichen gibt.
+- **Enge Nischen und kleine Länder** stoßen schneller an Grenzen: Anstiege von 25 % oder mehr sind häufig.
+- **Gute Creative-Erneuerung** kann die Kurve eine Zeit lang zurücksetzen, weil neue Anzeigen Menschen erreichen, die die alten ignoriert haben.
+- **Saisonale Spitzen** bringen eigene Kostensteigerungen. Siehe den [Ratgeber zur Saisonalität](/guides/seasonality-q4-ad-costs).
+
+Haben Sie bereits skaliert, messen Sie es. Vergleichen Sie einen Monat bei einem bestimmten Budget mit einem Monat bei etwa dem doppelten Budget, mit vergleichbaren Creatives und Saison, und berechnen Sie, um wie viel die Kosten pro Ergebnis gestiegen sind. Tragen Sie diese Zahl in die erweiterten Einstellungen des Planers ein.
+
+## Die Google-Suche skaliert anders
+
+Die Suche ist durch die Zahl der Suchenden begrenzt. Google meldet den **wegen Budget entgangenen Anteil an möglichen Impressionen**, also den Anteil berechtigter Suchanfragen, die verpasst wurden, weil das Budget aufgebraucht war. Bis dieser Wert null erreicht, kauft mehr Budget vor allem mehr Suchanfragen zu ähnlichen Kosten. Danach kann mehr Budget nur die Gebote für dieselben Suchanfragen erhöhen.
+
+Der Planer nennt diesen Punkt die **Obergrenze der Google-Suche** und teilt Google ab dort kein weiteres Budget zu. Der [Ratgeber zur Budgetaufteilung zwischen Meta und Google](/guides/meta-vs-google-budget-split) erklärt, wie diese Obergrenze in einem kombinierten Plan mit Meta zusammenwirkt.
+
+## Skalieren, ohne etwas kaputtzumachen
+
+Selbst mit dem richtigen Zielbudget kommt es darauf an, wie Sie es erreichen:
+
+1. **Erhöhen Sie schrittweise.** Steigern Sie Tagesbudgets um höchstens etwa 20 % alle drei Tage. Eine Kampagne mit 100 pro Tag erreicht so in etwa zwei Wochen 235 pro Tag.
+2. **Beobachten Sie die Grenzkosten, nicht nur den Durchschnitt.** Hat die letzte Erhöhung Ergebnisse über Ihren Zielkosten gebracht, halten Sie an und stabilisieren Sie.
+3. **Erneuern Sie Creatives, wenn die Frequenz steigt.** Neue Anzeigen bremsen den Kostenanstieg.
+4. **Halten Sie die Struktur einfach.** Mit vielen kleinen Anzeigengruppen zu skalieren, teilt die Daten und hält sie in der Lernphase. Siehe den [Ratgeber zur Lernphase](/guides/meta-learning-phase-50-results).
+5. **Messen Sie monatlich neu.** Aktualisieren Sie den Plan mit den echten Kosten und Ausgaben jedes Monats, damit die Projektion von frischen Daten ausgeht.
+
+## Anzeichen, dass Sie zu weit gegangen sind
+
+Die Projektion ist ein Plan, kein Versprechen. Achten Sie in den ersten Wochen auf einem neuen Budgetniveau auf diese Signale:
+
+- **Die Frequenz steigt über 3 bis 5**, während die CTR sinkt. Die Zielgruppe ist Ihrer Anzeigen müde.
+- **Die Kosten pro Ergebnis steigen schneller als geplant**, zum Beispiel um 30 % nach nur einer Verdopplung statt um 15 %.
+- **Die Lead-Qualität sinkt.** Es kommen mehr Leads, aber Termin- oder Abschlussquote fallen, also steigen die Kosten pro Kunde, auch wenn die Kosten pro Lead stabil wirken.
+- **Der wegen Budget entgangene Anteil bei Google liegt bereits nahe null**, und Sie erhöhen trotzdem weiter das Google-Budget.
+
+Sehen Sie zwei oder mehr dieser Anzeichen, gehen Sie zum letzten Budget zurück, das Ihr Ziel erreicht hat, erneuern Sie die Creatives und versuchen Sie es langsamer.
+
+## Zusammenfassung
+
+Die Kosten steigen mit dem Budget, weil die Plattformen zuerst die besten Interessenten erreichen. Eine einfache Annahme von etwa 15 % höheren Kosten bei jeder Verdopplung der Ausgaben macht daraus einen brauchbaren Plan: Sie sagt das Budget für ein Ziel voraus, zeigt die Grenzkosten zusätzlicher Ergebnisse und markiert das höchste profitable Budget. Spielen Sie Ihre Zahlen im [Planer](/calculator) durch, um die vollständige Skalierungstabelle für Ihr Konto zu sehen.

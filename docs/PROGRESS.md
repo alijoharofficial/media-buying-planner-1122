@@ -77,6 +77,12 @@
 - Verified: tsc, lint, parity tests, build; /fr pages 200, English slug 308s to French slug.
 - Next: Phase 8, session 3: German (de).
 
+## Phase 8, session 3: German (de) (done)
+- Done: all 9 UI namespaces in `messages/de/` (parity 9/9), all 10 guides in `content/guides/de/` (1,500 to 1,900 words), `slugs.de` in `lib/site.ts`, loaders in `lib/guides.ts`.
+- Decisions: formal "Sie"; German number format ("1.460", "29,20"), „ “ quotes; Meta/Google UI labels use the German interface names (Werbeanzeigenmanager, Keyword-Planer); "Lead", "Creative", "CPM/CTR/CAC/ROAS" kept as common German marketing terms.
+- Verified: tsc, lint, parity tests, build; /de pages 200, English and French slugs 308 to German slugs.
+- Next: Phase 8, session 4: Arabic (ar, RTL).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

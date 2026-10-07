@@ -1,0 +1,62 @@
+{
+  "items": {
+    "budgetCalculator": {
+      "title": "Budgetrechner",
+      "desc": "Das Monats- und Tagesbudget für Ihr Ziel oder was ein festes Budget bringt.",
+      "long": "Arbeitet mit Ihren echten Kosten, wenn Sie Daten haben, oder mit Schätzungen und einem Testplan, wenn nicht. Die Kosten steigen mit den Ausgaben, daher berücksichtigt das Budget abnehmende Erträge."
+    },
+    "leadFunnel": {
+      "title": "Lead-Funnel- und CAC-Analyse",
+      "desc": "Von den Kosten pro Lead zu den Kosten pro Kunde, über Termin-, Erscheinens- und Abschlussquote.",
+      "long": "Macht aus Kundenwert und Marge das Maximum, das Sie pro Kunde (CAC) und pro Lead (CPL) zahlen können, und prüft Ihren echten Funnel gegen diese Grenzen.",
+      "service": "Lead-Budgetrechner"
+    },
+    "ecomBreakEven": {
+      "title": "E-Commerce Break-even und ROAS",
+      "desc": "Break-even-CPA und -ROAS nach Produktkosten, Versand, Gebühren und Retouren.",
+      "long": "Zeigt genau, wie viel Gewinn eine Bestellung für Werbung übrig lässt, bewertet nach Erstbestellung oder Kundenlebenswert, mit einem Ziel-CPA samt Sicherheitspuffer.",
+      "service": "E-Commerce-Budgetrechner"
+    },
+    "testPlanner": {
+      "title": "Testplaner für neue Konten",
+      "desc": "Ein Testbudget, tägliche Ausgaben und klare Regeln für die Zeit nach dem Test.",
+      "long": "Für Konten ohne Daten: was Sie sich zum Testen leisten können, ein Stop-Loss und Entscheidungsregeln zum Skalieren, Optimieren oder Stoppen, sobald echte Kosten vorliegen.",
+      "service": "Testplaner für neue Konten"
+    },
+    "learningCheck": {
+      "title": "Lernphasen-Check",
+      "desc": "Prüft, ob jede Meta-Anzeigengruppe und jede Google-Kampagne genug Ergebnisse zum Lernen bekommt.",
+      "long": "Zählt effektive Anzeigengruppen für CBO, ABO und Advantage+, vergleicht Ergebnisse pro Anzeigengruppe und Woche mit der Lernschwelle und empfiehlt, wie viele Anzeigengruppen Ihr Budget trägt.",
+      "service": "Lernphasen-Check"
+    },
+    "scalingTable": {
+      "title": "Skalierungstabelle",
+      "desc": "Budget im Verhältnis zu Ergebnissen und Kosten pro Ergebnis, mit markierter profitabler Grenze.",
+      "long": "Projiziert, wie die Kosten pro Ergebnis beim Skalieren steigen, und zeigt das höchste Monatsbudget, das noch unter dem Break-even bleibt.",
+      "service": "Skalierungstabelle"
+    },
+    "budgetSplit": {
+      "title": "Budgetaufteilung",
+      "desc": "Wie viel an Meta, Google-Suche, Tests, Retargeting und Marke geht, und warum.",
+      "long": "Verteilt jede Budgetstufe auf die Plattform mit den niedrigsten Kosten für das nächste Ergebnis, beachtet Plattform-Mindestbudgets und ergänzt einen sicheren Steigerungsplan.",
+      "service": "Budgetaufteilung"
+    },
+    "googleCeiling": {
+      "title": "Google-Such-Obergrenze",
+      "desc": "Das Maximum, das die Google-Suche ausgeben und liefern kann, bevor die Kosten steigen.",
+      "long": "Nutzt Suchvolumen, Anteil an möglichen Impressionen und den wegen Budget entgangenen Anteil, um zu finden, ab wann zusätzliches Google-Budget keine zusätzlichen Suchanfragen mehr kauft.",
+      "service": "Google-Such-Obergrenze"
+    },
+    "bottleneck": {
+      "title": "Engpass-Finder",
+      "desc": "Die schwächste Stufe Ihres Lead-Funnels und was ihre Verbesserung wert ist.",
+      "long": "Testet eine Verbesserung um 10 Punkte bei Termin, Erscheinen und Abschluss und zeigt das eingesparte Budget oder die zusätzlichen Kunden.",
+      "service": "Engpass-Finder"
+    },
+    "showCalculation": {
+      "title": "Berechnung anzeigen",
+      "desc": "Jede Zahl Schritt für Schritt erklärt, mit Ihren Werten eingesetzt.",
+      "long": "Eine Zeitleiste jeder Formel in klarer Sprache, mit Farbmarkierungen für Ihre Eingaben, Annahmen und Einstellungen, damit Sie den Plan gegenüber einem Kunden begründen können."
+    }
+  }
+}
