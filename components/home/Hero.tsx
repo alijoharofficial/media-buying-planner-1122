@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
+import { m, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo, type MouseEvent } from 'react';
@@ -8,7 +8,6 @@ import { CountUp } from '@/components/results/CountUp';
 import { Badge } from '@/components/ui/Badge';
 import { ButtonLink } from '@/components/ui/Button';
 import { formatCurrency, formatNumber } from '@/lib/format';
-import { stagger, wordReveal } from '@/lib/motion';
 
 const AuroraCanvas = dynamic(() => import('./AuroraCanvas'), { ssr: false });
 
@@ -18,22 +17,23 @@ function words(text: string, locale: string): string[] {
   return text.split(/(\s+)/);
 }
 
+/** Word reveal done in CSS, so the text paints with the first HTML (no wait for hydration). */
 function RevealText({ text, as: Tag, className, delay = 0 }: { text: string; as: 'h1' | 'p'; className: string; delay?: number }) {
   const locale = useLocale();
   const parts = useMemo(() => words(text, locale), [text, locale]);
-  const M = motion[Tag];
+  let n = 0;
   return (
-    <M className={className} variants={stagger(0.045, delay)} initial="hidden" animate="visible" aria-label={text}>
+    <Tag className={className}>
       {parts.map((w, i) =>
         /^\s+$/.test(w) ? (
           <span key={i}> </span>
         ) : (
-          <motion.span key={i} variants={wordReveal} className="inline-block" aria-hidden="true">
+          <span key={i} className="word-rise" style={{ animationDelay: `${delay + n++ * 0.04}s` }}>
             {w}
-          </motion.span>
+          </span>
         ),
       )}
-    </M>
+    </Tag>
   );
 }
 
@@ -68,23 +68,23 @@ export function Hero() {
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 md:py-24 lg:grid-cols-[1.1fr_1fr]">
         <div>
-          <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mb-4 inline-flex rounded-full border border-border bg-surface/70 px-3 py-1 text-xs font-semibold text-accent">
+          <m.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mb-4 inline-flex rounded-full border border-border bg-surface/70 px-3 py-1 text-xs font-semibold text-accent">
             {tc('tagline')}
-          </motion.p>
+          </m.p>
           <RevealText as="h1" text={t('hero.title')} className="text-4xl font-extrabold leading-[1.1] tracking-tight md:text-6xl" />
-          <RevealText as="p" text={t('hero.subtitle')} className="mt-5 max-w-xl text-lg text-fg-muted" delay={0.35} />
-          <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="mt-8 flex flex-wrap gap-3">
+          <RevealText as="p" text={t('hero.subtitle')} className="mt-5 max-w-xl text-lg text-fg-muted" delay={0.1} />
+          <m.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/calculator" size="lg" shimmer>
               {t('hero.ctaPrimary')}
             </ButtonLink>
             <ButtonLink href="/how-to-use" size="lg" variant="secondary">
               {t('hero.ctaSecondary')}
             </ButtonLink>
-          </motion.div>
+          </m.div>
         </div>
 
         <div className="[perspective:1200px]">
-          <motion.div
+          <m.div
             style={reduce ? undefined : { rotateX, rotateY, transformStyle: 'preserve-3d' }}
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: [0, -8, 0] }}
@@ -130,15 +130,15 @@ export function Hero() {
                   <stop offset="1" stopColor="var(--color-accent)" stopOpacity="0" />
                 </linearGradient>
               </defs>
-              <motion.path d={`${CHART} L 240 80 L 0 80 Z`} fill="url(#hero-area)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.8 }} />
-              <motion.path d={CHART} fill="none" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.3 }} />
+              <m.path d={`${CHART} L 240 80 L 0 80 Z`} fill="url(#hero-area)" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.8 }} />
+              <m.path d={CHART} fill="none" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.6, ease: 'easeInOut', delay: 0.3 }} />
             </svg>
-            <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 380, damping: 18, delay: 1.6 }} className="mt-3" aria-hidden="true">
+            <m.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 380, damping: 18, delay: 1.6 }} className="mt-3" aria-hidden="true">
               <Badge tone="success" className="px-3 py-1 text-sm">
                 ✓ {t('preview.verdict')}
               </Badge>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         </div>
       </div>
     </section>

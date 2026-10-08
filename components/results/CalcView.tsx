@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/Button';
@@ -46,10 +46,10 @@ export function CalcView({ steps, currency }: { steps: StepRecord[]; currency: s
   const formula = (s: StepRecord, filled: boolean) => {
     const template = ts.raw(`${s.id}.formula`) as string;
     return template.split(/(\{\w+\})/).map((part, i) => {
-      const m = part.match(/^\{(\w+)\}$/);
-      if (!m) return <Fragment key={i}>{part}</Fragment>;
-      const v = s.inputs.find((x) => x.key === m[1]);
-      if (!filled || !v) return <span key={i} className="font-medium">{tv(m[1] ?? '')}</span>;
+      const hit = part.match(/^\{(\w+)\}$/);
+      if (!hit) return <Fragment key={i}>{part}</Fragment>;
+      const v = s.inputs.find((x) => x.key === hit[1]);
+      if (!filled || !v) return <span key={i} className="font-medium">{tv(hit[1] ?? '')}</span>;
       const src = sourceText(v);
       return (
         <span key={i} className={cn('mx-0.5 inline-flex items-center rounded px-1.5 py-0.5 font-semibold tabular-nums', tagStyle[v.tag])} title={`${tv(v.key)} · ${t(`tags.${v.tag}`)}${src ? ` · ${src}` : ''}`}>
@@ -104,7 +104,7 @@ export function CalcView({ steps, currency }: { steps: StepRecord[]; currency: s
               return n;
             });
             return (
-              <motion.li
+              <m.li
                 key={s.id + i}
                 ref={(el) => {
                   refs.current[i] = el;
@@ -149,7 +149,7 @@ export function CalcView({ steps, currency }: { steps: StepRecord[]; currency: s
                     </dl>
                   )}
                 </article>
-              </motion.li>
+              </m.li>
             );
           })}
         </ol>

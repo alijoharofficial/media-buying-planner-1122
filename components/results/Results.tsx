@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import { useLocale, useTranslations } from 'next-intl';
 import { useState, type ReactNode } from 'react';
@@ -34,13 +34,13 @@ const severityTone = { info: 'info', warning: 'warning', danger: 'danger' } as c
 
 function Block({ title, intro, children, className }: { title: string; intro?: string; children: ReactNode; className?: string }) {
   return (
-    <motion.section variants={fadeUp} {...revealOnScroll} className={cn('flex flex-col gap-4', className)}>
+    <m.section variants={fadeUp} {...revealOnScroll} className={cn('flex flex-col gap-4', className)}>
       <div>
         <h3 className="text-lg font-semibold">{title}</h3>
         {intro && <p className="text-sm text-fg-muted">{intro}</p>}
       </div>
       {children}
-    </motion.section>
+    </m.section>
   );
 }
 
@@ -91,7 +91,7 @@ export function Results({ plan, currency, onShare, onSave, onRecalculate }: Prop
       </div>
 
       {/* 1. Headline */}
-      <motion.div variants={fadeUp} initial="hidden" animate="visible">
+      <m.div variants={fadeUp} initial="hidden" animate="visible">
         <Card glass className="p-6 md:p-8">
           <h2 className="text-2xl font-bold tracking-tight md:text-3xl">{t('title')}</h2>
           {na ? (
@@ -141,7 +141,7 @@ export function Results({ plan, currency, onShare, onSave, onRecalculate }: Prop
           </Button>
           {showCalc && <CalcView steps={plan.steps} currency={currency} />}
         </Card>
-      </motion.div>
+      </m.div>
 
       {/* 2. What it delivers */}
       <Block title={t('deliver.title')} intro={t(`deliver.intro_${kind}`)}>
@@ -174,11 +174,11 @@ export function Results({ plan, currency, onShare, onSave, onRecalculate }: Prop
         <div className={cn('flex flex-col gap-3 rounded-xl border p-5 sm:flex-row sm:items-center sm:justify-between', verdictBorder[plan.verdict])}>
           <div>
             <p className="text-sm text-fg-muted">{t('verdict.title')}</p>
-            <motion.div initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 380, damping: 20 }}>
+            <m.div initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} viewport={{ once: true }} transition={{ type: 'spring', stiffness: 380, damping: 20 }}>
               <Badge tone={verdictTone[plan.verdict]} className="mt-1 px-3 py-1 text-sm">
                 {t(`verdict.${plan.verdict}`)}
               </Badge>
-            </motion.div>
+            </m.div>
             <p className="mt-2 text-sm text-fg-muted">{t(`verdict.desc_${plan.verdict}`)}</p>
           </div>
           <dl className="grid grid-cols-2 gap-x-6 gap-y-1 text-sm">

@@ -11,7 +11,7 @@ import { localizedSlug } from '@/lib/slugs';
 export function TryPlanner({ text }: { text?: string }) {
   const t = useTranslations('guides.article.cta');
   return (
-    <aside className="not-prose my-10 flex flex-col gap-4 rounded-2xl border border-accent/40 bg-accent-soft p-6 sm:flex-row sm:items-center sm:justify-between">
+    <div className="not-prose my-10 flex flex-col gap-4 rounded-2xl border border-accent/40 bg-accent-soft p-6 sm:flex-row sm:items-center sm:justify-between">
       <div>
         <p className="text-lg font-bold text-fg">{t('title', { brand: BRAND_NAME })}</p>
         <p className="mt-1 text-sm text-fg-muted">{text ?? t('text')}</p>
@@ -19,7 +19,7 @@ export function TryPlanner({ text }: { text?: string }) {
       <ButtonLink href="/calculator" shimmer className="shrink-0">
         {t('button')}
       </ButtonLink>
-    </aside>
+    </div>
   );
 }
 
@@ -70,7 +70,7 @@ export function Byline({ date, minutes }: { date: ReactNode; minutes: number }) 
 export function AuthorBox() {
   const t = useTranslations('guides.article');
   return (
-    <aside className="flex gap-4 rounded-2xl border border-border bg-surface p-6">
+    <aside aria-label={t('authorTitle')} className="flex gap-4 rounded-2xl border border-border bg-surface p-6">
       <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-brand-fg" aria-hidden="true">
         T24
       </span>

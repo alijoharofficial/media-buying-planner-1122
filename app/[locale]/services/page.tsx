@@ -33,8 +33,10 @@ export default async function ServicesPage({ params }: PageProps) {
                 </h2>
                 <p className="mt-1 text-sm text-fg-muted">{tf(`${s.id}.long`)}</p>
               </div>
-              <ButtonLink href="/calculator" variant="secondary" size="sm" aria-label={t('useItFor', { service: tf(`${s.id}.service`) })}>
+              {/* Visible text first, service name for screen readers (name matches what is shown). */}
+              <ButtonLink href="/calculator" variant="secondary" size="sm">
                 {t('useIt')}
+                <span className="sr-only">: {tf(`${s.id}.service`)}</span>
               </ButtonLink>
             </section>
           </RevealItem>

@@ -18,7 +18,7 @@ export default async function FeaturesPage({ params }: PageProps) {
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} crumb={{ name: tn('features'), path: '/features' }} />
       <div className="mt-12">
-        <FeatureGrid detailed />
+        <FeatureGrid detailed headingLevel="h2" />
       </div>
       <div className="mt-12 flex justify-center">
         <ButtonLink href="/calculator" size="lg" shimmer>

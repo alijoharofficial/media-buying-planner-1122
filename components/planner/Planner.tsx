@@ -1,6 +1,7 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { FormProvider, useForm, useWatch } from 'react-hook-form';
@@ -17,11 +18,13 @@ import { clearDraft, decodeShare, encodeShare, loadDraft, loadScenarios, saveDra
 import type { FormValues, TabId } from '@/lib/planner/types';
 import { modeOf, validate, type Issue } from '@/lib/planner/validation';
 import { PlannerContext, type PlannerCtx } from './context';
-import { Results } from '@/components/results/Results';
-import { ScenarioPanel } from './ScenarioPanel';
 import { Step0 } from './Step0';
 import { SummaryChips } from './SummaryChips';
 import { TabPanel } from './TabPanel';
+
+// Code-split: the results screen (and its charts) loads only once a plan is calculated.
+const Results = dynamic(() => import('@/components/results/Results').then((m) => m.Results));
+const ScenarioPanel = dynamic(() => import('./ScenarioPanel').then((m) => m.ScenarioPanel));
 
 const TABS_ID = 'planner-tabs';
 
@@ -250,8 +253,8 @@ export function Planner() {
               })}
             />
 
-            <AnimatePresence mode="wait">
-              <motion.div
+            <AnimatePresence mode="wait" initial={false}>
+              <m.div
                 key={activeTab}
                 role="tabpanel"
                 id={panelId(TABS_ID, activeTab)}
@@ -266,7 +269,7 @@ export function Planner() {
                 <Card>
                   <TabPanel tab={activeTab} />
                 </Card>
-              </motion.div>
+              </m.div>
             </AnimatePresence>
 
             <div className="flex flex-wrap items-center justify-between gap-3">

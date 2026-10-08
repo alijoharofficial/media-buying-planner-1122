@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
 import { Logo } from '@/components/brand/Logo';
@@ -60,9 +60,9 @@ export function Header() {
   return (
     <header className={cn('no-print sticky top-0 z-40 transition-[background-color,box-shadow,border-color] duration-300', scrolled ? 'glass border-b border-border shadow-soft' : 'border-b border-transparent')}>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4">
-        <Link href="/" aria-label={t('a11y.homeLink', { brand: 'Media Buying Planner' })} className="rounded-lg focus-glow">
-          <Logo size={32} className="hidden sm:inline-flex" />
-          <Logo variant="compact" size={30} className="sm:hidden" />
+        <Link href="/" className="rounded-lg focus-glow">
+          <Logo size={32} asText className="max-sm:hidden" />
+          <Logo variant="compact" size={30} asText className="sm:hidden" />
         </Link>
 
         <nav aria-label={t('nav.label')} className="hidden lg:block">
@@ -85,7 +85,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LanguageSwitcher className="hidden sm:inline-flex" />
+          <LanguageSwitcher className="max-sm:hidden" />
           <ThemeToggle />
           <button
             ref={toggleRef}
@@ -106,8 +106,8 @@ export function Header() {
       <AnimatePresence>
         {open && (
           <>
-            <motion.div className="fixed inset-0 z-40 bg-navy/50 lg:hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(false)} aria-hidden="true" />
-            <motion.div
+            <m.div className="fixed inset-0 z-40 bg-navy/50 lg:hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(false)} aria-hidden="true" />
+            <m.div
               ref={menuRef}
               id="mobile-menu"
               role="dialog"
@@ -143,7 +143,7 @@ export function Header() {
                 </ul>
               </nav>
               <LanguageSwitcher className="mt-auto w-full [&_select]:w-full" />
-            </motion.div>
+            </m.div>
           </>
         )}
       </AnimatePresence>

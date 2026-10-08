@@ -39,7 +39,7 @@ export default async function HowToUsePage({ params }: PageProps) {
     <main id="main" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
       <PageHeader eyebrow={t('eyebrow')} title={t('title')} intro={t('intro')} crumb={{ name: tn('howToUse'), path: '/how-to-use' }} />
       <div className="mt-14">
-        <HowStepper />
+        <HowStepper headingLevel="h2" />
       </div>
 
       <section className="mt-20">

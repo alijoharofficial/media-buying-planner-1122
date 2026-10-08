@@ -29,7 +29,7 @@ export function GuideCover({ guide, large }: { guide: GuideMeta; large?: boolean
 }
 
 /** Guide card: cover, category, title link, summary, date and reading time. */
-export function GuideCard({ guide, minutes }: { guide: GuideMeta; minutes?: number }) {
+export function GuideCard({ guide, minutes, headingLevel: H = 'h3' }: { guide: GuideMeta; minutes?: number; headingLevel?: 'h2' | 'h3' }) {
   const t = useTranslations('guides');
   const format = useFormatter();
   const locale = useLocale();
@@ -38,11 +38,11 @@ export function GuideCard({ guide, minutes }: { guide: GuideMeta; minutes?: numb
       <GuideCover guide={guide} />
       <div className="flex flex-1 flex-col gap-2 p-5">
         <span className="text-xs font-semibold uppercase tracking-wide text-accent">{t(`categories.${guide.category}`)}</span>
-        <h3 className="font-semibold leading-snug">
+        <H className="text-base font-semibold leading-snug">
           <Link href={guidePath(guide.slug, locale)} className="after:absolute after:inset-0 focus-glow rounded">
             {t(`items.${guide.slug}.title`)}
           </Link>
-        </h3>
+        </H>
         <p className="text-sm text-fg-muted">{t(`items.${guide.slug}.summary`)}</p>
         <p className="mt-auto flex gap-2 pt-2 text-xs text-fg-subtle">
           <time dateTime={guide.date}>{format.dateTime(new Date(guide.date), { dateStyle: 'medium' })}</time>

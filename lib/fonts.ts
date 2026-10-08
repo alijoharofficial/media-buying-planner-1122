@@ -1,24 +1,21 @@
-import { IBM_Plex_Sans_Arabic, Noto_Sans_SC, Plus_Jakarta_Sans } from 'next/font/google';
+import { IBM_Plex_Sans_Arabic, Plus_Jakarta_Sans } from 'next/font/google';
 
+// display 'optional': text paints once (no late font swap that would push back Largest Contentful
+// Paint); the cached font is used from the next page view on.
 export const fontLatin = Plus_Jakarta_Sans({
   subsets: ['latin', 'latin-ext'],
   variable: '--font-latin',
-  display: 'swap',
+  display: 'optional',
 });
 
 export const fontArabic = IBM_Plex_Sans_Arabic({
   subsets: ['arabic'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-arabic',
-  display: 'swap',
+  display: 'optional',
   preload: false,
 });
 
-export const fontCjk = Noto_Sans_SC({
-  weight: ['400', '500', '700'],
-  variable: '--font-cjk',
-  display: 'swap',
-  preload: false,
-});
-
-export const fontVariables = [fontLatin.variable, fontArabic.variable, fontCjk.variable].join(' ');
+// Chinese uses system fonts (PingFang SC, Microsoft YaHei, Noto Sans CJK SC): a CJK web font adds
+// about 300 @font-face rules to the shared CSS of every page, in every language.
+export const fontVariables = [fontLatin.variable, fontArabic.variable].join(' ');

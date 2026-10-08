@@ -5,9 +5,10 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/Button';
 import { Link } from '@/i18n/navigation';
+import { CONSENT_KEY as KEY } from '@/lib/consent';
 
 type Consent = 'accepted' | 'rejected';
-const KEY = 'mbp:consent:v1';
+
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 function readConsent(): Consent | null {
@@ -46,8 +47,8 @@ export function CookieConsent() {
           </Script>
         </>
       )}
-      {consent === null && (
-        <div role="region" aria-label={t('label')} className="no-print fixed inset-x-4 bottom-4 z-50 mx-auto max-w-2xl rounded-2xl border border-border bg-bg-elevated p-5 shadow-lift">
+      {(consent === null || consent === 'unknown') && (
+        <div data-cookie-banner role="region" aria-label={t('label')} className="no-print fixed inset-x-4 bottom-4 z-50 mx-auto max-w-2xl rounded-2xl border border-border bg-bg-elevated p-5 shadow-lift">
           <p className="text-sm text-fg">
             {t('text')}{' '}
             <Link href="/cookie-policy" className="font-medium text-accent underline-offset-2 hover:underline">

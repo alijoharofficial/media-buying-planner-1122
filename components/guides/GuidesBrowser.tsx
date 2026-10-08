@@ -62,7 +62,7 @@ export function GuidesBrowser({ guides }: { guides: Array<GuideMeta & { minutes:
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {shown.map((g) => (
             <li key={g.slug}>
-              <GuideCard guide={g} minutes={g.minutes} />
+              <GuideCard guide={g} minutes={g.minutes} headingLevel="h2" />
             </li>
           ))}
         </ul>

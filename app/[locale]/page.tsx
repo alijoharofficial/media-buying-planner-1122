@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { use, type ReactNode } from 'react';
+import { ClientMessages } from '@/components/ClientMessages';
 import { FaqAccordion } from '@/components/content/FaqAccordion';
 import { FeatureGrid } from '@/components/content/FeatureGrid';
 import { GuideCard } from '@/components/content/GuideCard';
@@ -55,7 +56,9 @@ export default function HomePage({ params }: Props) {
 
   return (
     <main id="main">
-      <Hero />
+      <ClientMessages namespaces={['home']}>
+        <Hero />
+      </ClientMessages>
       <JsonLd data={graph(webApplication(locale, t('meta.description')))} />
 
       {/* Trust strip */}
@@ -80,7 +83,7 @@ export default function HomePage({ params }: Props) {
 
       {/* Planner preview */}
       <section className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-        <Reveal className="grid items-center gap-10 rounded-3xl border border-border bg-surface p-6 shadow-soft md:grid-cols-2 md:p-10">
+        <Reveal className="grid items-center gap-10 rounded-3xl border border-border bg-surface p-6 shadow-soft md:grid-cols-2 md:p-10 [&>*]:min-w-0">
           <RevealItem>
             <h2 className="text-3xl font-bold tracking-tight">{t('preview.sectionTitle')}</h2>
             <p className="mt-3 text-fg-muted">{t('preview.sectionText')}</p>

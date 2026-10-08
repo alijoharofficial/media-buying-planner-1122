@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from 'react';
 import { cn } from '@/lib/cn';
 
@@ -35,7 +35,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
       <div aria-live="polite" role="status" className="pointer-events-none fixed bottom-4 end-4 z-50 flex flex-col gap-2">
         <AnimatePresence>
           {toasts.map((t) => (
-            <motion.div
+            <m.div
               key={t.id}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
               className={cn('pointer-events-auto max-w-sm rounded-lg border-s-4 bg-bg-elevated px-4 py-3 text-sm text-fg shadow-lift', tones[t.tone])}
             >
               {t.message}
-            </motion.div>
+            </m.div>
           ))}
         </AnimatePresence>
       </div>

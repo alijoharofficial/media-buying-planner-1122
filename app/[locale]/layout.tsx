@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
-import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { hasLocale } from 'next-intl';
+import { ClientMessages } from '@/components/ClientMessages';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { ReactNode } from 'react';
 import { CookieConsent } from '@/components/layout/CookieConsent';
@@ -12,6 +13,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { Providers } from '@/components/Providers';
 import { graph, organization, website } from '@/lib/jsonld';
 import { BRAND_NAME, SITE_URL } from '@/lib/brand';
+import { CONSENT_PRECHECK } from '@/lib/consent';
 import { fontVariables } from '@/lib/fonts';
 import { getDirection, routing } from '@/i18n/routing';
 
@@ -52,13 +54,15 @@ export default async function LocaleLayout({ children, params }: Props) {
     // suppressHydrationWarning: next-themes sets the theme class before hydration (no flash).
     <html lang={locale} dir={getDirection(locale)} className={fontVariables} suppressHydrationWarning>
       <body className="min-h-dvh antialiased">
+        {/* Hides the server-rendered cookie banner before first paint when a choice is already saved. */}
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: CONSENT_PRECHECK }} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-surface focus:px-4 focus:py-2 focus:shadow-lift"
         >
           {t('skipToContent')}
         </a>
-        <NextIntlClientProvider>
+        <ClientMessages>
           <Providers nonce={nonce}>
             <Header />
             {children}
@@ -67,7 +71,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Deterrents />
             <JsonLd data={graph(organization(), website(locale, tm('description')))} />
           </Providers>
-        </NextIntlClientProvider>
+        </ClientMessages>
       </body>
     </html>
   );

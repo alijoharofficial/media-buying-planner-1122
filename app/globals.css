@@ -13,15 +13,15 @@
   --color-border-strong: #c3c9de;
   --color-fg: #0b1230;
   --color-fg-muted: #4a5272;
-  --color-fg-subtle: #6b7393;
+  --color-fg-subtle: #5c6484;
 
   --color-brand: #1e2a78; /* deep indigo */
   --color-brand-fg: #ffffff;
   --color-navy: #0b1230;
-  --color-accent: #0891b2; /* electric cyan, darkened for AA on light */
-  --color-accent-strong: #0e7490;
+  --color-accent: #0e7490; /* electric cyan, darkened for AA (5:1) on light surfaces */
+  --color-accent-strong: #155e75;
   --color-accent-fg: #ffffff;
-  --color-accent-soft: rgb(8 145 178 / 0.12);
+  --color-accent-soft: rgb(14 116 144 / 0.12);
 
   --color-success: #15803d;
   --color-success-soft: rgb(21 128 61 / 0.12);
@@ -32,7 +32,7 @@
   --color-info: #1d4ed8;
   --color-info-soft: rgb(29 78 216 / 0.12);
 
-  --color-ring: rgb(8 145 178 / 0.45);
+  --color-ring: rgb(14 116 144 / 0.5);
   --shadow-soft: 0 1px 2px rgb(11 18 48 / 0.04), 0 8px 24px rgb(11 18 48 / 0.06);
   --shadow-lift: 0 2px 4px rgb(11 18 48 / 0.06), 0 18px 40px rgb(11 18 48 / 0.1);
 
@@ -124,8 +124,8 @@
   --shadow-soft: var(--shadow-soft);
   --shadow-lift: var(--shadow-lift);
 
-  --font-sans: var(--font-latin), var(--font-arabic), var(--font-cjk), ui-sans-serif, system-ui,
-    -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, -apple-system,
+    'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
 }
 
 /* Script-specific font priority */
@@ -133,8 +133,8 @@ html[lang='ar'] {
   --font-sans-override: var(--font-arabic), var(--font-latin), 'Segoe UI', Tahoma, sans-serif;
 }
 html[lang='zh'] {
-  --font-sans-override: var(--font-latin), var(--font-cjk), 'PingFang SC', 'Microsoft YaHei',
-    sans-serif;
+  --font-sans-override: var(--font-latin), 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Noto Sans CJK SC', 'Source Han Sans SC', sans-serif;
 }
 
 @layer base {
@@ -183,6 +183,27 @@ html[lang='zh'] {
     background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / 0.35) 50%, transparent 70%);
     transform: translateX(-100%);
     animation: shimmer 3.2s ease-in-out infinite;
+  }
+}
+
+html[data-consent] [data-cookie-banner] {
+  display: none;
+}
+
+/* Hero word reveal (CSS, so headline text paints before hydration) */
+.word-rise {
+  display: inline-block;
+  animation: word-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes word-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .word-rise {
+    animation: none;
   }
 }
 

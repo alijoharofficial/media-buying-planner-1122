@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useEffect, useId, useRef, useState, type ReactNode } from 'react';
 import { cn } from '@/lib/cn';
@@ -54,7 +54,7 @@ export function Tooltip({ content, label, className }: TooltipProps) {
       </button>
       <AnimatePresence>
         {open && (
-          <motion.span
+          <m.span
             id={id}
             role="tooltip"
             initial={{ opacity: 0, y: 4 }}
@@ -64,7 +64,7 @@ export function Tooltip({ content, label, className }: TooltipProps) {
             className="absolute bottom-full start-1/2 z-40 mb-2 w-64 -translate-x-1/2 rounded-lg border border-border bg-bg-elevated p-3 text-start text-xs font-normal leading-relaxed text-fg shadow-lift rtl:translate-x-1/2"
           >
             {content}
-          </motion.span>
+          </m.span>
         )}
       </AnimatePresence>
     </span>

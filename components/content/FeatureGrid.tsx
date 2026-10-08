@@ -4,7 +4,8 @@ import { FEATURES } from '@/lib/site';
 import { Reveal, RevealItem } from './Reveal';
 
 /** Feature cards from the shared FEATURES array (home and Features page). */
-export function FeatureGrid({ detailed }: { detailed?: boolean }) {
+/** headingLevel: h2 when the grid sits directly under the page's h1 (Features page). */
+export function FeatureGrid({ detailed, headingLevel: H = 'h3' }: { detailed?: boolean; headingLevel?: 'h2' | 'h3' }) {
   const t = useTranslations('features.items');
   return (
     <Reveal as="ul" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -17,7 +18,7 @@ export function FeatureGrid({ detailed }: { detailed?: boolean }) {
             >
               <Icon name={f.icon} />
             </span>
-            <h3 className="mt-4 font-semibold">{t(`${f.id}.title`)}</h3>
+            <H className="mt-4 text-base font-semibold">{t(`${f.id}.title`)}</H>
             <p className="mt-1.5 text-sm text-fg-muted">{t(`${f.id}.desc`)}</p>
             {detailed && <p className="mt-3 text-sm text-fg-muted">{t(`${f.id}.long`)}</p>}
           </article>

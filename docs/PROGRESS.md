@@ -102,10 +102,24 @@
 - Verified: tsc, lint, all tests (86 passed), build; /zh pages 200, other-locale slugs 308 to English slugs.
 - Next: Phase 9: performance, accessibility, QA (Lighthouse, browser checks, README, deliverables checklist).
 
+## Phase 9: performance, accessibility, QA (done)
+- Perf: dropped the Noto Sans SC web font (303 @font-face rules shipped to every page; CSS 338 KB to 59 KB), Chinese uses system fonts; fonts `display: optional`; hero word reveal moved to CSS; cookie banner server-rendered with a pre-paint consent check; per-subtree client messages; results screen and scenario panel lazy-loaded; Framer Motion via LazyMotion (async domMax).
+- A11y: accent #0e7490 and subtle text #5c6484 (5:1 on light), focus ring colour, logo link name from visible text, heading levels on index pages, service link names, in-article CTA no longer a duplicate landmark. axe-core: 0 issues on 19 pages, light and dark.
+- Layout: fixed language switcher and full logo showing on phones (base `inline-flex` beat `hidden`), home preview grid min-width, planner slide overflow; all 77 pages (11 per locale) fit 360px.
+- Lighthouse (mobile): a11y 100, SEO 100, best practices 96 to 100; performance 86 to 97 on home/content, planner 82 to 87 (desktop 99 to 100). Planner is near the framework floor (React DOM and Next router are about 120 KB gzipped); real-browser LCP equals first paint.
+- Verified: planner E2E (Step 0, example data, results, 18 calculation steps), skip link, tab arrow keys; no console or CSP errors. README added.
+- Note: `pages.services.useItFor` and `common.a11y.homeLink` are now unused (kept in all locales for parity).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents
 - [x] Animated "Your Media Buying Plan" results screen + "Show the calculation" view
 - [x] Engine module with passing unit tests for all fixtures in 9.9
 - [x] Logo set, favicons and web manifest
-- [x] Light and dark mode, reduced-motion support (base)
+- [x] Light and dark mode, reduced-motion support
+- [x] Complete Next.js project with README (setup, env variables, deploy steps)
+- [x] All pages in 7 languages, Arabic fully RTL, brand name kept in English
+- [x] Planner with Step 0, 6 tabs, tooltips, validation, CSV import, autosave, scenarios, share link
+- [x] 10 guide articles in 7 languages with TECH24 credit
+- [x] Support banner and footer links as specified
+- [~] Lighthouse 90+ in all categories: met for accessibility, best practices and SEO on every page type and for performance on home/content pages; planner performance 82 to 87 on mobile (99 to 100 desktop)

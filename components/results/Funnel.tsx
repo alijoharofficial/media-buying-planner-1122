@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import type { FunnelStage } from '@/lib/engine';
 import { useFormat } from './useFormat';
@@ -21,7 +21,7 @@ export function Funnel({ stages, currency }: { stages: FunnelStage[]; currency: 
         <li key={s.key} className="grid grid-cols-[minmax(6rem,9rem)_1fr] items-center gap-3">
           <span className="text-sm font-medium text-fg-muted">{t(`stages.${s.key}`)}</span>
           <div className="relative h-10 overflow-hidden rounded-lg bg-surface-muted">
-            <motion.div
+            <m.div
               className="absolute inset-y-0 start-0 rounded-lg bg-accent"
               style={{ opacity: 1 - i * 0.15 }}
               initial={{ width: 0 }}

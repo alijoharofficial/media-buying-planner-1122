@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { useId, useRef, type KeyboardEvent, type ReactNode } from 'react';
 import { cn } from '@/lib/cn';
 
@@ -72,7 +72,7 @@ export function Tabs({ items, value, onChange, label, id, className }: TabsProps
             )}
           >
             {selected && (
-              <motion.span
+              <m.span
                 layoutId={`tab-indicator-${groupId}`}
                 className="absolute inset-0 rounded-lg bg-surface shadow-soft"
                 transition={{ type: 'spring', stiffness: 400, damping: 32 }}

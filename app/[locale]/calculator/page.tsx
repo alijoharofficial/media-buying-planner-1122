@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { ClientMessages } from '@/components/ClientMessages';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { Planner } from '@/components/planner/Planner';
@@ -28,7 +29,9 @@ export default async function CalculatorPage({ params }: Props) {
         <h1 className="text-3xl font-extrabold tracking-tight md:text-4xl">{t('title')}</h1>
         <p className="mx-auto mt-3 max-w-2xl text-fg-muted">{t('intro')}</p>
       </header>
-      <Planner />
+      <ClientMessages namespaces={['planner', 'results']}>
+        <Planner />
+      </ClientMessages>
     </main>
   );
 }

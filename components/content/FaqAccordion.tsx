@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { useId, useState } from 'react';
 import { cn } from '@/lib/cn';
 
@@ -36,7 +36,7 @@ export function FaqAccordion({ items, headingLevel = 3 }: { items: FaqItem[]; he
             </H>
             <AnimatePresence initial={false}>
               {isOpen && (
-                <motion.div
+                <m.div
                   id={panel}
                   role="region"
                   aria-labelledby={btn}
@@ -47,7 +47,7 @@ export function FaqAccordion({ items, headingLevel = 3 }: { items: FaqItem[]; he
                   className="overflow-hidden"
                 >
                   <p className="px-5 pb-5 leading-relaxed text-fg-muted">{item.a}</p>
-                </motion.div>
+                </m.div>
               )}
             </AnimatePresence>
           </div>

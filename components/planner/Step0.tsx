@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useFormContext, useWatch } from 'react-hook-form';
 import { Badge } from '@/components/ui/Badge';
@@ -39,18 +39,19 @@ export function Step0({ step, onStep, onDone, single }: Props) {
   };
 
   return (
-    <section aria-labelledby="step0-title" className="mx-auto max-w-3xl">
+    <section aria-labelledby="step0-title" className="mx-auto max-w-3xl overflow-x-clip px-1">
       <div className="mb-6">
         <div className="mb-2 flex justify-between text-xs font-medium text-fg-muted">
           <span>{t('progress', { current: step + 1, total })}</span>
         </div>
         <div className="h-2 overflow-hidden rounded-full bg-surface-muted" role="progressbar" aria-valuemin={1} aria-valuemax={total} aria-valuenow={step + 1} aria-label={t('progress', { current: step + 1, total })}>
-          <motion.div className="h-full rounded-full bg-accent" animate={{ width: `${((step + 1) / total) * 100}%` }} transition={{ duration: 0.4 }} />
+          <m.div className="h-full rounded-full bg-accent" animate={{ width: `${((step + 1) / total) * 100}%` }} transition={{ duration: 0.4 }} />
         </div>
       </div>
 
-      <AnimatePresence mode="wait">
-        <motion.div key={q.id} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
+      {/* initial={false}: the first question renders visible on the server; later ones slide in. */}
+      <AnimatePresence mode="wait" initial={false}>
+        <m.div key={q.id} initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -24 }} transition={{ duration: 0.25 }}>
           <h2 id="step0-title" className="text-2xl font-bold tracking-tight md:text-3xl">
             {t(`questions.${q.id}.title`)}
           </h2>
@@ -90,7 +91,7 @@ export function Step0({ step, onStep, onDone, single }: Props) {
                 </div>
               ))}
           </div>
-        </motion.div>
+        </m.div>
       </AnimatePresence>
 
       <div className="mt-8 flex items-center justify-between gap-3">

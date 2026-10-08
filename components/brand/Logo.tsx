@@ -8,6 +8,8 @@ type LogoProps = {
   /** Icon height in px. Wordmark scales with it. */
   size?: number;
   className?: string;
+  /** Inside a link: expose the visible wordmark as text so the link's name matches what is shown. */
+  asText?: boolean;
 };
 
 /** Icon geometry, shared with app/icon.svg and the generated PNG icons. */
@@ -49,7 +51,7 @@ export function LogoMark({ size = 32, className }: { size?: number; className?: 
   );
 }
 
-export function Logo({ variant = 'full', size = 32, className }: LogoProps) {
+export function Logo({ variant = 'full', size = 32, className, asText = false }: LogoProps) {
   if (variant === 'icon') {
     return (
       <span role="img" aria-label={BRAND_NAME} className={cn('inline-flex', className)}>
@@ -63,14 +65,14 @@ export function Logo({ variant = 'full', size = 32, className }: LogoProps) {
 
   return (
     <span
-      role="img"
-      aria-label={BRAND_NAME}
+      role={asText ? undefined : 'img'}
+      aria-label={asText ? undefined : BRAND_NAME}
       className={cn('inline-flex items-center gap-2.5 font-bold tracking-tight text-fg', className)}
       style={{ fontSize: size * 0.56 }}
       dir="ltr"
     >
       <LogoMark size={size} />
-      <span aria-hidden="true" className="whitespace-nowrap leading-none">
+      <span aria-hidden={asText ? undefined : true} className="whitespace-nowrap leading-none">
         {[first, ...rest].join(' ')} <span className="text-accent">{last}</span>
       </span>
     </span>
