@@ -1,0 +1,52 @@
+{
+  "eyebrow": "Jurídico",
+  "updated": "Última atualização: {date}",
+  "date": "7 de outubro de 2026",
+  "privacy": {
+    "meta": { "title": "Política de privacidade", "description": "Como o planejador de mídia trata seus dados: os dados do planejador ficam no seu navegador e a análise só funciona com seu consentimento." },
+    "title": "Política de privacidade",
+    "intro": "Esta política explica quais dados o {brand} trata e por quê. Em resumo: seus dados do planejador nunca saem do seu navegador.",
+    "sections": [
+      { "heading": "Os dados do planejador ficam no seu navegador", "body": ["Tudo o que você digita no planejador, incluindo cenários e benchmarks salvos, fica no armazenamento local do navegador no seu dispositivo. Nada é enviado aos nossos servidores, e não temos acesso a esses dados.", "Os links de compartilhamento contêm seus dados do planejador codificados no próprio link. Qualquer pessoa com o link pode ver esses dados, então compartilhe apenas com pessoas de confiança."] },
+      { "heading": "O formulário de contato", "body": ["Quando você usa o formulário de contato, recebemos seu nome, e-mail e mensagem. Usamos esses dados apenas para responder e não os guardamos por mais tempo que o necessário.", "Para evitar spam, o formulário usa o Cloudflare Turnstile, que pode tratar dados técnicos como seu endereço IP."] },
+      { "heading": "Análise", "body": ["Usamos análise (Google Analytics 4) somente se você aceitar os cookies de análise no aviso de cookies. A análise nos ajuda a entender quais páginas são úteis. Os endereços IP são anonimizados. Você pode mudar sua escolha a qualquer momento limpando os dados deste site no navegador."] },
+      { "heading": "Seus direitos", "list": ["Acessar, corrigir ou excluir os dados pessoais que mantemos sobre você (mensagens do formulário de contato).", "Retirar o consentimento para análise a qualquer momento.", "Apresentar reclamação à autoridade de proteção de dados do seu país."] },
+      { "heading": "Contato", "body": ["Para dúvidas sobre privacidade, use o formulário de contato ou escreva para {email}."] }
+    ]
+  },
+  "terms": {
+    "meta": { "title": "Termos de uso", "description": "Os termos para usar o planejador de mídia gratuito e seus guias." },
+    "title": "Termos de uso",
+    "intro": "Ao usar o {brand}, você concorda com estes termos.",
+    "sections": [
+      { "heading": "O serviço", "body": ["O {brand} é uma ferramenta de planejamento gratuita que estima orçamentos de anúncios e planos de mídia com base nos números que você informa. Os guias são oferecidos como informação geral."] },
+      { "heading": "Sem garantia", "body": ["Os resultados são estimativas baseadas nas suas informações e em premissas de planejamento. Não são garantias de custos, resultados ou lucro. Você é responsável pelas suas decisões e orçamentos de publicidade."] },
+      { "heading": "Uso aceitável", "list": ["Não tente interromper, sobrecarregar ou atacar o serviço.", "Não use o formulário de contato de forma indevida nem envie mensagens não solicitadas.", "Não copie nem republique o conteúdo do site sem permissão."] },
+      { "heading": "Propriedade intelectual", "body": ["O design, os textos, os guias e o código do site são protegidos. Os guias são escritos pela equipe TECH24, creditada em cada artigo."] },
+      { "heading": "Limitação de responsabilidade", "body": ["Na medida permitida pela lei, o {brand} não se responsabiliza por perdas decorrentes do uso do planejador ou dos guias, ou da confiança neles."] },
+      { "heading": "Alterações", "body": ["Podemos atualizar estes termos. A data no topo mostra a versão mais recente."] }
+    ]
+  },
+  "disclaimer": {
+    "meta": { "title": "Aviso legal", "description": "Os resultados do planejador são estimativas, não garantias. Veja como usá-los com responsabilidade." },
+    "title": "Aviso legal",
+    "intro": "O {brand} oferece estimativas para apoiar o planejamento. Ele não prevê o futuro.",
+    "sections": [
+      { "heading": "Resultados são estimativas, não garantias", "body": ["Cada orçamento, custo e resultado exibido é uma estimativa baseada nas suas informações, nas configurações padrão e em benchmarks provisórios. Os resultados reais de publicidade dependem de criativos, ofertas, páginas de destino, concorrência, sazonalidade, rastreamento e mudanças nas plataformas."] },
+      { "heading": "Benchmarks são provisórios", "body": ["Os valores padrão de benchmark são provisórios e devem ser substituídos pelos seus dados antes de você confiar neles."] },
+      { "heading": "Não é aconselhamento financeiro nem jurídico", "body": ["Nada neste site é aconselhamento financeiro, jurídico ou tributário. Para decisões com impacto financeiro relevante, procure um profissional."] },
+      { "heading": "Plataformas de terceiros", "body": ["Meta, Facebook, Instagram, Google e Google Ads são marcas de seus respectivos donos. O {brand} não é afiliado a elas nem endossado por elas. Regras e recomendações das plataformas, como limites de aprendizado, podem mudar a qualquer momento."] }
+    ]
+  },
+  "cookies": {
+    "meta": { "title": "Política de cookies", "description": "Quais armazenamentos e cookies o planejador de mídia usa e como controlá-los." },
+    "title": "Política de cookies",
+    "intro": "O {brand} usa o mínimo possível de armazenamento no navegador.",
+    "sections": [
+      { "heading": "Armazenamento essencial", "body": ["Usamos o armazenamento local para salvar seus dados do planejador, cenários, benchmarks, tema e sua escolha sobre cookies. Um cookie de idioma (NEXT_LOCALE) lembra o idioma escolhido. Eles são necessários para o site funcionar e não rastreiam você."] },
+      { "heading": "Cookies de análise (opcionais)", "body": ["Se você aceitar a análise, o Google Analytics 4 define cookies como _ga para contar visitas e visualizações de página. Eles não são definidos sem sua aceitação."] },
+      { "heading": "Segurança", "body": ["O formulário de contato usa o Cloudflare Turnstile para bloquear spam, o que pode definir cookies necessários para essa verificação."] },
+      { "heading": "Como gerenciar sua escolha", "body": ["Você pode limpar o armazenamento e os cookies deste site nas configurações do navegador a qualquer momento. O aviso de cookies aparecerá novamente para você escolher."] }
+    ]
+  }
+}

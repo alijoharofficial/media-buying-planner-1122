@@ -1,0 +1,62 @@
+{
+  "items": {
+    "budgetCalculator": {
+      "title": "Calculadora de orçamento",
+      "desc": "O orçamento mensal e diário para sua meta, ou o que um orçamento fixo entrega.",
+      "long": "Trabalha com seus custos reais quando você tem dados, ou com estimativas e um plano de teste quando não tem. Os custos sobem conforme o investimento cresce, então o orçamento considera os retornos decrescentes."
+    },
+    "leadFunnel": {
+      "title": "Análise de funil de leads e CAC",
+      "desc": "Do custo por lead ao custo por cliente, passando pelas taxas de agendamento, comparecimento e fechamento.",
+      "long": "Transforma valor do cliente e margem no máximo que você pode pagar por cliente (CAC) e por lead (CPL) e confere seu funil real com esses limites.",
+      "service": "Calculadora de orçamento para leads"
+    },
+    "ecomBreakEven": {
+      "title": "Equilíbrio e ROAS no e-commerce",
+      "desc": "CPA e ROAS de equilíbrio depois de custo do produto, frete, taxas e devoluções.",
+      "long": "Mostra exatamente quanto lucro um pedido deixa para anúncios, avaliado no primeiro pedido ou no valor do tempo de vida, com um CPA-alvo que mantém uma margem de segurança.",
+      "service": "Calculadora de orçamento para e-commerce"
+    },
+    "testPlanner": {
+      "title": "Planejador de teste para conta nova",
+      "desc": "Um orçamento de teste, gasto diário e regras claras para depois do teste.",
+      "long": "Para contas sem dados: o que você pode bancar para testar, um stop-loss e regras de decisão para escalar, otimizar ou parar quando os custos reais aparecerem.",
+      "service": "Planejador de teste para conta nova"
+    },
+    "learningCheck": {
+      "title": "Verificação da fase de aprendizado",
+      "desc": "Confere se cada conjunto de anúncios do Meta e cada campanha do Google recebe resultados suficientes para aprender.",
+      "long": "Conta os conjuntos de anúncios efetivos em CBO, ABO e Advantage+, compara resultados por conjunto por semana com o limite de aprendizado e recomenda quantos conjuntos seu orçamento sustenta.",
+      "service": "Verificação da fase de aprendizado"
+    },
+    "scalingTable": {
+      "title": "Tabela de escala",
+      "desc": "Orçamento comparado a resultados e custo por resultado, com o limite lucrativo marcado.",
+      "long": "Projeta como o custo por resultado sobe ao escalar e mostra o maior orçamento mensal que ainda fica abaixo do equilíbrio.",
+      "service": "Tabela de escala"
+    },
+    "budgetSplit": {
+      "title": "Planejador de divisão do orçamento",
+      "desc": "Quanto vai para Meta, Pesquisa Google, testes, remarketing e marca, e por quê.",
+      "long": "Destina cada parcela do orçamento à plataforma com o menor custo para o próximo resultado, respeita o mínimo de cada plataforma e adiciona um cronograma seguro de aumento.",
+      "service": "Planejador de divisão do orçamento"
+    },
+    "googleCeiling": {
+      "title": "Teto da Pesquisa Google",
+      "desc": "O máximo que a Pesquisa Google consegue investir e entregar antes de os custos dispararem.",
+      "long": "Usa volume de pesquisa, parcela de impressões e parcela de impressões perdida por orçamento para encontrar o ponto em que mais investimento no Google deixa de comprar mais pesquisas.",
+      "service": "Teto da Pesquisa Google"
+    },
+    "bottleneck": {
+      "title": "Localizador de gargalos",
+      "desc": "A etapa mais fraca do seu funil de leads e quanto vale corrigi-la.",
+      "long": "Testa uma melhoria de 10 pontos nas etapas de agendamento, comparecimento e fechamento e mostra o orçamento que você economizaria ou os clientes extras que ganharia.",
+      "service": "Localizador de gargalos"
+    },
+    "showCalculation": {
+      "title": "Mostrar o cálculo",
+      "desc": "Cada número explicado passo a passo, com seus valores preenchidos.",
+      "long": "Uma linha do tempo de cada fórmula em linguagem simples, com etiquetas coloridas que separam suas entradas, premissas e configurações, para você defender o plano diante de um cliente."
+    }
+  }
+}

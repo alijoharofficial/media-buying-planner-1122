@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "title": "Calculadora de orçamento para Meta Ads e Google Ads",
+    "description": "Planejador de mídia gratuito: calcule o orçamento mensal de anúncios de que você precisa no Meta e na Pesquisa Google, seus custos de equilíbrio e uma divisão clara do orçamento. Para geração de leads e e-commerce."
+  },
+  "hero": {
+    "title": "Planeje seu orçamento de anúncios com confiança",
+    "subtitle": "Descubra o orçamento mensal de que sua empresa precisa no Meta e na Pesquisa Google e transforme-o em um plano de mídia claro, que você consegue explicar para qualquer pessoa.",
+    "ctaPrimary": "Criar meu plano de mídia",
+    "ctaSecondary": "Como funciona"
+  },
+  "preview": {
+    "title": "Plano de mídia",
+    "sample": "Exemplo",
+    "alt": "Exemplo de plano de mídia: orçamento mensal recomendado de 4.550, orçamento diário de 150, 154 leads a 29,50 por lead, veredito lucrativo com espaço para escalar.",
+    "budget": "Orçamento mensal recomendado",
+    "daily": "Orçamento diário",
+    "leads": "Leads esperados",
+    "cpl": "Custo por lead",
+    "verdict": "Lucrativo, com espaço para escalar",
+    "sectionTitle": "Seu plano em minutos, não em planilhas",
+    "sectionText": "Responda a quatro perguntas, preencha as abas que se aplicam a você e receba um orçamento, um veredito e uma divisão entre Meta e Pesquisa Google. Cada número vem com a fórmula por trás dele."
+  },
+  "trust": {
+    "types": "Para geração de leads e e-commerce",
+    "platforms": "Meta e Pesquisa Google",
+    "accounts": "Contas novas ou existentes",
+    "languages": "7 idiomas"
+  },
+  "features": {
+    "title": "Tudo o que um gestor de tráfego verifica, em um só planejador",
+    "intro": "Do custo de equilíbrio à fase de aprendizado, cada ferramenta responde a uma pergunta que você calcularia à mão.",
+    "cta": "Ver todos os recursos"
+  },
+  "how": {
+    "title": "Como funciona",
+    "intro": "Quatro passos dos números da sua empresa até um plano pronto para executar.",
+    "steps": {
+      "business": {
+        "title": "Escolha o tipo de negócio",
+        "desc": "Geração de leads ou e-commerce, conta nova ou existente, Meta e Pesquisa Google."
+      },
+      "numbers": {
+        "title": "Informe seus números",
+        "desc": "Valor do cliente ou custos do pedido, além de dados da conta ou estimativas. As dicas mostram onde encontrar cada um."
+      },
+      "plan": {
+        "title": "Receba seu plano de mídia",
+        "desc": "Um orçamento recomendado, resultados esperados, um veredito e uma divisão entre plataformas."
+      },
+      "calculation": {
+        "title": "Veja o cálculo",
+        "desc": "Abra cada etapa com a fórmula e seus números preenchidos."
+      }
+    }
+  },
+  "guides": {
+    "title": "Guias e dicas",
+    "intro": "Guias práticos da equipe TECH24 sobre orçamentos, testes e escala.",
+    "cta": "Ler todos os guias"
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "cta": "Ver todas as perguntas"
+  }
+}

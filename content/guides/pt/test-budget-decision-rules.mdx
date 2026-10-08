@@ -1,0 +1,124 @@
+export const faq = [
+  {
+    q: "Qual deve ser o tamanho de um orçamento de teste?",
+    a: "Grande o bastante para chegar a cerca de 50 resultados pelo máximo que você pode pagar por resultado. É o ponto em que o Meta consegue sair do aprendizado e o custo real por resultado fica confiável. Para uma loja com CPA de equilíbrio de 29,20, isso dá cerca de 1.460.",
+  },
+  {
+    q: "Quanto tempo um teste deve durar?",
+    a: "Catorze dias é um bom padrão. Cobre dois fins de semana e dá tempo para a plataforma se estabilizar depois do lançamento. Testes mais curtos reagem demais ao ruído inicial; os mais longos atrasam decisões sem acrescentar muita certeza.",
+  },
+  {
+    q: "O que é stop-loss em publicidade?",
+    a: "Um limite de gasto sem resultados, definido antes do lançamento. Se um conjunto de anúncios ou criativo gastar de duas a três vezes o seu custo máximo por resultado sem nenhuma conversão, você o pausa. Isso impede que um anúncio ruim consuma o teste inteiro.",
+  },
+  {
+    q: "Quando devo escalar depois de um teste?",
+    a: "Quando o custo real por resultado ficar em cerca de 70% do seu máximo ou menos. Isso deixa espaço para o aumento de custo que vem com mais investimento. Entre 70% e 100% do máximo, otimize e teste de novo primeiro.",
+  },
+  {
+    q: "E se meu orçamento de teste for pequeno demais para 50 compras?",
+    a: "Use um único conjunto de anúncios e otimize para adição ao carrinho na primeira semana, depois mude para compra. Mantenha o custo por adição ao carrinho abaixo do seu CPA de equilíbrio multiplicado pela taxa de adição ao carrinho para compra.",
+  },
+]
+
+A maioria dos testes de anúncios fracassa antes de começar. Não porque os anúncios sejam ruins, mas porque ninguém decidiu de antemão quanto investir, quanto tempo esperar ou qual resultado contaria como sucesso. Sem essas decisões, todo teste termina igual: alguns dias de números confusos, um corte nervoso de orçamento e nenhuma resposta clara.
+
+Um bom teste é um pequeno experimento com orçamento fixo e regras escritas. Este guia mostra como dimensioná-lo, o que acompanhar enquanto ele roda e como decidir os próximos passos. O [planejador](/calculator) monta o mesmo plano de teste a partir dos seus números.
+
+## Comece pela pergunta que o teste precisa responder
+
+O primeiro teste em uma conta nova tem uma única missão: **descobrir quanto um resultado realmente custa**. Todo o resto, de criativos vencedores a aprendizados sobre públicos, é bônus. Por isso o orçamento precisa ser grande o bastante para gerar resultados suficientes para medir o custo com alguma confiança, e as regras precisam dizer o que cada custo possível significa para o negócio.
+
+Antes de dimensionar qualquer coisa, você precisa dos seus limites:
+
+- No e-commerce, o **CPA de equilíbrio** é o lucro por pedido depois de produto, frete, taxas e devoluções. O [guia de equilíbrio](/guides/ecommerce-break-even-roas) mostra o cálculo.
+- Em geração de leads, o **custo máximo por lead** é o lucro por cliente multiplicado pela taxa de lead para cliente. Veja o [guia de custo por cliente](/guides/cost-per-lead-to-cac).
+
+Os exemplos abaixo usam uma loja com pedido médio de 60 e CPA de equilíbrio de 29,20.
+
+## Dimensione o teste: 50 resultados no seu máximo
+
+O Meta precisa de cerca de 50 resultados por conjunto de anúncios por semana para sair da fase de aprendizado, e 50 resultados também são uma amostra razoável para avaliar o custo. Então o orçamento de teste é:
+
+<Formula>Orçamento de teste = 50 × custo máximo por resultado</Formula>
+
+Para a loja, 50 × 29,20 = **1.460**. Essa é a **Opção A**: otimizar para compra desde o primeiro dia. Em um teste de 14 dias, são cerca de 104 por dia.
+
+Por que usar o máximo e não o custo esperado? Porque o teste precisa chegar a 50 resultados mesmo que os custos fiquem exatamente no seu limite. Se ficarem menores, você chega a 50 antes e guarda a diferença.
+
+### Opção B para orçamentos pequenos
+
+Se 1.460 for mais do que você pode investir, não espalhe um valor menor por vários conjuntos de anúncios. Use um único conjunto e **otimize para adição ao carrinho na primeira semana**. As adições ao carrinho acontecem várias vezes mais que as compras, então o Meta recebe sinais suficientes para aprender. Depois mude a otimização para compra.
+
+Durante a semana de adição ao carrinho, mantenha o custo por adição abaixo de um valor de referência:
+
+<Formula>Custo máximo por adição ao carrinho = CPA de equilíbrio × taxa de adição ao carrinho para compra</Formula>
+
+Se 30% das adições ao carrinho viram compras, isso dá 29,20 × 0,30 = **8,76**. Trate como estimativa; sua taxa real de adição ao carrinho para compra vai aparecer durante o teste.
+
+## Verifique se a ideia é viável antes de investir
+
+Monte o custo esperado por venda a partir de três estimativas: CPM, taxa de cliques e taxa de conversão do site. Com CPM de 10, CTR de 1,5% e taxa de conversão de 3%:
+
+<Formula>CPA estimado = CPM ÷ (1.000 × CTR × taxa de conversão) = 10 ÷ 0,45 = 22,22</Formula>
+
+Some 25% por ser conta nova e o CPA esperado fica em **27,78**, um pouco abaixo do equilíbrio de 29,20. Se as estimativas vierem de benchmarks publicados, o extremo cauteloso da faixa é 40% maior, cerca de 38,89. Como o custo esperado fica abaixo do equilíbrio, mas o extremo cauteloso fica acima, o planejador classifica este teste como **arriscado**. Ainda vale fazê-lo, mas a margem de erro é pequena, então o stop-loss e as regras de decisão importam ainda mais.
+
+O planejador também aponta a **maior premissa**: a estimativa com a fonte menos confiável. É o número a conferir primeiro quando chegarem dados reais. O [guia de benchmarks](/guides/benchmarks-before-launch) explica como escolher e indicar a fonte de cada estimativa.
+
+<TryPlanner text="Escolha “Conta nova” no planejador para obter seu orçamento de teste, investimento diário, stop-loss e regras de decisão." />
+
+## Reserve orçamento para criativos
+
+Um teste geralmente compara alguns criativos. Cada um precisa de investimento suficiente para mostrar o que pode fazer, cerca de 2,5 vezes o custo-alvo por resultado. Com margem de segurança de 25%, o CPA-alvo da loja é 29,20 ÷ 1,25 = 23,36, então quatro criativos precisam de cerca de 4 × 2,5 × 23,36 = **234**. Isso cabe com folga em um teste de 1.460. Se o teste de criativos algum dia custar mais que todo o orçamento de teste, teste menos criativos de cada vez.
+
+## Escreva as regras antes do lançamento
+
+Estas três regras transformam o custo real por resultado em uma decisão. Escreva-as antes de gastar o primeiro real, dólar ou euro.
+
+**1. Escalar** se o CPA real ficar em **70% do equilíbrio** ou menos. Para a loja, essa linha é 0,70 × 29,20 = **20,44**. Abaixo dela, há espaço para o aumento de custo que vem com mais investimento. Mude o plano para “Com dados” e calcule um orçamento de escala com os números reais.
+
+**2. Otimizar e testar de novo** se o CPA real ficar entre 20,44 e 29,20. A campanha não dá prejuízo, mas escalar a levaria acima do equilíbrio. Melhore criativos, página de destino ou oferta e faça outro teste.
+
+**3. Parar** se o CPA real passar de **29,20**. Mais orçamento não vai resolver. Revise oferta, preço, página de produto e checkout antes de investir de novo.
+
+<Callout title="Três resultados possíveis para o mesmo teste">
+<p>CPA real de 19: abaixo da linha de 20,44, então escalar.</p>
+<p>CPA real de 25: entre as linhas, então otimizar e testar de novo.</p>
+<p>CPA real de 33: acima do equilíbrio, então parar e corrigir o funil.</p>
+</Callout>
+
+## Defina um stop-loss
+
+Dentro do teste, alguns conjuntos de anúncios ou criativos simplesmente não vão funcionar. Um stop-loss impede que eles consumam o orçamento:
+
+<Formula>Stop-loss = 2 a 3 × custo máximo por resultado, sem resultados</Formula>
+
+Para a loja, qualquer conjunto ou criativo que gaste entre **58,40 e 87,60** sem uma única compra é pausado. Use o limite baixo para sinais claramente fracos, como uma taxa de cliques muito baixa, e o alto quando os cliques parecem saudáveis, mas as conversões ainda não chegaram.
+
+## Enquanto o teste roda
+
+- **Não edite nos primeiros dias.** Mudanças grandes reiniciam o aprendizado e alongam o teste.
+- **Confira todo dia, decida toda semana.** Procure diariamente rastreamento quebrado, anúncios reprovados e stop-loss atingidos. Avalie o custo por resultado no fim de cada semana.
+- **Observe o funil, não só o resultado.** Cliques, visualizações da página de destino, adições ao carrinho e finalizações de compra mostram onde as pessoas desistem, o que indica o que corrigir se o resultado decepcionar.
+- **Mantenha a loja ou o CRM como fonte da verdade.** Compare as compras informadas pela plataforma com os pedidos reais.
+
+## Testes de geração de leads pedem mais paciência
+
+Testes de leads têm uma armadilha extra. Um teste que gera 80 leads com taxa de lead para cliente de 16% traz só cerca de 13 clientes. É pouco para confirmar a taxa de fechamento. Avalie o teste pelo custo por lead em relação ao seu máximo, mas continue acompanhando agendamentos, comparecimentos e vendas por várias semanas antes de confiar no custo por cliente. O [guia para contas novas](/guides/meta-ads-budget-new-account) percorre um teste completo de geração de leads.
+
+## Depois do teste: da estimativa ao plano
+
+O orçamento de escala mostrado antes do teste é só uma estimativa. Para a loja, 100 vendas por mês custariam entre cerca de 2.220 e 3.890 conforme a faixa de custo esperada, com 2.780 no meio. Depois do teste, substitua as estimativas por dados reais: investimento efetivo, compras e custo por resultado. O plano então projeta como o custo sobe ao escalar, o que o [guia de escala](/guides/scaling-ad-spend-costs) explica.
+
+## Checklist do plano de teste
+
+- Saiba seu custo máximo por resultado antes de começar.
+- Dimensione o teste em 50 resultados nesse máximo, ao longo de cerca de 14 dias.
+- Use a Opção B (adição ao carrinho primeiro) quando o orçamento for menor.
+- Verifique a viabilidade e anote a maior premissa.
+- Reserve cerca de 2,5 vezes o custo-alvo por criativo.
+- Escreva de antemão as regras de escalar, otimizar e parar e o stop-loss.
+- Substitua a estimativa por dados reais quando o teste terminar.
+
+Monte seu plano de teste no [planejador](/calculator) e deixe as regras ao lado do painel dos seus anúncios.

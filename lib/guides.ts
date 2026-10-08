@@ -58,6 +58,16 @@ export const GUIDE_CONTENT: Record<string, () => Promise<{ default: ComponentTyp
   'ar/seasonality-q4-ad-costs': () => import('@/content/guides/ar/seasonality-q4-ad-costs.mdx'),
   'ar/benchmarks-before-launch': () => import('@/content/guides/ar/benchmarks-before-launch.mdx'),
   'ar/lead-funnel-bottleneck': () => import('@/content/guides/ar/lead-funnel-bottleneck.mdx'),
+  'pt/meta-ads-budget-new-account': () => import('@/content/guides/pt/meta-ads-budget-new-account.mdx'),
+  'pt/cost-per-lead-to-cac': () => import('@/content/guides/pt/cost-per-lead-to-cac.mdx'),
+  'pt/ecommerce-break-even-roas': () => import('@/content/guides/pt/ecommerce-break-even-roas.mdx'),
+  'pt/meta-learning-phase-50-results': () => import('@/content/guides/pt/meta-learning-phase-50-results.mdx'),
+  'pt/scaling-ad-spend-costs': () => import('@/content/guides/pt/scaling-ad-spend-costs.mdx'),
+  'pt/meta-vs-google-budget-split': () => import('@/content/guides/pt/meta-vs-google-budget-split.mdx'),
+  'pt/test-budget-decision-rules': () => import('@/content/guides/pt/test-budget-decision-rules.mdx'),
+  'pt/seasonality-q4-ad-costs': () => import('@/content/guides/pt/seasonality-q4-ad-costs.mdx'),
+  'pt/benchmarks-before-launch': () => import('@/content/guides/pt/benchmarks-before-launch.mdx'),
+  'pt/lead-funnel-bottleneck': () => import('@/content/guides/pt/lead-funnel-bottleneck.mdx'),
 };
 
 export type FaqEntry = { q: string; a: string };

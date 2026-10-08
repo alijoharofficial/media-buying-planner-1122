@@ -1,0 +1,127 @@
+export const faq = [
+  {
+    q: "Por que meu custo por resultado sobe quando aumento o orçamento?",
+    a: "As plataformas mostram seus anúncios primeiro às pessoas mais receptivas. Quando você investe mais, alcança pessoas com menos chance de converter e entra em leilões mais caros. Cada resultado extra custa mais que o anterior, então o custo médio sobe.",
+  },
+  {
+    q: "Quanto os custos sobem quando dobro meu orçamento?",
+    a: "Depende da conta, do nicho e do tamanho do público. Uma premissa de planejamento de 15% a mais no custo por resultado a cada duplicação do investimento serve para muitas contas. Troque-a pelo seu próprio número assim que já tiver escalado e puder medir.",
+  },
+  {
+    q: "O que é o limite lucrativo?",
+    a: "É o maior orçamento mensal em que o custo projetado por resultado fica igual ou abaixo do seu custo de equilíbrio. Acima dele, o investimento extra perde dinheiro, mesmo que a média ainda pareça aceitável por um tempo.",
+  },
+  {
+    q: "Com que velocidade posso aumentar um orçamento no Meta?",
+    a: "Um ritmo seguro é de cerca de 20% a cada três dias. Saltos maiores podem reiniciar a fase de aprendizado e fazer os custos dispararem. Duplicar conjuntos com orçamentos maiores é outra opção, mas divide os dados.",
+  },
+  {
+    q: "A Pesquisa Google tem os mesmos retornos decrescentes?",
+    a: "Em parte. Até o ponto em que você deixa de perder impressões por falta de orçamento, os custos do Google ficam relativamente estáveis. Depois disso, a única forma de conseguir mais cliques é dar lances mais altos nas mesmas pesquisas, então os custos sobem rápido. Esse ponto é o teto da Pesquisa Google.",
+  },
+]
+
+A ideia mais tentadora em publicidade é a escala linear: se 3.000 por mês trazem 100 vendas, 6.000 deveriam trazer 200. Quase nunca funciona assim. Dobre o orçamento e você geralmente recebe bem menos que o dobro de resultados, porque cada resultado extra custa mais que o anterior.
+
+Este guia explica por que os custos sobem com o orçamento, como modelar o efeito com uma única premissa simples e como encontrar o maior orçamento que continua lucrativo. Você pode ver a mesma projeção para sua conta na tabela de escala do [planejador](/calculator).
+
+## Por que os custos sobem quando você investe mais
+
+As plataformas de anúncios são muito boas em encontrar primeiro os resultados mais baratos. Quando seu orçamento é pequeno, Meta e Google o gastam com as pessoas e pesquisas mais propensas a converter. Quando você investe mais:
+
+- **Você alcança pessoas menos receptivas.** Os melhores prospects já veem seus anúncios; o grupo seguinte converte menos.
+- **As mesmas pessoas veem você mais vezes.** A frequência sobe, e cada impressão extra tem menos chance de mudar a decisão delas.
+- **Você entra em leilões mais caros.** Para entregar mais, a plataforma dá lances em posicionamentos e públicos mais caros.
+- **Na pesquisa, as pesquisas acabam.** Quando você já aparece na maioria das pesquisas relevantes, a única forma de conseguir mais cliques é pagar mais pelos mesmos.
+
+O resultado são **retornos decrescentes**: os resultados continuam crescendo com o investimento, mas mais devagar que o orçamento.
+
+## Um modelo simples: custo por duplicação
+
+Você não precisa de um modelo complexo para considerar isso. Uma única premissa captura o essencial: **cada vez que o investimento dobra, o custo por resultado sobe uma porcentagem fixa**. Um valor de planejamento comum é 15%.
+
+<Formula>Custo projetado = custo atual × (1 + aumento por duplicação) ^ log2(novo orçamento ÷ orçamento atual)</Formula>
+
+A parte log2 apenas conta quantas duplicações houve. Dobrar uma vez dá um aumento de 15%, dobrar duas vezes dá dois aumentos, e um aumento de 50% dá um pouco mais que meio passo. Abaixo do seu nível atual de investimento, o modelo mantém o custo atual.
+
+### Um exemplo prático
+
+Uma loja virtual investiu 3.000 em 30 dias, cerca de 3.040 para um mês médio de 30,4 dias, a 30 por compra. Com aumento de 15% por duplicação:
+
+<table>
+  <thead>
+    <tr><th scope="col">Orçamento mensal</th><th scope="col">Custo por venda</th><th scope="col">Vendas</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">3.040</th><td>30,00</td><td>101</td></tr>
+    <tr><th scope="row">6.080</th><td>34,50</td><td>176</td></tr>
+    <tr><th scope="row">12.160</th><td>39,68</td><td>306</td></tr>
+    <tr><th scope="row">24.320</th><td>45,63</td><td>533</td></tr>
+  </tbody>
+</table>
+
+Dobrar o orçamento de 3.040 para 6.080 traz 75 vendas a mais, não 101. Essas 75 vendas extras custam 3.040, cerca de 40,50 cada. Esse número, o **custo marginal** dos resultados extras, é bem maior que a nova média de 34,50. É ele que você deve observar ao decidir investir mais.
+
+<Callout title="Custo médio e custo marginal">
+<p>O custo médio por resultado pode parecer bom muito depois de o investimento extra ter deixado de ser lucrativo. Se seu custo de equilíbrio é 45, a média de 12.160 (39,68) ainda parece confortável, mas os últimos resultados comprados custaram bem mais. Planejar pela curva projetada, e não pela média atual, mantém você lúcido.</p>
+</Callout>
+
+## Encontre seu limite lucrativo
+
+Toda conta tem um orçamento a partir do qual o custo projetado por resultado passa do equilíbrio. Você pode calculá-lo diretamente:
+
+<Formula>Limite lucrativo = orçamento atual × 2 ^ (ln(custo de equilíbrio ÷ custo atual) ÷ ln(1 + aumento por duplicação))</Formula>
+
+Para a loja acima, com CPA de equilíbrio de 45, o limite é 3.040 × 2 ^ (ln 1,5 ÷ ln 1,15), cerca de 22.700 por mês. Se a loja quiser manter uma margem de segurança de 25%, o CPA-alvo é 36 e o limite confortável fica em cerca de 7.500 por mês.
+
+O planejador marca esse limite no gráfico e na tabela de escala, para você ver de relance quais orçamentos são lucrativos.
+
+<TryPlanner text="Veja sua própria tabela de escala, o custo projetado para cada orçamento e seu limite lucrativo." />
+
+## Orçamento para uma meta, não meta para um orçamento
+
+Muitas vezes a pergunta é inversa: quanto preciso investir para atingir uma meta? Como o custo sobe com o investimento, você não pode simplesmente multiplicar a meta pelo custo de hoje. O planejador procura o orçamento em que os resultados projetados atingem a meta.
+
+Para a loja chegar a 200 vendas por mês, a conta simples dá 200 × 30 = 6.000. A projeção dá cerca de 7.130, com custo por venda próximo de 35,65. Ainda fica abaixo da meta de 36: o plano funciona, mas custa quase 20% mais que a estimativa ingênua. Geração de leads funciona do mesmo jeito: o [guia de CAC](/guides/cost-per-lead-to-cac) mostra uma clínica que precisa de cerca de 4.520 em vez de 3.850 para atingir sua meta de clientes.
+
+## Escolhendo seu aumento por duplicação
+
+15% é um padrão razoável, mas sua conta pode se comportar de outro jeito:
+
+- **Públicos amplos e mercados grandes** costumam escalar com aumentos menores, porque ainda há muitos compradores parecidos para alcançar.
+- **Nichos estreitos e países pequenos** batem no limite mais rápido: aumentos de 25% ou mais são comuns.
+- **Boa renovação de criativos** pode reiniciar a curva por um tempo, porque anúncios novos alcançam de novo quem ignorava os antigos.
+- **Picos sazonais** trazem os próprios aumentos de custo. Veja o [guia de sazonalidade](/guides/seasonality-q4-ad-costs).
+
+Se você já escalou, meça. Compare um mês com determinado orçamento com um mês com cerca do dobro, com criativos e época parecidos, e calcule quanto o custo por resultado subiu. Informe esse número nas Configurações avançadas do planejador.
+
+## A Pesquisa Google escala de outro jeito
+
+A pesquisa é limitada pelo número de pessoas que pesquisam. O Google informa a **parcela de impressões perdida na pesquisa por orçamento**, a fatia das pesquisas qualificadas que você perdeu porque o orçamento acabou. Até esse número chegar a zero, mais orçamento compra principalmente mais pesquisas a custo parecido. Depois disso, mais orçamento só consegue aumentar os lances nas mesmas pesquisas.
+
+O planejador chama esse ponto de **teto da Pesquisa Google** e para de destinar orçamento ao Google quando ele é atingido. O [guia de divisão entre Meta e Google](/guides/meta-vs-google-budget-split) explica como esse teto interage com o Meta em um plano combinado.
+
+## Escalar sem quebrar nada
+
+Mesmo com o orçamento-alvo certo, a forma de chegar lá importa:
+
+1. **Aumente aos poucos.** Suba os orçamentos diários no máximo cerca de 20% a cada três dias. Uma campanha de 100 por dia chega a 235 por dia em cerca de duas semanas.
+2. **Acompanhe o custo marginal, não só a média.** Se o último aumento trouxe resultados acima do seu custo-alvo, pare e estabilize.
+3. **Renove os criativos quando a frequência subir.** Anúncios novos freiam o aumento de custo.
+4. **Mantenha a estrutura simples.** Escalar com muitos conjuntos pequenos divide os dados e os mantém em aprendizado. Veja o [guia da fase de aprendizado](/guides/meta-learning-phase-50-results).
+5. **Meça de novo todo mês.** Atualize o plano com o custo e o investimento reais de cada mês para a projeção partir de dados recentes.
+
+## Sinais de que você foi longe demais
+
+A projeção é um plano, não uma promessa. Fique atento a estes sinais nas primeiras semanas em um novo nível de orçamento:
+
+- **A frequência passa de 3 a 5** enquanto a CTR cai. O público cansou dos seus anúncios.
+- **O custo por resultado sobe mais rápido que o planejado**, por exemplo 30% depois de uma única duplicação em vez de 15%.
+- **A qualidade dos leads cai.** Chegam mais leads, mas as taxas de agendamento ou fechamento despencam, então o custo por cliente sobe mesmo que o custo por lead pareça estável.
+- **A parcela de impressões perdida por orçamento no Google já está perto de zero**, e mesmo assim você continua colocando orçamento no Google.
+
+Se notar dois ou mais desses sinais, volte ao último orçamento que atingiu sua meta, renove os criativos e tente de novo mais devagar.
+
+## Resumo
+
+Os custos sobem com o orçamento porque as plataformas alcançam primeiro os melhores prospects. Uma premissa simples de cerca de 15% a mais no custo a cada duplicação do investimento transforma isso em um plano utilizável: ela prevê o orçamento para uma meta, mostra o custo marginal dos resultados extras e indica o maior orçamento lucrativo. Rode seus números no [planejador](/calculator) para ver a tabela de escala completa da sua conta.

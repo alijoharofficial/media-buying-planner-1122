@@ -1,0 +1,130 @@
+{
+  "features": {
+    "meta": {
+      "title": "Recursos: ferramentas de orçamento, CAC, ROAS e escala",
+      "description": "Todas as ferramentas do planejador de mídia: calculadora de orçamento, CAC e ROAS de equilíbrio, planejador de teste, verificação da fase de aprendizado, tabela de escala, divisão do orçamento e mais."
+    },
+    "eyebrow": "Recursos",
+    "title": "Cada verificação de um gestor de tráfego, já integrada",
+    "intro": "Dez ferramentas que trabalham juntas. Cada uma responde a uma pergunta que você resolveria em uma planilha.",
+    "cta": "Criar meu plano de mídia"
+  },
+  "howTo": {
+    "meta": {
+      "title": "Como usar o planejador de orçamento de anúncios",
+      "description": "Passo a passo: escolha o tipo de negócio, informe seus números, leia seu plano de mídia e veja o cálculo. Além de onde encontrar cada número no Meta e no Google Ads."
+    },
+    "eyebrow": "Como usar",
+    "title": "Dos seus números a um plano de mídia",
+    "intro": "A maioria dos planos leva de cinco a dez minutos. Veja o que cada etapa e cada aba pedem e onde encontrar os números.",
+    "tabsTitle": "As abas do planejador",
+    "tabsIntro": "Você só vê as abas que se aplicam ao seu tipo de negócio e à sua conta.",
+    "tabs": {
+      "setup": "Escolha nicho, regiões, mês de planejamento e moeda, depois sua meta de clientes ou vendas, ou seu orçamento mensal fixo.",
+      "business": "Para geração de leads: valor do cliente, margem e taxas de agendamento, comparecimento e fechamento. Para e-commerce: valor do pedido, custo do produto, frete, taxas e devoluções.",
+      "account": "Só para contas com dados: investimento, impressões, alcance, cliques e resultados por país, além dos números da Pesquisa Google. Você pode importar uma exportação CSV.",
+      "estimates": "Só para contas novas: CPM, CTR e taxas de conversão para o Meta, e volume de pesquisa, lances e taxas para o Google, cada um com a fonte indicada.",
+      "planning": "Quantos conjuntos de anúncios e criativos do Meta você pretende usar, a duração do teste e se haverá remarketing.",
+      "advanced": "Limites de aprendizado, margens, multiplicadores de faixa e sazonalidade. Os padrões já vêm preenchidos, e a maioria das pessoas nunca os altera."
+    },
+    "whereTitle": "Onde encontrar cada número",
+    "whereIntro": "Use o mesmo período em todas as plataformas. 30 dias é um bom padrão.",
+    "where": {
+      "number": "Número",
+      "meta": "Gerenciador de Anúncios do Meta",
+      "google": "Google Ads",
+      "rows": {
+        "spend": { "name": "Investimento", "meta": "Colunas → Desempenho → Valor usado", "google": "Campanhas → Custo" },
+        "impressions": { "name": "Impressões", "meta": "Colunas → Desempenho → Impressões", "google": "Campanhas → Impr." },
+        "reach": { "name": "Alcance", "meta": "Colunas → Desempenho → Alcance", "google": "Não usado na Pesquisa" },
+        "clicks": { "name": "Cliques", "meta": "Colunas → Desempenho e cliques → Cliques no link", "google": "Campanhas → Cliques" },
+        "leads": { "name": "Leads", "meta": "Resultados (campanhas de cadastro) ou Leads no site", "google": "Conversões (ação principal de lead)" },
+        "purchases": { "name": "Compras e valor", "meta": "Colunas → Conversões → Compras, Valor de conversão das compras", "google": "Conversões e Valor conv." },
+        "impressionShare": { "name": "Parcela de impressões", "meta": "Não disponível", "google": "Colunas → Métricas de concorrência → Parc. impr. de pesq." },
+        "lostBudget": { "name": "Parcela de impressões perdida", "meta": "Não disponível", "google": "Parc. impr. perd. de pesq. (orçamento) e (classif.)" },
+        "searchVolume": { "name": "Volume de pesquisa", "meta": "Não disponível", "google": "Ferramentas → Planejador de palavras-chave → Média de pesquisas mensais" },
+        "bids": { "name": "Lances", "meta": "Não disponível", "google": "Planejador de palavras-chave → Lance para o topo da página (faixa baixa e alta)" }
+      }
+    },
+    "cta": "Começar a planejar"
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre",
+      "description": "O que o planejador faz, como calcula orçamentos em linguagem simples e por que todo resultado é uma estimativa."
+    },
+    "eyebrow": "Sobre",
+    "title": "Sobre o {brand}",
+    "intro": "O {brand} transforma os números da sua empresa em um orçamento de anúncios e um plano de mídia para Meta e Pesquisa Google.",
+    "sections": [
+      {
+        "heading": "O que ele faz",
+        "body": [
+          "Responde às perguntas que todo gestor de tráfego faz antes de investir: quanto orçamento precisamos, o que ele vai entregar, conseguimos bancar e como dividir entre as plataformas?",
+          "Funciona para geração de leads e e-commerce, para contas novas e contas com histórico, e em sete idiomas."
+        ]
+      },
+      {
+        "heading": "Como funciona, em linguagem simples",
+        "body": [
+          "Os números da sua empresa definem os limites. Valor do cliente e margem, ou valor do pedido e custos, determinam o máximo que você pode pagar por um cliente, um lead ou uma venda.",
+          "Dados ou testes revelam o custo real. Com histórico na conta, partimos do que os resultados realmente custam para você. Sem histórico, planejamos um orçamento de teste e regras claras para quando os custos reais aparecerem.",
+          "Depois consideramos como os custos sobem ao escalar, a fase de aprendizado em cada plataforma e quanto a Pesquisa Google consegue de fato entregar."
+        ]
+      },
+      {
+        "heading": "Resultados são estimativas",
+        "body": [
+          "Todo plano é uma estimativa, não uma promessa. Os custos de anúncios mudam com seus criativos, oferta, concorrência, sazonalidade e atualizações das plataformas. Use o plano para decidir o que testar e quanto arriscar e depois atualize-o com resultados reais."
+        ]
+      },
+      {
+        "heading": "Seus dados ficam com você",
+        "body": ["Os dados do planejador ficam salvos apenas no seu navegador. Nada do que você digita no planejador é enviado aos nossos servidores."]
+      }
+    ],
+    "creditsTitle": "Guias e créditos",
+    "creditsText": "Os guias deste site são escritos pela equipe TECH24.",
+    "creditsLink": "Visitar a TECH24"
+  },
+  "services": {
+    "meta": {
+      "title": "Serviços: ferramentas do planejador e opinião de especialista",
+      "description": "Calculadoras de orçamento para leads e e-commerce, planejador de teste para conta nova, verificação da fase de aprendizado, tabela de escala, divisão do orçamento, teto do Google e localizador de gargalos, além de opinião de especialista."
+    },
+    "eyebrow": "Serviços",
+    "title": "Ferramentas para cada decisão de orçamento",
+    "intro": "Cada ferramenta faz parte do planejador. Abra, informe seus números e tenha uma resposta em minutos.",
+    "useIt": "Usar",
+    "useItFor": "Usar {service}",
+    "expertTitle": "Opinião de especialista",
+    "expertText": "Quer que um profissional revise seus números, seu funil e seu plano de escala antes de investir? Peça a opinião de um especialista.",
+    "expertCta": "Pedir opinião de especialista"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contato",
+      "description": "Dúvidas, sugestões ou ideias para o planejador de mídia? Envie uma mensagem."
+    },
+    "eyebrow": "Contato",
+    "title": "Fale conosco",
+    "intro": "Dúvidas, sugestões ou um recurso que você gostaria de ver? Envie uma mensagem e responderemos por e-mail.",
+    "fields": { "name": "Seu nome", "email": "E-mail", "message": "Mensagem", "website": "Deixe este campo em branco" },
+    "send": "Enviar mensagem",
+    "sending": "Enviando...",
+    "success": "Obrigado. Sua mensagem foi enviada.",
+    "privacy": "Usamos seus dados apenas para responder à sua mensagem.",
+    "errors": {
+      "name": "Informe seu nome (de 2 a 100 caracteres).",
+      "email": "Informe um e-mail válido.",
+      "message": "Escreva pelo menos 10 caracteres.",
+      "verification": "Conclua a verificação.",
+      "rateLimited": "Mensagens demais. Tente novamente em alguns minutos.",
+      "invalid": "Alguns campos são inválidos. Revise o formulário e tente novamente.",
+      "unavailable": "Não foi possível enviar sua mensagem agora. Tente novamente mais tarde."
+    },
+    "expertTitle": "Precisa da opinião de um especialista?",
+    "expertText": "Para uma revisão profissional do seu orçamento, funil e plano de escala, peça a opinião de um especialista.",
+    "expertLink": "Pedir opinião de especialista"
+  }
+}

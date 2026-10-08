@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "tagline": "Calculadora de orçamento de anúncios e planejador de mídia para Meta e Google",
+    "description": "Calcule o orçamento mensal de anúncios de que você precisa no Meta e na Pesquisa Google e transforme-o em um plano de mídia claro."
+  },
+  "a11y": {
+    "skipToContent": "Pular para o conteúdo",
+    "logoAlt": "Logotipo do {brand}",
+    "homeLink": "Página inicial do {brand}"
+  },
+  "theme": {
+    "toggle": "Alternar tema",
+    "light": "Modo claro",
+    "dark": "Modo escuro",
+    "system": "Tema do sistema"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "Em breve",
+    "moreInfo": "Mais informações",
+    "close": "Fechar"
+  },
+  "support": {
+    "tagline": "Seus números estão prontos. Quer que um profissional os revise?",
+    "subline": "Receba a opinião de um especialista sobre seu orçamento, funil e plano de escala.",
+    "button": "Pedir opinião de especialista"
+  },
+  "nav": {
+    "label": "Principal",
+    "menu": "Menu",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "planner": "Planejador",
+    "features": "Recursos",
+    "howToUse": "Como usar",
+    "guides": "Guias",
+    "faq": "Perguntas frequentes",
+    "about": "Sobre",
+    "contact": "Contato",
+    "services": "Serviços",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "disclaimer": "Aviso legal",
+    "cookies": "Política de cookies"
+  },
+  "footer": {
+    "expertText": "Precisa de um segundo olhar sobre seu orçamento?",
+    "expertLink": "Opinião de especialista",
+    "quickLinks": "Links rápidos",
+    "features": "Ferramentas do planejador",
+    "qr": "Gerador de QR Code grátis",
+    "guidesBy": "Guias da TECH24"
+  },
+  "cookie": {
+    "label": "Consentimento de cookies",
+    "text": "Usamos apenas o armazenamento essencial do navegador para salvar seus dados no planejador. Com sua permissão, também usamos cookies de análise para entender como o site é usado.",
+    "policy": "Ler a política de cookies",
+    "accept": "Aceitar análise",
+    "reject": "Somente essenciais"
+  },
+  "errors": {
+    "notFoundTitle": "Esta página não existe",
+    "notFoundText": "O link pode estar desatualizado ou digitado errado. Seus dados salvos no planejador continuam seguros no seu navegador.",
+    "serverTitle": "Algo deu errado",
+    "serverText": "Um erro inesperado impediu o carregamento desta página. Tente novamente.",
+    "retry": "Tentar novamente",
+    "home": "Ir para a página inicial",
+    "planner": "Abrir o planejador"
+  },
+  "protected": "Este conteúdo é protegido",
+  "breadcrumbs": {
+    "home": "Início",
+    "label": "Trilha de navegação"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "Guias e dicas sobre orçamento de anúncios e mídia paga",
+    "description": "Guias práticos sobre orçamentos de anúncios no Meta e no Google, CAC, ROAS de equilíbrio, fase de aprendizado, escala e orçamentos de teste, escritos pela equipe TECH24."
+  },
+  "eyebrow": "Guias e dicas",
+  "title": "Guias e dicas para orçamentos de anúncios mais inteligentes",
+  "intro": "Guias passo a passo da equipe TECH24. Cada um leva ao planejador para você testar com seus próprios números.",
+  "categories": {
+    "budgets": "Orçamentos",
+    "metaAds": "Anúncios no Meta",
+    "ecommerce": "E-commerce",
+    "strategy": "Estratégia"
+  },
+  "items": {
+    "meta-ads-budget-new-account": {
+      "title": "Como calcular o orçamento do Meta Ads para uma conta de anúncios nova",
+      "summary": "Comece pelo que você pode pagar por resultado e planeje um teste capaz de sair do aprendizado."
+    },
+    "cost-per-lead-to-cac": {
+      "title": "Orçamentos de geração de leads: do custo por lead ao custo por cliente (CAC)",
+      "summary": "Por que o custo por lead sozinho engana e como as taxas de agendamento, comparecimento e fechamento definem seu limite real."
+    },
+    "ecommerce-break-even-roas": {
+      "title": "CPA e ROAS de equilíbrio no e-commerce, incluindo devoluções e taxas",
+      "summary": "Calcule o lucro que um pedido deixa para anúncios e o ROAS de que você precisa para empatar."
+    },
+    "meta-learning-phase-50-results": {
+      "title": "A fase de aprendizado do Meta: por que 50 resultados por conjunto de anúncios importam (CBO, ABO, Advantage+)",
+      "summary": "Como o tipo de orçamento muda o número de conjuntos que precisam de dados e o que fazer com orçamentos pequenos."
+    },
+    "scaling-ad-spend-costs": {
+      "title": "Escalar o investimento em anúncios: por que os custos sobem com o orçamento",
+      "summary": "Retornos decrescentes, o custo de cada duplicação e como encontrar seu limite lucrativo."
+    },
+    "meta-vs-google-budget-split": {
+      "title": "Meta ou Pesquisa Google: como dividir seu orçamento",
+      "summary": "Mínimos de cada plataforma, custo marginal e limites de volume de pesquisa, em linguagem simples."
+    },
+    "test-budget-decision-rules": {
+      "title": "Como planejar um orçamento de teste e as regras de decisão depois dele",
+      "summary": "Quanto testar, quando parar e qual resultado significa escalar, otimizar ou parar."
+    },
+    "seasonality-q4-ad-costs": {
+      "title": "Sazonalidade: como o quarto trimestre e os meses de pico mudam seus custos de anúncios",
+      "summary": "Por que novembro e dezembro custam mais e como planejar orçamentos em torno dos meses de pico."
+    },
+    "benchmarks-before-launch": {
+      "title": "Onde encontrar benchmarks de CPM, CTR e taxa de conversão antes de lançar",
+      "summary": "Fontes confiáveis para estimativas e como indicar quanto você confia em cada uma."
+    },
+    "lead-funnel-bottleneck": {
+      "title": "Como encontrar o gargalo do seu funil de leads (taxas de agendamento, comparecimento e fechamento)",
+      "summary": "Qual etapa custa mais caro e quanto vale uma melhoria de 10 pontos."
+    }
+  },
+  "index": {
+    "searchLabel": "Buscar guias",
+    "searchPlaceholder": "Buscar guias",
+    "filterLabel": "Filtrar por categoria",
+    "all": "Todos",
+    "count": "{count, plural, one {# guia exibido} other {# guias exibidos}}",
+    "noResults": "Nenhum guia corresponde à sua busca."
+  },
+  "article": {
+    "titleSuffix": "Guias",
+    "byline": "Guia da TECH24",
+    "readingTime": "{minutes} min de leitura",
+    "faqTitle": "Perguntas frequentes",
+    "relatedTitle": "Guias relacionados",
+    "authorTitle": "Escrito pela equipe TECH24",
+    "authorText": "A TECH24 escreve guias práticos sobre publicidade digital, mídia paga e crescimento para profissionais de marketing e donos de empresas.",
+    "authorLink": "Visitar a TECH24",
+    "cta": {
+      "title": "Experimente no {brand}",
+      "text": "Informe seus próprios números e receba em minutos um orçamento, um veredito e o cálculo por trás deles.",
+      "button": "Abrir o planejador"
+    }
+  }
+}

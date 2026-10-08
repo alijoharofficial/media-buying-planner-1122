@@ -1,0 +1,121 @@
+export const faq = [
+  {
+    q: "Quanto devo investir em Meta Ads com uma conta totalmente nova?",
+    a: "O suficiente para dar a um conjunto de anúncios cerca de 50 resultados pelo máximo que você pode pagar por resultado. Para um negócio de geração de leads que pode pagar até 40 por lead, isso dá um orçamento de teste de cerca de 2.000. Se for demais, comece menor com um conjunto e público amplo, e avalie o teste pelo custo por resultado, não pelo status de aprendizado.",
+  },
+  {
+    q: "Por que somar um acréscimo aos custos estimados de uma conta nova?",
+    a: "Uma conta de anúncios nova não tem histórico de conversões, então o Meta precisa aprender quem responde antes que a entrega fique eficiente. Os custos das primeiras semanas costumam ser maiores do que os benchmarks sugerem. Somar cerca de 25% aos custos estimados mantém o plano honesto.",
+  },
+  {
+    q: "Devo usar os resultados diários estimados pelo Meta?",
+    a: "Use-os como conferência, não como plano. Divida o orçamento diário pelos resultados estimados para obter um custo por resultado implícito e compare com o número que você calculou a partir de CPM, CTR e taxa de conversão.",
+  },
+  {
+    q: "Quanto tempo deve durar o primeiro teste?",
+    a: "Catorze dias é um bom padrão. Cobre duas semanas completas de comportamento em dias úteis e fins de semana e dá tempo para o algoritmo se estabilizar. Pare antes apenas se o investimento atingir o stop-loss sem resultados.",
+  },
+  {
+    q: "O que acontece depois do teste?",
+    a: "Compare o custo real por resultado com seus limites. Com cerca de 70% do máximo ou menos, escale. Entre essa linha e o máximo, otimize e teste de novo. Acima do máximo, corrija a oferta, o preço ou o funil antes de investir mais.",
+  },
+]
+
+Uma conta de anúncios nova é o lugar mais difícil para planejar um orçamento. Não há histórico para aprender, todo número é uma estimativa e a própria plataforma ainda não sabe quem são seus compradores. A maioria das pessoas responde à pergunta “quanto devemos investir?” com um número redondo que parece seguro. Esse número costuma ser pequeno demais para ensinar algo ao algoritmo ou grande demais para o risco que a empresa pode correr.
+
+Este guia mostra um caminho melhor. Você parte do que sua empresa pode pagar por um resultado, estima quanto esse resultado vai realmente custar e então dimensiona um teste capaz de dar uma resposta clara. Cada etapa usa contas simples, e você pode rodar os mesmos números no [planejador](/calculator) em poucos minutos.
+
+## Comece pelo que você pode pagar, não pelo que quer investir
+
+O primeiro número de qualquer orçamento de anúncios não é o orçamento. É o **custo máximo por resultado** que sua empresa pode pagar e ainda empatar. Todo o resto é medido em relação a ele.
+
+Em geração de leads, calcule de trás para frente a partir do cliente:
+
+- **Lucro por cliente** é o valor do cliente multiplicado pela margem. Uma clínica que fatura 600 por novo cliente com margem de 60% fica com 360 para investir na conquista desse cliente.
+- **Taxa de lead para cliente** é a taxa de agendamento vezes a taxa de comparecimento vezes a taxa de fechamento. Com 35% dos leads agendando, 65% dos agendamentos comparecendo e 50% de quem compareceu comprando, 11,4% dos leads viram clientes.
+- **Custo máximo por lead** é o lucro por cliente multiplicado pela taxa de lead para cliente. Aqui, 360 × 11,375%, ou cerca de 40,95.
+
+<Formula>Custo máximo por lead = valor do cliente × margem × taxa de agendamento × taxa de comparecimento × taxa de fechamento</Formula>
+
+No e-commerce a lógica é a mesma, mas a unidade é o pedido. Pegue o valor médio do pedido e subtraia custo do produto, frete, taxas de pagamento e o valor perdido com devoluções. O que sobra é o lucro por pedido, que também é seu custo de equilíbrio por venda. O [guia de equilíbrio no e-commerce](/guides/ecommerce-break-even-roas) detalha esse cálculo.
+
+A maioria das empresas também quer uma margem de segurança. Dividir o máximo por 1,25 dá um **custo-alvo** que preserva uma margem de lucro de 25%. No exemplo da clínica, o custo-alvo por lead fica em cerca de 32,76.
+
+## Estime quanto um resultado vai realmente custar
+
+Sem histórico na conta, você monta o custo por resultado a partir de três estimativas:
+
+1. **CPM**: quanto custam 1.000 impressões no seu país e nicho.
+2. **CTR (link)**: a parcela de pessoas que clica.
+3. **Taxa de conversão**: a parcela dos cliques que vira lead ou venda. Para formulários instantâneos, use a taxa de conclusão do formulário.
+
+<Formula>Custo estimado por resultado = CPM ÷ (1.000 × CTR × taxa de conversão)</Formula>
+
+Com CPM de 20, CTR de link de 1,2% e taxa de conversão da página de destino de 8%, o custo estimado por lead é 20 ÷ (1.000 × 0,012 × 0,08) = 20,83.
+
+Esse número é otimista demais para uma conta nova. O Meta não tem dados de conversão para otimizar, seus criativos não foram testados e seu pixel ainda não viu nenhum lead. Some um **acréscimo de conta nova** de cerca de 25% e ajuste pela sazonalidade se estiver planejando um mês movimentado. O custo esperado por lead passa a ser 20,83 × 1,25 = 26,04.
+
+### Indique quanto você confia em cada estimativa
+
+Nem toda estimativa merece a mesma confiança. Um CPM tirado de outra conta que você gerencia no mesmo país é muito mais confiável que um palpite. No planejador, cada estimativa tem uma fonte: suas contas, estimativa do Meta, benchmark publicado ou palpite. Fontes menos confiáveis recebem uma faixa mais ampla. Um palpite pode sair 30% melhor ou 60% pior que o esperado, por isso o planejador mostra um custo baixo, esperado e alto em vez de um único número. O [guia de benchmarks](/guides/benchmarks-before-launch) mostra onde encontrar cada estimativa.
+
+## Verifique se a ideia é viável antes de investir
+
+Agora compare o custo esperado com o máximo que você pode pagar:
+
+- **Viável**: até o extremo cauteloso da faixa está abaixo do seu máximo.
+- **Arriscado**: o custo esperado está abaixo do máximo, mas o extremo alto não.
+- **Inviável**: o custo esperado já está acima do máximo.
+
+No exemplo da clínica, o custo esperado por lead é 26,04 e o máximo, 40,95. Se as três estimativas vierem de benchmarks publicados, o extremo cauteloso da faixa é 40% maior, cerca de 36,46, que fica abaixo do limite: viável. Se a taxa de conversão for só um palpite, o extremo cauteloso é 60% maior, cerca de 41,66, logo acima do limite: arriscado. Ainda vale testar, mas a taxa de conversão é a maior premissa a acompanhar. Se o custo esperado fosse 45, nenhum orçamento resolveria. A oferta, o preço ou o funil precisariam de ajustes antes.
+
+Essa verificação leva um minuto e economiza muito dinheiro. Muitos lançamentos que deram errado nunca foram viáveis no papel.
+
+<TryPlanner text="Informe valor do cliente, taxas do funil e estimativas e veja o orçamento de teste e a viabilidade da sua conta." />
+
+## Dimensione o teste para que ele ensine algo
+
+O Meta otimiza cada conjunto de anúncios separadamente e precisa de aproximadamente **50 resultados por conjunto por semana** para sair da fase de aprendizado. Esse limite também é um bom tamanho de teste: 50 resultados bastam para avaliar o custo real por resultado com alguma confiança.
+
+<Formula>Orçamento de teste = 50 × custo máximo por resultado</Formula>
+
+Usar o máximo, e não o custo esperado, é proposital. Isso mostra o máximo que você precisaria investir para chegar a 50 resultados se os custos ficarem exatamente no seu limite. Para a clínica, o orçamento de teste é de até 50 × 40,95 = 2.047. Em um teste de 14 dias, são cerca de 146 por dia.
+
+No e-commerce, a mesma regra gera a **Opção A**: 50 × CPA de equilíbrio. Uma loja com CPA de equilíbrio de 29,20 precisa de cerca de 1.460 para chegar a 50 compras no equilíbrio. Se for mais do que você pode investir, use a **Opção B**: otimize para adição ao carrinho na primeira semana, para o algoritmo receber mais sinais, e depois mude para compra. Mantenha o custo por adição ao carrinho abaixo do seu CPA de equilíbrio multiplicado pela taxa de adição ao carrinho para compra.
+
+### Quando o orçamento é menor que o teste
+
+Você não precisa forçar o orçamento para cima. Com menos dinheiro, use um conjunto de anúncios e público amplo para que todos os resultados caiam no mesmo lugar. O conjunto pode ficar em “Aprendizado limitado”, e tudo bem, desde que o custo por resultado fique dentro da meta. O que você precisa evitar é dividir um orçamento pequeno entre muitos conjuntos, o que deixa cada um com dados insuficientes para aprender. O [guia da fase de aprendizado](/guides/meta-learning-phase-50-results) explica os detalhes para campanhas CBO, ABO e Advantage+.
+
+### Reserve espaço para testar criativos
+
+Cada criativo novo precisa de algum investimento antes de ser avaliado. Uma regra prática é cerca de 2,5 vezes o custo-alvo por resultado por criativo. Três criativos com custo-alvo de 32,76 precisam de cerca de 246. Se testar todos os criativos custar mais que o orçamento de teste inteiro, teste menos de cada vez.
+
+## Defina as regras antes de o teste começar
+
+Os erros mais caros acontecem depois do lançamento, quando as pessoas reagem a poucos dias de dados. Decida de antemão o que cada resultado significa:
+
+- **Escalar** se o custo real por resultado ficar em 70% do máximo ou menos. No exemplo da clínica, essa linha fica em cerca de 28,67 por lead. Mude o plano para “Com dados” e calcule um orçamento de escala com números reais.
+- **Otimizar e testar de novo** se o custo ficar entre essa linha e o máximo. Trabalhe criativos, público ou página de destino e teste novamente.
+- **Parar** se o custo ficar acima do máximo. Corrija a oferta, o preço ou o funil antes de investir mais.
+
+Adicione também um **stop-loss**. Se um conjunto de anúncios ou criativo gastar de duas a três vezes o custo máximo por resultado sem nenhum resultado, pause-o. Para a clínica, isso significa de 82 a 123 sem nenhum lead.
+
+### Lembre-se do que um teste de leads não consegue dizer
+
+Um teste de 2.000 que gera 78 leads a 26 cada traz apenas cerca de 9 clientes com uma taxa de lead para cliente de 11,4%. Nove clientes não bastam para confirmar sua taxa de fechamento. Continue acompanhando agendamentos, comparecimentos e vendas no CRM depois do teste e trate o plano de escala como estimativa até esses números se estabilizarem. O guia do [custo por cliente (CAC)](/guides/cost-per-lead-to-cac) explica por que isso importa tanto.
+
+## Transforme o teste em um orçamento mensal
+
+Quando o teste fornece um custo real por resultado, o orçamento de escala sai da sua meta. Se você precisa de 20 novos clientes por mês com taxa de lead para cliente de 11,4%, precisa de cerca de 176 leads. Ao custo esperado de 26,04, são aproximadamente 4.580 por mês, com uma faixa de cerca de 3.200 a 7.300 dependendo de como as estimativas se confirmarem. Depois do teste, substitua a estimativa por dados reais: os custos também sobem com o investimento, como mostra o [guia de escala](/guides/scaling-ad-spend-costs).
+
+## Checklist rápido para contas novas
+
+- Calcule primeiro o custo máximo e o custo-alvo por resultado.
+- Monte o custo esperado com CPM, CTR e taxa de conversão, mais o acréscimo de conta nova.
+- Verifique a viabilidade com o extremo cauteloso da faixa.
+- Dimensione o teste em 50 resultados ao custo máximo e mantenha poucos conjuntos de anúncios.
+- Anote as regras de escalar, otimizar e parar e o stop-loss antes do lançamento.
+- Depois do teste, passe para dados reais e recalcule.
+
+O [planejador](/calculator) faz cada uma dessas etapas por você e mostra o cálculo por trás de cada número, para você explicar o plano a um cliente ou gestor com confiança.

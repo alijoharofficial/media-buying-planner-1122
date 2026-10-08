@@ -89,6 +89,12 @@
 - Verified: tsc, lint, all tests, build; /ar pages 200 with dir="rtl".
 - Next: Phase 8, session 5: Portuguese (pt).
 
+## Phase 8, session 5: Portuguese (pt) (done)
+- Done: all 9 UI namespaces in `messages/pt/` (parity 9/9), all 10 guides in `content/guides/pt/` (1,620 to 2,010 words), `slugs.pt` in `lib/site.ts`, loaders in `lib/guides.ts`.
+- Decisions: Brazilian Portuguese (largest market), "você"; number format "1.460", "29,20"; “ ” quotes; Meta/Google labels use the Brazilian interface names (Gerenciador de Anúncios, Planejador de palavras-chave, Parc. impr. de pesq.).
+- Verified: tsc, lint, all tests (77 passed), build; /pt pages 200, English and German slugs 308 to Portuguese slugs.
+- Next: Phase 8, session 6: Simplified Chinese (zh).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents
