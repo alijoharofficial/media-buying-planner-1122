@@ -122,4 +122,7 @@
 - [x] Planner with Step 0, 6 tabs, tooltips, validation, CSV import, autosave, scenarios, share link
 - [x] 10 guide articles in 7 languages with TECH24 credit
 - [x] Support banner and footer links as specified
-- [~] Lighthouse 90+ in all categories: met for accessibility, best practices and SEO on every page type and for performance on home/content pages; planner performance 82 to 87 on mobile (99 to 100 desktop)
+- [~] Lighthouse 90+ in all categories: met for accessibility, best practices and SEO on every page type and for performance on home/content pages; planner performance 85 to 89 on mobile (99 to 100 desktop)
+
+## Follow-up: planner loading
+- Planner form now loads client-side after hydration (`components/planner/PlannerLazy.tsx`, same-size placeholder, CLS 0); mobile Lighthouse 85 to 89 (was 82 to 87). Remaining time is React rendering the page; further gains would need restructuring the form. E2E, axe and 360px sweep re-run clean.

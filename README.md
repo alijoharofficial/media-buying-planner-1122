@@ -93,7 +93,7 @@ docs/                Build brief and progress log
 - Translations: key, placeholder, brand and punctuation checks for all locales.
 - Lighthouse (mobile, simulated throttling), measured on the home page, planner, a guide and content
   pages in several languages: accessibility and SEO 100, best practices 96 to 100. Performance is 86 to
-  97 on the home and content pages; the planner scores 82 to 87 on mobile (99 to 100 on desktop)
-  because its interactive form needs more JavaScript. Results vary a few points between runs.
+  97 on the home and content pages; the planner scores 85 to 89 on mobile (99 to 100 on desktop):
+  its form loads after the page is interactive, and the rest is React rendering the page. Results vary a few points between runs.
 - Every page fits a 360px wide screen in all 7 languages; axe-core reports no WCAG 2.1 AA issues in
   light or dark mode.

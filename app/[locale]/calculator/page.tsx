@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ClientMessages } from '@/components/ClientMessages';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
-import { Planner } from '@/components/planner/Planner';
+import { PlannerLazy } from '@/components/planner/PlannerLazy';
 import { graph, webApplication } from '@/lib/jsonld';
 import { buildMetadata } from '@/lib/seo';
 
@@ -30,7 +30,7 @@ export default async function CalculatorPage({ params }: Props) {
         <p className="mx-auto mt-3 max-w-2xl text-fg-muted">{t('intro')}</p>
       </header>
       <ClientMessages namespaces={['planner', 'results']}>
-        <Planner />
+        <PlannerLazy />
       </ClientMessages>
     </main>
   );
