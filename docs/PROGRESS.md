@@ -95,6 +95,13 @@
 - Verified: tsc, lint, all tests (77 passed), build; /pt pages 200, English and German slugs 308 to Portuguese slugs.
 - Next: Phase 8, session 6: Simplified Chinese (zh).
 
+## Phase 8, session 6: Simplified Chinese (zh) (done; Phase 8 complete)
+- Done: all 9 UI namespaces in `messages/zh/` (parity 9/9 for every locale, 54/54), all 10 guides in `content/guides/zh/` (2,130 to 2,730 Han characters), loaders in `lib/guides.ts`.
+- Fix: `readingMinutes` now counts Han characters at about 400 a minute (Chinese has no spaces); zh and en guides both show 6 min for the CAC guide.
+- Decisions: zh keeps English URL slugs (same as ar, avoids percent-encoded URLs); Western number format (1,460, 29.20); “ ” quotes; Meta/Google labels use the Simplified Chinese interface names (广告管理工具, 关键字规划师).
+- Verified: tsc, lint, all tests (86 passed), build; /zh pages 200, other-locale slugs 308 to English slugs.
+- Next: Phase 9: performance, accessibility, QA (Lighthouse, browser checks, README, deliverables checklist).
+
 ## Deliverables
 - [x] sitemap.xml, robots.txt, structured data, hreflang
 - [x] Security headers and deterrents

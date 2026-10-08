@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "title": "广告预算与媒体投放指南和技巧",
+    "description": "关于 Meta 和 Google 广告预算、获客成本、盈亏平衡 ROAS、学习阶段、扩量和测试预算的实用指南，由 TECH24 团队撰写。"
+  },
+  "eyebrow": "指南与技巧",
+  "title": "让广告预算更聪明的指南与技巧",
+  "intro": "TECH24 团队的分步指南。每篇都链接到规划工具，方便你用自己的数字试一试。",
+  "categories": {
+    "budgets": "预算",
+    "metaAds": "Meta 广告",
+    "ecommerce": "电商",
+    "strategy": "策略"
+  },
+  "items": {
+    "meta-ads-budget-new-account": {
+      "title": "如何为新广告账户计算 Meta 广告预算",
+      "summary": "先算出每个结果你最多能付多少，再规划一个能退出学习阶段的测试。"
+    },
+    "cost-per-lead-to-cac": {
+      "title": "线索获取预算：从单条线索成本到单个客户成本 (CAC)",
+      "summary": "为什么只看单条线索成本会误导你，以及预约率、到店率和成交率如何决定你的真实上限。"
+    },
+    "ecommerce-break-even-roas": {
+      "title": "详解电商盈亏平衡 CPA 与 ROAS（含退货和手续费）",
+      "summary": "算出一笔订单能留给广告的利润，以及打平所需的 ROAS。"
+    },
+    "meta-learning-phase-50-results": {
+      "title": "Meta 学习阶段：为什么每个广告组 50 个结果很重要（CBO、ABO、Advantage+）",
+      "summary": "预算类型如何改变需要数据的广告组数量，以及预算较小时该怎么做。"
+    },
+    "scaling-ad-spend-costs": {
+      "title": "扩大广告花费：为什么预算越大成本越高",
+      "summary": "边际收益递减、每次翻倍的成本，以及如何找到你的盈利上限。"
+    },
+    "meta-vs-google-budget-split": {
+      "title": "Meta 还是 Google 搜索：如何分配预算",
+      "summary": "用通俗语言讲清各平台最低预算、边际成本和搜索量上限。"
+    },
+    "test-budget-decision-rules": {
+      "title": "如何规划测试预算以及测试后的决策规则",
+      "summary": "测试多少、何时停止，以及什么结果意味着扩量、优化或停止。"
+    },
+    "seasonality-q4-ad-costs": {
+      "title": "季节性：第四季度和旺季如何改变你的广告成本",
+      "summary": "为什么 11 月和 12 月更贵，以及如何围绕旺季规划预算。"
+    },
+    "benchmarks-before-launch": {
+      "title": "上线前去哪里找 CPM、CTR 和转化率基准",
+      "summary": "可靠的估算来源，以及如何标注你对每个来源的信任程度。"
+    },
+    "lead-funnel-bottleneck": {
+      "title": "找到线索漏斗的瓶颈（预约率、到店率和成交率）",
+      "summary": "哪个环节让你花费最多，以及提升 10 个百分点值多少。"
+    }
+  },
+  "index": {
+    "searchLabel": "搜索指南",
+    "searchPlaceholder": "搜索指南",
+    "filterLabel": "按类别筛选",
+    "all": "全部",
+    "count": "{count, plural, other {显示 # 篇指南}}",
+    "noResults": "没有符合搜索条件的指南。"
+  },
+  "article": {
+    "titleSuffix": "指南",
+    "byline": "TECH24 指南",
+    "readingTime": "阅读约 {minutes} 分钟",
+    "faqTitle": "常见问题",
+    "relatedTitle": "相关指南",
+    "authorTitle": "由 TECH24 团队撰写",
+    "authorText": "TECH24 为营销人员和企业主撰写关于数字广告、媒体投放和增长的实用指南。",
+    "authorLink": "访问 TECH24",
+    "cta": {
+      "title": "在 {brand} 中试试",
+      "text": "输入你自己的数字，几分钟内获得预算、结论以及背后的计算。",
+      "button": "打开规划工具"
+    }
+  }
+}

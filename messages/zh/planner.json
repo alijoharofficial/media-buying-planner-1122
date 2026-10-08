@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "title": "广告预算计算器与媒体投放计划",
+    "description": "回答四个问题，输入你的数字，获得 Meta 和 Google 搜索的月度广告预算、预期结果和预算分配。"
+  },
+  "title": "生成你的媒体投放计划",
+  "intro": "先回答四个简短问题，再填写各标签页。所有内容都保留在你的浏览器中。",
+  "step0": {
+    "progress": "第 {current} 题，共 {total} 题",
+    "back": "上一步",
+    "next": "下一步",
+    "start": "开始规划",
+    "done": "返回表单",
+    "comingSoon": "即将推出",
+    "questions": {
+      "businessType": {
+        "title": "你在为哪类业务做规划？",
+        "hint": "这决定了我们需要哪些数字，以及如何评估利润。",
+        "short": "业务类型"
+      },
+      "accountStatus": {
+        "title": "广告账户有历史数据吗？",
+        "hint": "有数据时我们从你的真实成本出发；没有数据时先规划一次测试。",
+        "short": "账户状态"
+      },
+      "platforms": {
+        "title": "你会使用哪些平台？",
+        "hint": "选一个或两个都选。更多平台即将推出。",
+        "short": "平台"
+      },
+      "goalType": {
+        "title": "你的目标是什么？",
+        "hint": "告诉我们你想要多少结果，或者你能花多少钱。",
+        "short": "目标"
+      }
+    },
+    "options": {
+      "leads": {
+        "label": "线索获取",
+        "desc": "你收集线索，再预约电话或面谈，把他们转化为客户。"
+      },
+      "ecommerce": {
+        "label": "电商",
+        "desc": "你在线销售产品，客户在你的店铺下单。"
+      },
+      "new": {
+        "label": "新账户",
+        "desc": "还没有有用的历史数据。我们会规划测试预算和决策规则。"
+      },
+      "existing": {
+        "label": "已有数据",
+        "desc": "至少有几周可供分析的花费和结果数据。"
+      },
+      "meta": {
+        "label": "Meta",
+        "desc": "Facebook 和 Instagram 广告。"
+      },
+      "google": {
+        "label": "Google 搜索",
+        "desc": "Google 上的搜索广告。"
+      },
+      "shopping": {
+        "label": "Google 购物 / PMax"
+      },
+      "youtube": {
+        "label": "YouTube"
+      },
+      "tiktok": {
+        "label": "TikTok"
+      },
+      "target": {
+        "label": "目标结果数",
+        "desc": "我知道每月想要多少客户或订单。"
+      },
+      "budget": {
+        "label": "固定月预算",
+        "desc": "我知道每月能花多少钱。"
+      }
+    }
+  },
+  "chips": {
+    "label": "你的回答",
+    "edit": "更改{item}，当前为{value}"
+  },
+  "tabs": {
+    "label": "规划工具各部分",
+    "setup": "基础设置",
+    "business": "业务数字",
+    "account": "账户数据",
+    "estimates": "估算",
+    "planning": "规划",
+    "advanced": "高级设置",
+    "back": "上一步",
+    "next": "下一步",
+    "calculate": "计算我的计划",
+    "fixErrors": "{count, plural, other {修正 # 个问题后即可计算}}",
+    "showIssues": "{count, plural, other {显示 # 个问题}}",
+    "errorsCount": "{count, plural, other {# 个错误}}",
+    "warningsCount": "{count, plural, other {# 个警告}}"
+  },
+  "tabIntro": {
+    "setup": "告诉我们你卖什么、在哪里卖、什么时候卖。这会决定基准、季节性和货币。",
+    "business": "你的业务数字设定了上限：一条线索、一个客户或一笔订单你最多能付多少。",
+    "account": "输入广告账户近期一段时间的结果，或导入 CSV 导出文件。",
+    "estimates": "为新账户填写你的最佳估算。为每项选择来源，让我们知道该有多大把握。",
+    "planning": "你计划如何安排广告系列和素材测试。",
+    "advanced": "合理的默认值已填好。只有在你确定自己的账户表现不同时才需要修改。"
+  },
+  "groups": {
+    "metaPerformance": "Meta 受众",
+    "googlePerformance": "Google 搜索表现",
+    "metaEstimates": "Meta 估算",
+    "metaCrossCheck": "Meta 预估每日成效（可选的交叉核对）",
+    "googleEstimates": "Google 搜索估算",
+    "learning": "学习阶段与数据可信度",
+    "costs": "成本与安全余量",
+    "testing": "测试与决策规则",
+    "retargeting": "再营销",
+    "budgetSteps": "预算分配与加预算节奏",
+    "ranges": "按来源的区间系数",
+    "seasonal": "季节性 CPM 系数",
+    "campaigns": "Meta 广告系列",
+    "metaRows": "Meta 各国表现"
+  },
+  "fields": {
+    "niche": {
+      "label": "行业",
+      "placeholder": "搜索行业",
+      "tooltip": "选择与你所售产品最接近的一项。它会设定默认基准和季节性，例如电商在第四季度成本更高。"
+    },
+    "regions": {
+      "label": "地区",
+      "placeholder": "搜索国家",
+      "tooltip": "你投放的国家。各国广告成本差异很大，所以当你有多个国家的数据时，我们会分别规划。"
+    },
+    "month": {
+      "label": "规划月份",
+      "tooltip": "你要规划的月份。11 月和 12 月等旺季的单次展示成本通常更高。"
+    },
+    "currency": {
+      "label": "货币",
+      "tooltip": "所有金额字段都使用该货币。我们会根据你的第一个地区推荐一种，你也可以更改。"
+    },
+    "targetResults": {
+      "label_leads": "每月目标新客户数",
+      "label_ecommerce": "每月目标订单数",
+      "tooltip": "你每月想要的新客户数（线索获取）或订单数（电商）。我们据此倒推预算。"
+    },
+    "monthlyBudget": {
+      "label": "可用月预算",
+      "tooltip": "你每月最多能花在广告上的金额。我们会显示它能带来什么，以及是否足以退出学习阶段。"
+    },
+    "clientValue": {
+      "label": "平均客户价值",
+      "tooltip": "新客户平均付给你的金额：套餐价格或首次购买金额。可在 CRM 或销售记录中找到。"
+    },
+    "margin": {
+      "label": "利润率",
+      "tooltip": "交付服务后、扣除广告成本前剩下的利润。600 的 60% 利润率意味着有 360 可用于赢得这个客户。"
+    },
+    "bookingRate": {
+      "label": "预约率",
+      "tooltip": "预约电话或咨询的线索比例。预约数 ÷ 线索数，来自 CRM 或日程表。"
+    },
+    "showRate": {
+      "label": "到店率",
+      "tooltip": "预约后实际到场的比例。到场数 ÷ 预约数。"
+    },
+    "closeRate": {
+      "label": "成交率",
+      "tooltip": "到场后购买的比例。客户数 ÷ 到场数。有历史数据时，我们会改用你的真实漏斗。"
+    },
+    "rateSource": {
+      "label": "这些比率的来源",
+      "tooltip": "预约率、到店率和成交率的来源。CRM 数据最可靠，区间也更窄。"
+    },
+    "leadSource": {
+      "label": "线索来源",
+      "tooltip": "即时表单在 Meta 内收集线索，通常更便宜，但这些线索的预约率低于落地页线索。"
+    },
+    "aov": {
+      "label": "平均订单价值 (AOV)",
+      "tooltip": "每笔订单的平均收入。新店可使用主推产品或套装的价格。"
+    },
+    "productCost": {
+      "label": "每单产品成本",
+      "tooltip": "一笔平均订单中产品的成本，包括包装。"
+    },
+    "shipping": {
+      "label": "每单运费",
+      "tooltip": "你为一笔平均订单支付的运费。如果运费完全由客户承担，填 0。"
+    },
+    "paymentFee": {
+      "label": "支付手续费",
+      "tooltip": "支付服务商的手续费占订单金额的比例，通常为 2% 到 4%。"
+    },
+    "returnRate": {
+      "label": "退货率",
+      "tooltip": "因退货和退款损失的收入比例。在服装类目中很重要，可能达到 20% 或更高。"
+    },
+    "ordersPerCustomer": {
+      "label": "每位客户订单数",
+      "tooltip": "一位客户在整个生命周期内的平均下单次数。只有按终身价值评估利润时才会使用。"
+    },
+    "judgeOn": {
+      "label": "利润评估依据",
+      "tooltip": "首单是稳妥的默认选项。终身价值允许你为每个客户付更多，但前提是复购已被证实。"
+    },
+    "days": {
+      "label": "时间范围（天）",
+      "tooltip": "下方账户数据覆盖的天数。30 天是不错的默认值。Meta 和 Google 请使用相同范围。"
+    },
+    "retargetingAudience": {
+      "label": "再营销受众规模",
+      "tooltip": "最近 30 天的网站访客加上社交互动用户。可在 Meta 事件管理工具或自定义受众中查看。"
+    },
+    "gCost": {
+      "label": "费用",
+      "tooltip": "Google Ads → 广告系列 → 同一时间范围的费用。"
+    },
+    "gImpressions": {
+      "label": "展示次数",
+      "tooltip": "Google Ads → 广告系列 → 展示次数。"
+    },
+    "gClicks": {
+      "label": "点击次数",
+      "tooltip": "Google Ads → 广告系列 → 点击次数。"
+    },
+    "gConversions": {
+      "label": "转化次数",
+      "tooltip": "Google Ads → 广告系列 → 转化次数。只统计主要转化（线索或购买）。"
+    },
+    "gConversionValue": {
+      "label": "转化价值",
+      "tooltip": "Google Ads → 广告系列 → 转化价值。Google 报告的购买收入。"
+    },
+    "gImpressionShare": {
+      "label": "搜索展示次数份额",
+      "tooltip": "Google Ads → 列 → 竞争指标 → 搜索展示次数份额。你的广告在符合条件的搜索中出现的比例。"
+    },
+    "gLostBudget": {
+      "label": "搜索因预算而损失的展示次数份额",
+      "tooltip": "因预算用完而错过的搜索比例。它决定了 Google 还能再吸收多少预算。"
+    },
+    "gLostRank": {
+      "label": "搜索因评级而损失的展示次数份额",
+      "tooltip": "因广告评级偏低而错过的搜索比例。加预算解决不了，需要更好的出价和质量。"
+    },
+    "gBrand": {
+      "label": "有人搜索你的品牌吗？",
+      "tooltip": "如果已经有人搜索你的品牌名，我们会预留一小部分品牌词预算来保护这些点击。"
+    },
+    "eCpm": {
+      "label": "CPM",
+      "tooltip": "CPM 是每千次展示的成本。可使用广告管理工具中的 Meta 估算、你的其他账户或你所在国家公开发布的基准。"
+    },
+    "eCtr": {
+      "label": "CTR（链接）",
+      "tooltip": "链接点击率：链接点击量 ÷ 展示次数。在 Meta 上 0.8% 到 1.5% 较为常见。"
+    },
+    "eCvr": {
+      "label_leads": "落地页转化率",
+      "label_ecommerce": "店铺转化率",
+      "tooltip": "链接点击中变成线索（落地页）或购买（店铺）的比例。网站分析数据是最好的来源。"
+    },
+    "eFormRate": {
+      "label": "即时表单完成率",
+      "tooltip": "打开即时表单并提交的人所占比例。通常为 10% 到 20%。"
+    },
+    "eAtcRate": {
+      "label": "加购 → 购买转化率",
+      "tooltip": "加入购物车后完成购买的比例。预算较小时用于指导加购测试。"
+    },
+    "eDailyMin": {
+      "label": "预估每日成效（最低）",
+      "tooltip": "来自 Meta 广告组面板：“预估每日成效”的下限。仅用于交叉核对。"
+    },
+    "eDailyMax": {
+      "label": "预估每日成效（最高）",
+      "tooltip": "同一日预算下 Meta “预估每日成效”的上限。"
+    },
+    "eDailyBudget": {
+      "label": "该估算对应的日预算",
+      "tooltip": "Meta 显示上述估算时你输入的日预算。"
+    },
+    "gKeywords": {
+      "label": "主要关键字",
+      "tooltip": "可选。你计划出价的主要搜索词，供你自己参考。"
+    },
+    "gSearches": {
+      "label": "每月搜索量",
+      "tooltip": "你的关键字在所选地区的每月总搜索量。Google Ads → 工具 → 关键字规划师。"
+    },
+    "gBidLow": {
+      "label": "页首出价（低位）",
+      "tooltip": "关键字规划师 → “页首出价（低位区间）”。我们取低位和高位出价的平均值作为预期单次点击费用。"
+    },
+    "gBidHigh": {
+      "label": "页首出价（高位）",
+      "tooltip": "关键字规划师 → “页首出价（高位区间）”。"
+    },
+    "gIS": {
+      "label": "预期展示次数份额",
+      "tooltip": "你预计能出现的搜索比例。新账户通常能达到 30% 到 60%。"
+    },
+    "gCtrNew": {
+      "label": "预期 CTR",
+      "tooltip": "搜索广告的点击次数 ÷ 展示次数。匹配良好的关键字通常为 3% 到 7%。"
+    },
+    "gCvrNew": {
+      "label": "预期转化率",
+      "tooltip": "搜索点击中完成转化的比例。搜索流量通常比社交流量转化更好。"
+    },
+    "gBrandNew": {
+      "label": "有人搜索你的品牌吗？",
+      "tooltip": "如果有，我们会保留一个小型品牌词广告系列，防止竞争对手拿走这些点击。"
+    },
+    "adSets": {
+      "label": "计划的 Meta 广告组数量",
+      "tooltip": "每个广告组每周需要约 50 个结果才能退出学习阶段。广告组越少，每个广告组的数据越多。"
+    },
+    "creatives": {
+      "label": "要测试的素材数量",
+      "tooltip": "每个素材都需要一些花费来证明自己，约为目标单次结果成本的 2.5 倍。"
+    },
+    "testDays": {
+      "label": "测试时长（天）",
+      "tooltip": "首次测试运行多久后再决定扩量、优化或停止。14 天是不错的默认值。"
+    },
+    "includeRetargeting": {
+      "label": "包含再营销",
+      "tooltip": "向访问过或互动过的人再次展示广告。新账户会在 2 到 4 周后加入。"
+    },
+    "campaignName": {
+      "label": "广告系列名称",
+      "tooltip": "可选，方便你识别这一行。"
+    },
+    "budgetType": {
+      "label": "预算类型",
+      "tooltip": "CBO：Meta 在各广告组之间分配同一笔预算。ABO：每个广告组有自己的预算。Advantage+：一个自动化广告系列。"
+    },
+    "campaignAdSets": {
+      "label": "广告组数量",
+      "tooltip": "该广告系列中的活跃广告组。"
+    },
+    "adSetsWithSpend": {
+      "label": "获得有效花费的广告组",
+      "tooltip": "在 CBO 中，Meta 往往只在少数广告组上花钱。只统计真正分到预算的广告组。"
+    },
+    "rowCountry": {
+      "label": "国家",
+      "tooltip": "这一行对应的国家。如果所有国家只有一行，请留空。"
+    },
+    "spend": {
+      "label": "花费金额",
+      "tooltip": "广告管理工具 → 列 → 成效 → 花费金额。"
+    },
+    "impressions": {
+      "label": "展示次数",
+      "tooltip": "广告管理工具 → 列 → 成效 → 展示次数。"
+    },
+    "reach": {
+      "label": "覆盖人数",
+      "tooltip": "广告管理工具 → 列 → 成效 → 覆盖人数。看到你广告的独立用户数。"
+    },
+    "linkClicks": {
+      "label": "链接点击量",
+      "tooltip": "广告管理工具 → 列 → 成效和点击量 → 链接点击量。"
+    },
+    "landingPageViews": {
+      "label": "落地页浏览量",
+      "tooltip": "广告管理工具 → 列 → 成效和点击量 → 落地页浏览量。需要 Meta 像素代码。"
+    },
+    "formLeads": {
+      "label": "即时表单线索",
+      "tooltip": "广告管理工具 → 潜在客户表单广告的成效（Facebook 站内潜在客户）。"
+    },
+    "landingLeads": {
+      "label": "落地页线索",
+      "tooltip": "由像素代码或 CRM 追踪的网站线索。"
+    },
+    "bookings": {
+      "label": "预约数 (CRM)",
+      "tooltip": "这些线索预约的电话或咨询，来自 CRM 或日程表。"
+    },
+    "shows": {
+      "label": "到场数 (CRM)",
+      "tooltip": "预约后实际到场的人。"
+    },
+    "clients": {
+      "label": "客户数 (CRM)",
+      "tooltip": "到场后完成购买的人。"
+    },
+    "addToCarts": {
+      "label": "加入购物车次数",
+      "tooltip": "广告管理工具 → 列 → 转化 → 加入购物车次数。"
+    },
+    "checkouts": {
+      "label": "发起结账次数",
+      "tooltip": "广告管理工具 → 列 → 转化 → 发起结账次数。"
+    },
+    "purchases": {
+      "label": "购物次数",
+      "tooltip": "广告管理工具 → 列 → 转化 → 购物次数。如果数字不一致，以你的店铺为准。"
+    },
+    "purchaseValue": {
+      "label": "购物价值",
+      "tooltip": "广告管理工具 → 购物转化价值。"
+    },
+    "learningThreshold": {
+      "label": "Meta 学习门槛（每个广告组每周结果数）",
+      "tooltip": "Meta 每个广告组每周需要约 50 次优化事件才能退出学习阶段。"
+    },
+    "googleMinConversions": {
+      "label": "Google 智能出价最低要求（每个广告系列 30 天内的转化次数）",
+      "tooltip": "智能出价的常见经验值。请查看 Google 当前的建议，因为它会变化。"
+    },
+    "minResultsForConfidence": {
+      "label": "可信数据所需的最少结果数",
+      "tooltip": "结果数低于该值时，我们会把你的成本与基准混合，并标记为低可信度。"
+    },
+    "scalingPenalty": {
+      "label": "花费每翻一倍的成本增幅",
+      "tooltip": "花费每翻一倍，单次结果成本上升多少。15% 是常见的规划假设。"
+    },
+    "profitBuffer": {
+      "label": "利润安全余量",
+      "tooltip": "低于盈亏平衡点的安全余量。目标成本 = 最高成本 ÷ (1 + 余量)。"
+    },
+    "newAccountPenalty": {
+      "label": "新账户溢价",
+      "tooltip": "新账户起初通常要多付一些。我们把这部分加到估算成本上。"
+    },
+    "creativeTestMultiplier": {
+      "label": "每个素材的测试花费（× 目标成本）",
+      "tooltip": "每个素材用来证明自己的花费，以目标单次结果成本的倍数表示。"
+    },
+    "scaleThreshold": {
+      "label": "扩量门槛（占盈亏平衡的比例）",
+      "tooltip": "如果测试后的真实成本等于或低于你最高成本的这个比例，就扩量。"
+    },
+    "stopLossLow": {
+      "label": "止损下限（× 盈亏平衡）",
+      "tooltip": "当广告系列或素材花掉最高成本的这个倍数却没有任何结果时，停止它。"
+    },
+    "stopLossHigh": {
+      "label": "止损上限（× 盈亏平衡）",
+      "tooltip": "止损区间的上限。"
+    },
+    "retargetingViewsPerMonth": {
+      "label": "再营销每人每月展示次数",
+      "tooltip": "再营销受众中的每个人每月应看到你广告的次数。"
+    },
+    "retargetingCap": {
+      "label": "再营销上限（占 Meta 预算的比例）",
+      "tooltip": "再营销所占的 Meta 预算永远不会超过这个比例。"
+    },
+    "minRetargetingAudience": {
+      "label": "最小再营销受众",
+      "tooltip": "低于这个规模时会跳过再营销，因为无法高效投放。"
+    },
+    "brandShare": {
+      "label": "品牌词广告系列占 Google 预算的比例",
+      "tooltip": "当有人搜索你的品牌时，为品牌词广告系列预留的 Google 预算比例。"
+    },
+    "maxStepIncrease": {
+      "label": "每步最大加预算幅度",
+      "tooltip": "每次加预算不要超过这个幅度，以免重置学习阶段。"
+    },
+    "stepDays": {
+      "label": "每次加预算的间隔天数",
+      "tooltip": "两次加预算之间等待的天数。"
+    },
+    "rangeLow": {
+      "label": "{source}：低位系数",
+      "tooltip": "该来源估算的成本区间中乐观的一端。"
+    },
+    "rangeHigh": {
+      "label": "{source}：高位系数",
+      "tooltip": "该来源估算的成本区间中谨慎的一端。可信度越低的来源，区间越宽。"
+    }
+  },
+  "options": {
+    "rateSource": {
+      "crm": "CRM 数据",
+      "estimate": "客户估算",
+      "default": "默认值"
+    },
+    "leadSource": {
+      "form": "即时表单",
+      "landing": "落地页",
+      "both": "两者都有"
+    },
+    "judgeOn": {
+      "first": "首单",
+      "lifetime": "终身价值"
+    },
+    "budgetType": {
+      "CBO": "CBO（广告系列预算）",
+      "ABO": "ABO（广告组预算）",
+      "ADVANTAGE": "Advantage+"
+    }
+  },
+  "sources": {
+    "accounts": "你的账户",
+    "metaEstimate": "Meta 估算",
+    "benchmark": "公开基准",
+    "guess": "推测"
+  },
+  "nicheGroups": {
+    "ecommerce": "电商",
+    "leads": "线索获取类服务",
+    "messaging": "消息与预约类服务"
+  },
+  "niches": {
+    "fashion": "服装",
+    "beautyProducts": "美妆产品",
+    "electronics": "电子产品",
+    "home": "家居",
+    "ecommerceOther": "其他电商",
+    "beautyClinic": "医美诊所",
+    "bodyContouring": "塑形",
+    "dental": "牙科",
+    "realEstate": "房地产",
+    "legal": "法律服务",
+    "education": "教育",
+    "leadsOther": "其他服务",
+    "messaging": "消息或预约类服务"
+  },
+  "ui": {
+    "required": "必填",
+    "optional": "选填",
+    "increase": "增加",
+    "decrease": "减少",
+    "search": "搜索",
+    "noResults": "无匹配结果",
+    "removeItem": "移除{item}",
+    "addCountry": "添加国家",
+    "addCampaign": "添加广告系列",
+    "rowN": "国家行 {n}",
+    "campaignN": "广告系列 {n}",
+    "yes": "是",
+    "no": "否",
+    "tagsHint": "输入后按回车",
+    "sourceLabel": "来源",
+    "moreInfoAbout": "关于{field}的更多信息"
+  },
+  "errors": {
+    "required": "此字段为必填项。",
+    "invalid": "请输入有效数字。",
+    "integer": "请使用整数。",
+    "min": "必须大于或等于 {min}。",
+    "max": "必须小于或等于 {max}。",
+    "range": "必须介于 {min} 和 {max} 之间。",
+    "rowsRequired": "请至少添加一行账户数据。",
+    "reachGtImpressions": "覆盖人数不能高于展示次数。",
+    "clicksGtImpressions": "点击次数不能高于展示次数。",
+    "lpvGtClicks": "落地页浏览量不能高于链接点击量。",
+    "bookingsGtLeads": "预约数不能高于线索数。",
+    "showsGtBookings": "到场数不能多于预约数。",
+    "clientsGtShows": "客户数不能多于到场数。",
+    "costsGteAov": "产品成本、运费、手续费和退货加起来已达到或超过订单价值，没有利润可用于广告。",
+    "adSetsSpendGtAdSets": "获得花费的广告组数不能多于广告组总数。",
+    "bidLowGtHigh": "低位出价不能高于高位出价。",
+    "stopLossOrder": "止损下限不能高于上限。",
+    "nicheFirst": "请先在基础设置中选择行业。"
+  },
+  "warnings": {
+    "purchasesGtCheckouts": "购物次数高于结账次数。请检查追踪设置。",
+    "ctrHigh": "CTR 超过 10% 不常见。请确认你使用的是链接点击量。",
+    "cvrHigh": "转化率超过 50% 不常见。请检查数字。",
+    "frequencyHigh": "频次超过 5。受众可能已经看腻了你的广告。",
+    "fewResults": "该时间段只有 {results} 个结果（少于 {min}）。我们会与基准混合，并标记为低可信度。"
+  },
+  "actions": {
+    "loadExample": "加载示例数据",
+    "exampleLoaded": "已加载该模式的示例数据。",
+    "clearAll": "全部清除",
+    "clearConfirm": "再次点击以清除",
+    "cleared": "已清除所有输入。",
+    "saveScenario": "保存方案",
+    "scenarioName": "方案名称",
+    "save": "保存",
+    "cancel": "取消",
+    "savedToast": "方案已保存在此浏览器中。",
+    "scenarios": "方案（{count}）",
+    "scenarioLoaded": "已加载方案。",
+    "noScenarios": "还没有保存的方案。保存一个以便之后比较。",
+    "compareHint": "最多勾选 {max} 个方案进行并排比较。",
+    "load": "加载",
+    "delete": "删除",
+    "share": "复制分享链接",
+    "shareCopied": "分享链接已复制。它只包含你在规划工具中的输入。",
+    "shareFailed": "无法复制链接。请从地址栏复制。",
+    "sharedLoaded": "已加载分享的计划。",
+    "resetDefaults": "恢复默认值",
+    "resetDone": "高级设置已恢复默认值。"
+  },
+  "csv": {
+    "title": "导入 CSV 导出文件",
+    "intro": "上传 Meta 广告管理工具或 Google Ads 的导出文件。我们会匹配列，你确认后我们再填写字段。",
+    "choose": "选择 CSV 文件",
+    "mappingTitle": "检查列匹配",
+    "targetLabel": "导出类型",
+    "target": {
+      "meta": "Meta 广告管理工具",
+      "google": "Google Ads"
+    },
+    "fields": {
+      "country": "国家",
+      "spend": "花费金额",
+      "impressions": "展示次数",
+      "reach": "覆盖人数",
+      "linkClicks": "链接点击量",
+      "landingPageViews": "落地页浏览量",
+      "formLeads": "即时表单线索",
+      "landingLeads": "落地页线索",
+      "addToCarts": "加入购物车次数",
+      "checkouts": "发起结账次数",
+      "purchases": "购物次数",
+      "purchaseValue": "购物价值",
+      "gCost": "费用",
+      "gImpressions": "展示次数",
+      "gClicks": "点击次数",
+      "gConversions": "转化次数",
+      "gConversionValue": "转化价值",
+      "gImpressionShare": "搜索展示次数份额",
+      "gLostBudget": "搜索因预算而损失的展示次数份额",
+      "gLostRank": "搜索因评级而损失的展示次数份额"
+    },
+    "notMapped": "此文件中没有",
+    "confirm": "导入这些数字",
+    "imported": "{rows, plural, other {已导入 # 行。}}请检查下方字段。",
+    "error": "无法读取该文件。请导出为 CSV 后重试。"
+  },
+  "benchmarks": {
+    "title": "我的基准",
+    "intro": "保存你自己账户的数字，在同一行业和地区的新客户上重复使用。",
+    "use": "使用我的基准",
+    "manage": "管理（{count}）",
+    "used": "{count, plural, other {已根据你保存的 # 行数据填写。}}",
+    "usedDefaults": "还没有匹配的保存数据，因此使用了占位基准。请替换为你自己的数字。",
+    "none": "该行业暂时没有可用基准。",
+    "platform": "平台",
+    "cpm": "CPM",
+    "ctr": "CTR",
+    "cvr": "转化率",
+    "cost": "CPL / CPA",
+    "add": "保存这一行",
+    "saved": "基准已保存在此浏览器中。",
+    "context": "已与当前行业、地区（{region}）和月份（{month}）一同保存。",
+    "empty": "还没有保存的基准。"
+  },
+  "crossCheck": {
+    "implied": "Meta 的估算意味着单次结果成本在 {low} 到 {high} 之间。请与上方你的估算进行比较。"
+  },
+  "seasonal": {
+    "intro": "{profile} 的系数。1.0 表示普通月份。这些是可编辑的估算，并非实测数据。"
+  },
+  "advanced": {
+    "benchmarksNote": "各行业和平台的默认基准是占位值，应替换为真实数据。"
+  },
+  "compare": {
+    "budget": "月预算",
+    "results": "结果",
+    "cpa_leads": "单条线索成本",
+    "cpa_ecommerce": "单笔订单成本",
+    "verdict": "结论",
+    "verdicts": {
+      "profitable": "盈利，有扩量空间",
+      "optimize": "先优化",
+      "notViable": "不可行"
+    },
+    "incomplete": "该方案有缺失或无效的输入。"
+  }
+}

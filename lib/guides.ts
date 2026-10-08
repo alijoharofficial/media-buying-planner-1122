@@ -68,6 +68,16 @@ export const GUIDE_CONTENT: Record<string, () => Promise<{ default: ComponentTyp
   'pt/seasonality-q4-ad-costs': () => import('@/content/guides/pt/seasonality-q4-ad-costs.mdx'),
   'pt/benchmarks-before-launch': () => import('@/content/guides/pt/benchmarks-before-launch.mdx'),
   'pt/lead-funnel-bottleneck': () => import('@/content/guides/pt/lead-funnel-bottleneck.mdx'),
+  'zh/meta-ads-budget-new-account': () => import('@/content/guides/zh/meta-ads-budget-new-account.mdx'),
+  'zh/cost-per-lead-to-cac': () => import('@/content/guides/zh/cost-per-lead-to-cac.mdx'),
+  'zh/ecommerce-break-even-roas': () => import('@/content/guides/zh/ecommerce-break-even-roas.mdx'),
+  'zh/meta-learning-phase-50-results': () => import('@/content/guides/zh/meta-learning-phase-50-results.mdx'),
+  'zh/scaling-ad-spend-costs': () => import('@/content/guides/zh/scaling-ad-spend-costs.mdx'),
+  'zh/meta-vs-google-budget-split': () => import('@/content/guides/zh/meta-vs-google-budget-split.mdx'),
+  'zh/test-budget-decision-rules': () => import('@/content/guides/zh/test-budget-decision-rules.mdx'),
+  'zh/seasonality-q4-ad-costs': () => import('@/content/guides/zh/seasonality-q4-ad-costs.mdx'),
+  'zh/benchmarks-before-launch': () => import('@/content/guides/zh/benchmarks-before-launch.mdx'),
+  'zh/lead-funnel-bottleneck': () => import('@/content/guides/zh/lead-funnel-bottleneck.mdx'),
 };
 
 export type FaqEntry = { q: string; a: string };
@@ -110,6 +120,8 @@ export function readingMinutes(locale: string, slug: string) {
     .replace(/^export const[\s\S]*?^\]\s*$/m, ' ') // FAQ export counts separately below
     .replace(/<[^>]+>/g, ' ')
     .replace(/[#*_`>[\]()-]/g, ' ');
-  const words = text.trim().split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 220));
+  // Chinese has no spaces: count Han characters separately, at about 400 a minute.
+  const han = (text.match(/\p{Script=Han}/gu) ?? []).length;
+  const words = text.replace(/\p{Script=Han}/gu, ' ').trim().split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 220 + han / 400));
 }

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "tagline": "面向 Meta 和 Google 的广告预算计算器与媒体投放规划工具",
+    "description": "计算你在 Meta 和 Google 搜索上每月需要的广告预算，并把它变成清晰的媒体投放计划。"
+  },
+  "a11y": {
+    "skipToContent": "跳到主要内容",
+    "logoAlt": "{brand} 标志",
+    "homeLink": "{brand} 首页"
+  },
+  "theme": {
+    "toggle": "切换主题",
+    "light": "浅色模式",
+    "dark": "深色模式",
+    "system": "跟随系统"
+  },
+  "language": {
+    "label": "语言",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "简体中文"
+  },
+  "ui": {
+    "comingSoon": "即将推出",
+    "moreInfo": "更多信息",
+    "close": "关闭"
+  },
+  "support": {
+    "tagline": "数字已经算好。想请专业人士帮你看看吗？",
+    "subline": "获取专家对你的预算、转化漏斗和扩量计划的意见。",
+    "button": "获取专家意见"
+  },
+  "nav": {
+    "label": "主导航",
+    "menu": "菜单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "planner": "规划工具",
+    "features": "功能",
+    "howToUse": "使用方法",
+    "guides": "指南",
+    "faq": "常见问题",
+    "about": "关于",
+    "contact": "联系我们",
+    "services": "服务",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "disclaimer": "免责声明",
+    "cookies": "Cookie 政策"
+  },
+  "footer": {
+    "expertText": "需要有人再帮你核对一下预算吗？",
+    "expertLink": "专家意见",
+    "quickLinks": "快速链接",
+    "features": "规划工具",
+    "qr": "免费二维码生成器",
+    "guidesBy": "TECH24 出品的指南"
+  },
+  "cookie": {
+    "label": "Cookie 同意",
+    "text": "我们只使用必要的浏览器存储来保存你在规划工具中的输入。经你同意后，我们还会使用分析 Cookie 来了解网站的使用情况。",
+    "policy": "阅读 Cookie 政策",
+    "accept": "接受分析",
+    "reject": "仅必要"
+  },
+  "errors": {
+    "notFoundTitle": "该页面不存在",
+    "notFoundText": "链接可能已过期或输入有误。你在规划工具中保存的输入仍安全地保存在浏览器中。",
+    "serverTitle": "出了点问题",
+    "serverText": "一个意外错误导致页面无法加载。请重试。",
+    "retry": "重试",
+    "home": "返回首页",
+    "planner": "打开规划工具"
+  },
+  "protected": "此内容受保护",
+  "breadcrumbs": {
+    "home": "首页",
+    "label": "面包屑导航"
+  }
+}
